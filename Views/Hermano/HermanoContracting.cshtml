@@ -1,0 +1,426 @@
+﻿
+@{
+    ViewBag.Title = "HermanoContracting";
+    Layout = "~/Views/Shared/_LayoutHermanoContracting.cshtml";
+}
+
+<style>
+    @@font-face {
+        font-family: 'PTSerif-Bold';
+        src: url('../../assets/fonts/Hermano/HermanoContracting/PTSerif-Bold.ttf') format('truetype');
+    }
+
+h1, h2 { font-family: "PTSerif-Bold" !important; }
+
+    @@font-face {
+        font-family: 'PTSerif-Regular';
+        src: url('../../assets/fonts/Hermano/HermanoContracting/PTSerif-Regular.ttf') format('truetype');
+    }
+
+    * {
+        font-family: "PTSerif-Regular" !important;
+    }
+
+    img.scale-with-grid, #Content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+  
+
+    .zoomEffect_2 {
+        display: inline-block;
+        border: 0;
+        position: relative;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+    }
+        .zoomEffect_2:hover {
+            box-shadow: 0px 0px 150px #000000;
+            z-index: 2;
+            -webkit-transition: all 200ms ease-in;
+            -webkit-transform: scale(1.2);
+            -ms-transition: all 200ms ease-in;
+            -ms-transform: scale(1.2);
+            -moz-transition: all 200ms ease-in;
+            -moz-transform: scale(1.2);
+            transition: all 200ms ease-in;
+            transform: scale(1.2);
+        }
+
+
+    /*animation*/
+    .section {
+        display: flex;
+        
+    }
+
+        section:nth-child(1) {
+        }
+
+        section:nth-child(2) {
+            color: #42455a;
+        }
+
+        section:nth-child(3) {
+        }
+
+        section:nth-child(4) {
+            color: #42455a;
+        }
+
+        section .container {
+            /* margin: 100px;*/
+        }
+
+    @@media (max-width: 900px) {
+        section h1 {
+            font-size: 2rem;
+            
+        }
+
+        section .text-container {
+            flex-direction: column;
+        }
+    }
+
+    .reveal {
+        position: relative;
+        opacity: 0;
+    }
+
+        .reveal.active {
+            opacity: 1;
+        }
+
+    .active.fade-bottom {
+        animation: fade-bottom 1s ease-in;
+    }
+
+    .active.fade-left {
+        animation: fade-left 1s ease-in;
+    }
+
+    .active.fade-right {
+        animation: fade-right 1s ease-in;
+    }
+
+    @@keyframes fade-bottom {
+        0% {
+            transform: translateY(200px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @@keyframes fade-left {
+        0% {
+            transform: translateX(-200px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @@keyframes fade-right {
+        0% {
+            transform: translateX(200px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+</style>
+
+
+<div id="Content">
+    <div class="content_wrapper clearfix">
+        <div class="sections_group">
+            <div class="entry-content">
+                <div class="section mcb-section no-margin-h no-margin-v" style="padding-top:0px; padding-bottom:80px;background-image:url(../../assets/ImagesHermanoContracting/home_garden3_sectionbg1.jpg); background-repeat:no-repeat; background-position:center bottom">
+                    <div class="section_wrapper mcb-section-inner">
+                        <div class="wrap mcb-wrap one valign-top move-up clearfix "  style="margin-top:-60px" data-mobile="no-up">
+                            <div class="mcb-wrap-inner section reveal fade-left">
+                                <div class="column mcb-column one-second column_column ">
+                                    <div class="column_attr clearfix" style="background-color:#003538; padding:110px 50px 95px; border-radius:10px;">
+                                        <h2 style="color:#fff">Hermano <br />Contracting and Landscaping</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap mcb-wrap two-fifth valign-top clearfix" style="padding:70px 5% 55px">
+                            <div class="mcb-wrap-inner section reveal fade-left">
+                                <div class="column mcb-column one column_column">
+                                    <div class="column_attr clearfix ">
+                                        <h5>Hermano Contracting and Landscaping works on constructing and maintaining buildings of all kinds.</h5>
+                                        <p>
+                                            Such as hotels, buildings, villas and apartments, in addition to providing maintenance services for electricity and plumbing works through a specialized and experienced team in this field for 7 days through a mobile car with all their equipment.
+                                        </p>
+                                        <h6><a href="#">LEARN MORE</a><i class="icon-right-open themecolor"></i></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap mcb-wrap three-fifth valign-top move-up clearfix" style="margin-top:-215px;" data-mobile="no-up">
+                            <div class="mcb-wrap-inner section reveal fade-right">
+                                <div class="column mcb-column one column_image">
+                                    <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
+                                        <div class="image_wrapper">
+                                            <img class="scale-with-grid" src="~/assets/ImagesHermanoContracting/group-2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap mcb-wrap divider valign-top clearfix">
+                            <div class="mcb-wrap-inner"></div>
+                        </div>
+                        <div class="wrap mcb-wrap two-fifth valign-top clearfix">
+                            <div class="mcb-wrap-inner">
+                                <div class="column mcb-column one column_image">
+                                    <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
+                                        <div class="image_wrapper">
+                                            <img class="scale-with-grid" src="~/assets/ImagesHermanoContracting/dsc-09512.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap mcb-wrap three-fifth valign-top clearfix" style="padding:70px 7% 55px">
+                            <div class="mcb-wrap-inner">
+                                <div class="column mcb-column one column_column  section reveal fade-right">
+                                    <div class="column_attr clearfix">
+                                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                                    </div>
+                                </div>
+                                <div class="column mcb-column one column_divider">
+                                    <hr class="no_line" style="margin:0 auto 50px">
+                                </div>
+                                <div class="column mcb-column one-second column_column  section reveal fade-right">
+                                    <div class="column_attr clearfix" style="padding:0 8% 0 0">
+                                        <h5>Hermano Contracting and Landscaping works on constructing and maintaining buildings.</h5>
+                                        <p>
+                                            Such as hotels, buildings, villas and apartments, in addition to providing maintenance services for electricity and plumbing works through a specialized and experienced team.
+                                        </p>
+                                        <h6><a href="#">SEE OUR PROJECTS</a><i class="icon-right-open themecolor"></i></h6>
+                                        <h6><a href="#">OUR REFERENCES</a><i class="icon-right-open themecolor"></i></h6>
+                                    </div>
+                                </div>
+                                <div class="column mcb-column one-second column_column  section reveal fade-right">
+                                    <div class="column_attr clearfix align_center" style="background-color:#fff; padding:50px 40px 35px; border-bottom: 5px solid #70c458; margin: 0 3%">
+                                        <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
+                                            <div class="image_wrapper">
+                                                <img class="scale-with-grid" src="~/assets/ImagesHermanoContracting/home_garden3_pic3.png">
+                                            </div>
+                                        </div>
+                                        <hr class="no_line" style="margin:0 auto 20px">
+                                        <h2>1347</h2>
+                                        <p style="letter-spacing: 3px">
+                                            REALIZED PROJECTS IN 2017
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section mcb-section" style="padding-top:110px; padding-bottom:110px; background-color:#222f1f; background-image:url(../../assets/ImagesHermanoContracting/home_garden3_sectionbg2.png); background-repeat:no-repeat; background-position:center top">
+                    <div class="section_wrapper mcb-section-inner ">
+                        <div class="wrap mcb-wrap one valign-top clearfix">
+                            <div class="mcb-wrap-inner">
+                                <div class="column mcb-column one column_column">
+                                    <div class="column_attr clearfix align_center">
+                                        <h2 style="color:#fff">Our Services</h2>
+                                      
+                                    </div>
+                                </div>
+                                <div class="column mcb-column one-fourth column_trailer_box section reveal fade-bottom">
+                                    <div class="trailer_box zoomEffect_2">
+                                        <a href="#">
+                                            <img class="scale-with-grid " src="~/assets/ImagesHermanoContracting/home_garden3_pic5.jpg">
+                                            <div class="desc">
+                                                <div class="subtitle">
+                                                    SERVICE
+                                                </div><h2>Landscape Care & Maintenance</h2><div class="line"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="column mcb-column one-fourth column_trailer_box section reveal fade-bottom">
+                                    <div class="trailer_box zoomEffect_2">
+                                        <a href="#">
+                                            <img class="scale-with-grid" src="~/assets/ImagesHermanoContracting/home_garden3_pic6.jpg">
+                                            <div class="desc">
+                                                <div class="subtitle">
+                                                    SERVICE
+                                                </div><h2>Construction of Buildings</h2><div class="line"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="column mcb-column one-fourth column_trailer_box section reveal fade-bottom">
+                                    <div class="trailer_box zoomEffect_2">
+                                        <a href="#">
+                                            <img class="scale-with-grid" src="~/assets/ImagesHermanoContracting/home_garden3_pic7.jpg">
+                                            <div class="desc">
+                                                <div class="subtitle">
+                                                    SERVICE
+                                                </div><h2>Beautify Sites | Gardens | Villas</h2><div class="line"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="column mcb-column one-fourth column_trailer_box section reveal fade-bottom">
+                                    <div class="trailer_box zoomEffect_2">
+                                        <a href="#">
+                                            <img class="scale-with-grid " src="~/assets/ImagesHermanoContracting/home_garden3_pic8.jpg">
+                                            <div class="desc">
+                                                <div class="subtitle">
+                                                    SERVICE
+                                                </div><h2>Landscape Care & Maintenance</h2><div class="line"></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section mcb-section no-margin-h no-margin-v equal-height" style="padding-top:0px; padding-bottom:120px">
+                    <div class="section_wrapper mcb-section-inner">
+                        <div class="wrap mcb-wrap one-third valign-top clearfix" style="padding:70px 7% 55px 0">
+                            <div class="mcb-wrap-inner">
+                                <div class="column mcb-column one column_column  section reveal fade-bottom">
+                                    <div class="column_attr clearfix">
+                                        <h2>Lorem ipsum consectetur</h2>
+                                        <h5>Nulla mauris dolor, gravida a varius blandit, auctor eget purus. Phasellus scelerisque</h5>
+                                        <p>
+                                            Duis ultricies malesuada leo vel aliquet. Curabitur rutrum porta dui eget mollis. Nullam lacinia dictum auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                        </p>
+                                        <h6><a href="#">CONTACT US</a><i class="icon-right-open themecolor"></i></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap mcb-wrap two-third valign-top move-up clearfix" style="margin-top:-60px" data-mobile="no-up">
+                            <div class="mcb-wrap-inner">
+                                <div class="column mcb-column one-second column_column">
+                                    <div class="column_attr clearfix" style="background-color:#003538; padding:50px 50px 35px">
+                                        <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
+                                            <div class="image_wrapper">
+                                                <img class="scale-with-grid" src="~/assets/ImagesHermanoContracting/home_garden3_pic9.png">
+                                            </div>
+                                        </div>
+                                        <hr class="no_line" style="margin:0 auto 55px">
+                                        <h4 style="color:#fff">Mauris accumsan, mass</h4>
+                                        <p style="color: #b7e3ab">
+                                            Suspendisse potenti. In non lacinia risus, ac tempor ipsum.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="column mcb-column one column_divider">
+                                    <hr class="no_line">
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="wrap mcb-wrap one valign-top clearfix">
+                            <div class="mcb-wrap-inner">
+                                <div class="column mcb-column one-third column_column" style="text-align:center">
+
+                                    <img src="~/assets/ImagesHermanoContracting/hermano-img-box.png" />
+                                </div>
+                                <div class="column mcb-column one-third column_placeholder">
+                                    <div class="column_attr clearfix" style="background-color:#201815; background-image:url('../../assets/ImagesHermanoContracting/home_garden3_pic12.jpg'); background-repeat:no-repeat; background-position:center top">
+                                        <hr class="no_line" style="margin:0 auto 200px">
+                                    </div>
+                                </div>
+                                <div class="column mcb-column one-third column_column">
+                                    <div class="column_attr clearfix" style="background-color:#355b2b; padding:50px 50px 35px">
+                                        <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
+                                            <div class="image_wrapper">
+                                                <img class="scale-with-grid" src="~/assets/ImagesHermanoContracting/home_garden3_pic10.png">
+                                            </div>
+                                        </div>
+                                        <hr class="no_line" style="margin:0 auto 55px">
+                                        <h4 style="color:#fff">Maecenas sit amet</h4>
+                                        <p style="color: #9aad95">
+                                            Phasellus venenatis leo eu semper varius. Maecenas sit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap mcb-wrap one valign-top clearfix">
+                            <div class="mcb-wrap-inner">
+                                <div class="column mcb-column one-third column_column">
+                                    <div class="column_attr clearfix" style="background-color:#003538; padding:50px 50px 35px">
+                                        <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
+                                            <div class="image_wrapper">
+                                                <img class="scale-with-grid" src="~/assets/ImagesHermanoContracting/home_garden3_pic11.png">
+                                            </div>
+                                        </div>
+                                        <hr class="no_line" style="margin:0 auto 55px">
+                                        <h4 style="color:#fff">Nulla mauris dolor</h4>
+                                        <p style="color: #accfa3">
+                                            Orci varius natoque penatibus et magnis dis parturient montes
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="column mcb-column one-third column_placeholder">
+                                    <div class="placeholder">
+                                        &nbsp;
+                                    </div>
+                                </div>
+                                <div class="column mcb-column one-third column_column">
+                                    <div class="column_attr clearfix align_center" style="background-image:url('../../assets/ImagesHermanoContracting/home_garden3_pic12.jpg'); background-repeat:no-repeat; background-position:center top; padding:130px 50px 35px">
+                                        <a class="button  button_right button_size_2 button_js" href="#"><span class="button_icon"><i class="icon-right-open"></i></span><span class="button_label">SEE GALLERY</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    //animation section
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+    }
+
+    window.addEventListener("scroll", reveal);
+</script>

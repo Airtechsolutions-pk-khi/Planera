@@ -1,0 +1,373 @@
+﻿
+@{
+    ViewBag.Title = "PlaneraCareer";
+    Layout = "~/Views/Shared/_Layoutv2.cshtml";
+}
+<link href="~/assets/cssplaneracareer/bootstrap.min.css" rel="stylesheet">
+<link href="~/assets/cssplaneracareer/style.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+
+<style>
+    #contactform .column input, #contactform .column textarea {
+        border-color: black;
+        
+    }
+    .column input, textarea {
+        background-color: white;
+    }
+    .s-card-icon {
+        margin-bottom: 0px !important;
+    }
+
+    .s-block-content h4 {
+        font-size: 18px !important;
+    }
+    h1, h2,h3,h4,h5 {
+        font-family: "Cinzel" !important;
+    }
+    @@font-face {
+        font-family: 'Montserrat-Regular';
+        src: url('../../assets/OurBusinesses/fonts/Montserrat-Regular.ttf') format('truetype');
+    }
+p { font-family: 'Montserrat-Regular' !important }
+</style>
+<!--Breadcrumb Area-->
+<section class="breadcrumb-area banner-6">
+    <div class="text-block" style="padding-top:270px; background-color:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 v-center">
+                    <div class="bread-inner">
+
+                        <div class="bread-title wow animate fadeIn" data-wow-delay="1s">
+                            @*<h1 style="color:white;">Job Openings</h1>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Breadcrumb Area-->
+<!--Start About-->
+<section class="about-agencys pad-tb block-1 bg-gradient5" style=" padding-top: 70px; padding-bottom: 0px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 ">
+                <div class="common-heading text-l animate fadeInDown delay-1s">
+                    <h2 class="mb20  text-center" style="color:#1f438f;font-family:Cinzel">Perks To Work With Planera</h2>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End About-->
+<!--Start Why Choose-->
+<section class="service-block pad-tb " style="padding-top:20px;padding-bottom:50px;background: white;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+               
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-sm-6 mt30  wow fadeIn" data-wow-delay=".5s">
+                <div class="s-block wide-sblock">
+                    <div class="s-card-icon"><img src="~/assets/ImagesPlaneraCareer/teama.svg" alt="service" class="img-fluid"></div>
+                    <div class="s-block-content">
+                        <h4>Reliable Service. In House Team</h4>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mt30 wow fadeIn" data-wow-delay="1s">
+                <div class="s-block wide-sblock">
+                    <div class="s-card-icon"><img src="~/assets/ImagesPlaneraCareer/link.svg" alt="service" class="img-fluid"></div>
+                    <div class="s-block-content">
+                        <h4>Trusted by People Like You</h4>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mt30 wow fadeIn" data-wow-delay="1.7s">
+                <div class="s-block wide-sblock">
+                    <div class="s-card-icon"><img src="~/assets/ImagesPlaneraCareer/tech.svg" alt="service" class="img-fluid"></div>
+                    <div class="s-block-content">
+                        <h4>Complete Technical Competency</h4>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mt30 wow fadeIn" data-wow-delay="2s">
+                <div class="s-block wide-sblock">
+                    <div class="s-card-icon"><img src="~/assets/ImagesPlaneraCareer/hi.svg" alt="service" class="img-fluid"></div>
+                    <div class="s-block-content">
+                        <h4>Friendly & Cordial in Nature</h4>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mt30 animate wow fadeIn" data-wow-delay=".5s">
+                <div class="s-block wide-sblock">
+                    <div class="s-card-icon"><img src="~/assets/ImagesPlaneraCareer/badge.svg" alt="service" class="img-fluid"></div>
+                    <div class="s-block-content">
+                        <h4>Excellent Quality Delivered on Time</h4>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mt30 wow fadeIn" data-wow-delay="1.7s">
+                <div class="s-block wide-sblock">
+                    <div class="s-card-icon"><img src="~/assets/ImagesPlaneraCareer/tin.svg" alt="service" class="img-fluid"></div>
+                    <div class="s-block-content">
+                        <h4>Effective & Continuous Communication</h4>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--End Why Choose-->
+<!--Start Enquire Form-->
+<section class="contact-page pad-tb" style="padding-top:50px;" id="jobs">
+    <div class="container">
+        
+        <div class="row align-items-center">
+            <div class="col-lg-6  ">
+                <h2 style="color:#1f438f;font-family:Cinzel;padding-bottom:25px">CURRENT OPENING</h2>
+                @*<h4  style="font-family:Montserrat-Regular;padding-bottom:32px">Currently we do not have any open positions, however if you are interested in possible future opportunities</h4>
+        <p>please send your CV to jobs@planerabh.com or upload your resume here. We will be in touch if a role becomes available that matches your skills and experiences.</p>*@
+                <p style="text-align:justify;font-family:Montserrat-Regular !important;padding-bottom:25px;padding-right:25px;font-size:18px;">Please send your CV to <a href="mailto:jobs@planerabh.com" style="text-decoration:underline;">jobs@planerabh.com</a> or upload your resume here. We will be in touch if a role becomes available that matches your skills and experiences.</p>
+            </div>
+            <div class="col-lg-6">
+                <h3 class="pt20" style="font-family: Montserrat-Regular">Submit Your Resume</h3>
+
+                <div class="column_attr" style="margin-top:25px">
+                    <div id="contactWrapper">
+                        <form id="contactform">
+                            <!-- One Third (1/3) Column -->
+                            <div class="column one-second">
+                                <label>Name:</label><span>
+                                    <input type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" />
+                                </span>
+                            </div>
+                            <!-- One Third (1/3) Column -->
+                            <div class="column one-second">
+                                <label>E-mail address:</label><span>
+                                    <input type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" />
+                                </span>
+                            </div>
+
+                            <div class="column one">
+                                <label>Upload Your Resume:</label>
+                                <input style="padding: 1px;" class="form-control form-control-sm" id="formFileSm" type="file" placeholder="upload your resume">
+                            </div>
+
+                            <div class="column one">
+                                <label>Message:</label><span>
+                                    <textarea name="body" id="body" class="flv_style_38" rows="10" aria-invalid="false"></textarea>
+                                </span>
+                            </div>
+                            <div class="column one">
+                                <button>Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                @*<form id="contact-form" method="post" action="#">
+            <div class="fieldsets row">
+                <div class="col-md-6 form-group"><input id="form_name" type="text" name="name" placeholder="Enter your name *" required="required"> </div>
+                <div class="col-md-6 form-group"><input id="form_email" type="email" name="email" placeholder="Enter your email *" required="required"> </div>
+            </div>
+            <div class="fieldsets row">
+                <div class="col-md-6 form-group"><input id="form_phone" type="text" name="phone" placeholder="Enter your Phone No *" required="required">	</div>
+                <div class="col-md-6 form-group">
+                    <select id="form_need" name="need" required="required">
+                        <option value="">Select Post</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="Web Design">Web Design</option>
+                        <option value="App Design">App Design</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="fieldsets form-group"> <textarea id="form_message" name="message" placeholder="Message *" rows="4" required="required"></textarea> </div>
+            <div class="fieldsets- row">
+                <div class="col-md-12 form-group">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input mb0" id="customFile">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                    <p><small>Please upload maximum 5 files Only pdf, docx and doc files.</small></p>
+                </div>
+            </div>
+            <div class="fieldsets mt20">
+                <button type="submit" class="lnk btn-main bg-btn">Submit Application<span class="circle"></span></button>
+            </div>
+        </form>
+            </div>
+            <div class="col-lg-8">
+                <div class="career-card-div">
+                    @*<div id="accordion" class="accordion">
+                    <div class="card-2">
+                        <div class="card-header" id="acc1">
+                            <button class="btn btn-link btn-block text-left acc-icon" type="button" data-toggle="collapse" data-target="#collapse-a" aria-expanded="true" aria-controls="collapse-a">
+                                Web & Visual Designer - 2 Post
+                            </button>
+                        </div>
+                        <div id="collapse-a" class="card-body collapse show p0" aria-labelledby="acc1" data-parent="#accordion">
+                            <div class="data-reqs">
+                                <h5 class="pt20 pb20">Overview</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                <h5 class="pt20 pb20">Required experience</h5>
+                                <p>5 Years Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                <h4 class="pb20 pt20">Skills Required:</h4>
+                                <ul class="list-ul ul-check">
+                                    <li>Deep familiarity with Core PHP and Laravel</li>
+                                    <li>Experience of Ajax &amp; Jquery</li>
+                                    <li>Good understanding of JSON &amp; third-party libraries and APIs</li>
+                                    <li>Should be able to understand entire development life cycle concept. (Design, build, deploy, test, deploy online &amp; support)</li>
+                                    <li>Strong knowledge in Web Services &amp; API's, LBS, Social Network Integration etc.</li>
+                                    <li>Strong knowledge in database (Mysql)</li>
+                                    <li>Good Knowledge in Google APIs</li>
+                                    <li>Good understanding of MVC concepts and design patterns</li>
+                                    <li>Strong object oriented programming and design skills</li>
+                                    <li>Knowledge in versioning Tools that includes like trunk, branch, export, import and copy will be an added advantage</li>
+                                </ul>
+                                <a href="#" style="background-color: #1f438f !important;border-radius:0px;font-size:23px;" class="btn-main mt20" data-toggle="modal" data-target="#modalform"><b>Apply Now</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-2 mt30">
+                        <div class="card-header" id="acc2">
+                            <button class="btn btn-link btn-block text-left acc-icon collapsed" type="button" data-toggle="collapse" data-target="#collapse-b" aria-expanded="true" aria-controls="collapse-a">
+                                Head of UX and Design - 3 Post
+                            </button>
+                        </div>
+                        <div id="collapse-b" class="card-body collapse p0" aria-labelledby="acc2" data-parent="#accordion">
+                            <div class="data-reqs">
+                                <h5 class="pt20 pb20">Overview</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                <h5 class="pt20 pb20">Required experience</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                <h4 class="pb20 pt20">Skills Required:</h4>
+                                <ul class="list-ul ul-check">
+                                    <li>Deep familiarity with Core PHP and Laravel</li>
+                                    <li>Experience of Ajax &amp; Jquery</li>
+                                    <li>Good understanding of JSON &amp; third-party libraries and APIs</li>
+                                    <li>Should be able to understand entire development life cycle concept. (Design, build, deploy, test, deploy online &amp; support)</li>
+                                    <li>Strong knowledge in Web Services &amp; API's, LBS, Social Network Integration etc.</li>
+                                    <li>Strong knowledge in database (Mysql)</li>
+                                    <li>Good Knowledge in Google APIs</li>
+                                    <li>Good understanding of MVC concepts and design patterns</li>
+                                    <li>Strong object oriented programming and design skills</li>
+                                    <li>Knowledge in versioning Tools that includes like trunk, branch, export, import and copy will be an added advantage</li>
+                                </ul>
+                                <a href="#" style="background-color: #1f438f !important;border-radius:0px;font-size:23px;" class="btn-main mt20" data-toggle="modal" data-target="#modalform"><b>Apply Now</b></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+                </div>
+            </div>
+        </div>
+        </div>
+</section>
+<!--End Enquire Form-->
+
+
+<div class="section mcb-section highlight-right equal-height-wrap" style="padding-top:70px; padding-bottom:50px; background-color:#0F3584" data-parallax="3d">
+
+    <img class="mfn-parallax" src="~/assets/HomeV2/images/home-bg.png" style="opacity:0">
+    <div class="section_wrapper mcb-section-inner">
+        <div class="wrap mcb-wrap one-sixth  valign-top clearfix">
+            <div class="mcb-wrap-inner">
+                <div class="column mcb-column one column_placeholder">
+                    <div class="placeholder">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap mcb-wrap two-fifth valign-middle clearfix animate delay-2s" data-anim-type="fadeIn">
+            <div class="mcb-wrap-inner">
+                <div class="column mcb-column five-sixth column_contact_box">
+                    <div class="get_in_touch" style="background-color:white;">
+                        <h3 style="color:#1a3f8c !important;">CONTACT US</h3>
+                        <div class="get_in_touch_wrapper">
+                            <ul>
+                                <li class="address">
+                                    <span class="icon"><i class="icon-location"></i></span><span class="address_wrapper" style="color: #1a3f8c;">
+                                        Mandarine Business Center
+                                        <br>
+                                        Alseef District (Bahrain)
+                                    </span>
+                                </li>
+                                <li class="phone phone-1">
+                                    <span class="icon"><i class="icon-phone"></i></span>
+
+                                    <p>
+                                        <a href="tel:+97317004006" style="color:#1a3f8c !important;">+973 17004006</a>
+                                    </p>
+                                    <p>
+                                        <a href="tel:+97337750033" style="color:#1a3f8c !important;">+973 37750033 </a><br />
+                                        <a href="tel:+97337750044" style="color:#1a3f8c !important;">+973 37750044</a>
+                                    </p>
+
+
+                                </li>
+                                <li class="mail">
+                                    <span class="icon"><i class="icon-mail"></i></span>
+                                    <p style="color: #1a3f8c;">
+                                        <a href="mailto:info@planerabh.com" style="color:#1a3f8c !important;"><span>info@planerabh.com</span></a>
+                                    </p>
+                                </li>
+                                <li class="www">
+                                    <span class="icon"><i class="icon-link"></i></span>
+                                    <p style="color: #1a3f8c !important;">
+                                        <a target="_blank" href="http://www.planerabh.com/" style="color:#1a3f8c !important;">www.planerabh.com</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap mcb-wrap two-fifth valign-middle clearfix">
+            <div class="mcb-wrap-inner">
+                <div class="column mcb-column one column_column">
+                    <div class="column_attr clearfix" style="padding:30px 40px 30px 30px;">
+                        <h2 style="color:white; font-family:Cinzel;">
+                            OUR SOCIAL <br />LINKS
+                        </h2>
+                        <hr class="no_line" style="margin: 0 auto 10px">
+                        <p style="color:#9d9da8;font-size:22px" class="pb20">
+                            Connect us for the latest updates and upcoming projects
+                        </p>
+                        <div class="column_attr clearfix">
+                            <p style="font-size: 28px; line-height: 40px">
+                                <a href="#">
+                                    <i class="icon-facebook" style="color:white;"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="icon-twitter" style="color:white;"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="icon-instagram" style="color:white"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="icon-youtube" style="color:white"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

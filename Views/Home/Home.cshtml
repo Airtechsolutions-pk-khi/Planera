@@ -1,0 +1,1351 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    a.button, a.tp-button {
+        background-color: #1f438f;
+        color: #001946;
+    }
+
+    .zoomEffect_2 {
+        display: inline-block;
+        border: 0;
+        position: relative;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+    }
+
+        .zoomEffect_2:hover {
+            box-shadow: 0px 0px 10px #000000;
+            z-index: 2;
+            -webkit-transition: all 200ms ease-in;
+            -webkit-transform: scale(1.2);
+            -ms-transition: all 200ms ease-in;
+            -ms-transform: scale(1.2);
+            -moz-transition: all 200ms ease-in;
+            -moz-transform: scale(1.2);
+            transition: all 200ms ease-in;
+            transform: scale(1.2);
+        }
+
+    .ml2 {
+        font-weight: 900;
+        font-size: 3.5em;
+    }
+
+        .ml2 .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+    .ml1 {
+        font-weight: 900;
+        font-size: 3.5em;
+    }
+
+    .fade-in {
+        animation: fadeIn ease 7s;
+        -webkit-animation: fadeIn ease 7s;
+        -moz-animation: fadeIn ease 7s;
+        -o-animation: fadeIn ease 7s;
+        -ms-animation: fadeIn ease 7s;
+    }
+
+    @@keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @@-moz-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @@-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @@-o-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @@-ms-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .box {
+        width: 100%;
+    }
+    /*=== Trigger  ===*/
+    .animate {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    /*=== Optional Delays, change values here  ===*/
+    .one {
+        -webkit-animation-delay: 0.5s;
+        -moz-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+    }
+
+    .two {
+        -webkit-animation-delay: 1.5s;
+        -moz-animation-delay: 1.5s;
+        animation-delay: 1.5s;
+    }
+
+
+    /*==== FADE IN UP ===*/
+    @@-webkit-keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    @@keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    .fadeInUp {
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+    }
+
+    /*=== FADE IN DOWN ===*/
+    .fadeInDown {
+        -webkit-animation-name: fadeInDown;
+        animation-name: fadeInDown;
+    }
+
+    @@-webkit-keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    @@keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    /*=== FADE IN LEFT ===*/
+    @@-webkit-keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    @@keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    .fadeInLeft {
+        -webkit-animation-name: fadeInLeft;
+        animation-name: fadeInLeft;
+    }
+
+    /*==== FADE IN RIGHT ===*/
+    @@-webkit-keyframes fadeInRight {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    @@keyframes fadeInRight {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    .fadeInRight {
+        -webkit-animation-name: fadeInRight;
+        animation-name: fadeInRight;
+    }
+
+    /*=== FADE IN  ===*/
+    @@-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .fadeIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+
+    /*=== FADE IN UP Big ===*/
+    .fadeInUpBig {
+        -webkit-animation-name: fadeInUpBig;
+        animation-name: fadeInUpBig;
+    }
+
+    @@-webkit-keyframes fadeInUpBig {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 2000px, 0);
+            transform: translate3d(0, 2000px, 0);
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    @@keyframes fadeInUpBig {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 2000px, 0);
+            transform: translate3d(0, 2000px, 0);
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    /*=== FADE IN DOWN Big ===*/
+    .fadeInDownBig {
+        -webkit-animation-name: fadeInDownBig;
+        animation-name: fadeInDownBig;
+    }
+
+    @@-webkit-keyframes fadeInDownBig {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -2000px, 0);
+            transform: translate3d(0, -2000px, 0);
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    @@keyframes fadeInDownBig {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -2000px, 0);
+            transform: translate3d(0, -2000px, 0);
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    /*=== FADE IN LEFT Big ===*/
+    .fadeInLeftBig {
+        -webkit-animation-name: fadeInLeftBig;
+        animation-name: fadeInLeftBig;
+    }
+
+    @@-webkit-keyframes fadeInLeftBig {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(-2000px, 0, 0);
+            transform: translate3d(-2000px, 0, 0);
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    @@keyframes fadeInLeftBig {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(-2000px, 0, 0);
+            transform: translate3d(-2000px, 0, 0);
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    /*=== FADE IN RIGHT Big ===*/
+    .fadeInRightBig {
+        -webkit-animation-name: fadeInRightBig;
+        animation-name: fadeInRightBig;
+    }
+
+    @@-webkit-keyframes fadeInRightBig {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(2000px, 0, 0);
+            transform: translate3d(2000px, 0, 0);
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    @@keyframes fadeInRightBig {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(2000px, 0, 0);
+            transform: translate3d(2000px, 0, 0);
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    /*animation*/
+    .section {
+        display: flex;
+    }
+
+    section:nth-child(1) {
+    }
+
+    section:nth-child(2) {
+        color: #42455a;
+    }
+
+    section:nth-child(3) {
+    }
+
+    section:nth-child(4) {
+        color: #42455a;
+    }
+
+    section .container {
+        /* margin: 100px;*/
+    }
+
+    @@media (max-width: 900px) {
+        section h1 {
+            font-size: 2rem;
+        }
+
+        section .text-container {
+            flex-direction: column;
+        }
+    }
+
+    .reveal {
+        position: relative;
+        opacity: 0;
+    }
+
+        .reveal.active {
+            opacity: 1;
+        }
+
+    .active.fade-bottom {
+        animation: fade-bottom 1s ease-in;
+    }
+
+    .active.fade-left {
+        animation: fade-left 1s ease-in;
+    }
+
+    .active.fade-right {
+        animation: fade-right 1s ease-in;
+    }
+
+    @@keyframes fade-bottom {
+        0% {
+            transform: translateY(200px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @@keyframes fade-left {
+        0% {
+            transform: translateX(-200px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @@keyframes fade-right {
+        0% {
+            transform: translateX(200px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+</style>
+<!-- Main Content -->
+<div id="Content">
+    <div class="content_wrapper clearfix">
+        <div class="sections_group">
+            <div class="entry-content">
+                <div class="section mcb-section full-screen" style="padding-top:130px; padding-bottom:80px;background-image:url(../assets/ImagesHome/home_firm_bgd.jpg); background-repeat:repeat;">
+                    <div class="section_wrapper mcb-section-inner">
+                        <div class="wrap mcb-wrap one clearfix">
+                            <!-- One Full Row-->
+                            <div class="column mcb-column one column_divider">
+                                <hr class="no_line" style="margin: 0 auto 80px;" />
+                            </div>
+                            <!-- One Full Row-->
+                            <div class="column mcb-column one column_column" style="padding-top:200px;">
+                                <div class="column_attr align_center">
+                                    <h1 style="color: #fff; margin: 0;" class="ml2">
+                                        PLANERA GROUP
+                                        <br>
+                                        ESTABLISHED IN 2019
+                                    </h1>
+                                </div>
+                            </div>
+                            <!-- One Full Row-->
+                            <div class="column mcb-column one column_column">
+                                <div class="column_attr align_center">
+                                    <div style="width: 100%; height: 1px; background: #fff;"></div>
+                                </div>
+                            </div>
+                            <!-- One Sixth (1/6) Column -->
+                            <div class="column mcb-column one-sixth column_placeholder">
+                                <div class="placeholder">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            <!-- Two Third (2/3) Column -->
+                            <div class="column mcb-column two-third column_column">
+                                <div class="column_attr align_center">
+                                    <h4 style="color: #fff;" class="fade-in">in the field of construction and we have achieved great success in the construction field.</h4>
+                                </div>
+                            </div>
+                            <!-- One Full Row-->
+                            <div class="column mcb-column one column_column column-margin-0px">
+                                <div class="column_attr align_center">
+                                    <a class="button button_right button_large button_js" href="#"><span class="button_icon" style="background-color:#1f438f;"></span><span class="button_label" style="background-color:#1f438f;color:white;">Learn More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section mcb-section section-border-top" style="background-color: rgba(25,65,144,0.93);">
+                    <div class="section_wrapper mcb-section-inner">
+                        <div class="wrap mcb-wrap one column-margin-0px clearfix">
+                            <!-- One Full Row-->
+                            <div class="column mcb-column one column_image">
+                                <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
+                                    <div class="image_wrapper">
+                                        <img class="scale-with-grid" src="~/assets/ImagesHome/home_firm_sep.png" width="1" height="98" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- One Full Row-->
+                            <div class="column mcb-column one column_divider">
+                                <hr class="no_line" style="margin: 0 auto 30px;" />
+                            </div>
+                            <!-- One Full Row-->
+
+                            <div class="column mcb-column one column_column section reveal fade-bottom">
+                                <div class="column_attr align_center " style="padding:0 5%;">
+                                    <p style="color: #fff;">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    </p>
+                                    <hr class="no_line" style="margin: 0 auto 20px;" />
+
+                                    <h2 style="color: #fff;">PLANERA GROUP</h2>
+                                    <h5 style="color: #fff;">now operates in construction, interior design, perfume selling, social media advertising, photography and video, and also works in marketing and management consulting.</h5>
+
+                                    <hr class="no_line" style="margin: 0 auto 40px;color:#fff" />
+                                    <a class="button button_large button_theme button_js" href="#"><span class="button_label" style="border:1px solid white; background-color:#1f438f;color:white;">Read more</span></a>
+                                </div>
+                            </div>
+
+                            <!-- One Full Row-->
+                            <div class="column mcb-column one column_divider">
+                                <hr class="no_line" style="margin: 0 auto 20px;" />
+                            </div>
+                            <!-- One Full Row-->
+                            <div class="column mcb-column one column_image">
+                                <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
+                                    <div class="image_wrapper">
+                                        <img class="scale-with-grid" src="~/assets/ImagesHome/home_firm_sep.png" width="1" height="98" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section mcb-section section-border-top" style="padding-top:120px; padding-bottom:80px; background-color:rgba(6,12,23,.7); background-image:url(../assets/ImagesHome/group-14.png); background-repeat:repeat; background-position:center top;">
+                    <div class="section_wrapper mcb-section-inner">
+                        <div class="wrap mcb-wrap one clearfix">
+                            <!-- One Full Row-->
+                            <div class="column mcb-column one column_column " style="text-align: center;">
+                                <div class="column_attr align_center ">
+                                    <h3 style="color: #fff;">OUR BUSINESSES</h3>
+                                    <p style="color: #fff;">
+                                        Sed ut per omnis iste natus error sit voluptatemiumpiciatis unde omnis iste natus
+                                        <br> cerror sit voluptatem accusantium
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- One Third (1/3) Column -->
+                            <div class="column mcb-column one-third column_zoom_box section reveal fade-left">
+                                <div class="zoom_box">
+                                    <a href="#">
+                                        <div class="photo">
+                                            <img class="scale-with-grid" src="~/assets/ImagesHome/dsc-02850.png" width="700" height="1305" />
+                                        </div>
+                                        <div class="desc" style="background-color:rgba(202, 32, 40, 0.8);">
+                                            <div class="desc_wrap">
+                                                <div class="desc_img">
+                                                    <img class="scale-with-grid" src="~/assets/ImagesHome/logo-ab-white.png">
+                                                </div>
+                                                <div class="desc_txt" style="font-size:18px">
+                                                    Sed fringilla purus nec tortorSed fringilla purus nec tortor
+                                                    Sed fringilla purus nec tortord fringilla purus nec tortor
+                                                    Sed fringilla purus nec tortor
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- One Third (1/3) Column -->
+                            <div class="column mcb-column one-third column_zoom_box section reveal fade-bottom">
+                                <div class="zoom_box">
+                                    <a href="#">
+                                        <div class="photo">
+                                            <img class="scale-with-grid" src="~/assets/ImagesHome/dsc-04185.png" width="700" height="1305" />
+                                        </div>
+                                        <div class="desc" style="background-color:rgba(202, 32, 40, 0.8);">
+                                            <div class="desc_wrap">
+                                                <div class="desc_img">
+                                                    <img class="scale-with-grid" src="~/assets/ImagesHome/logo-ab-white.png">
+                                                </div>
+                                                <div class="desc_txt" style="font-size:18px">
+                                                    Sed fringilla purus nec tortorSed fringilla purus nec tortor
+                                                    Sed fringilla purus nec tortord fringilla purus nec tortor
+                                                    Sed fringilla purus nec tortor
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- One Third (1/3) Column -->
+                            <div class="column mcb-column one-third column_zoom_box section reveal fade-right">
+                                <div class="zoom_box">
+                                    <a href="#">
+                                        <div class="photo">
+                                            <img class="scale-with-grid" src="~/assets/ImagesHome/dsc-02850.png" width="700" height="1305" />
+                                        </div>
+                                        <div class="desc" style="background-color:rgba(202, 32, 40, 0.8);">
+                                            <div class="desc_wrap">
+                                                <div class="desc_img">
+                                                    <img class="scale-with-grid" src="~/assets/ImagesHome/logo-ab-white.png">
+                                                </div>
+                                                <div class="desc_txt" style="font-size:18px">
+                                                    Sed fringilla purus nec tortorSed fringilla purus nec tortor
+                                                    Sed fringilla purus nec tortord fringilla purus nec tortor
+                                                    Sed fringilla purus nec tortor
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section mcb-section section-border-top" style="padding-top:120px; padding-bottom:80px; background-color:rgba(255,255,255,.9)">
+                    <div class="section_wrapper mcb-section-inner">
+                        <div class="wrap mcb-wrap one clearfix">
+                            <!-- One Full Row-->
+
+                            <div class="column mcb-column one column_column ">
+                                <div class="column_attr">
+                                    <h1>
+                                        <span class="text-wrapper">
+                                            <span class="line line1"></span>
+                                            <span class="">Proin suscipit elit nulla id arcu</span>
+                                            <span class="line line2"></span>
+                                        </span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One Second (1/2) Column -->
+
+                        <div class="column mcb-column one-second column_column section reveal fade-left">
+                            <div class="column_attr box animate fadeInUp one" style="background-color:rgba(255,255,255,.8); padding:30px 20px;">
+
+                                <div style="background: url(../../assets/ImagesHome/home_firm_icon1.png) no-repeat left top; padding-left: 65px; margin-bottom: 30px;">
+                                    <h4 style="margin-bottom: 7px;">Suspendisse hendrerit ex</h4>
+                                    <p>
+                                        Dictum varius; erat risus tempus mi, ac molestie velit leo vel ligula. Pellentesque ullamcorper, lacus nec.
+                                    </p>
+                                </div>
+                                <div style="background: url(../../assets/ImagesHome/home_firm_icon2.png) no-repeat left top; padding-left: 65px; margin-bottom: 30px;">
+                                    <h4 style="margin-bottom: 7px;">Nullam consectetur ipsum</h4>
+                                    <p>
+                                        Proin eu lacinia purus. Praesent dui metus, mattis nec nulla vel, pharetra scelerisque mi nullam finibus.
+                                    </p>
+                                </div>
+                                <div style="background: url(../../assets/ImagesHome/home_firm_icon3.png) no-repeat left top; padding-left: 65px;">
+                                    <h4 style="margin-bottom: 7px;">Consectetur ipsumx</h4>
+                                    <p>
+                                        Pharetra scelerisque mi. Nullam consectetur ipsum finibus dui pulvinar, vel tempor sapien sed.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- One Second (1/2) Column -->
+                        <div class="column mcb-column one-second column_column box animate fadeInDown two section reveal fade-right">
+
+                            <div class="column_attr" style="padding:15px 0 0 3%;">
+                                <h4>Proin accumsan mauris elit, suscipit iaculis mi elementum sit amet. Pellentesque suscipit metus justo, vitae auctor lacus convallis id. Praesent dolor volutpat.</h4>
+                                <p>
+                                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                </p>
+                                <a class="button button_large button_theme button_js" href="#"><span class="button_label" style="color:white;">Read more</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section mcb-section section-border-top" style="padding-top:80px; padding-bottom:60px; background-color:rgba(227,229,232,.95)">
+                <div class="section_wrapper mcb-section-inner">
+                    <div class="wrap mcb-wrap one clearfix">
+                        <!-- One Full Row-->
+                        <div class="column mcb-column one column_column">
+                            <div class="column_attr">
+                                <h1>Our Strategic Alliance Partners</h1>
+                            </div>
+                        </div>
+                        <div class="column mcb-column one-fourth column_column section reveal fade-left">
+                            <div class="column_attr" style="padding:0 5% 0 0;">
+                                <p class="big">
+                                    Praesent gravida sollicitudin enim, vel consectetur.
+                                    pellentesque condimentum. Aenean nec sollicitudin libero, ut ultrices libero. Morbi ultricies posuere.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column mcb-column one-fourth column_image section reveal fade-right">
+                            <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
+                                <div class="image_wrapper text-center">
+                                    <img src="~/assets/ImagesHome/Shalal.png" style="height:auto; height:100px;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column mcb-column one-fourth column_image section reveal fade-right">
+                            <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
+                                <div class="image_wrapper text-center">
+                                    <img src="~/assets/ImagesHome/Aladixat.png" style="width:auto; height:100px;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column mcb-column one-fourth column_image section reveal fade-right">
+                            <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
+                                <div class="image_wrapper text-center">
+                                    <img src="~/assets/ImagesHome/Asianyouth.png" style="width:auto; height:100px;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="Content">
+                <div class="content_wrapper clearfix">
+                    <div class="sections_group">
+                        <div class="entry-content">
+                            <div class="section full-width" style="padding-top:0px; padding-bottom:0px; background-color:#2e3141">
+                                <div class="section_wrapper clearfix">
+                                    <div class="items_group clearfix">
+                                        <!-- One full width row-->
+                                        <div class="column one column_blog">
+                                            <div class="column_filters">
+                                                <!--  Filter Area -->
+                                                @*<div id="Filters" class="isotope-filters" data-parent="column_filters">
+                                                        <ul class="filters_buttons">
+                                                            <li class="label">
+                                                                Filter by
+                                                            </li>
+                                                            <li class="categories">
+                                                                <a class="open" href="#"><i class="icon-docs"></i>Categories<i class="icon-down-dir"></i></a>
+                                                            </li>
+                                                            <li class="tags">
+                                                                <a class="open" href="#"><i class="icon-tag"></i>Tags<i class="icon-down-dir"></i></a>
+                                                            </li>
+                                                            <li class="authors">
+                                                                <a class="open" href="#"><i class="icon-user"></i>Authors<i class="icon-down-dir"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="filters_wrapper">
+                                                            <ul class="categories">
+                                                                <li class="reset current-cat">
+                                                                    <a class="all" data-rel="*" href="#">Show all</a>
+                                                                </li>
+                                                                <li class="hot-news">
+                                                                    <a data-rel=".category-hot-news" href="#">Hot news</a>
+                                                                </li>
+                                                                <li class="lifestyle">
+                                                                    <a data-rel=".category-lifestyle" href="#">Lifestyle</a>
+                                                                </li>
+                                                                <li class="news">
+                                                                    <a data-rel=".category-news" href="#">News</a>
+                                                                </li>
+                                                                <li class="sport">
+                                                                    <a data-rel=".category-sport" href="#">Sport</a>
+                                                                </li>
+                                                                <li class="technology">
+                                                                    <a data-rel=".category-technology" href="#">Technology</a>
+                                                                </li>
+                                                                <li class="close">
+                                                                    <a href="#"><i class="icon-cancel"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="tags">
+                                                                <li class="reset current-cat">
+                                                                    <a class="all" data-rel="*" href="#">Show all</a>
+                                                                </li>
+                                                                <li class="design">
+                                                                    <a data-rel=".tag-design" href="#">Design</a>
+                                                                </li>
+                                                                <li class="framework">
+                                                                    <a data-rel=".tag-framework" href="#">Framework</a>
+                                                                </li>
+                                                                <li class="grid">
+                                                                    <a data-rel=".tag-grid" href="#">Grid</a>
+                                                                </li>
+                                                                <li class="motion">
+                                                                    <a data-rel=".tag-motion" href="#">Motion</a>
+                                                                </li>
+                                                                <li class="themeforest">
+                                                                    <a data-rel=".tag-themeforest" href="#">Themeforest</a>
+                                                                </li>
+                                                                <li class="video">
+                                                                    <a data-rel=".tag-video" href="#">Video</a>
+                                                                </li>
+                                                                <li class="wordpress">
+                                                                    <a data-rel=".tag-wordpress" href="#">Wordpress</a>
+                                                                </li>
+                                                                <li class="close">
+                                                                    <a href="#"><i class="icon-cancel"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="authors">
+                                                                <li class="reset current-cat">
+                                                                    <a class="all" data-rel="*" href="#">Show all</a>
+                                                                </li>
+                                                                <li class="admin">
+                                                                    <a data-rel=".author-admin" href="#">BeantownThemes</a>
+                                                                </li>
+                                                                <li class="close">
+                                                                    <a href="#"><i class="icon-cancel"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>*@
+                                                <div class="blog_wrapper isotope_wrapper clearfix">
+                                                    <div class="posts_group lm_wrapper col-4 masonry tiles isotope">
+                                                        <div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
+                                                            <div class="date_label">
+                                                                May 8, 2014
+                                                            </div>
+                                                            <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
+                                                                <img width="800" height="813" src="~/assets/ImagesHome/home_journalist_blog7.jpg" class="scale-with-grid wp-post-image " />
+                                                            </div>
+                                                            <div class="post-desc-wrapper">
+                                                                <div class="post-desc">
+                                                                    <div class="post-head">
+                                                                        <div class="post-meta clearfix">
+                                                                            <div class="author-date">
+                                                                                <span class="vcard author post-author"><span class="label">Published by </span><i class="icon-user"></i> <span class="fn"><a href="#">BeantownThemes</a></span></span><span class="date"><span class="label">at </span><i class="icon-clock"></i> <span class="post-date updated">May 8, 2014</span></span>
+                                                                            </div>
+                                                                            <div class="category">
+                                                                                <span class="cat-btn">Categories <i class="icon-down-dir"></i></span>
+                                                                                <div class="cat-wrapper">
+                                                                                    <ul class="post-categories">
+                                                                                        <li>
+                                                                                            <a href="#" rel="category tag">Lifestyle</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" rel="category tag">Technology</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="post-title">
+                                                                        <h2 class="entry-title"><a href="#">Vestibulum commodo volutpat laoreet</a></h2>
+                                                                    </div>
+                                                                    <div class="post-excerpt">
+                                                                        <p class="big">
+                                                                            Nunc felis. Curabitur ac ipsum. Pellentesque nibh ultricies est. Maecenas consequat, augue a venenatis risus. Ut id mollis vel, lacinia quam. Praesent blandit malesuada. Suspendisse commodo
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-technology tag-motion tag-video">
+                                                            <div class="date_label">
+                                                                May 7, 2014
+                                                            </div>
+                                                            <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
+                                                                <img width="800" height="690" src="~/assets/ImagesHome/home_journalist_blog14.jpg" class="scale-with-grid wp-post-image" />
+                                                            </div>
+                                                            <div class="post-desc-wrapper">
+                                                                <div class="post-desc">
+                                                                    <div class="post-head">
+                                                                        <div class="post-meta clearfix">
+                                                                            <div class="author-date">
+                                                                                <span class="vcard author post-author"><span class="label">Published by </span><i class="icon-user"></i> <span class="fn"><a href="#">BeantownThemes</a></span></span><span class="date"><span class="label">at </span><i class="icon-clock"></i> <span class="post-date updated">May 7, 2014</span></span>
+                                                                            </div>
+                                                                            <div class="category">
+                                                                                <span class="cat-btn">Categories <i class="icon-down-dir"></i></span>
+                                                                                <div class="cat-wrapper">
+                                                                                    <ul class="post-categories">
+                                                                                        <li>
+                                                                                            <a href="#" rel="category tag">Technology</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="post-title">
+                                                                        <h2 class="entry-title"><a href="#">Quisque lorem tortor fringilla sed vesti bulum justo vel</a></h2>
+                                                                    </div>
+                                                                    <div class="post-excerpt">
+                                                                        Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vella ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-technology">
+                                                            <div class="date_label">
+                                                                May 6, 2014
+                                                            </div>
+                                                            <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
+                                                                <img width="800" height="861" src="~/assets/ImagesHome/home_journalist_blog10.jpg" class="scale-with-grid wp-post-image" />
+                                                            </div>
+                                                            <div class="post-desc-wrapper">
+                                                                <div class="post-desc">
+                                                                    <div class="post-head">
+                                                                        <div class="post-meta clearfix">
+                                                                            <div class="author-date">
+                                                                                <span class="vcard author post-author"><span class="label">Published by </span><i class="icon-user"></i> <span class="fn"><a href="#">BeantownThemes</a></span></span><span class="date"><span class="label">at </span><i class="icon-clock"></i> <span class="post-date updated">May 6, 2014</span></span>
+                                                                            </div>
+                                                                            <div class="category">
+                                                                                <span class="cat-btn">Categories <i class="icon-down-dir"></i></span>
+                                                                                <div class="cat-wrapper">
+                                                                                    <ul class="post-categories">
+                                                                                        <li>
+                                                                                            <a href="#" rel="category tag">Technology</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="post-title">
+                                                                        <h2 class="entry-title"><a href="#">Vivamus sit amet metus sem imperdiet</a></h2>
+                                                                    </div>
+                                                                    <div class="post-excerpt">
+                                                                        <p class="big">
+                                                                            Aliquam adipiscing felis tincidunt eget, euismod pede eu cursus at, suscipit a, lorem. Morbi sodales wisi placerat eget, elementum eu, ullamcorper ac
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-item isotope-item clearfix no-img post format-standard  category-lifestyle  category-sport tag-design" style="background-color:#17bbce;">
+                                                            <div class="date_label">
+                                                                May 5, 2014
+                                                            </div>
+                                                            <div class="post-photo-wrapper scale-with-grid zoomEffect_2"></div>
+                                                            <div class="post-desc-wrapper">
+                                                                <div class="post-desc">
+                                                                    <div class="post-head">
+                                                                        <div class="post-meta clearfix">
+                                                                            <div class="author-date">
+                                                                                <span class="vcard author post-author"><span class="label">Published by </span><i class="icon-user"></i> <span class="fn"><a href="#">BeantownThemes</a></span></span><span class="date"><span class="label">at </span><i class="icon-clock"></i> <span class="post-date updated">May 5, 2014</span></span>
+                                                                            </div>
+                                                                            <div class="category">
+                                                                                <span class="cat-btn">Categories <i class="icon-down-dir"></i></span>
+                                                                                <div class="cat-wrapper">
+                                                                                    <ul class="post-categories">
+                                                                                        <li>
+                                                                                            <a href="#" rel="category tag">Lifestyle</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" rel="category tag">News</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" rel="category tag">Sport</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="post-title">
+                                                                        <h2 class="entry-title"><a href="#">Aenean gravida vitae consequat lorem fermentum rutrum nunc id risus</a></h2>
+                                                                    </div>
+                                                                    <div class="post-excerpt">
+                                                                        Aenean ligula nunc, accumsan quam, lobortis fringilla, massa. Maecenas pellentesque dolor.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="post-item isotope-item clearfix no-img post format-quote  category-sport category-technology tag-motion  post_format-post-format-quote" style="background-color:#8223b8;">
+                                                            <i class="post-format-icon icon-quote"></i>
+                                                            <div class="date_label">
+                                                                May 3, 2014
+                                                            </div>
+                                                            <div class="post-photo-wrapper scale-with-grid zoomEffect_2"></div>
+                                                            <div class="post-desc-wrapper">
+                                                                <div class="post-desc">
+                                                                    <div class="post-head">
+                                                                        <div class="post-meta clearfix">
+                                                                            <div class="author-date">
+                                                                                <span class="vcard author post-author"><span class="label">Published by </span><i class="icon-user"></i> <span class="fn"><a href="#">BeantownThemes</a></span></span><span class="date"><span class="label">at </span><i class="icon-clock"></i> <span class="post-date updated">May 3, 2014</span></span>
+                                                                            </div>
+                                                                            <div class="category">
+                                                                                <span class="cat-btn">Categories <i class="icon-down-dir"></i></span>
+                                                                                <div class="cat-wrapper">
+                                                                                    <ul class="post-categories">
+                                                                                        <li>
+                                                                                            <a href="#" rel="category tag">Sport</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" rel="category tag">Technology</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="post-title">
+                                                                        <blockquote>
+                                                                            <a href="#">Praesent ornare hendrerit sed. Etiam faucibus quis cras amet. Vestibulum nec iaculis nullam.</a>
+                                                                        </blockquote>
+                                                                    </div>
+                                                                    <div class="post-excerpt">
+                                                                        Praesent consequat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum massa dui sed nulla ut nulla a mi. Fusce wisi nibh [&hellip;]
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="post-item isotope-item clearfix no-img post format-quote  category-sport category-technology tag-motion  post_format-post-format-quote" style="background-color:#8223b8;">
+                                                            <i class="post-format-icon icon-quote"></i>
+                                                            <div class="date_label">
+                                                                May 3, 2014
+                                                            </div>
+                                                            <div class="post-photo-wrapper scale-with-grid zoomEffect_2"></div>
+                                                            <div class="post-desc-wrapper">
+                                                                <div class="post-desc">
+                                                                    <div class="post-head">
+                                                                        <div class="post-meta clearfix">
+                                                                            <div class="author-date">
+                                                                                <span class="vcard author post-author"><span class="label">Published by </span><i class="icon-user"></i> <span class="fn"><a href="#">BeantownThemes</a></span></span><span class="date"><span class="label">at </span><i class="icon-clock"></i> <span class="post-date updated">May 3, 2014</span></span>
+                                                                            </div>
+                                                                            <div class="category">
+                                                                                <span class="cat-btn">Categories <i class="icon-down-dir"></i></span>
+                                                                                <div class="cat-wrapper">
+                                                                                    <ul class="post-categories">
+                                                                                        <li>
+                                                                                            <a href="#" rel="category tag">Sport</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" rel="category tag">Technology</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="post-title">
+                                                                        <blockquote>
+                                                                            <a href="#">Praesent ornare hendrerit sed. Etiam faucibus quis cras amet. Vestibulum nec iaculis nullam.</a>
+                                                                        </blockquote>
+                                                                    </div>
+                                                                    <div class="post-excerpt">
+                                                                        Praesent consequat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum massa dui sed nulla ut nulla a mi. Fusce wisi nibh [&hellip;]
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-sport tag-video">
+                                                            <div class="date_label">
+                                                                April 30, 2014
+                                                            </div>
+                                                            <div class="post-photo-wrapper scale-with-grid zoomEffect_2"></div>
+                                                            <div class="post-desc-wrapper">
+                                                                <div class="post-desc">
+                                                                    <div class="post-head">
+                                                                        <div class="post-meta clearfix">
+                                                                            <div class="author-date">
+                                                                                <span class="vcard author post-author"><span class="label">Published by </span><i class="icon-user"></i> <span class="fn"><a href="#">BeantownThemes</a></span></span><span class="date"><span class="label">at </span><i class="icon-clock"></i> <span class="post-date updated">April 30, 2014</span></span>
+                                                                            </div>
+                                                                            <div class="category">
+                                                                                <span class="cat-btn">Categories <i class="icon-down-dir"></i></span>
+                                                                                <div class="cat-wrapper">
+                                                                                    <ul class="post-categories">
+                                                                                        <li>
+                                                                                            <a href="#" rel="category tag">Lifestyle</a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href="#" rel="category tag">Sport</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="post-title">
+                                                                        <h2 class="entry-title"><a href="#">Fusce lorem ligula</a></h2>
+                                                                    </div>
+                                                                    <div class="post-excerpt">
+                                                                        Donec est. Vivamus iaculis, diam eu arcu congue eleifend. Vestibulum commodo ligula ut augue. Maecenas pretium, diam id pharetra.
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="post-item isotope-item clearfix no-img post format-standard " style="background-color:#f07145;">
+                                                            <div class="date_label">
+                                                                March 12, 2014
+                                                            </div>
+                                                            <div class="post-photo-wrapper scale-with-grid zoomEffect_2"></div>
+                                                            <div class="post-desc-wrapper">
+                                                                <div class="post-desc">
+                                                                    <div class="post-head">
+                                                                        <div class="post-meta clearfix">
+                                                                            <div class="author-date">
+                                                                                <span class="vcard author post-author"><span class="label">Published by </span><i class="icon-user"></i> <span class="fn"><a href="#">BeantownThemes</a></span></span><span class="date"><span class="label">at </span><i class="icon-clock"></i> <span class="post-date updated">March 12, 2014</span></span>
+                                                                            </div>
+                                                                            <div class="category">
+                                                                                <span class="cat-btn">Categories <i class="icon-down-dir"></i></span>
+                                                                                <div class="cat-wrapper">
+                                                                                    <ul class="post-categories">
+                                                                                        <li>
+                                                                                            <a href="#" rel="category tag">News</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="post-title">
+                                                                        <h2 class="entry-title"><a href="#">Nullam nec urna in sem lacinia malesuada sed mollis tortor</a></h2>
+                                                                    </div>
+                                                                    <div class="post-excerpt">
+                                                                        Praesent consequat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum massa dui sed nulla ut nulla a mi. Fusce wisi nibh [&hellip;]
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="post-item isotope-item clearfix no-img post format-standard  " style="background-color:#f07145;">
+                                                            <div class="date_label">
+                                                                March 12, 2014
+                                                            </div>
+                                                            <div class="post-photo-wrapper scale-with-grid zoomEffect_2"></div>
+                                                            <div class="post-desc-wrapper">
+                                                                <div class="post-desc">
+                                                                    <div class="post-head">
+                                                                        <div class="post-meta clearfix">
+                                                                            <div class="author-date">
+                                                                                <span class="vcard author post-author"><span class="label">Published by </span><i class="icon-user"></i> <span class="fn"><a href="#">BeantownThemes</a></span></span><span class="date"><span class="label">at </span><i class="icon-clock"></i> <span class="post-date updated">March 12, 2014</span></span>
+                                                                            </div>
+                                                                            <div class="category">
+                                                                                <span class="cat-btn">Categories <i class="icon-down-dir"></i></span>
+                                                                                <div class="cat-wrapper">
+                                                                                    <ul class="post-categories">
+                                                                                        <li>
+                                                                                            <a href="#" rel="category tag">News</a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="post-title">
+                                                                        <h2 class="entry-title"><a href="#">Nullam nec urna in sem lacinia malesuada sed mollis tortor</a></h2>
+                                                                    </div>
+                                                                    <div class="post-excerpt">
+                                                                        Praesent consequat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum massa dui sed nulla ut nulla a mi. Fusce wisi nibh [&hellip;]
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- One full width row-->
+                                                    <div class="column one pager_wrapper pager_lm" style="padding-top:50px;padding-bottom:50px;">
+                                                        <a class="pager_load_more button button_js" href="#" style="background:#4D5063;color:white"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label" >Load more</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section full-width sections_style_0">
+                                <div class="section_wrapper clearfix">
+                                    <div class="items_group clearfix">
+                                        <!-- One full width row-->
+                                        <div class="column one column_hover_color">
+                                            <div class="hover_color" style="background:#0e9ef1;">
+                                                <div class="hover_color_bg" style="background:#3048d5;">
+                                                    <a href="#">
+                                                        <div class="hover_color_wrapper" style="background-color:#292c34 !important;">
+                                                            <h2 style="color: #fff; margin-bottom: 20px;">Click for more articles and stories <img style="position: relative; top: 5px; margin-top: 10px; margin-left: 20px;" class="scale-with-grid" src="~/assets/ImagesHome/home_journalist_arrow.png"></h2>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section the_content no_content">
+                                <div class="section_wrapper">
+                                    <div class="the_content_wrapper"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<script>
+    var textWrapper = document.querySelector('.ml2');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({ loop: true })
+        .add({
+            targets: '.ml2 .letter',
+            scale: [4, 1],
+            opacity: [0, 1],
+            translateZ: 0,
+            easing: "easeOutExpo",
+            duration: 950,
+            delay: (el, i) => 70 * i
+        }).add({
+            targets: '.ml2',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+</script>
+<script>
+    var textWrapper = document.querySelector('.ml1 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({ loop: true })
+        .add({
+            targets: '.ml1 .letter',
+            scale: [0.3, 1],
+            opacity: [0, 1],
+            translateZ: 0,
+            easing: "easeOutExpo",
+            duration: 600,
+            delay: (el, i) => 70 * (i + 1)
+        }).add({
+            targets: '.ml1 .line',
+            scaleX: [0, 1],
+            opacity: [0.5, 1],
+            easing: "easeOutExpo",
+            duration: 700,
+            offset: '-=875',
+            delay: (el, i, l) => 80 * (l - i)
+        }).add({
+            targets: '.ml1',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+
+
+</script>
+<script>
+    //animation section
+    function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+            } else {
+                reveals[i].classList.remove("active");
+            }
+        }
+    }
+
+    window.addEventListener("scroll", reveal);
+</script>

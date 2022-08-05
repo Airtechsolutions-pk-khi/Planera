@@ -1,0 +1,447 @@
+﻿
+@{
+    ViewBag.Title = "CompanyOverview";
+    Layout = "~/Views/Shared/_Layoutv2.cshtml";
+}
+<link href="~/assets/css/sweetalert.css" rel="stylesheet" />
+@*<link href="~/assets/css/factory3.css" rel="stylesheet" />
+<link href="~/assets/css/structureoverview.css" rel="stylesheet" />*@
+<style>
+    .column, .columns {
+        float: left;
+        margin: 0 0% 40px;
+    }
+
+    h2 {
+        font-size: 45px;
+        line-height: 40px;
+        font-weight: 600;
+        letter-spacing: 0px;
+    }
+
+    .highlight-left:after, .highlight-right:after {
+        background: #0F3584 !important;
+    }
+
+    *::selection {
+        background-color: #0F3584;
+        color: white;
+    }
+
+    .active.fade-bottom {
+        animation: fade-bottom 1s ease-in;
+    }
+
+    .active.fade-left {
+        animation: fade-left 1s ease-in;
+    }
+
+    .active.fade-right {
+        animation: fade-right 1s ease-in;
+    }
+
+    @@keyframes fade-bottom {
+        0% {
+            transform: translateY(200px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @@keyframes fade-left {
+        0% {
+            transform: translateX(-200px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @@keyframes fade-right {
+        0% {
+            transform: translateX(200px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+</style>
+
+<div class="container-fluid" style="padding-bottom:60px;">
+    <img src="~/assets/ImagesCompanyOverView/header-bg.jpg" style="width:100%" />
+</div>
+
+<div class="section_wrapper mcb-section-inner">
+    <div class="wrap mcb-wrap one valign-top move-up clearfix">
+        <div class="mcb-wrap-inner">
+            <div class="column mcb-column one column_column fade-bottom">
+                <h3 class="" style="text-align:center; font-size:40px;">Planera Group</h3>
+                <br />
+                <p class="" style="font-size:18px;text-align:justify;text-align:center">
+                    Established in 2020 in the field of construction, and achieved great success by working on living conditions, and versatility in urban communities and areas. Then the company decided to bring its operations together under one umbrella of Planera Group such as Planera Arts and Activar Bahrain Public Relations
+                    <br />
+                    <br />
+                    Through its founder's vision, strategic direction, and unwavering commitment, the Planera group achieved its goals in the construction business and now The Group expands its Portfolio in interior design, perfume sales, social media advertising, photography, and video, and Marketing and Management consultancy field
+                    <br />
+                    <br />
+                    We started with one employee, and now the group consists of more than 50 employees from around the world working together with a common goal.
+
+                    We achieve our goals under  the leadership of Omar Abdulaziz, a  great leader and successful businessman.  The Planera Group  now works in construction, interior design, perfume sales,  social media advertising, photography and video, and also works in marketing and management consulting.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="section mcb-section no-margin-h no-margin-v equal-height-wrap full-width" style="padding-top:60px;" >
+    <div class="section_wrapper mcb-section-inner">
+        
+        <div class="wrap mcb-wrap one-second valign-middle clearfix" style="padding:50px 5% 50px 7%;background-image: url('../../assets/ImagesCompanyOverView/chairman-msg-bg.png'); background-repeat: no-repeat;background-size:cover;">
+            @*background-color:#f3f4f6;*@
+            <div class="mcb-wrap-inner">
+                <div class="column mcb-column one column_column column-margin-30px">
+                    <div class="column_attr clearfix">
+                        <h2 class="animate fadeInLeft" style="color: white; font-size:50px;">CHAIRMAN MESSAGE</h2>
+                        @*background-color:#f3f4f6;*@
+                        <hr class="no_line" style="margin:0 auto 15px">
+                        <p class="animate fadeInLeft text-justify" style="font-size:16px;color:white;">
+                            @*color:#01247d;*@
+                            Mr. Omar Bukamal believes that if a company does not change it will not survive and therefore the leadership philosophy of Planera Group has always been one of flexibility and adaptation.
+                        </p>
+                    </div>
+                </div>
+                <div class="animate fadeInLeft column mcb-column one column_column column-margin-10px">
+                    <div class="column_attr clearfix" style="background-image: url('../../assets/OurBusinesses/images/box.png'); background-repeat: no-repeat; background-position: left top; padding: 0 0 0 50px;">
+                        <p style="color:white;font-size:16px;" class="text-justify">The purpose of the Planera Group is to serve the people and serve the community</p>
+                        @*color:#01247d;*@
+                    </div>
+                </div>
+                <div class="animate fadeInLeft column mcb-column one column_column column-margin-10px">
+                    <div class="column_attr clearfix" style="background-image: url('../../assets/OurBusinesses/images/box.png'); background-repeat: no-repeat; background-position: left top; padding: 0 0 0 50px;">
+                        <p style="color:white;font-size:16px;" class="text-justify">Planera Group has always been one of flexibility and adaptation.</p>
+                    </div>
+                </div>
+                <div class="animate fadeInLeft column mcb-column one column_column column-margin-40px">
+                    <div class="column_attr clearfix" style="background-image: url('../../assets/OurBusinesses/images/box.png'); background-repeat: no-repeat; background-position: left top; padding: 0 0 0 50px;">
+                        <p style="color:white;font-size:16px;" class="text-justify">We grow to become a diversified multinational business with interest across multiple sectors</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class=" wrap mcb-wrap one-second valign-middle clearfix stretch">
+            <div class="mcb-wrap-inner">
+                <div class="column mcb-column one column_image">
+                    <div class="image_frame image_item no_link scale-with-grid stretch no_border">
+                        <div class="image_wrapper">
+                            <img class="scale-with-grid" src="~/assets/OurBusinesses/images/ceo.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section_wrapper mcb-section-inner animate fadeInLeft">
+    <div class="wrap mcb-wrap one valign-top move-up clearfix stretch" style="margin-top:80px">
+        <div class="mcb-wrap-inner">
+            <div class="column mcb-column one-second column_column" >
+                <div class="column_attr clearfix" style="background-color:#fffdf6;padding:64px 10% 57px;">
+                    <h2>Vision & </h2>
+                    <h2>&nbsp;&nbsp; &nbsp; &nbsp; Mission</h2>
+
+                    <p style="font-size: 16px; text-align: justify; ">To be the regional leader by setting benchmarks for superior quality products, innovative services, reliability, and customer satisfaction and make a big difference for people with a big dreams</p>
+                    <p style="font-size: 16px; text-align: justify;">Our mission is whether we are entering new markets or meeting customers in new ways, we are constantly innovating to meet customer expectations.</p>
+                </div>
+            </div>
+            <div class="column mcb-column one-second column_column" >
+                <div class="column_attr clearfix bg-cover" style="background-image: url('../../assets/ImagesCompanyOverView/vision-missionnew.jpg');background-repeat: no-repeat;">
+
+                    <hr class="no_line" style="margin:0 auto 460px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="section mcb-section" id="offer" style="padding-top:150px; padding-bottom:118px;  background-image:url(../../assets/ImagesCompanyOverView/strategy-bg.jpg); background-position:right top; background-repeat:no-repeat;background-size:cover;">
+    <div class="section_wrapper mcb-section-inner">
+        <h2 style="text-align:center;color:white;padding-bottom:20px;">Our Strategy</h2>
+        <p style="text-align:center;color:white; padding-bottom:25px">Planera Group strategy is derived from our mission to make tomorrow a better place. <br /> Our strategy is to achieve sustainable, profitable growth by</p>
+        <div class="wrap mcb-wrap one  column-margin-50px valign-top clearfix ourbusinessbox">
+            <div class="mcb-wrap-inner ">
+                <div class="column mcb-column one-fourth column_flat_box" style="text-align:center;">
+                    <div class="flat_box">
+                        <div class="animate" data-anim-type="fadeInLeft">
+                            <div class="photo_wrapper">
+                                <img src="~/assets/ImagesCompanyOverView/strategy3.png" />
+                            </div>
+                            <div class="">
+                                <p style="color:white;font-size:16px;">Investing in our people and capabilities</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column mcb-column one-fourth column_flat_box" style="text-align:center;">
+                    <div class="flat_box">
+                        <div class="animate" data-anim-type="fadeInLeft">
+                            <div class="photo_wrapper">
+                                <img src="~/assets/ImagesCompanyOverView/strategy1.png" />
+                            </div>
+                            <div class="">
+                                <p style="color:white;font-size:16px;">Building long-term, trusted partnerships</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column mcb-column one-fourth column_flat_box" style="text-align:center;">
+                    <div class="flat_box">
+                        <div class="animate" data-anim-type="fadeInLeft">
+                            <div class="photo_wrapper">
+                                <img src="~/assets/ImagesCompanyOverView/strategy2.png" />
+                            </div>
+                            <div class="">
+                                <p style="color:white;font-size:16px;">Transferring knowledge and skills to new and existing markets</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column mcb-column one-fourth column_flat_box" style="text-align:center;">
+                    <div class="flat_box">
+                        <div class="animate" data-anim-type="fadeInLeft">
+                            <div class="photo_wrapper">
+                                <img src="~/assets/ImagesCompanyOverView/strategy4.png" />
+                            </div>
+                            <div class="">
+                                <p style="color:white;font-size:16px;">Providing a turnkey high-quality construction capability</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="section mcb-section highlight-right equal-height-wrap" style="padding-top:70px; padding-bottom:50px; background-color:#0F3584" data-parallax="3d">
+
+    <img class="mfn-parallax" src="~/assets/HomeV2/images/home-bg.png" style="opacity:0">
+    <div class="section_wrapper mcb-section-inner">
+        <div class="wrap mcb-wrap one-sixth  valign-top clearfix">
+            <div class="mcb-wrap-inner">
+                <div class="column mcb-column one column_placeholder">
+                    <div class="placeholder">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap mcb-wrap two-fifth valign-middle clearfix animate delay-2s" data-anim-type="fadeIn">
+            <div class="mcb-wrap-inner">
+                <div class="column mcb-column five-sixth column_contact_box">
+                    <div class="get_in_touch" style="background-color:white;">
+                        <h3 style="color:#1a3f8c !important;">CONTACT US</h3>
+                        <div class="get_in_touch_wrapper">
+                            <ul>
+                                <li class="address">
+                                    <span class="icon"><i class="icon-location"></i></span><span class="address_wrapper" style="color: #1a3f8c;">
+                                        Mandarine Business Center
+                                        <br>
+                                        Alseef District (Bahrain)
+                                    </span>
+                                </li>
+                                <li class="phone phone-1">
+                                    <span class="icon"><i class="icon-phone"></i></span>
+
+                                    <p>
+                                        <a href="tel:+97317004006" style="color:#1a3f8c !important;">+973 17004006</a>
+                                    </p>
+                                    <p>
+                                        <a href="tel:+97337750033" style="color:#1a3f8c !important;">+973 37750033 </a><br />
+                                        <a href="tel:+97337750044" style="color:#1a3f8c !important;">+973 37750044</a>
+                                    </p>
+
+
+                                </li>
+                                <li class="mail">
+                                    <span class="icon"><i class="icon-mail"></i></span>
+                                    <p style="color: #1a3f8c;">
+                                        <a href="mailto:info@planerabh.com" style="color:#1a3f8c !important;"><span>info@planerabh.com</span></a>
+                                    </p>
+                                </li>
+                                <li class="www">
+                                    <span class="icon"><i class="icon-link"></i></span>
+                                    <p style="color: #1a3f8c !important;">
+                                        <a target="_blank" href="http://www.planerabh.com/" style="color:#1a3f8c !important;">www.planerabh.com</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap mcb-wrap two-fifth valign-middle clearfix">
+            <div class="mcb-wrap-inner">
+                <div class="column mcb-column one column_column">
+                    <div class="column_attr clearfix" style="padding:30px 40px 30px 30px;">
+                        <h2 style="color:white; font-family:Cinzel;">
+                            OUR SOCIAL <br />LINKS
+                        </h2>
+                        <hr class="no_line" style="margin: 0 auto 10px">
+                        <p style="color:#9d9da8;font-size:22px">
+                            Connect us for the latest updates and upcoming projects
+                        </p>
+                        <div class="column_attr clearfix">
+                            <p style="font-size: 28px; line-height: 40px">
+                                <a href="#">
+                                    <i class="icon-facebook" style="color:white;"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="icon-twitter" style="color:white;"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="icon-instagram" style="color:white"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="icon-youtube" style="color:white"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section mcb-section full-width no-margin-h" id="contact" style="padding-top:0px; padding-bottom:0px; background-color:#0F3584">
+    <div class="section_wrapper mcb-section-inner">
+        <div class="wrap mcb-wrap one-second valign-top clearfix" style="padding:60px 5% 30px 5%">
+            <div class="mcb-wrap-inner">
+                <div class="column mcb-column one column_column">
+                    <div class="column_attr clearfix animate" data-anim-type="fadeInLeft">
+                        <h3 style="color:White; font-family:Cinzel">SEND A MESSAGE</h3>
+                        <div id="contactWrapper">
+                            <form id="contactform">
+                                <!-- One Second (1/2) Column -->
+                                <div class="column one-second">
+                                    <input placeholder="Your name" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" style="color:white !important;" required />
+                                </div>
+                                <!-- One Second (1/2) Column -->
+                                <div class="column one-second">
+                                    <input placeholder="Your e-mail" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" style="color: white !important;" required />
+                                </div>
+                                <div class="column one">
+                                    <input placeholder="Subject" type="text" name="subject" id="subject" size="40" aria-invalid="false" style="color: white !important;" required />
+                                </div>
+                                <div class="column one">
+                                    <textarea placeholder="Message" name="Message" id="message" style="width:100%; color:white;" rows="10" aria-invalid="false" required></textarea>
+                                </div>
+                                <div class="column one">
+                                    <input style="background-color: #c07757 !important;" type="button" value="Send A Message" id="submit" onclick="SendEmail();">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap mcb-wrap one-second valign-top clearfix">
+            <div class="mcb-wrap-inner">
+                <div class="column mcb-column one column_map">
+
+                    <div class="google-map-wrapper no_border" style="margin-bottom:-8px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14314.83719313858!2d50.5347584!3d26.2386336!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x264bc01fa2bf4ca0!2sPlanera%20Group!5e0!3m2!1sen!2ssa!4v1649192418211!5m2!1sen!2ssa" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/assets/js/jquery-3.6.0.min.js"></script>
+<script src="~/assets/plugins/sweetalert.min.js"></script>
+<script>
+     function SendEmail() {
+
+             debugger
+            var dataType = 'application/json; charset=utf-8';
+            var obj = {
+                "Name": $('#name').val(),
+                "Email": $('#email').val(),
+                "Subject": $('#subject').val(),
+                "Message": $('#message').val()
+
+            }
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("SendEmailToAdmin", "Home")',
+                dataType: 'json',
+                contentType: dataType,
+                data: JSON.stringify(obj),
+                success: function (result) {
+                    if (result.Success == true) {
+
+                        //alert("Email Has been Sent")
+
+                        swal({
+                            title: "We have received you query, our team will get back to you soon!",
+                            //text: "",
+                            type: "success"
+                        });
+                        ClearFields()
+                    }
+                    else {
+                        //alert("Error Occured While Sending an Email")
+                        swal({
+                            title: "Error !",
+                            text: "Error Occured While Sending an Email",
+                            type: "error",
+                            html: true,
+                            showCancelButton: false,
+                            confirmButtonColor: "#DD6B55",
+                            confirmButtonText: "Ok",
+                            closeOnConfirm: false,
+                        });
+                        ClearFields()
+                    }
+                }
+            });
+
+        }
+
+        function ClearFields() {
+            $('#name').val('');
+            $('#email').val('');
+            $('#subject').val('');
+            $('#message').val('');
+        }
+</script>
