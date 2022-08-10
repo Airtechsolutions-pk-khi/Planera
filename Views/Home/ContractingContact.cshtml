@@ -3,7 +3,14 @@
     ViewBag.Title = "ContractingContact";
     Layout = "~/Views/Shared/_LayoutConstruction.cshtml";
 }
-
+<style>
+    .button-stroke input[type="button"] {
+        border-color: #056b39 !important;
+        color: #ffffff !important;
+        background: #056b39 !important;
+        font-size: 18px;
+    }
+</style>
 <div id="Content">
     <div class="content_wrapper clearfix">
         <div class="sections_group">
@@ -15,7 +22,7 @@
                                 <div class="column mcb-column one column_image">
                                     <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
                                         <div class="image_wrapper">
-                                            <img class="scale-with-grid" src="~/assets/ImagesPlaneraConstruction/bgcontact.png" width="1920" height="520" />
+                                            <img class="scale-with-grid" src="~/assets/ImagesPlaneraConstruction/bgcontact.jpg" width="1920" height="520" />
                                         </div>
                                     </div>
                                 </div>
@@ -30,18 +37,28 @@
                                 <div class="column mcb-column one-second column_column">
                                     <div class="column_attr clearfix">
                                         <h4 style="color:#056b39;">Are you ready to upgrade</h4>
-                                        <h4>your house with our help?</h4>
+                                        <h4>We are here to help you?</h4>
 
                                     </div>
                                 </div>
                                 <div class="column mcb-column one-second column_column">
                                     <div class="column_attr clearfix">
                                         <h3 style="font-size:20px;">
-                                            <img src="~/assets/ImagesPlaneraConstruction/instaicon.png" style="width:30px;" /> &nbsp; &nbsp;
-                                            <span style="padding-bottom:10px;"> /Hermano.landscaping</span>
+
+                                            <img src="~/assets/ImagesPlaneraConstruction/contact-icon.png" style="width:25px;" /> &nbsp; &nbsp;
+                                            <span><a href="tel:+97317004006">+973 17004006</a>, <a href="tel:+97337755188">+973 37755188</a></span>
+                                            <br>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                                            <span><a href="tel:+97337755200">+973 37755200</a>, <a href="tel:+97337755020">+973 37755020</a></span>
                                             <br>
-                                            <img src="~/assets/ImagesPlaneraConstruction/emailicon.png" style="width:30px;" /> &nbsp; &nbsp;
-                                            <span>hermano@planerabh.com</span>
+                                            <img src="~/assets/ImagesPlaneraConstruction/instaicon.png" style="width:25px;" /> &nbsp; &nbsp;
+                                            <span style="padding-bottom:10px;"><a href="https://www.instagram.com/hermano.landscaping/" target="_blank">Hermano.landscaping</a> </span>
+                                            <br>
+                                            <img src="~/assets/ImagesPlaneraConstruction/emailicon.png" style="width:25px;" /> &nbsp; &nbsp;
+                                            <span><a href="mailto:hermano@planerabh.com">hermano@planerabh.com</a></span>
+                                            <br>
+                                            <img src="~/assets/ImagesPlaneraConstruction/address-icon.png" style="width:25px;" /> &nbsp; &nbsp;
+                                            <span>Mandarine Business Center, Alseef District BAHRAIN</span>
+
                                         </h3>
                                     </div>
                                 </div>
@@ -55,12 +72,12 @@
                             <div class="mcb-wrap-inner">
                                 <div class="column mcb-column one column_column">
                                     <div class="column_attr clearfix">
-                                        <h4>Connect With Us</h4>
-                                        <p>
+                                        <h3>Connect With Us</h3>
+                                        <p style="font-size: 18px;">
                                             Want to chat?
                                         </p>
-                                        <p>
-                                             We’d love to hear from you! Get in touch with our Customer Success Team to inquire about services, projects, rates, or just say hello.
+                                        <p style="font-size: 18px;">
+                                            We’d love to hear from you! Get in touch with our Customer Success Team to inquire about services, projects, rates, or just say hello.
                                         </p>
                                     </div>
                                 </div>
@@ -84,7 +101,7 @@
                             <div class="mcb-wrap-inner">
                                 <div class="column mcb-column one column_column">
                                     <div class="column_attr clearfix align_center">
-                                        <h3>Send us a message</h3>
+                                        <h3>Send us a Message</h3>
                                         <hr class="no_line" style="margin: 0 auto 15px;" />
                                         <div id="contactWrapper">
                                             <form id="contactform">
@@ -116,12 +133,9 @@
         </div>
     </div>
 </div>
-<script src="~/assets/js/jquery-3.6.0.min.js"></script>
 <script src="~/assets/plugins/sweetalert.min.js"></script>
 <script>
       function SendEmail() {
-
-             debugger
             var dataType = 'application/json; charset=utf-8';
             var obj = {
                 "Name": $('#name').val(),
@@ -139,8 +153,6 @@
                 success: function (result) {
                     if (result.Success == true) {
 
-                        //alert("Email Has been Sent")
-
                         swal({
                             title: "We have received you query, our team will get back to you soon!",
                             //text: "",
@@ -152,7 +164,7 @@
                         //alert("Error Occured While Sending an Email")
                         swal({
                             title: "Error !",
-                            text: "Error Occured While Sending an Email",
+                            text: "Problem Occured! Kindly Call Us For Assistance",
                             type: "error",
                             html: true,
                             showCancelButton: false,

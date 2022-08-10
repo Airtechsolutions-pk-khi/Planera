@@ -37,15 +37,36 @@
     <!-- Revolution Slider -->
     <link rel="stylesheet" href="~/assets/plugins/rs-plugin/css/settings.css">
     <link href="~/assets/cssplaneraconstruction/custom.css" rel="stylesheet" />
+
+
+    <script src="~/assets/js/jquery-3.6.0.min.js"></script>
     <style>
+        #Top_bar #logo img{
+            vertical-align:middle !important;
+        }
+        .pestcontrol-heading {
+            border-bottom: 2px solid #21956c;
+            display: inline-block;
+            padding-bottom: 5px;
+            font-size:20px;
+        }
+
+        .pestcontrol-about h2 {
+            font-size: 55px;
+            line-height: 60px;
+            font-weight: 500;
+            letter-spacing: 0px;
+        }
 
         .button-stroke a.button, .button-stroke a.button .button_icon i, .button-stroke a.tp-button {
             border-color: #056b39 !important;
             color: #056b39 !important;
         }
+
         #Footer, #Footer .widget_recent_entries ul li a {
             color: #000;
         }
+
             #Footer a {
                 color: #000;
             }
@@ -68,10 +89,12 @@
             background-color: #056b39 !important;
             color: #fff !important;
         }
+
         .button-stroke input[type="button"] {
             border-color: #056b39 !important;
             color: #056b39 !important;
         }
+
         .flv_sections_53 {
             padding-top: 271px;
             padding-bottom: 259px;
@@ -87,8 +110,9 @@
             background-color: #056b39 !important;
             color: #fff !important;
         }
+
         .arrow {
-            text-align:left !important;
+            text-align: left !important;
             border: 1px solid #ffd800;
             border-radius: 10px;
             background: white;
@@ -97,6 +121,7 @@
             padding: 45px;
             width: 400px;
         }
+
         .arrow--2 {
             position: relative;
         }
@@ -126,6 +151,7 @@
                 top: 50%;
                 margin-top: -14px;
                 border-width: 14px;
+
             }
 
         .arrow--4 {
@@ -162,8 +188,9 @@
         @@media only screen and (max-width: 767px) {
             .category-offer {
                 width: 100% !important;
-                height: 450px;                
+                height: 450px;
             }
+
             .arrow {
                 text-align: left !important;
                 border: 1px solid #ffd800;
@@ -174,13 +201,14 @@
                 padding: 15px;
                 width: 250px;
             }
-            .container{
-                float:none;
+
+            .container {
+                float: none;
             }
-            .widgets_wrapper{
-                text-align:center;
+
+            .widgets_wrapper {
+                text-align: center;
             }
-            
         }
     </style>
 </head>
@@ -205,7 +233,7 @@
                                 <div class="menu_wrapper">
                                     <nav id="menu" class="menu-main-menu-container">
                                         <ul id="menu-main-menu" class="menu">
-                                            <li class="current_page_item">
+                                            <li class="">
                                                 <a href="/planera/construction"><span>Home</span></a>
                                             </li>
                                             <li>
@@ -246,7 +274,7 @@
         </div>
         @RenderBody()
         <footer id="Footer" class="clearfix" style="background-image:url(../../assets/ImagesHermanoContracting/bgfooter.png); background-repeat:no-repeat;background-size:cover;">
-            <div class="widgets_wrapper" style="padding:60px 0;">
+            <div class="widgets_wrapper" style="padding:50px 0;">
                 <div class="container">
                     <div class="column one-fourth">
                         <aside class="widget widget_text">
@@ -260,7 +288,6 @@
                             <h4>Quick Links</h4>
                             <div class="textwidget">
 
-                                <br />
                                 <ul>
                                     <li style="margin-bottom: 10px">
                                         <a href="/contracting/about">About us</a>
@@ -284,17 +311,25 @@
                         <aside class="widget widget_text">
                             <h4>Contact us</h4>
                             <div class="textwidget">
-                                <br />
+                                
                                 <ul>
                                     <li class="phone phone-1" style="margin-bottom: 10px">
-                                        <span class="icon-phone">+973 17004006</span>
-
+                                        <span class="icon-phone">
+                                        </span>
+                                        +973 17004006, +973 37755188
+                                        <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        +973 37755200, +973 37755020
                                     </li>
                                     <li style="margin-bottom: 10px">
-                                        <span class="icon-mail">hermano@planerabh.com</span>
+                                        <span class="icon-mail"><a href="mailto:hermano@planerabh.com">hermano@planerabh.com</a></span>
                                     </li>
                                     <li style="margin-bottom: 10px">
-                                        <span class="icon-instagram">/Hermano.landscaping</span>
+                                        <span class="icon-address">
+                                            Mandarine Business Center, Alseef District Kingdom of Bahrain
+                                        </span>
+                                    </li>
+                                    <li style="margin-bottom: 10px">
+                                        <span class="icon-instagram"><a href="https://www.instagram.com/hermano.landscaping/" target="_blank">Hermano.landscaping</a></span>
                                     </li>
 
                                 </ul>
@@ -313,9 +348,8 @@
             </div>
             <div class="footer_copy">
                 <div class="container">
-                    <div class="column one">
-                        @*<a id="back_to_top" class="button button_left button_js" href="#"><span class="button_icon"><i class="icon-up-open-big"></i></span></a>*@
-                        <div class="copyright">
+                    <div class="column one" style="text-align:center">
+                        <div class="">
                             &copy;  2022 Powered by Planera Group
                         </div>
 
@@ -324,7 +358,6 @@
             </div>
         </footer>
     </div>
-    <script src="~/assets/js/jquery-3.6.0.min.js"></script>
     <script src="~/assets/js/jquery-migrate-3.3.2.js"></script>
 
     <script src="~/assets/js/mfn.menu.js"></script>
@@ -344,7 +377,26 @@
     <script src="~/assets/plugins/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
     <script src="~/assets/plugins/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
 
+    <style>
+        .dmopMx {
+            display: none
+        }
+    </style>
     <script>
+        (function () {
+            var options = {
+
+                whatsapp: "+97337755188", // WhatsApp number
+                call_to_action: "Message us", // Call to action
+                button_color: "#E74339", // Color of button
+                position: "right", // Position may be 'right' or 'left'
+                order: "facebook,whatsapp", // Order of buttons
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
         var tpj = jQuery;
         var revapi1;
         tpj(document).ready(function () {
@@ -433,7 +485,7 @@
             //    var mobileStickyLogoH = mobileStickyEl.height();
             //    mobileStickyEl.attr("src", "../../assets/ImagesPlaneraConstruction/pc-logo-black.png").width(mobileStickyLogoW).height(mobileStickyLogoH);
         }
-                    );
+        );
     </script>
     <script>
         var tpj = jQuery;

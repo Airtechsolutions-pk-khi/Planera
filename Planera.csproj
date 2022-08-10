@@ -967,6 +967,7 @@
     <Content Include="assets\ImagesHermano\-e-Vector Smart Object-2.png" />
     <Content Include="assets\ImagesHermano\-e-Vector Smart Object-3.png" />
     <Content Include="assets\ImagesHermano\-e-Vector Smart Object.png" />
+    <Content Include="assets\ImagesHermano\about-header.jpg" />
     <Content Include="assets\ImagesHermano\Air Conditioner Maintenance Work.png" />
     <Content Include="assets\ImagesHermano\bg-wm-hr.png" />
     <Content Include="assets\ImagesHermano\building construction.png" />
@@ -978,6 +979,7 @@
     <Content Include="assets\ImagesHermano\garden equipment.png" />
     <Content Include="assets\ImagesHermano\group-6.png" />
     <Content Include="assets\ImagesHermano\group-7.png" />
+    <Content Include="assets\ImagesHermano\headerservice.png" />
     <Content Include="assets\ImagesHermano\hermano-logo.jpg" />
     <Content Include="assets\ImagesHermano\hermano-logo.png" />
     <Content Include="assets\ImagesHermano\landscape design.png" />
@@ -985,6 +987,7 @@
     <Content Include="assets\ImagesHermano\msgicon.png" />
     <Content Include="assets\ImagesHermano\phoneicon.png" />
     <Content Include="assets\ImagesHermano\Plumbing Work.png" />
+    <Content Include="assets\ImagesHermano\project-header.jpg" />
     <Content Include="assets\ImagesHermano\reno4-about-icon1.png" />
     <Content Include="assets\ImagesHermano\reno4-about-icon2.png" />
     <Content Include="assets\ImagesHermano\reno4-about-icon3.png" />
@@ -1119,9 +1122,11 @@
     <Content Include="assets\ImagesPlaneraConstruction\4.png" />
     <Content Include="assets\ImagesPlaneraConstruction\5.jpg" />
     <Content Include="assets\ImagesPlaneraConstruction\6.jpg" />
+    <Content Include="assets\ImagesPlaneraConstruction\address-icon.png" />
+    <Content Include="assets\ImagesPlaneraConstruction\bgcontact.jpg" />
     <Content Include="assets\ImagesPlaneraConstruction\bgcontact.png" />
-    <Content Include="assets\ImagesPlaneraConstruction\bgheader.png" />
     <Content Include="assets\ImagesPlaneraConstruction\bgproject.png" />
+    <Content Include="assets\ImagesPlaneraConstruction\contact-icon.png" />
     <Content Include="assets\ImagesPlaneraConstruction\developer2.png" />
     <Content Include="assets\ImagesPlaneraConstruction\emailicon.png" />
     <Content Include="assets\ImagesPlaneraConstruction\favicon.ico" />
@@ -1131,6 +1136,7 @@
     <Content Include="assets\ImagesPlaneraConstruction\hicon2.png" />
     <Content Include="assets\ImagesPlaneraConstruction\hicon3.png" />
     <Content Include="assets\ImagesPlaneraConstruction\hicon4.png" />
+    <Content Include="assets\ImagesPlaneraConstruction\hicon5.png" />
     <Content Include="assets\ImagesPlaneraConstruction\home_developer2_about1.jpg" />
     <Content Include="assets\ImagesPlaneraConstruction\home_developer2_about2.png" />
     <Content Include="assets\ImagesPlaneraConstruction\home_developer2_bg.png" />
