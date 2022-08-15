@@ -759,6 +759,10 @@
     <Content Include="assets\ImagesActivarBH\-e-Vector Smart Object5.png" />
     <Content Include="assets\ImagesActivarBH\-e-_MG_7638.png" />
     <Content Include="assets\ImagesActivarBH\ablogo.png" />
+    <Content Include="assets\ImagesActivarBH\AcBHV1.mp4" />
+    <Content Include="assets\ImagesActivarBH\AcBHV2.mp4" />
+    <Content Include="assets\ImagesActivarBH\AcBHV3.mp4" />
+    <Content Include="assets\ImagesActivarBH\AcBHV4.mp4" />
     <Content Include="assets\ImagesActivarBH\activar-bg.jpg" />
     <Content Include="assets\ImagesActivarBH\ad-gallery.png" />
     <Content Include="assets\ImagesActivarBH\ad-gallery2.png" />
@@ -831,6 +835,16 @@
     <Content Include="assets\ImagesActivarBH\photo2-subheader-bg.jpg" />
     <Content Include="assets\ImagesActivarBH\planera-footer.png" />
     <Content Include="assets\ImagesActivarBH\robins.png" />
+    <Content Include="assets\ImagesActivarBH\slider\01.jpg" />
+    <Content Include="assets\ImagesActivarBH\slider\02.jpg" />
+    <Content Include="assets\ImagesActivarBH\slider\03.jpg" />
+    <Content Include="assets\ImagesActivarBH\slider\04.jpg" />
+    <Content Include="assets\ImagesActivarBH\slider\05.jpg" />
+    <Content Include="assets\ImagesActivarBH\slider\06.jpg" />
+    <Content Include="assets\ImagesActivarBH\slider\07.jpg" />
+    <Content Include="assets\ImagesActivarBH\slider\08.jpg" />
+    <Content Include="assets\ImagesActivarBH\slider\09.jpg" />
+    <Content Include="assets\ImagesActivarBH\slider\10.jpg" />
     <Content Include="assets\ImagesActivarBH\tanta.png" />
     <Content Include="assets\ImagesActivarBH\vector-smart-object-5.png" />
     <Content Include="assets\ImagesActivarBH\vector-smart-object.png" />

@@ -52,8 +52,8 @@ namespace Planera.Controllers
         [Route("planera/activarbahrain")]
         public ActionResult ActivarBHV2()
         {
-            return RedirectToAction("comingsoon");
-            //return View();
+            //return RedirectToAction("comingsoon");
+            return View();
         }
 
         [Route("planera/construction")]
@@ -103,8 +103,8 @@ namespace Planera.Controllers
         [Route("planera/general-trading")]
         public ActionResult PlaneraGeneralTrading()
         {
-            //return RedirectToAction("comingsoon");
-            return View();
+            return RedirectToAction("comingsoon");
+            //return View();
         }
 
         [Route("planera/planera-career")]
