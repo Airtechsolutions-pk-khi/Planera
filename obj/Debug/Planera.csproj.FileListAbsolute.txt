@@ -676,3 +676,4 @@ D:\Planera\obj\Debug\Planera.csproj.CoreCompileInputs.cache
 D:\Planera\obj\Debug\Planera.csproj.CopyComplete
 D:\Planera\obj\Debug\Planera.dll
 D:\Planera\obj\Debug\Planera.pdb
+D:\Planera\obj\Debug\Planera.csproj.AssemblyReference.cache
