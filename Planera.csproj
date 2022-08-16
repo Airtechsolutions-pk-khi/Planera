@@ -974,9 +974,13 @@
     <Content Include="assets\ImagesHermanoContracting\section2.png" />
     <Content Include="assets\ImagesHermanoContracting\sectionOver.png" />
     <Content Include="assets\ImagesHermanoContracting\vector-smart-object.png" />
+    <Content Include="assets\ImagesHermano\-e-Air Conditioner Maintenance Work.png" />
+    <Content Include="assets\ImagesHermano\-e-electrical work.png" />
     <Content Include="assets\ImagesHermano\-e-Group 6.png" />
     <Content Include="assets\ImagesHermano\-e-Group 7.png" />
+    <Content Include="assets\ImagesHermano\-e-Plumbing Work.png" />
     <Content Include="assets\ImagesHermano\-e-reno4-home-team.png" />
+    <Content Include="assets\ImagesHermano\-e-Repair house hold appliances.png" />
     <Content Include="assets\ImagesHermano\-e-Vector Smart Object-1.png" />
     <Content Include="assets\ImagesHermano\-e-Vector Smart Object-2.png" />
     <Content Include="assets\ImagesHermano\-e-Vector Smart Object-3.png" />
@@ -3657,6 +3661,7 @@
     <Content Include="Views\Home\ContractingContact.cshtml" />
     <Content Include="Views\Home\ContractingProject.cshtml" />
     <Content Include="Views\Home\ContractingService.cshtml" />
+    <Content Include="Views\Hermano\HermanoAbout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
