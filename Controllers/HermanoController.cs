@@ -33,5 +33,11 @@ namespace Planera.Controllers
         //{
         //    return View();
         //}
+        [Route("hermano/about")]
+
+        public ActionResult HermanoAbout()
+        {
+            return View();
+        }
     }
 }
