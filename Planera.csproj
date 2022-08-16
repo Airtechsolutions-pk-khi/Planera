@@ -1000,6 +1000,7 @@
     <Content Include="assets\ImagesHermano\hiw-img1.png" />
     <Content Include="assets\ImagesHermano\hiw-img2.png" />
     <Content Include="assets\ImagesHermano\hiw-img3.png" />
+    <Content Include="assets\ImagesHermano\hr-project-header.jpg" />
     <Content Include="assets\ImagesHermano\hrm-contact-img1.png" />
     <Content Include="assets\ImagesHermano\hrm-header-bg.png" />
     <Content Include="assets\ImagesHermano\hrm-icon-1.png" />
@@ -3674,6 +3675,8 @@
     <Content Include="Views\Home\ContractingService.cshtml" />
     <Content Include="Views\Hermano\HermanoRMService.cshtml" />
     <Content Include="Views\Hermano\HermanoRMContact.cshtml" />
+    <Content Include="Views\Hermano\HermanoRMAbout.cshtml" />
+    <Content Include="Views\Hermano\HermanoRMProjects.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -3,67 +3,74 @@
     ViewBag.Title = "ContactPlaneraGroup";
     Layout = "~/Views/Shared/_LayoutInterior.cshtml";
 }
- 
-   
-    <link rel="stylesheet" href="~/assets/plugins/rs-plugin/css/settings.css">
-    <style>
-        .sweet-alert button {
-            background-color: #1f438f !important;
-            color: white;
-            border: none;
-            box-shadow: none;
-            font-size: 17px;
-            font-weight: 500;
-            -webkit-border-radius: 4px;
-            border-radius: 5px;
-            padding: 10px 32px;
-            margin: 26px 5px 0 5px;
-            cursor: pointer;
-        }
+<link href="~/assets/cssplaneracareer/style.css" rel="stylesheet">
+@*<link href="~/assets/cssplaneracareer/bootstrap.min.css" rel="stylesheet">*@
 
-        LABEL.indented-checkbox-text {
-            margin-left: 2em;
-            display: block;
-            position: relative;
-            margin-top: -1.4em; /* make this margin match whatever your line-height is */
-            line-height: 1.4em; /* can be set here, or elsewehere */
-        }
+<link rel="stylesheet" href="~/assets/plugins/rs-plugin/css/settings.css">
+<style>
+    .sweet-alert button {
+        background-color: #1f438f !important;
+        color: white;
+        border: none;
+        box-shadow: none;
+        font-size: 17px;
+        font-weight: 500;
+        -webkit-border-radius: 4px;
+        border-radius: 5px;
+        padding: 10px 32px;
+        margin: 26px 5px 0 5px;
+        cursor: pointer;
+    }
 
-        input[type="date"], input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], select, textarea, .woocommerce .quantity input.qty,
-        .contactbox input[type="date"]:focus, .contactbox input[type="email"]:focus, .contactbox input[type="number"]:focus, .contactbox input[type="password"]:focus, .contactbox input[type="search"]:focus, input[type="tel"]:focus, .contactbox input[type="text"]:focus, .contactbox input[type="url"]:focus, .contactbox select:focus, .contactbox textarea:focus {
-            color: #888;
-            background-color: white !important;
-            border-color: #b5b5b5;
-            border-radius: 5px !important;
-        }
+    LABEL.indented-checkbox-text {
+        margin-left: 2em;
+        display: block;
+        position: relative;
+        margin-top: -1.4em; /* make this margin match whatever your line-height is */
+        line-height: 1.4em; /* can be set here, or elsewehere */
+    }
 
-        .list_item .list_left {
-            width: 42px;
-            line-height: 50px;
-            height: auto;
-            background-color: transparent !important;
-        }
+    input[type="date"], input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], select, textarea, .woocommerce .quantity input.qty,
+    .contactbox input[type="date"]:focus, .contactbox input[type="email"]:focus, .contactbox input[type="number"]:focus, .contactbox input[type="password"]:focus, .contactbox input[type="search"]:focus, input[type="tel"]:focus, .contactbox input[type="text"]:focus, .contactbox input[type="url"]:focus, .contactbox select:focus, .contactbox textarea:focus {
+        color: #888;
+        background-color: white !important;
+        border-color: #b5b5b5;
+        border-radius: 5px !important;
+    }
 
-        .list_item .list_right {
-            margin-left: 70px;
-        }
+    .list_item .list_left {
+        width: 42px;
+        line-height: 50px;
+        height: auto;
+        background-color: transparent !important;
+    }
 
-        .list_right .desc {
-            line-height: 40px;
-            font-size: 15px;
-            font-weight: 600;
-        }
-        checkbox{
-            display:none;
-        }
-        
-    </style>
-    <link href="~/assets/css/sweetalert.css" rel="stylesheet" />
- 
+    .list_item .list_right {
+        margin-left: 70px;
+    }
+
+    .list_right .desc {
+        line-height: 40px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .s-card-icon {
+        margin: 0 auto 0;
+    }
+    img.scale-with-grid, #Content img {
+       
+        height: 60px;
+    }
+    checkbox {
+        display: none;
+    }
+</style>
+<link href="~/assets/css/sweetalert.css" rel="stylesheet" />
+
 
 <body class="home page template-slider style-simple button-round layout-full-width if-zoom no-content-padding hide-love no-shadows header-overlay header-transparent header-fw minimalist-header-no sticky-header sticky-tb-color ab-hide subheader-both-center menu-link-color logo-valign-top mobile-tb-center mobile-side-slide mobile-mini-mr-ll tablet-sticky mobile-header-mini mobile-sticky">
     <div id="Wrapper">
-        
+
         <div class="section full-width center dark flv_sections_53" style="background-image: url(../../assets/ImagesPlaneraInterior/contact-us.jpg);background-size: cover;background-repeat: no-repeat;" data-stellar-background-ratio="0.5">
             <div class="section_wrapper clearfix">
                 <div class="items_group clearfix"></div>
@@ -74,7 +81,7 @@
         </div>
 
 
-        
+
         <div id="Content">
             <div class="content_wrapper clearfix">
                 <div class="sections_group">
@@ -139,50 +146,76 @@
                 </div>
             </div>
 
-            <div class="section mcb-section" style="padding-top:20px; padding-bottom:80px;">
-                <div class="section mcb-section">
-                    <div class="wrap mcb-wrap one valign-top clearfix">
-                        <div class="mcb-wrap-inner">
-                            <div>
-                                <div class="column_attr clearfix align_center">
-                                    <h2 style="padding-bottom:20px; ">OUR TEAM</h2>
+            <section class="service-block pad-tb " style="padding-top:20px;padding-bottom:50px;background: white;">
+                <div class="container">
+                    <div class="common-heading text-l animate fadeInDown delay-1s text-center">
+                        <h2 class="mb20  " style="color:#1f438f;text-align:center">Perks To Work With Planera</h2>
+
+                    </div>
+                    <div class="column mcb-column justify-content-center">
+                        <div class="column one-third mt30  wow fadeIn" data-wow-delay=".5s">
+                            <div class="s-block wide-sblock">
+                                <div class="s-card-icon"><img src="~/assets/ImagesPlaneraCareer/teama.svg" alt="service" class="img-fluid"></div>
+                                <div class="s-block-content" style=" align-self: center;">
+                                    <h6>One Hub Solution and One Point of Contact</h6>
+
                                 </div>
-                                <div class="wrapper">
-                                    <div class="sliding-background"></div>
-                                </div>
-                                <style>
-                                    .wrapper {
-                                        overflow: hidden;
-                                    }
-
-                                    .sliding-background {
-                                        background: url(../../assets/HomeV2/images/team-slider.jpg) repeat-x;
-                                        height: 535px;
-                                        width: 5076px;
-                                        animation: slide 30s linear infinite;
-                                    }
-
-                                    @@keyframes slide {
-                                        0% {
-                                            transform: translate3d(0, 0, 0);
-                                        }
-
-                                        100% {
-                                            transform: translate3d(-1692px, 0, 0);
-                                        }
-                                    }
-                                </style>
                             </div>
+                        </div>
+                        <div class="column one-third mt30 wow fadeIn" data-wow-delay="1s">
+                            <div class="s-block wide-sblock">
+                                <div class="s-card-icon"><img src="~/assets/ImagesPlaneraCareer/link.svg" alt="service" class="img-fluid"></div>
+                                <div class="s-block-content" style=" align-self: center;">
+                                    <h6>More Satisfied work with Less Coordination </h6>
 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column one-third mt30 wow fadeIn" data-wow-delay="1.7s">
+                            <div class="s-block wide-sblock">
+                                <div class="s-card-icon"><img src="~/assets/ImagesPlaneraCareer/tech.svg" alt="service" class="img-fluid"></div>
+                                <div class="s-block-content" style=" align-self: center;">
+                                    <h6>Keep Up with Competitors with technical competency 	</h6>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column one-third mt30 wow fadeIn" data-wow-delay="2s">
+                            <div class="s-block wide-sblock">
+                                <div class="s-card-icon"><img src="~/assets/ImagesPlaneraCareer/hi.svg" alt="service" class="img-fluid"></div>
+                                <div class="s-block-content" style=" align-self: center;">
+                                    <h6>Trained and Transformed </h6>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column one-third mt30 animate wow fadeIn" data-wow-delay=".5s">
+                            <div class="s-block wide-sblock">
+                                <div class="s-card-icon"><img src="~/assets/ImagesPlaneraCareer/badge.svg" alt="service" class="img-fluid"></div>
+                                <div class="s-block-content" style=" align-self: center;">
+                                    <h6>Well Planned and properly executed </h6>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column one-third mt30 wow fadeIn" data-wow-delay="1.7s">
+                            <div class="s-block wide-sblock">
+                                <div class="s-card-icon"><img src="~/assets/ImagesPlaneraCareer/tin.svg" alt="service" class="img-fluid"></div>
+                                <div class="s-block-content" style=" align-self: center;">
+                                    <h6>Efficient and Satisfying work</h6>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
-            </div>
+            </section>
         </div>
     </div>
     <script src="~/assets/js/jquery-3.6.0.min.js"></script>
     <script src="~/assets/plugins/sweetalert.min.js"></script>
- 
+
     <script src="http://maps.google.com/maps/api/js?sensor=false&ver=5.9"></script>
     <script src="~/assets/js/email.js"></script>
     <script>
