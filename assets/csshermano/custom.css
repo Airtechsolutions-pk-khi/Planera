@@ -69,6 +69,9 @@ sectionani .container {
 .active.fade-right {
     animation: fade-right 1s ease-in;
 }
+.active.fade-in {
+    animation: fade-right 1s ease-in;
+}
 
 @keyframes fade-bottom {
     0% {
@@ -104,4 +107,7 @@ sectionani .container {
         transform: translateX(0);
         opacity: 1;
     }
+}
+.hiw h2, .hiw h5, .hiw h2 a, .hiw h2 a:hover {
+    color: #ffffff;
 }

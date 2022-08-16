@@ -12,8 +12,20 @@ namespace Planera.Controllers
         [Route("hermano/repair-maintenance")] 
         public ActionResult HermanoHome()
         {
-            return RedirectToAction("/planera/comingsoon");
-            //return View();
+            //return RedirectToAction("/planera/comingsoon");
+            return View();
+        }
+        [Route("hermano/repair-maintenance/services")]
+        public ActionResult HermanoRMService()
+        {
+            //return RedirectToAction("/planera/comingsoon");
+            return View();
+        }
+        [Route("hermano/repair-maintenance/contact")]
+        public ActionResult HermanoRMContact()
+        {
+            //return RedirectToAction("/planera/comingsoon");
+            return View();
         }
         //old
         //[Route("hermano/contractor")]
