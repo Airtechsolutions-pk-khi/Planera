@@ -242,6 +242,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Model\BookNow.cs" />
     <Compile Include="Model\ContactBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -3674,6 +3675,7 @@
     <Content Include="Views\Home\ContractingService.cshtml" />
     <Content Include="Views\Hermano\HermanoRMService.cshtml" />
     <Content Include="Views\Hermano\HermanoRMContact.cshtml" />
+    <Content Include="Views\Hermano\HermanoAbout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
