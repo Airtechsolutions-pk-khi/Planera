@@ -672,7 +672,6 @@ D:\Planera\bin\System.Web.WebPages.Razor.xml
 D:\Planera\bin\Newtonsoft.Json.xml
 D:\Planera\bin\Antlr3.Runtime.pdb
 D:\Planera\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Planera\obj\Debug\Planera.csproj.AssemblyReference.cache
 D:\Planera\obj\Debug\Planera.csproj.CoreCompileInputs.cache
 D:\Planera\obj\Debug\Planera.csproj.CopyComplete
 D:\Planera\obj\Debug\Planera.dll

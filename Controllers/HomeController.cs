@@ -145,7 +145,7 @@ namespace Planera.Controllers
         }
 
         public JsonResult SendEmailToAdmin(ContactBLL obj, string Subject)
-        {
+         {
             try
             {
                 ViewBag.Contact = "";
