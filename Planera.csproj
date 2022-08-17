@@ -966,6 +966,7 @@
     <Content Include="assets\ImagesHermanoContracting\home_garden3_slider_bg.jpg" />
     <Content Include="assets\ImagesHermanoContracting\home_garden3_slider_pic1.png" />
     <Content Include="assets\ImagesHermanoContracting\logo.png" />
+    <Content Include="assets\ImagesHermanoContracting\logofooter-hrm.png" />
     <Content Include="assets\ImagesHermanoContracting\logofooter.png" />
     <Content Include="assets\ImagesHermanoContracting\logoheader.png" />
     <Content Include="assets\ImagesHermanoContracting\ourmission.jpg" />
@@ -987,8 +988,10 @@
     <Content Include="assets\ImagesHermano\-e-Vector Smart Object-3.png" />
     <Content Include="assets\ImagesHermano\-e-Vector Smart Object.png" />
     <Content Include="assets\ImagesHermano\about-header.jpg" />
+    <Content Include="assets\ImagesHermano\aboutheader.png" />
     <Content Include="assets\ImagesHermano\Air Conditioner Maintenance Work.png" />
     <Content Include="assets\ImagesHermano\bg-hiw.png" />
+    <Content Include="assets\ImagesHermano\bg-hrm-s4.png" />
     <Content Include="assets\ImagesHermano\bg-wm-hr.png" />
     <Content Include="assets\ImagesHermano\building construction.png" />
     <Content Include="assets\ImagesHermano\building maintenance_.png" />
@@ -1006,10 +1009,15 @@
     <Content Include="assets\ImagesHermano\hiw-img2.png" />
     <Content Include="assets\ImagesHermano\hiw-img3.png" />
     <Content Include="assets\ImagesHermano\hr-project-header.jpg" />
+    <Content Include="assets\ImagesHermano\hrm-about-s2-img1.png" />
+    <Content Include="assets\ImagesHermano\hrm-about-s2-img2.png" />
     <Content Include="assets\ImagesHermano\hrm-contact-img1.png" />
     <Content Include="assets\ImagesHermano\hrm-header-bg.png" />
     <Content Include="assets\ImagesHermano\hrm-icon-1.png" />
     <Content Include="assets\ImagesHermano\hrm-icon-2.png" />
+    <Content Include="assets\ImagesHermano\hrm-icon1.png" />
+    <Content Include="assets\ImagesHermano\hrm-icon2.png" />
+    <Content Include="assets\ImagesHermano\hrm-icon3.png" />
     <Content Include="assets\ImagesHermano\hrm-service1.png" />
     <Content Include="assets\ImagesHermano\hrm-service2.png" />
     <Content Include="assets\ImagesHermano\hrm-service3.png" />
@@ -3683,6 +3691,7 @@
     <Content Include="Views\Hermano\HermanoRMAbout.cshtml" />
     <Content Include="Views\Hermano\HermanoRMProjects.cshtml" />
     <Content Include="Template\PLANERAINTERIOR.pdf" />
+    <Content Include="Views\Hermano\HermanoRMAboutold.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

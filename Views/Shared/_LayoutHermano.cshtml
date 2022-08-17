@@ -90,10 +90,11 @@
                                 <div class="menu_wrapper">
                                     <nav id="menu">
                                         <ul id="menu-main-menu" class="menu menu-main">
+                                            <li> <a href="/hermano/repair-maintenance"><span>Home</span></a> </li>
                                             <li> <a href="/hermano/repair-maintenance/about"><span>About</span></a> </li>
                                             <li> <a href="/hermano/repair-maintenance/services"><span>Service</span></a> </li>
                                             <li> <a href="/hermano/repair-maintenance/projects"><span>Project</span></a> </li>
-                                            <li> <a href="#"><span>Gallery</span></a> </li>
+                                            @* <li> <a href="#"><span>Gallery</span></a> </li>*@
                                             <li> <a href="/hermano/repair-maintenance/contact"><span>Contact</span></a> </li>
                                         </ul>
                                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
@@ -125,6 +126,9 @@
 
                             <ul>
                                 <li style="margin-bottom: 10px">
+                                    <a href="/hermano/repair-maintenance">Home</a>
+                                </li>
+                                <li style="margin-bottom: 10px">
                                     <a href="/hermano/repair-maintenance/about">About us</a>
                                 </li>
                                 <li style="margin-bottom: 10px">
@@ -133,9 +137,9 @@
                                 <li style="margin-bottom: 10px">
                                     <a href="/hermano/repair-maintenance/projects">Projects</a>
                                 </li>
-                                <li style="margin-bottom: 10px">
-                                    <a href="#">Gallery</a>
-                                </li>
+                                @*<li style="margin-bottom: 10px">
+            <a href="#">Gallery</a>
+        </li>*@
                                 <li style="margin-bottom: 10px">
                                     <a href="/hermano/repair-maintenance/contact">Contact us</a>
                                 </li>
@@ -144,7 +148,7 @@
                     </aside>
                 </div>
 
-                <div class="column two-fifth" >
+                <div class="column two-fifth">
                     <aside class="widget widget_text">
                         <h4>Contact us</h4>
                         <div class="textwidget">
@@ -171,7 +175,7 @@
 
                 <div class="column one-fifth" style="text-align:center">
                     <aside class="widget widget_text">
-                        <img src="~/assets/ImagesHermanoContracting/logofooter.png" />
+                        <img src="~/assets/ImagesHermanoContracting/logofooter-hrm.png" />
                     </aside>
                 </div>
             </div>
@@ -181,7 +185,6 @@
                         <a id="back_to_top" class="footer_button" href="#"><i class="icon-up-open-big"></i></a>
                         <div class="copyright"> &copy; 2022 Powered by Planera group</div>
                         <ul class="social">
-                          
                         </ul>
                     </div>
                 </div>
@@ -197,8 +200,8 @@
             <div class="menu_wrapper"></div>
             <ul class="social">
                 @*<li class="facebook"> <a href="#" title="Facebook"><i class="icon-facebook"></i></a> </li>
-                <li class="linkedin"> <a href="#" title="LinkedIn"><i class="icon-linkedin"></i></a> </li>
-                <li class="pinterest"> <a href="#" title="Pinterest"><i class="icon-pinterest"></i></a> </li>*@
+                    <li class="linkedin"> <a href="#" title="LinkedIn"><i class="icon-linkedin"></i></a> </li>
+                    <li class="pinterest"> <a href="#" title="Pinterest"><i class="icon-pinterest"></i></a> </li>*@
                 <li class="instagram"> <a href="https://www.instagram.com/hermano.landscaping/" target="_blank" title="Instagram"><i class="icon-instagram"></i></a> </li>
             </ul>
         </div>
@@ -223,18 +226,18 @@
                     <div class="container-fluid">
                         <div class="row form-group text-center">
                             <div class="col-6">
-                                <input type="text" name="fname" id="fname" class="form-control" placeholder="First Name" required style="width:100%;"/>
+                                <input type="text" name="fname" id="fname" class="form-control" placeholder="First Name" required style="width:100%;" />
                             </div>
                             <div class="col-6">
-                                <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name" required style="width:100%;"/>
+                                <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name" required style="width:100%;" />
                             </div>
                         </div>
                         <div class="row form-group text-center">
                             <div class="col-6">
-                                <input type="email" name="email" id="email"class="form-control" placeholder="Email" required style="width:100%;"/>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email" required style="width:100%;" />
                             </div>
                             <div class="col-6">
-                                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required style="width:100%;"/>
+                                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required style="width:100%;" />
                             </div>
                         </div>
                         <div class="row form-group text-center">
@@ -282,11 +285,26 @@
     <script src="~/assets/plugins/rs-plugin-6.custom/js/revolution.tools.min.js"></script>
     <script src="~/assets/plugins/rs-plugin-6.custom/js/rs6.min.js"></script>
 
+    <style>
+        .dmopMx {
+            display: none
+        }
+    </style>
+    <script>
+        (function () {
+            var options = {
 
-
-
-
-    <script type="text/javascript">
+                whatsapp: "+97337755020", // WhatsApp number
+                call_to_action: "Message us", // Call to action
+                button_color: "#E74339", // Color of button
+                position: "right", // Position may be 'right' or 'left'
+                order: "facebook,whatsapp", // Order of buttons
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
         var revapi1, tpj;
 
         function revinit_revslider11() {
