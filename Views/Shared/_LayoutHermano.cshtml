@@ -99,8 +99,8 @@
                                         <ul id="menu-main-menu" class="menu menu-main">
                                             <li> <a href="/hermano/repair-maintenance"><span>Home</span></a> </li>
                                             <li> <a href="/hermano/repair-maintenance/about"><span>About</span></a> </li>
-                                            <li> <a href="/hermano/repair-maintenance/services"><span>Service</span></a> </li>
-                                            <li> <a href="/hermano/repair-maintenance/projects"><span>Project</span></a> </li>
+                                            <li> <a href="/hermano/repair-maintenance/services"><span>Services</span></a> </li>
+                                            <li> <a href="/hermano/repair-maintenance/projects"><span>Projects</span></a> </li>
                                             @* <li> <a href="#"><span>Gallery</span></a> </li>*@
                                             <li> <a href="/hermano/repair-maintenance/contact"><span>Contact</span></a> </li>
                                         </ul>
@@ -244,7 +244,7 @@
                                 <input type="email" name="email" id="email" placeholder="Email" required style="width: 100%; border: groove;" />
                             </div>
                             <div class="col-6">
-                                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required style="width:100%;"/>
+                                <input type="text" name="phone" id="phone"  placeholder="Phone"  required style="width: 100%; border: groove;"/>
                             </div>
                         </div>
                         <div class="row form-group text-center">
@@ -329,13 +329,14 @@
                             gridwidth: "1240,1240,778,778",
                             gridheight: "900,900,700,700",
                             spinner: "spinner11",
+                            duration: "1500ms",
                             perspective: 600,
                             perspectiveType: "local",
                             spinnerclr: "#ffd800",
                             editorheight: "900,768,700,720",
                             responsiveLevels: "1240,1240,778,778",
                             progressBar: {
-                                disableProgressBar: true
+                                disableProgressBar: false
                             },
                             navigation: {
                                 onHoverStop: false

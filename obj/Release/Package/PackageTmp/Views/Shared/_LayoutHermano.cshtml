@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="~/assets/plugins/rs-plugin-6.custom/css/rs6.css">
 
     <script src="~/assets/js/jquery-3.6.0.min.js"></script>
-
+    <script src="~/assets/js/bootstrap.min.js"></script>
     <link href="~/assets/csshermano/custom.css" rel="stylesheet" />
     <style>
         .bs-example {
@@ -61,6 +61,13 @@
                 font-size: 50px !important;
             }
         }
+        option:disabled {
+            color: #ddd;
+        }
+        ::placeholder {
+            color: #ddd;
+            opacity: 1; /* Firefox */
+        }
 
         .flv_sections_53 {
             padding-top: 280px;
@@ -90,10 +97,11 @@
                                 <div class="menu_wrapper">
                                     <nav id="menu">
                                         <ul id="menu-main-menu" class="menu menu-main">
+                                            <li> <a href="/hermano/repair-maintenance"><span>Home</span></a> </li>
                                             <li> <a href="/hermano/repair-maintenance/about"><span>About</span></a> </li>
                                             <li> <a href="/hermano/repair-maintenance/services"><span>Service</span></a> </li>
                                             <li> <a href="/hermano/repair-maintenance/projects"><span>Project</span></a> </li>
-                                            <li> <a href="#"><span>Gallery</span></a> </li>
+                                            @* <li> <a href="#"><span>Gallery</span></a> </li>*@
                                             <li> <a href="/hermano/repair-maintenance/contact"><span>Contact</span></a> </li>
                                         </ul>
                                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
@@ -125,6 +133,9 @@
 
                             <ul>
                                 <li style="margin-bottom: 10px">
+                                    <a href="/hermano/repair-maintenance">Home</a>
+                                </li>
+                                <li style="margin-bottom: 10px">
                                     <a href="/hermano/repair-maintenance/about">About us</a>
                                 </li>
                                 <li style="margin-bottom: 10px">
@@ -133,9 +144,9 @@
                                 <li style="margin-bottom: 10px">
                                     <a href="/hermano/repair-maintenance/projects">Projects</a>
                                 </li>
-                                <li style="margin-bottom: 10px">
-                                    <a href="#">Gallery</a>
-                                </li>
+                                @*<li style="margin-bottom: 10px">
+            <a href="#">Gallery</a>
+        </li>*@
                                 <li style="margin-bottom: 10px">
                                     <a href="/hermano/repair-maintenance/contact">Contact us</a>
                                 </li>
@@ -144,7 +155,7 @@
                     </aside>
                 </div>
 
-                <div class="column two-fifth" >
+                <div class="column two-fifth">
                     <aside class="widget widget_text">
                         <h4>Contact us</h4>
                         <div class="textwidget">
@@ -171,7 +182,7 @@
 
                 <div class="column one-fifth" style="text-align:center">
                     <aside class="widget widget_text">
-                        <img src="~/assets/ImagesHermanoContracting/logofooter.png" />
+                        <img src="~/assets/ImagesHermanoContracting/logofooter-hrm.png" />
                     </aside>
                 </div>
             </div>
@@ -181,7 +192,6 @@
                         <a id="back_to_top" class="footer_button" href="#"><i class="icon-up-open-big"></i></a>
                         <div class="copyright"> &copy; 2022 Powered by Planera group</div>
                         <ul class="social">
-                          
                         </ul>
                     </div>
                 </div>
@@ -197,8 +207,8 @@
             <div class="menu_wrapper"></div>
             <ul class="social">
                 @*<li class="facebook"> <a href="#" title="Facebook"><i class="icon-facebook"></i></a> </li>
-                <li class="linkedin"> <a href="#" title="LinkedIn"><i class="icon-linkedin"></i></a> </li>
-                <li class="pinterest"> <a href="#" title="Pinterest"><i class="icon-pinterest"></i></a> </li>*@
+                    <li class="linkedin"> <a href="#" title="LinkedIn"><i class="icon-linkedin"></i></a> </li>
+                    <li class="pinterest"> <a href="#" title="Pinterest"><i class="icon-pinterest"></i></a> </li>*@
                 <li class="instagram"> <a href="https://www.instagram.com/hermano.landscaping/" target="_blank" title="Instagram"><i class="icon-instagram"></i></a> </li>
             </ul>
         </div>
@@ -223,31 +233,32 @@
                     <div class="container-fluid">
                         <div class="row form-group text-center">
                             <div class="col-6">
-                                <input type="text" name="fname" id="fname" class="form-control" placeholder="First Name" required />
+                                <input type="text" name="fname" id="fname" placeholder="First Name" required style="width:100%; border:groove;" />
                             </div>
                             <div class="col-6">
-                                <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name" required />
-                            </div>
-                        </div>
-                        <div class="row form-group text-center">
-                            <div class="col-6">
-                                <input type="email" name="email" id="email"class="form-control" placeholder="Email" required />
-                            </div>
-                            <div class="col-6">
-                                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                                <input type="text" name="lname" id="lname" placeholder="Last Name" required style="width: 100%; border: groove;" />
                             </div>
                         </div>
                         <div class="row form-group text-center">
                             <div class="col-6">
-                                <select class="form-control" name="service" id="service">
+                                <input type="email" name="email" id="email" placeholder="Email" required style="width: 100%; border: groove;" />
+                            </div>
+                            <div class="col-6">
+                                <input type="text" name="phone" id="phone"  placeholder="Phone"  required style="width: 100%; border: groove;"/>
+                            </div>
+                        </div>
+                        <div class="row form-group text-center">
+                            <div class="col-6">
+                                <select name="service" id="service" style="width: 100%; border: groove;" required>
                                     <option selected disabled>Select Services</option>
-                                    <option>Air Conditioner Maintenance</option>
-                                    <option>Other</option>
-                                    <option></option>
+                                    <option value="0">Household and appliances</option>
+                                    <option value="1">Electricity</option>
+                                    <option value="2">Plumbing Work</option>
+                                    <option value="3">Air Conditioner Work</option>
                                 </select>
                             </div>
                             <div class="col-6">
-                                <select class="form-control" name="time" id="time">
+                                <select name="time" id="time" style="width: 100%; border: groove;" required>
                                     <option selected disabled>Select Time</option>
                                     <option>11 AM</option>
                                     <option>12 AM</option>
@@ -257,18 +268,19 @@
                         </div>
                         <div class="row form-group text-center">
                             <div class="col-12">
-                                <textarea name="details" id="details" class="form-control" placeholder="Tell us more about what you need"></textarea>
+                                <textarea name="details" id="details" placeholder="Tell us more about what you need" style="width: 100%; border: groove;" required></textarea>
                             </div>
                         </div>
 
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <input type="button" value="Submit" id="submit" onClick="SendEmail();" style="background-color: #275935; width: 100%; padding: 10px 40px; border-radius: 0;">
+                    <div class="col-12 text-right">
+                        <input type="button" value="Submit" id="submit" onClick="SendEmail();" style="background-color: #275935; width: 100%; padding: 10px 40px; border-radius: 0;">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <!-- JS -->
     <script src="~/assets/js/jquery-migrate-3.3.2.js"></script>
@@ -282,89 +294,118 @@
     <script src="~/assets/plugins/rs-plugin-6.custom/js/revolution.tools.min.js"></script>
     <script src="~/assets/plugins/rs-plugin-6.custom/js/rs6.min.js"></script>
 
+    <style>
+        .dmopMx {
+            display: none
+        }
+    </style>
+    <script>
+        (function () {
+            var options = {
 
-
-
-
-    <script type="text/javascript">
+                whatsapp: "+97337755020", // WhatsApp number
+                call_to_action: "Message us", // Call to action
+                button_color: "#E74339", // Color of button
+                position: "right", // Position may be 'right' or 'left'
+                order: "facebook,whatsapp", // Order of buttons
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
         var revapi1, tpj;
 
-        function revinit_revslider11() {
-            jQuery(function () {
-                tpj = jQuery;
-                revapi1 = tpj("#rev_slider_1_1");
-                if (revapi1 == undefined || revapi1.revolution == undefined) {
-                    revslider_showDoubleJqueryError("rev_slider_1_1");
-                } else {
-                    revapi1.revolution({
-                        sliderLayout: "fullwidth",
-                        visibilityLevels: "1240,1240,778,778",
-                        gridwidth: "1240,1240,778,778",
-                        gridheight: "900,900,700,700",
-                        spinner: "spinner11",
-                        perspective: 600,
-                        perspectiveType: "local",
-                        spinnerclr: "#ffd800",
-                        editorheight: "900,768,700,720",
-                        responsiveLevels: "1240,1240,778,778",
-                        progressBar: {
-                            disableProgressBar: true
-                        },
-                        navigation: {
-                            onHoverStop: false
-                        },
-                        fallbacks: {
-                            allowHTML5AutoPlayOnAndroid: true
-                        },
-                    });
-                }
-            });
-        } // End of RevInitScript
-        var once_revslider11 = false;
-        if (document.readyState === "loading") {
-            document.addEventListener('readystatechange', function () {
-                if ((document.readyState === "interactive" || document.readyState === "complete") && !once_revslider11) {
-                    once_revslider11 = true;
-                    revinit_revslider11();
-                }
-            });
-        } else {
-            once_revslider11 = true;
-            revinit_revslider11();
-        }
+            function revinit_revslider11() {
+                jQuery(function () {
+                    tpj = jQuery;
+                    revapi1 = tpj("#rev_slider_1_1");
+                    if (revapi1 == undefined || revapi1.revolution == undefined) {
+                        revslider_showDoubleJqueryError("rev_slider_1_1");
+                    } else {
+                        revapi1.revolution({
+                            sliderLayout: "fullwidth",
+                            visibilityLevels: "1240,1240,778,778",
+                            gridwidth: "1240,1240,778,778",
+                            gridheight: "900,900,700,700",
+                            spinner: "spinner11",
+                            duration: "1500ms",
+                            perspective: 600,
+                            perspectiveType: "local",
+                            spinnerclr: "#ffd800",
+                            editorheight: "900,768,700,720",
+                            responsiveLevels: "1240,1240,778,778",
+                            progressBar: {
+                                disableProgressBar: false
+                            },
+                            navigation: {
+                                onHoverStop: false
+                            },
+                            fallbacks: {
+                                allowHTML5AutoPlayOnAndroid: true
+                            },
+                        });
+                    }
+                });
+            } // End of RevInitScript
+            var once_revslider11 = false;
+            if (document.readyState === "loading") {
+                document.addEventListener('readystatechange', function () {
+                    if ((document.readyState === "interactive" || document.readyState === "complete") && !once_revslider11) {
+                        once_revslider11 = true;
+                        revinit_revslider11();
+                    }
+                });
+            } else {
+                once_revslider11 = true;
+                revinit_revslider11();
+            }
 
-    </script>
-    <script>
-        //animation section
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
+        </script>
+        <script>
+            //animation section
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
 
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
 
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                } else {
-                    reveals[i].classList.remove("active");
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    } else {
+                        reveals[i].classList.remove("active");
+                    }
                 }
             }
-        }
 
-        window.addEventListener("scroll", reveal);
-    </script>
+            window.addEventListener("scroll", reveal);
+        </script>
 
-    <script>
-        $(document).ready(function () {
-            $("#myBtn").click(function () {
-                $("#myModal").modal({ show: true });
+        <script>
+            $(document).ready(function () {
+                $("#myBtn").click(function () {
+                    $("#myModal").modal({ show: true });
+                });
             });
-        });
-    </script>
+
+            $("#submit1").click(function () {
+                $("#service").val('0');
+            });
+            $("#submit2").click(function () {
+                $("#service").val('1');
+            });
+            $("#submit3").click(function () {
+                $("#service").val('2');
+            });
+            $("#submit4").click(function () {
+                $("#service").val('3');
+            });
+        </script>
 
 
-    <script>
+        <script>
       function SendEmail() {
 
              debugger
@@ -425,7 +466,7 @@
             $('#time').val('');
             $('#details').val('');
         }
-    </script>
+        </script>
 
 </body>
 </html>

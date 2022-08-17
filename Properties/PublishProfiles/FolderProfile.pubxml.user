@@ -4,7 +4,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\RAFI SIRAJUDDIN\Desktop\06planera</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\RAFI SIRAJUDDIN\Desktop\09planera</_PublishTargetUrl>
     <History>True|2022-08-16T15:45:11.8204998Z;False|2022-08-16T18:44:34.7327906+03:00;True|2022-08-10T11:39:24.9163279+03:00;</History>
   </PropertyGroup>
   <ItemGroup>
@@ -1737,7 +1737,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:03:00</publishTime>
     </File>
     <File Include="assets/csshermano/custom.css">
-      <publishTime>08/16/2022 17:00:41</publishTime>
+      <publishTime>08/17/2022 10:24:02</publishTime>
     </File>
     <File Include="assets/csshermano/renovate4.css">
       <publishTime>08/08/2022 17:03:00</publishTime>
@@ -3860,11 +3860,17 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/ImagesHermano/about-header.jpg">
       <publishTime>08/09/2022 12:58:01</publishTime>
     </File>
+    <File Include="assets/ImagesHermano/aboutheader.png">
+      <publishTime>08/17/2022 11:00:51</publishTime>
+    </File>
     <File Include="assets/ImagesHermano/Air Conditioner Maintenance Work.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesHermano/bg-hiw.png">
       <publishTime>08/15/2022 13:56:49</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/bg-hrm-s4.png">
+      <publishTime>08/17/2022 11:31:40</publishTime>
     </File>
     <File Include="assets/ImagesHermano/bg-wm-hr.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -3917,6 +3923,12 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/ImagesHermano/hr-project-header.jpg">
       <publishTime>08/16/2022 13:09:54</publishTime>
     </File>
+    <File Include="assets/ImagesHermano/hrm-about-s2-img1.png">
+      <publishTime>08/17/2022 11:17:06</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/hrm-about-s2-img2.png">
+      <publishTime>08/17/2022 11:17:06</publishTime>
+    </File>
     <File Include="assets/ImagesHermano/hrm-contact-img1.png">
       <publishTime>08/15/2022 16:35:22</publishTime>
     </File>
@@ -3928,6 +3940,15 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="assets/ImagesHermano/hrm-icon-2.png">
       <publishTime>08/15/2022 16:57:22</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/hrm-icon1.png">
+      <publishTime>08/17/2022 11:29:52</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/hrm-icon2.png">
+      <publishTime>08/17/2022 11:29:52</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/hrm-icon3.png">
+      <publishTime>08/17/2022 11:29:52</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hrm-service1.png">
       <publishTime>08/15/2022 16:07:51</publishTime>
@@ -4372,6 +4393,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="assets/ImagesHermanoContracting/logo.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
+    </File>
+    <File Include="assets/ImagesHermanoContracting/logofooter-hrm.png">
+      <publishTime>08/17/2022 10:53:22</publishTime>
     </File>
     <File Include="assets/ImagesHermanoContracting/logofooter.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -18849,10 +18873,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:03:11</publishTime>
     </File>
     <File Include="bin/Planera.dll">
-      <publishTime>08/16/2022 20:56:32</publishTime>
+      <publishTime>08/17/2022 12:43:25</publishTime>
     </File>
     <File Include="bin/Planera.pdb">
-      <publishTime>08/16/2022 20:56:32</publishTime>
+      <publishTime>08/17/2022 12:43:25</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>08/08/2022 17:03:11</publishTime>
@@ -19635,19 +19659,22 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/08/2022 22:14:21</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoHome.cshtml">
-      <publishTime>08/16/2022 20:54:29</publishTime>
+      <publishTime>08/17/2022 12:11:10</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMAbout.cshtml">
-      <publishTime>08/16/2022 20:56:03</publishTime>
+      <publishTime>08/17/2022 12:17:50</publishTime>
+    </File>
+    <File Include="Views/Hermano/HermanoRMAboutold.cshtml">
+      <publishTime>08/17/2022 10:54:25</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMContact.cshtml">
-      <publishTime>08/15/2022 18:42:04</publishTime>
+      <publishTime>08/17/2022 12:32:15</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMProjects.cshtml">
       <publishTime>08/16/2022 13:10:02</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMService.cshtml">
-      <publishTime>08/15/2022 18:36:41</publishTime>
+      <publishTime>08/17/2022 12:18:22</publishTime>
     </File>
     <File Include="Views/Home/AboutInterior.cshtml">
       <publishTime>08/15/2022 16:07:00</publishTime>
@@ -19677,7 +19704,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
     <File Include="Views/Home/ContractingAbout.cshtml">
-      <publishTime>08/16/2022 17:55:02</publishTime>
+      <publishTime>08/17/2022 11:44:45</publishTime>
     </File>
     <File Include="Views/Home/ContractingContact.cshtml">
       <publishTime>08/15/2022 18:07:56</publishTime>
@@ -19764,7 +19791,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/15/2022 18:05:13</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutHermano.cshtml">
-      <publishTime>08/16/2022 20:53:31</publishTime>
+      <publishTime>08/17/2022 12:21:15</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutHermanoContracting.cshtml">
       <publishTime>08/08/2022 17:02:56</publishTime>

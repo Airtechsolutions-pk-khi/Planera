@@ -38,15 +38,15 @@ namespace Planera.Controllers
         [Route("planera/activardubai")]
         public ActionResult ActivarDubai()
         {
-            return RedirectToAction("comingsoon");
-            //return View();
+            //return RedirectToAction("comingsoon");
+            return View();
         }
 
         [Route("planera/activarbahrainold")]
         public ActionResult ActivarBH()
         {
-            return RedirectToAction("comingsoon");
-            //return View();
+            //return RedirectToAction("comingsoon");
+            return View();
         }
 
         [Route("planera/activarbahrain")]
@@ -89,8 +89,8 @@ namespace Planera.Controllers
         [Route("planera/interiorv2")]
         public ActionResult PlaneraInterior()
         {
-            return RedirectToAction("comingsoon");
-            //return View();
+            //return RedirectToAction("comingsoon");
+            return View();
         }
 
         [Route("planera/interior")]
@@ -103,8 +103,8 @@ namespace Planera.Controllers
         [Route("planera/general-trading")]
         public ActionResult PlaneraGeneralTrading()
         {
-            return RedirectToAction("comingsoon");
-            //return View();
+            //return RedirectToAction("comingsoon");
+            return View();
         }
 
         [Route("planera/planera-career")]
