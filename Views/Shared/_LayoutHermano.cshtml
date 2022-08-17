@@ -61,6 +61,13 @@
                 font-size: 50px !important;
             }
         }
+        option:disabled {
+            color: #ddd;
+        }
+        ::placeholder {
+            color: #ddd;
+            opacity: 1; /* Firefox */
+        }
 
         .flv_sections_53 {
             padding-top: 280px;
@@ -226,31 +233,32 @@
                     <div class="container-fluid">
                         <div class="row form-group text-center">
                             <div class="col-6">
-                                <input type="text" name="fname" id="fname" class="form-control" placeholder="First Name" required style="width:100%;" />
+                                <input type="text" name="fname" id="fname" placeholder="First Name" required style="width:100%; border:groove;" />
                             </div>
                             <div class="col-6">
-                                <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name" required style="width:100%;" />
-                            </div>
-                        </div>
-                        <div class="row form-group text-center">
-                            <div class="col-6">
-                                <input type="email" name="email" id="email" class="form-control" placeholder="Email" required style="width:100%;" />
-                            </div>
-                            <div class="col-6">
-                                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required style="width:100%;" />
+                                <input type="text" name="lname" id="lname" placeholder="Last Name" required style="width: 100%; border: groove;" />
                             </div>
                         </div>
                         <div class="row form-group text-center">
                             <div class="col-6">
-                                <select class="form-control" name="service" id="service">
+                                <input type="email" name="email" id="email" placeholder="Email" required style="width: 100%; border: groove;" />
+                            </div>
+                            <div class="col-6">
+                                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required style="width:100%;"/>
+                            </div>
+                        </div>
+                        <div class="row form-group text-center">
+                            <div class="col-6">
+                                <select name="service" id="service" style="width: 100%; border: groove;" required>
                                     <option selected disabled>Select Services</option>
-                                    <option>Air Conditioner Maintenance</option>
-                                    <option>Other</option>
-                                    <option></option>
+                                    <option value="0">Household and appliances</option>
+                                    <option value="1">Electricity</option>
+                                    <option value="2">Plumbing Work</option>
+                                    <option value="3">Air Conditioner Work</option>
                                 </select>
                             </div>
                             <div class="col-6">
-                                <select class="form-control" name="time" id="time">
+                                <select name="time" id="time" style="width: 100%; border: groove;" required>
                                     <option selected disabled>Select Time</option>
                                     <option>11 AM</option>
                                     <option>12 AM</option>
@@ -260,18 +268,19 @@
                         </div>
                         <div class="row form-group text-center">
                             <div class="col-12">
-                                <textarea name="details" id="details" class="form-control" placeholder="Tell us more about what you need"></textarea>
+                                <textarea name="details" id="details" placeholder="Tell us more about what you need" style="width: 100%; border: groove;" required></textarea>
                             </div>
                         </div>
 
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <input type="button" value="Submit" id="submit" onClick="SendEmail();" style="background-color: #275935; width: 100%; padding: 10px 40px; border-radius: 0;">
+                    <div class="col-12 text-right">
+                        <input type="button" value="Submit" id="submit" onClick="SendEmail();" style="background-color: #275935; width: 100%; padding: 10px 40px; border-radius: 0;">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <!-- JS -->
     <script src="~/assets/js/jquery-migrate-3.3.2.js"></script>
@@ -307,82 +316,95 @@
         })();
         var revapi1, tpj;
 
-        function revinit_revslider11() {
-            jQuery(function () {
-                tpj = jQuery;
-                revapi1 = tpj("#rev_slider_1_1");
-                if (revapi1 == undefined || revapi1.revolution == undefined) {
-                    revslider_showDoubleJqueryError("rev_slider_1_1");
-                } else {
-                    revapi1.revolution({
-                        sliderLayout: "fullwidth",
-                        visibilityLevels: "1240,1240,778,778",
-                        gridwidth: "1240,1240,778,778",
-                        gridheight: "900,900,700,700",
-                        spinner: "spinner11",
-                        perspective: 600,
-                        perspectiveType: "local",
-                        spinnerclr: "#ffd800",
-                        editorheight: "900,768,700,720",
-                        responsiveLevels: "1240,1240,778,778",
-                        progressBar: {
-                            disableProgressBar: true
-                        },
-                        navigation: {
-                            onHoverStop: false
-                        },
-                        fallbacks: {
-                            allowHTML5AutoPlayOnAndroid: true
-                        },
-                    });
-                }
-            });
-        } // End of RevInitScript
-        var once_revslider11 = false;
-        if (document.readyState === "loading") {
-            document.addEventListener('readystatechange', function () {
-                if ((document.readyState === "interactive" || document.readyState === "complete") && !once_revslider11) {
-                    once_revslider11 = true;
-                    revinit_revslider11();
-                }
-            });
-        } else {
-            once_revslider11 = true;
-            revinit_revslider11();
-        }
+            function revinit_revslider11() {
+                jQuery(function () {
+                    tpj = jQuery;
+                    revapi1 = tpj("#rev_slider_1_1");
+                    if (revapi1 == undefined || revapi1.revolution == undefined) {
+                        revslider_showDoubleJqueryError("rev_slider_1_1");
+                    } else {
+                        revapi1.revolution({
+                            sliderLayout: "fullwidth",
+                            visibilityLevels: "1240,1240,778,778",
+                            gridwidth: "1240,1240,778,778",
+                            gridheight: "900,900,700,700",
+                            spinner: "spinner11",
+                            perspective: 600,
+                            perspectiveType: "local",
+                            spinnerclr: "#ffd800",
+                            editorheight: "900,768,700,720",
+                            responsiveLevels: "1240,1240,778,778",
+                            progressBar: {
+                                disableProgressBar: true
+                            },
+                            navigation: {
+                                onHoverStop: false
+                            },
+                            fallbacks: {
+                                allowHTML5AutoPlayOnAndroid: true
+                            },
+                        });
+                    }
+                });
+            } // End of RevInitScript
+            var once_revslider11 = false;
+            if (document.readyState === "loading") {
+                document.addEventListener('readystatechange', function () {
+                    if ((document.readyState === "interactive" || document.readyState === "complete") && !once_revslider11) {
+                        once_revslider11 = true;
+                        revinit_revslider11();
+                    }
+                });
+            } else {
+                once_revslider11 = true;
+                revinit_revslider11();
+            }
 
-    </script>
-    <script>
-        //animation section
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
+        </script>
+        <script>
+            //animation section
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
 
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
 
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                } else {
-                    reveals[i].classList.remove("active");
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    } else {
+                        reveals[i].classList.remove("active");
+                    }
                 }
             }
-        }
 
-        window.addEventListener("scroll", reveal);
-    </script>
+            window.addEventListener("scroll", reveal);
+        </script>
 
-    <script>
-        $(document).ready(function () {
-            $("#myBtn").click(function () {
-                $("#myModal").modal({ show: true });
+        <script>
+            $(document).ready(function () {
+                $("#myBtn").click(function () {
+                    $("#myModal").modal({ show: true });
+                });
             });
-        });
-    </script>
+
+            $("#submit1").click(function () {
+                $("#service").val('0');
+            });
+            $("#submit2").click(function () {
+                $("#service").val('1');
+            });
+            $("#submit3").click(function () {
+                $("#service").val('2');
+            });
+            $("#submit4").click(function () {
+                $("#service").val('3');
+            });
+        </script>
 
 
-    <script>
+        <script>
       function SendEmail() {
 
              debugger
@@ -443,7 +465,7 @@
             $('#time').val('');
             $('#details').val('');
         }
-    </script>
+        </script>
 
 </body>
 </html>
