@@ -804,6 +804,7 @@
     <Content Include="assets\ImagesActivarBH\bg-ab.png" />
     <Content Include="assets\ImagesActivarBH\black.png" />
     <Content Include="assets\ImagesActivarBH\BLANCO.png" />
+    <Content Include="assets\ImagesActivarBH\footerbg.png" />
     <Content Include="assets\ImagesActivarBH\green.png" />
     <Content Include="assets\ImagesActivarBH\grey.png" />
     <Content Include="assets\ImagesActivarBH\img1.jpg" />
@@ -3692,6 +3693,7 @@
     <Content Include="Views\Hermano\HermanoRMProjects.cshtml" />
     <Content Include="Template\PLANERAINTERIOR.pdf" />
     <Content Include="Views\Hermano\HermanoRMAboutold.cshtml" />
+    <Content Include="Views\Shared\_LayoutActivarBAH.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
