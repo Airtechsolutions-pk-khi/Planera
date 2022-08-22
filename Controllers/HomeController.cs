@@ -55,7 +55,11 @@ namespace Planera.Controllers
             //return RedirectToAction("comingsoon");
             return View();
         }
-
+        [Route("planera/activarbahrain/about")]
+        public ActionResult ActivarBHAbout()
+        {
+            return View();
+        }
         [Route("planera/construction")]
         public ActionResult PlaneraConstruction()
         {

@@ -750,14 +750,31 @@
     <Content Include="assets\ImagesActivarBH\-e-006.png" />
     <Content Include="assets\ImagesActivarBH\-e-DS6A3414.png" />
     <Content Include="assets\ImagesActivarBH\-e-DSC00449.png" />
+    <Content Include="assets\ImagesActivarBH\-e-DSLR Camera.png" />
     <Content Include="assets\ImagesActivarBH\-e-Group 4.png" />
     <Content Include="assets\ImagesActivarBH\-e-Group 5.png" />
+    <Content Include="assets\ImagesActivarBH\-e-Layer 21.png" />
+    <Content Include="assets\ImagesActivarBH\-e-Moleskine2.png" />
+    <Content Include="assets\ImagesActivarBH\-e-our-msg.png" />
+    <Content Include="assets\ImagesActivarBH\-e-our-vision.png" />
+    <Content Include="assets\ImagesActivarBH\-e-Pen holder.png" />
     <Content Include="assets\ImagesActivarBH\-e-Vector Smart Object-1.png" />
-    <Content Include="assets\ImagesActivarBH\-e-Vector Smart Object-2.png" />
-    <Content Include="assets\ImagesActivarBH\-e-Vector Smart Object-3.png" />
-    <Content Include="assets\ImagesActivarBH\-e-Vector Smart Object-4.png" />
-    <Content Include="assets\ImagesActivarBH\-e-Vector Smart Object.png" />
-    <Content Include="assets\ImagesActivarBH\-e-Vector Smart Object5.png" />
+    <Content Include="assets\ImagesActivarBH\01.jpg" />
+    <Content Include="assets\ImagesActivarBH\02.jpg" />
+    <Content Include="assets\ImagesActivarBH\About-section3.jpg" />
+    <Content Include="assets\ImagesActivarBH\arrow.png" />
+    <Content Include="assets\ImagesActivarBH\detail-image.png" />
+    <Content Include="assets\ImagesActivarBH\FootBg.jpg" />
+    <Content Include="assets\ImagesActivarBH\footbg2.jpg" />
+    <Content Include="assets\ImagesActivarBH\footbg3.jpg" />
+    <Content Include="assets\ImagesActivarBH\footer logo.png" />
+    <Content Include="assets\ImagesActivarBH\FOOTER-LOGO.png" />
+    <Content Include="assets\ImagesActivarBH\photo2-home-bg.jpg" />
+    <Content Include="assets\ImagesActivarBH\service-image6.png" />
+    <Content Include="assets\ImagesActivarBH\service-image1.png" />
+    <Content Include="assets\ImagesActivarBH\service-image4.png" />
+    <Content Include="assets\ImagesActivarBH\service-image5.png" />
+    <Content Include="assets\ImagesActivarBH\service-image3.png" />
     <Content Include="assets\ImagesActivarBH\-e-_MG_7638.png" />
     <Content Include="assets\ImagesActivarBH\ablogo.png" />
     <Content Include="assets\ImagesActivarBH\AcBHV1.mp4" />
@@ -837,6 +854,8 @@
     <Content Include="assets\ImagesActivarBH\photo2-subheader-bg.jpg" />
     <Content Include="assets\ImagesActivarBH\planera-footer.png" />
     <Content Include="assets\ImagesActivarBH\robins.png" />
+    <Content Include="assets\ImagesActivarBH\service-image7.png" />
+    <Content Include="assets\ImagesActivarBH\service-image8.png" />
     <Content Include="assets\ImagesActivarBH\slider\01.jpg" />
     <Content Include="assets\ImagesActivarBH\slider\02.jpg" />
     <Content Include="assets\ImagesActivarBH\slider\03.jpg" />
@@ -855,6 +874,7 @@
     <Content Include="assets\ImagesActivarBH\vector-smart-object4.png" />
     <Content Include="assets\ImagesActivarBH\vector-smart-object5.png" />
     <Content Include="assets\ImagesActivarBH\video-section-bg.jpg" />
+    <Content Include="assets\ImagesActivarBH\services-image2.png" />
     <Content Include="assets\ImagesActivarBH\white.png" />
     <Content Include="assets\ImagesCompanyOverView\chairman-msg-bg.png" />
     <Content Include="assets\ImagesCompanyOverView\header-bg.jpg" />
@@ -3627,6 +3647,9 @@
     <Content Include="assets\plugins\rs-plugin-6.custom\fonts\revicons\revicons.ttf" />
     <Content Include="assets\plugins\rs-plugin-6.custom\fonts\revicons\revicons.woff" />
     <Content Include="assets\plugins\rs-plugin-6.custom\info.cfg" />
+    <Content Include="assets\cssActivrBH\fonts\Proxima Nova Font.otf" />
+    <Content Include="assets\cssActivrBH\fonts\FontsFree-Net-ProximaNova-Regular.ttf" />
+    <Content Include="assets\cssActivrBH\fonts\FontsFree-Net-FontsFree-Net-Proxima-Nova-Sbold.ttf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -3694,6 +3717,7 @@
     <Content Include="Template\PLANERAINTERIOR.pdf" />
     <Content Include="Views\Hermano\HermanoRMAboutold.cshtml" />
     <Content Include="Views\Shared\_LayoutActivarBAH.cshtml" />
+    <Content Include="Views\Home\ActivarBHAbout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
