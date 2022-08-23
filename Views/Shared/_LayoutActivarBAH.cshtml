@@ -35,6 +35,8 @@
     <link rel='stylesheet' href='~/assets/cssActivrBH/photography2.css'>
     <link rel='stylesheet' href='~/assets/cssActivrBH/custom.css'>
 
+    
+
     <!-- Revolution Slider -->
 
     <link rel="stylesheet" type="text/css" href="~/assets/plugins/rs-plugin/css/settings.css">
@@ -43,22 +45,36 @@
 
     <style>
         @@font-face {
-            font-family: 'GothamMedium';
-            src: url('../../assets/fonts/Gotham/GothamMedium.ttf') format('truetype');
+            font-family: 'FontsFree-Net-ProximaNova-Regular';
+            src: url('../../assets/cssActivrBH/fonts/FontsFree-Net-ProximaNova-Regular.ttf') format('truetype');
         }
 
         * {
-            font-family: "GothamMedium" !important;
+            font-family: FontsFree-Net-ProximaNova-Regular !important;
         }
+
+        @@font-face {
+            font-family: 'FontsFree-Net-FontsFree-Net-Proxima-Nova-Sbold';
+            src: url('../../assets/cssActivrBH/fonts/FontsFree-Net-FontsFree-Net-Proxima-Nova-Sbold.ttf') format('truetype');
+        }
+
+        h1, h2 {
+            font-family: FontsFree-Net-FontsFree-Net-Proxima-Nova-Sbold !important;
+        }
+
         #Footer .footer_copy .one {
             margin-bottom: 15px;
             padding-top: 20px;
         }
+
         .big {
             font-size: 16px;
             line-height: 28px;
-             font-weight: unset; 
+            font-weight: unset;
             letter-spacing: 0px;
+        }
+        #Wrapper, #Content {
+            background-color: white !important;
         }
     </style>
 </head>
@@ -83,19 +99,16 @@
                                     <nav id="menu">
                                         <ul id="menu-menu" class="menu menu-main">
                                             <li class=" current-menu-item page_item current_page_item">
-                                                <a href="#"><span>About us</span></a>
+                                                <a href="/planera/activarbahrain"><span>Home</span></a>
                                             </li>
                                             <li>
-                                                <a href="#"><span>Services</span></a>
+                                                <a href="/planera/activarbahrain/about"><span>About us</span></a>
                                             </li>
                                             <li>
-                                                <a href="#"><span>Work</span></a>
+                                                <a href="/planera/activarbahrain/service"><span>Services</span></a>
                                             </li>
                                             <li>
-                                                <a href="#"><span>Clients</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><span>FAQs</span></a>
+                                                <a href="/planera/activarbahrain/gallery"><span>Gallery</span></a>
                                             </li>
                                         </ul>
                                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
@@ -103,7 +116,7 @@
                             </div>
                             <div class="top_bar_right">
                                 <div class="top_bar_right_wrapper">
-                                    <a href="" class="action_button" style="background-color:#bc955a !important" target="_blank">Contact us</a>
+                                    <a href="/planera/activarbahrain/contact" class="action_button" style="background-color:#bc955a !important" target="_blank">Contact us</a>
                                 </div>
                             </div>
                         </div>
@@ -113,92 +126,89 @@
             </header>
         </div>
         @RenderBody()
-    </div>
-    <footer id="Footer" class="clearfix" style="background: #bc955a; background-image: url(../../assets/ImagesActivarBH/footerbg.png); background-repeat: no-repeat; background-size: contain; background-position-x: right; ">
-        <div class="widgets_wrapper" style="padding:30px 0;">
-            <div class="container">
-                <div class="column one-fourth" style="text-align:center">
-                    <aside class="widget widget_text">
+        <footer id="Footer" class="clearfix" style="background: #e9e9e9; background-image: url(../../assets/ImagesActivarBH/footbg2.jpg); background-repeat: no-repeat; background-size: contain; background-position-x: right; ">
+            <div class="widgets_wrapper" style="padding:30px 0;">
+                <div class="container-fluid">
+                    <div class="column one-fourth" style="text-align:center">
+                        <aside class="">
+                            <img src="~/assets/ImagesHermanoContracting/logo.png" />
+                        </aside>
+                    </div>
+                    <div class="column one-fourth">
+                        <aside class="widget widget_text">
+                            <h4  style="color:black"> Quick Links</h4>
+                            <div class="textwidget">
 
-                        <img src="~/assets/ImagesHermanoContracting/logo.png" />
-
-                    </aside>
-                </div>
-                <div class="column one-fourth">
-                    <aside class="widget widget_text">
-                        <h5>Quick Links</h5>
-                        <div class="textwidget">
-
-                            <ul>
-                                <li style="margin-bottom: 10px">
-                                    <a href="/contracting/about">About us</a>
-                                </li>
-                                <li style="margin-bottom: 10px">
-                                    <a href="/contracting/services">Services</a>
-                                </li>
-                                <li style="margin-bottom: 10px">
-                                    <a href="/contracting/projects">Projects</a>
-                                </li>
-
-                                <li style="margin-bottom: 10px">
-                                    <a href="/contracting/contact">Contact us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </aside>
-                </div>
-
-                <div class="column one-fourth">
-                    <aside class="widget widget_text">
-                        <h4>Contact us</h4>
-                        <div class="textwidget">
-
-                            <ul>
-                                <li class="phone phone-1" style="margin-bottom: 10px">
-                                    <span class="icon-phone">
-                                    </span>
-                                    +973 17004006, +973 37755188
-                                    <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    +973 37755200, +973 37755020
-                                </li>
-                                <li style="margin-bottom: 10px">
-                                    <span class="icon-mail"><a href="mailto:hermano@planerabh.com">hermano@planerabh.com</a></span>
-                                </li>
-                                <li style="margin-bottom: 10px">
-                                    <span class="icon-address">
-                                        Mandarine Business Center, Alseef District Kingdom of Bahrain
-                                    </span>
-                                </li>
-                                <li style="margin-bottom: 10px">
-                                    <span class="icon-instagram"><a href="https://www.instagram.com/hermano.landscaping/" target="_blank">Hermano.landscaping</a></span>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </aside>
-                </div>
-
-                <div class="column one-fourth" style="text-align:center">
-                    <aside class="widget widget_text">
-
-                        <img src="~/assets/ImagesHermanoContracting/logofooter.png" />
-
-                    </aside>
-                </div>
-            </div>
-        </div>
-        <div class="footer_copy">
-            <div class="container">
-                <div class="column one" style="text-align:center">
-                    <div class="">
-                        &copy;  2022 Powered by Planera Group
+                                <ul>
+                                    <li style="margin-bottom: 10px">
+                                        <a href="/planera/activarbahrain" style="color:black">Home</a>
+                                    </li>
+                                    <li style="margin-bottom: 10px">
+                                        <a href="/planera/activarbahrain/about"  style="color:black">About us</a>
+                                    </li>
+                                    <li style="margin-bottom: 10px">
+                                        <a href="/planera/activarbahrain/services"  style="color:black">Services</a>
+                                    </li>
+                                    <li style="margin-bottom: 10px">
+                                            <a href="#"  style="color:black">Gallery</a>
+                                        </li>
+                                    <li style="margin-bottom: 10px">
+                                        <a href="/planera/activarbahrain/contact" style="color:black">Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
                     </div>
 
+                    <div class="column one-fourth">
+                        <aside class="widget widget_text">
+                            <p style="color:black"><u>Contact us</u></p>
+                            <div class="textwidget">
+
+                                <ul style="color:black">
+                                    <li class="phone phone-1" style="margin-bottom: 10px; color: black">
+                                        <span class="icon-phone">
+                                        </span>
+                                        +973 17004006
+                                        <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        +973 37755020
+                                    </li>
+                                    <li style="margin-bottom: 10px; color: black">
+                                        <span class="icon-mail"><a href="mailto:info@activarbh.com" style="color: black">info@activarbh.com</a></span>
+                                    </li>
+
+                                    <li style="margin-bottom: 10px; color: black">
+                                        <span class="icon-instagram"><a href="#" target="_blank" style="color: black">/activar.bahrain</a></span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+
+                    <div class="column one-fourth" style="text-align:center;">
+                        <aside class="widget widget_text">
+
+                            <img src="~/assets/ImagesActivarBH/footer logo.png" />
+
+                        </aside>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    
+            <div class="footer_copy">
+                <div class="container-fluid">
+                    <hr style="color:#e9e9e9; border:0px; " />
+                    <div class="column one" style="text-align: center; color: black">
+                        <div class="">
+                            &copy;  2022 Powered by Planera Group
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
 
     <div id="Side_slide" class="right dark" data-width="250">
         <div class="close-wrapper">
@@ -210,15 +220,6 @@
         </div>
         <div class="menu_wrapper"></div>
         <ul class="social">
-            @*<li class="facebook">
-                    <a href="#"><i class="icon-facebook"></i></a>
-                </li>
-                <li class="twitter">
-                    <a href="#"><i class="icon-twitter"></i></a>
-                </li>
-                <li class="pinterest">
-                    <a href="#"><i class="icon-pinterest"></i></a>
-                </li>*@
             <li class="instagram">
                 <a href="https://www.instagram.com/activar.bahrain/" target="_blank"><i class="icon-instagram"></i></a>
             </li>
