@@ -1030,6 +1030,17 @@
     <Content Include="assets\ImagesHermano\-e-Vector Smart Object-2.png" />
     <Content Include="assets\ImagesHermano\-e-Vector Smart Object-3.png" />
     <Content Include="assets\ImagesHermano\-e-Vector Smart Object.png" />
+    <Content Include="assets\ImagesHermano\01.jpg" />
+    <Content Include="assets\ImagesHermano\02.jpg" />
+    <Content Include="assets\ImagesHermano\03.jpg" />
+    <Content Include="assets\ImagesHermano\04.jpg" />
+    <Content Include="assets\ImagesHermano\05.jpg" />
+    <Content Include="assets\ImagesHermano\06.jpg" />
+    <Content Include="assets\ImagesHermano\07.jpg" />
+    <Content Include="assets\ImagesHermano\08.jpg" />
+    <Content Include="assets\ImagesHermano\09.jpg" />
+    <Content Include="assets\ImagesHermano\10.jpg" />
+    <Content Include="assets\ImagesHermano\11.jpg" />
     <Content Include="assets\ImagesHermano\about-header.jpg" />
     <Content Include="assets\ImagesHermano\aboutheader.png" />
     <Content Include="assets\ImagesHermano\Air Conditioner Maintenance Work.png" />
