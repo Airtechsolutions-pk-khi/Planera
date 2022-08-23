@@ -788,14 +788,8 @@
     <Content Include="assets\ImagesActivarBH\footbg3.jpg" />
     <Content Include="assets\ImagesActivarBH\footer logo.png" />
     <Content Include="assets\ImagesActivarBH\FOOTER-LOGO.png" />
-<<<<<<< HEAD
     <Content Include="assets\ImagesActivarBH\gallery-header.jpg" />
-<<<<<<< HEAD
     <Content Include="assets\ImagesActivarBH\photo2-contact-sub-bg.jpg" />
-=======
->>>>>>> parent of d2710e4 (23-08-2022)
-=======
->>>>>>> parent of 073a23c (23-08-2022)
     <Content Include="assets\ImagesActivarBH\photo2-home-bg.jpg" />
     <Content Include="assets\ImagesActivarBH\service-image6.png" />
     <Content Include="assets\ImagesActivarBH\service-image1.png" />
@@ -3754,16 +3748,10 @@
     <Content Include="Views\Hermano\HermanoRMAboutold.cshtml" />
     <Content Include="Views\Shared\_LayoutActivarBAH.cshtml" />
     <Content Include="Views\Home\ActivarBHAbout.cshtml" />
-<<<<<<< HEAD
-<<<<<<< HEAD
     <Content Include="Views\Home\ActivarBHService.cshtml" />
     <Content Include="Views\Home\ActivarBHContact.cshtml" />
-=======
->>>>>>> parent of d2710e4 (23-08-2022)
-=======
     <Content Include="Views\Home\NewsEvents.cshtml" />
     <Content Include="Views\Home\ActivarBHGallery.cshtml" />
->>>>>>> parent of 073a23c (23-08-2022)
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
