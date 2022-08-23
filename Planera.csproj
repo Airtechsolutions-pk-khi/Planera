@@ -728,7 +728,6 @@
     <Content Include="assets\HomeV2\images\line.png" />
     <Content Include="assets\HomeV2\images\line2.png" />
     <Content Include="assets\HomeV2\images\news1.jpg" />
-    <Content Include="assets\HomeV2\images\our business- clients.png" />
     <Content Include="assets\HomeV2\images\pg-logo-hor-black.png" />
     <Content Include="assets\HomeV2\images\pg-logo-horizontal-white.png" />
     <Content Include="assets\HomeV2\images\phone.png" />
@@ -752,33 +751,37 @@
     <Content Include="assets\ImagesActivarBH\-e-DS6A3414.png" />
     <Content Include="assets\ImagesActivarBH\-e-DSC00449.png" />
     <Content Include="assets\ImagesActivarBH\-e-DSLR Camera.png" />
-    <Content Include="assets\ImagesActivarBH\-e-email.png" />
-    <Content Include="assets\ImagesActivarBH\-e-Graphic Design Information.png" />
     <Content Include="assets\ImagesActivarBH\-e-Group 4.png" />
     <Content Include="assets\ImagesActivarBH\-e-Group 5.png" />
-    <Content Include="assets\ImagesActivarBH\-e-insta.png" />
     <Content Include="assets\ImagesActivarBH\-e-Layer 21.png" />
-    <Content Include="assets\ImagesActivarBH\-e-Manage.png" />
-    <Content Include="assets\ImagesActivarBH\-e-Managing Social.png" />
-    <Content Include="assets\ImagesActivarBH\-e-map.png" />
-    <Content Include="assets\ImagesActivarBH\-e-Media.png" />
     <Content Include="assets\ImagesActivarBH\-e-Moleskine2.png" />
     <Content Include="assets\ImagesActivarBH\-e-our-msg.png" />
     <Content Include="assets\ImagesActivarBH\-e-our-vision.png" />
     <Content Include="assets\ImagesActivarBH\-e-Pen holder.png" />
-    <Content Include="assets\ImagesActivarBH\-e-phone.png" />
-    <Content Include="assets\ImagesActivarBH\-e-Photographer.png" />
-    <Content Include="assets\ImagesActivarBH\-e-Promotion and.png" />
-    <Content Include="assets\ImagesActivarBH\-e-Public.png" />
-    <Content Include="assets\ImagesActivarBH\-e-Rectangle 11 copy 3.png" />
     <Content Include="assets\ImagesActivarBH\-e-Vector Smart Object-1.png" />
-    <Content Include="assets\ImagesActivarBH\-e-Video Shooting.png" />
     <Content Include="assets\ImagesActivarBH\01.jpg" />
+    <Content Include="assets\ImagesActivarBH\01L.jpg" />
+    <Content Include="assets\ImagesActivarBH\01s.jpg" />
     <Content Include="assets\ImagesActivarBH\02.jpg" />
+    <Content Include="assets\ImagesActivarBH\02L.jpg" />
+    <Content Include="assets\ImagesActivarBH\02s.jpg" />
+    <Content Include="assets\ImagesActivarBH\03.png" />
+    <Content Include="assets\ImagesActivarBH\03L.jpg" />
+    <Content Include="assets\ImagesActivarBH\03s.jpg" />
+    <Content Include="assets\ImagesActivarBH\04L.jpg" />
+    <Content Include="assets\ImagesActivarBH\04s.jpg" />
+    <Content Include="assets\ImagesActivarBH\05L.jpg" />
+    <Content Include="assets\ImagesActivarBH\05s.jpg" />
+    <Content Include="assets\ImagesActivarBH\06L.jpg" />
+    <Content Include="assets\ImagesActivarBH\06s.jpg" />
+    <Content Include="assets\ImagesActivarBH\07L.jpg" />
+    <Content Include="assets\ImagesActivarBH\07s.jpg" />
+    <Content Include="assets\ImagesActivarBH\08L.jpg" />
+    <Content Include="assets\ImagesActivarBH\08s.jpg" />
+    <Content Include="assets\ImagesActivarBH\09L.jpg" />
+    <Content Include="assets\ImagesActivarBH\09s.jpg" />
     <Content Include="assets\ImagesActivarBH\About-section3.jpg" />
     <Content Include="assets\ImagesActivarBH\arrow.png" />
-    <Content Include="assets\ImagesActivarBH\bg-contact.png" />
-    <Content Include="assets\ImagesActivarBH\contact-us-header.jpg" />
     <Content Include="assets\ImagesActivarBH\detail-image.png" />
     <Content Include="assets\ImagesActivarBH\FootBg.jpg" />
     <Content Include="assets\ImagesActivarBH\footbg2.jpg" />
@@ -787,9 +790,12 @@
     <Content Include="assets\ImagesActivarBH\FOOTER-LOGO.png" />
 <<<<<<< HEAD
     <Content Include="assets\ImagesActivarBH\gallery-header.jpg" />
+<<<<<<< HEAD
     <Content Include="assets\ImagesActivarBH\photo2-contact-sub-bg.jpg" />
 =======
 >>>>>>> parent of d2710e4 (23-08-2022)
+=======
+>>>>>>> parent of 073a23c (23-08-2022)
     <Content Include="assets\ImagesActivarBH\photo2-home-bg.jpg" />
     <Content Include="assets\ImagesActivarBH\service-image6.png" />
     <Content Include="assets\ImagesActivarBH\service-image1.png" />
@@ -877,7 +883,6 @@
     <Content Include="assets\ImagesActivarBH\robins.png" />
     <Content Include="assets\ImagesActivarBH\service-image7.png" />
     <Content Include="assets\ImagesActivarBH\service-image8.png" />
-    <Content Include="assets\ImagesActivarBH\services-header.jpg" />
     <Content Include="assets\ImagesActivarBH\slider\01.jpg" />
     <Content Include="assets\ImagesActivarBH\slider\02.jpg" />
     <Content Include="assets\ImagesActivarBH\slider\03.jpg" />
@@ -898,10 +903,8 @@
     <Content Include="assets\ImagesActivarBH\video-section-bg.jpg" />
     <Content Include="assets\ImagesActivarBH\services-image2.png" />
     <Content Include="assets\ImagesActivarBH\white.png" />
-    <Content Include="assets\ImagesCompanyOverView\chairman msg.png" />
     <Content Include="assets\ImagesCompanyOverView\chairman-msg-bg.png" />
     <Content Include="assets\ImagesCompanyOverView\header-bg.jpg" />
-    <Content Include="assets\ImagesCompanyOverView\history.png" />
     <Content Include="assets\ImagesCompanyOverView\strategy-bg.jpg" />
     <Content Include="assets\ImagesCompanyOverView\strategy1.png" />
     <Content Include="assets\ImagesCompanyOverView\strategy2.png" />
@@ -909,7 +912,6 @@
     <Content Include="assets\ImagesCompanyOverView\-e-Layer 270.png" />
     <Content Include="assets\ImagesCompanyOverView\strategy3.png" />
     <Content Include="assets\ImagesCompanyOverView\strategy4.png" />
-    <Content Include="assets\ImagesCompanyOverView\vision mission.png" />
     <Content Include="assets\ImagesCompanyOverView\vision-mission.jpg" />
     <Content Include="assets\ImagesCompanyOverView\vision-missionnew.jpg" />
     <Content Include="assets\ImagesHermanoContracting\bgfooter.png" />
@@ -1033,21 +1035,9 @@
     <Content Include="assets\ImagesHermano\-e-Vector Smart Object-2.png" />
     <Content Include="assets\ImagesHermano\-e-Vector Smart Object-3.png" />
     <Content Include="assets\ImagesHermano\-e-Vector Smart Object.png" />
-    <Content Include="assets\ImagesHermano\01.jpg" />
-    <Content Include="assets\ImagesHermano\02.jpg" />
-    <Content Include="assets\ImagesHermano\03.jpg" />
-    <Content Include="assets\ImagesHermano\04.jpg" />
-    <Content Include="assets\ImagesHermano\05.jpg" />
-    <Content Include="assets\ImagesHermano\06.jpg" />
-    <Content Include="assets\ImagesHermano\07.jpg" />
-    <Content Include="assets\ImagesHermano\08.jpg" />
-    <Content Include="assets\ImagesHermano\09.jpg" />
-    <Content Include="assets\ImagesHermano\10.jpg" />
-    <Content Include="assets\ImagesHermano\11.jpg" />
     <Content Include="assets\ImagesHermano\about-header.jpg" />
     <Content Include="assets\ImagesHermano\aboutheader.png" />
     <Content Include="assets\ImagesHermano\Air Conditioner Maintenance Work.png" />
-    <Content Include="assets\ImagesHermano\air-conditiner.png" />
     <Content Include="assets\ImagesHermano\bg-hiw.png" />
     <Content Include="assets\ImagesHermano\bg-hrm-s4.png" />
     <Content Include="assets\ImagesHermano\bg-wm-hr.png" />
@@ -1055,21 +1045,17 @@
     <Content Include="assets\ImagesHermano\building maintenance_.png" />
     <Content Include="assets\ImagesHermano\contact logo.png" />
     <Content Include="assets\ImagesHermano\electrical work.png" />
-    <Content Include="assets\ImagesHermano\electricity.png" />
     <Content Include="assets\ImagesHermano\email.png" />
     <Content Include="assets\ImagesHermano\favicon.ico" />
-    <Content Include="assets\ImagesHermano\footer-logo.png" />
     <Content Include="assets\ImagesHermano\garden equipment.png" />
     <Content Include="assets\ImagesHermano\group-6.png" />
     <Content Include="assets\ImagesHermano\group-7.png" />
-    <Content Include="assets\ImagesHermano\header-logo.png" />
     <Content Include="assets\ImagesHermano\headerservice.png" />
     <Content Include="assets\ImagesHermano\hermano-logo.jpg" />
     <Content Include="assets\ImagesHermano\hermano-logo.png" />
     <Content Include="assets\ImagesHermano\hiw-img1.png" />
     <Content Include="assets\ImagesHermano\hiw-img2.png" />
     <Content Include="assets\ImagesHermano\hiw-img3.png" />
-    <Content Include="assets\ImagesHermano\homepage-our- services.png" />
     <Content Include="assets\ImagesHermano\hr-project-header.jpg" />
     <Content Include="assets\ImagesHermano\hrm-about-s2-img1.png" />
     <Content Include="assets\ImagesHermano\hrm-about-s2-img2.png" />
@@ -1093,7 +1079,6 @@
     <Content Include="assets\ImagesHermano\phoneicon.png" />
     <Content Include="assets\ImagesHermano\Plumbing Work.png" />
     <Content Include="assets\ImagesHermano\project-header.jpg" />
-    <Content Include="assets\ImagesHermano\reair of household.png" />
     <Content Include="assets\ImagesHermano\reno4-about-icon1.png" />
     <Content Include="assets\ImagesHermano\reno4-about-icon2.png" />
     <Content Include="assets\ImagesHermano\reno4-about-icon3.png" />
@@ -1128,13 +1113,11 @@
     <Content Include="assets\ImagesHermano\renovate4_logo%402x.png" />
     <Content Include="assets\ImagesHermano\renovate4_logo.png" />
     <Content Include="assets\ImagesHermano\Repair house hold appliances.png" />
-    <Content Include="assets\ImagesHermano\why choose.png" />
     <Content Include="assets\ImagesHome\Aladixat.png" />
     <Content Include="assets\ImagesHome\Asianyouth.png" />
     <Content Include="assets\ImagesHome\bahrainicon.png" />
     <Content Include="assets\ImagesHome\bh.png" />
     <Content Include="assets\ImagesHome\callicon.png" />
-    <Content Include="assets\ImagesHome\careers-header.jpg" />
     <Content Include="assets\ImagesHome\chiristmis.jpg" />
     <Content Include="assets\HomeV2\images\Client01.png" />
     <Content Include="assets\HomeV2\images\Client02.png" />
@@ -1182,7 +1165,6 @@
     <Content Include="assets\ImagesHome\emailicon.png" />
     <Content Include="assets\ImagesHome\emailicon1.png" />
     <Content Include="assets\ImagesHome\fbicon.png" />
-    <Content Include="assets\ImagesHome\get-in-touch-header.jpg" />
     <Content Include="assets\ImagesHome\home_firm_bgd.png" />
     <Content Include="assets\ImagesHome\home_journalist_arrow.png" />
     <Content Include="assets\ImagesHome\home_journalist_blog10.jpg" />
@@ -1377,7 +1359,6 @@
     <Content Include="assets\ImagesPlaneraInterior\about-section2.png" />
     <Content Include="assets\ImagesPlaneraInterior\about-section3.png" />
     <Content Include="assets\ImagesPlaneraInterior\about-us.png" />
-    <Content Include="assets\ImagesPlaneraInterior\about133.png" />
     <Content Include="assets\ImagesPlaneraInterior\adhari-p2.jpg" />
     <Content Include="assets\ImagesPlaneraInterior\atyab-almarshod-p3.jpg" />
     <Content Include="assets\ImagesPlaneraInterior\bahrain-bay-office-big.jpg" />
@@ -1408,9 +1389,7 @@
     <Content Include="assets\ImagesPlaneraInterior\chairman-msg-bg.png" />
     <Content Include="assets\ImagesPlaneraInterior\closet-big.jpg" />
     <Content Include="assets\ImagesPlaneraInterior\consult.png" />
-    <Content Include="assets\ImagesPlaneraInterior\consult133.png" />
     <Content Include="assets\ImagesPlaneraInterior\consulting.png" />
-    <Content Include="assets\ImagesPlaneraInterior\contact-header.png" />
     <Content Include="assets\ImagesPlaneraInterior\contact-us.jpg" />
     <Content Include="assets\ImagesPlaneraInterior\contactimage.png" />
     <Content Include="assets\ImagesPlaneraInterior\dana-toilet-big.jpg" />
@@ -1428,7 +1407,6 @@
     <Content Include="assets\ImagesPlaneraInterior\girl-bathroom1-big.jpg" />
     <Content Include="assets\ImagesPlaneraInterior\HeaderProject.png" />
     <Content Include="assets\ImagesPlaneraInterior\home_architect3_about3.png" />
-    <Content Include="assets\ImagesPlaneraInterior\home_architect3_sectionbg2.png" />
     <Content Include="assets\ImagesPlaneraInterior\hor-line.png" />
     <Content Include="assets\ImagesPlaneraInterior\hp-s-1.png" />
     <Content Include="assets\ImagesPlaneraInterior\hp-s-2.png" />
@@ -1493,7 +1471,6 @@
     <Content Include="assets\ImagesPlaneraInterior\majlis-big.jpg" />
     <Content Include="assets\ImagesPlaneraInterior\majlis1-big.jpg" />
     <Content Include="assets\ImagesPlaneraInterior\master-bedroom-big.jpg" />
-    <Content Include="assets\ImagesPlaneraInterior\planera-interior-team-slider.jpg" />
     <Content Include="assets\ImagesPlaneraInterior\project-header.png" />
     <Content Include="assets\ImagesPlaneraInterior\project1.jpg" />
     <Content Include="assets\ImagesPlaneraInterior\Project1.png" />
@@ -1700,6 +1677,10 @@
     <Content Include="assets\NewsEvents\css\custom.css" />
     <Content Include="assets\NewsEvents\css\press.css" />
     <Content Include="assets\NewsEvents\css\structure.css" />
+    <Content Include="assets\NewsEvents\event1.jpg" />
+    <Content Include="assets\NewsEvents\event2.jpg" />
+    <Content Include="assets\NewsEvents\event3.jpg" />
+    <Content Include="assets\NewsEvents\event4.jpg" />
     <Content Include="assets\NewsEvents\images\125x125.gif" />
     <Content Include="assets\NewsEvents\images\250x250.gif" />
     <Content Include="assets\NewsEvents\images\468x60.gif" />
@@ -1786,6 +1767,10 @@
     <Content Include="assets\NewsEvents\images\social2.png" />
     <Content Include="assets\NewsEvents\images\social3.png" />
     <Content Include="assets\NewsEvents\images\team.png" />
+    <Content Include="assets\NewsEvents\news1.jpg" />
+    <Content Include="assets\NewsEvents\news2.jpg" />
+    <Content Include="assets\NewsEvents\news3.jpg" />
+    <Content Include="assets\NewsEvents\news4.jpg" />
     <Content Include="assets\OurBusinesses\css\custom.css" />
     <Content Include="assets\OurBusinesses\css\politics2.css" />
     <Content Include="assets\OurBusinesses\css\structure.css" />
@@ -3569,6 +3554,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="rev-s-gallery-news.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="assets\plugins\rs-plugin\assets\gridimages\Thumbs.db" />
@@ -3735,7 +3721,7 @@
     <Content Include="Views\Shared\_Layoutv2.cshtml" />
     <Content Include="Views\Home\Homev2.cshtml" />
     <Content Include="Views\Home\NewsEventsaa.cshtml" />
-    <Content Include="Views\Home\NewsEvents.cshtml" />
+    <Content Include="Views\Home\NewsEventsOld.cshtml" />
     <Content Include="Views\Home\PlaneraInteriorv2.cshtml" />
     <Content Include="Views\Home\PlaneraCareerpld.cshtml" />
     <Content Include="Views\Home\ActivarBHV2.cshtml" />
@@ -3769,10 +3755,15 @@
     <Content Include="Views\Shared\_LayoutActivarBAH.cshtml" />
     <Content Include="Views\Home\ActivarBHAbout.cshtml" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Content Include="Views\Home\ActivarBHService.cshtml" />
     <Content Include="Views\Home\ActivarBHContact.cshtml" />
 =======
 >>>>>>> parent of d2710e4 (23-08-2022)
+=======
+    <Content Include="Views\Home\NewsEvents.cshtml" />
+    <Content Include="Views\Home\ActivarBHGallery.cshtml" />
+>>>>>>> parent of 073a23c (23-08-2022)
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
