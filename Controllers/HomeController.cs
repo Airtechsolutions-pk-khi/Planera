@@ -60,6 +60,12 @@ namespace Planera.Controllers
         {
             return View();
         }
+
+        [Route("planera/activarbahrain/gallery")]
+        public ActionResult ActivarBHGallery()
+        {
+            return View();
+        }
         [Route("planera/construction")]
         public ActionResult PlaneraConstruction()
         {

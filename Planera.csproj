@@ -760,7 +760,26 @@
     <Content Include="assets\ImagesActivarBH\-e-Pen holder.png" />
     <Content Include="assets\ImagesActivarBH\-e-Vector Smart Object-1.png" />
     <Content Include="assets\ImagesActivarBH\01.jpg" />
+    <Content Include="assets\ImagesActivarBH\01L.jpg" />
+    <Content Include="assets\ImagesActivarBH\01s.jpg" />
     <Content Include="assets\ImagesActivarBH\02.jpg" />
+    <Content Include="assets\ImagesActivarBH\02L.jpg" />
+    <Content Include="assets\ImagesActivarBH\02s.jpg" />
+    <Content Include="assets\ImagesActivarBH\03.png" />
+    <Content Include="assets\ImagesActivarBH\03L.jpg" />
+    <Content Include="assets\ImagesActivarBH\03s.jpg" />
+    <Content Include="assets\ImagesActivarBH\04L.jpg" />
+    <Content Include="assets\ImagesActivarBH\04s.jpg" />
+    <Content Include="assets\ImagesActivarBH\05L.jpg" />
+    <Content Include="assets\ImagesActivarBH\05s.jpg" />
+    <Content Include="assets\ImagesActivarBH\06L.jpg" />
+    <Content Include="assets\ImagesActivarBH\06s.jpg" />
+    <Content Include="assets\ImagesActivarBH\07L.jpg" />
+    <Content Include="assets\ImagesActivarBH\07s.jpg" />
+    <Content Include="assets\ImagesActivarBH\08L.jpg" />
+    <Content Include="assets\ImagesActivarBH\08s.jpg" />
+    <Content Include="assets\ImagesActivarBH\09L.jpg" />
+    <Content Include="assets\ImagesActivarBH\09s.jpg" />
     <Content Include="assets\ImagesActivarBH\About-section3.jpg" />
     <Content Include="assets\ImagesActivarBH\arrow.png" />
     <Content Include="assets\ImagesActivarBH\detail-image.png" />
@@ -769,6 +788,7 @@
     <Content Include="assets\ImagesActivarBH\footbg3.jpg" />
     <Content Include="assets\ImagesActivarBH\footer logo.png" />
     <Content Include="assets\ImagesActivarBH\FOOTER-LOGO.png" />
+    <Content Include="assets\ImagesActivarBH\gallery-header.jpg" />
     <Content Include="assets\ImagesActivarBH\photo2-home-bg.jpg" />
     <Content Include="assets\ImagesActivarBH\service-image6.png" />
     <Content Include="assets\ImagesActivarBH\service-image1.png" />
@@ -1650,6 +1670,10 @@
     <Content Include="assets\NewsEvents\css\custom.css" />
     <Content Include="assets\NewsEvents\css\press.css" />
     <Content Include="assets\NewsEvents\css\structure.css" />
+    <Content Include="assets\NewsEvents\event1.jpg" />
+    <Content Include="assets\NewsEvents\event2.jpg" />
+    <Content Include="assets\NewsEvents\event3.jpg" />
+    <Content Include="assets\NewsEvents\event4.jpg" />
     <Content Include="assets\NewsEvents\images\125x125.gif" />
     <Content Include="assets\NewsEvents\images\250x250.gif" />
     <Content Include="assets\NewsEvents\images\468x60.gif" />
@@ -1736,6 +1760,10 @@
     <Content Include="assets\NewsEvents\images\social2.png" />
     <Content Include="assets\NewsEvents\images\social3.png" />
     <Content Include="assets\NewsEvents\images\team.png" />
+    <Content Include="assets\NewsEvents\news1.jpg" />
+    <Content Include="assets\NewsEvents\news2.jpg" />
+    <Content Include="assets\NewsEvents\news3.jpg" />
+    <Content Include="assets\NewsEvents\news4.jpg" />
     <Content Include="assets\OurBusinesses\css\custom.css" />
     <Content Include="assets\OurBusinesses\css\politics2.css" />
     <Content Include="assets\OurBusinesses\css\structure.css" />
@@ -3519,6 +3547,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="rev-s-gallery-news.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="assets\plugins\rs-plugin\assets\gridimages\Thumbs.db" />
@@ -3685,7 +3714,7 @@
     <Content Include="Views\Shared\_Layoutv2.cshtml" />
     <Content Include="Views\Home\Homev2.cshtml" />
     <Content Include="Views\Home\NewsEventsaa.cshtml" />
-    <Content Include="Views\Home\NewsEvents.cshtml" />
+    <Content Include="Views\Home\NewsEventsOld.cshtml" />
     <Content Include="Views\Home\PlaneraInteriorv2.cshtml" />
     <Content Include="Views\Home\PlaneraCareerpld.cshtml" />
     <Content Include="Views\Home\ActivarBHV2.cshtml" />
@@ -3718,6 +3747,8 @@
     <Content Include="Views\Hermano\HermanoRMAboutold.cshtml" />
     <Content Include="Views\Shared\_LayoutActivarBAH.cshtml" />
     <Content Include="Views\Home\ActivarBHAbout.cshtml" />
+    <Content Include="Views\Home\NewsEvents.cshtml" />
+    <Content Include="Views\Home\ActivarBHGallery.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
