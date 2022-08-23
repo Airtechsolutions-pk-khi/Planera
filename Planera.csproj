@@ -728,6 +728,7 @@
     <Content Include="assets\HomeV2\images\line.png" />
     <Content Include="assets\HomeV2\images\line2.png" />
     <Content Include="assets\HomeV2\images\news1.jpg" />
+    <Content Include="assets\HomeV2\images\our business- clients.png" />
     <Content Include="assets\HomeV2\images\pg-logo-hor-black.png" />
     <Content Include="assets\HomeV2\images\pg-logo-horizontal-white.png" />
     <Content Include="assets\HomeV2\images\phone.png" />
@@ -894,8 +895,10 @@
     <Content Include="assets\ImagesActivarBH\video-section-bg.jpg" />
     <Content Include="assets\ImagesActivarBH\services-image2.png" />
     <Content Include="assets\ImagesActivarBH\white.png" />
+    <Content Include="assets\ImagesCompanyOverView\chairman msg.png" />
     <Content Include="assets\ImagesCompanyOverView\chairman-msg-bg.png" />
     <Content Include="assets\ImagesCompanyOverView\header-bg.jpg" />
+    <Content Include="assets\ImagesCompanyOverView\history.png" />
     <Content Include="assets\ImagesCompanyOverView\strategy-bg.jpg" />
     <Content Include="assets\ImagesCompanyOverView\strategy1.png" />
     <Content Include="assets\ImagesCompanyOverView\strategy2.png" />
@@ -903,6 +906,7 @@
     <Content Include="assets\ImagesCompanyOverView\-e-Layer 270.png" />
     <Content Include="assets\ImagesCompanyOverView\strategy3.png" />
     <Content Include="assets\ImagesCompanyOverView\strategy4.png" />
+    <Content Include="assets\ImagesCompanyOverView\vision mission.png" />
     <Content Include="assets\ImagesCompanyOverView\vision-mission.jpg" />
     <Content Include="assets\ImagesCompanyOverView\vision-missionnew.jpg" />
     <Content Include="assets\ImagesHermanoContracting\bgfooter.png" />
@@ -1029,6 +1033,7 @@
     <Content Include="assets\ImagesHermano\about-header.jpg" />
     <Content Include="assets\ImagesHermano\aboutheader.png" />
     <Content Include="assets\ImagesHermano\Air Conditioner Maintenance Work.png" />
+    <Content Include="assets\ImagesHermano\air-conditiner.png" />
     <Content Include="assets\ImagesHermano\bg-hiw.png" />
     <Content Include="assets\ImagesHermano\bg-hrm-s4.png" />
     <Content Include="assets\ImagesHermano\bg-wm-hr.png" />
@@ -1036,17 +1041,21 @@
     <Content Include="assets\ImagesHermano\building maintenance_.png" />
     <Content Include="assets\ImagesHermano\contact logo.png" />
     <Content Include="assets\ImagesHermano\electrical work.png" />
+    <Content Include="assets\ImagesHermano\electricity.png" />
     <Content Include="assets\ImagesHermano\email.png" />
     <Content Include="assets\ImagesHermano\favicon.ico" />
+    <Content Include="assets\ImagesHermano\footer-logo.png" />
     <Content Include="assets\ImagesHermano\garden equipment.png" />
     <Content Include="assets\ImagesHermano\group-6.png" />
     <Content Include="assets\ImagesHermano\group-7.png" />
+    <Content Include="assets\ImagesHermano\header-logo.png" />
     <Content Include="assets\ImagesHermano\headerservice.png" />
     <Content Include="assets\ImagesHermano\hermano-logo.jpg" />
     <Content Include="assets\ImagesHermano\hermano-logo.png" />
     <Content Include="assets\ImagesHermano\hiw-img1.png" />
     <Content Include="assets\ImagesHermano\hiw-img2.png" />
     <Content Include="assets\ImagesHermano\hiw-img3.png" />
+    <Content Include="assets\ImagesHermano\homepage-our- services.png" />
     <Content Include="assets\ImagesHermano\hr-project-header.jpg" />
     <Content Include="assets\ImagesHermano\hrm-about-s2-img1.png" />
     <Content Include="assets\ImagesHermano\hrm-about-s2-img2.png" />
@@ -1070,6 +1079,7 @@
     <Content Include="assets\ImagesHermano\phoneicon.png" />
     <Content Include="assets\ImagesHermano\Plumbing Work.png" />
     <Content Include="assets\ImagesHermano\project-header.jpg" />
+    <Content Include="assets\ImagesHermano\reair of household.png" />
     <Content Include="assets\ImagesHermano\reno4-about-icon1.png" />
     <Content Include="assets\ImagesHermano\reno4-about-icon2.png" />
     <Content Include="assets\ImagesHermano\reno4-about-icon3.png" />
@@ -1104,11 +1114,13 @@
     <Content Include="assets\ImagesHermano\renovate4_logo%402x.png" />
     <Content Include="assets\ImagesHermano\renovate4_logo.png" />
     <Content Include="assets\ImagesHermano\Repair house hold appliances.png" />
+    <Content Include="assets\ImagesHermano\why choose.png" />
     <Content Include="assets\ImagesHome\Aladixat.png" />
     <Content Include="assets\ImagesHome\Asianyouth.png" />
     <Content Include="assets\ImagesHome\bahrainicon.png" />
     <Content Include="assets\ImagesHome\bh.png" />
     <Content Include="assets\ImagesHome\callicon.png" />
+    <Content Include="assets\ImagesHome\careers-header.jpg" />
     <Content Include="assets\ImagesHome\chiristmis.jpg" />
     <Content Include="assets\HomeV2\images\Client01.png" />
     <Content Include="assets\HomeV2\images\Client02.png" />
@@ -1156,6 +1168,7 @@
     <Content Include="assets\ImagesHome\emailicon.png" />
     <Content Include="assets\ImagesHome\emailicon1.png" />
     <Content Include="assets\ImagesHome\fbicon.png" />
+    <Content Include="assets\ImagesHome\get-in-touch-header.jpg" />
     <Content Include="assets\ImagesHome\home_firm_bgd.png" />
     <Content Include="assets\ImagesHome\home_journalist_arrow.png" />
     <Content Include="assets\ImagesHome\home_journalist_blog10.jpg" />
