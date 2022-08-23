@@ -60,6 +60,7 @@ namespace Planera.Controllers
         {
             return View();
         }
+<<<<<<< HEAD
         [Route("planera/activarbahrain/service")]
         public ActionResult ActivarBHService()
         {
@@ -70,6 +71,8 @@ namespace Planera.Controllers
         {
             return View();
         }
+=======
+>>>>>>> parent of d2710e4 (23-08-2022)
         [Route("planera/construction")]
         public ActionResult PlaneraConstruction()
         {
