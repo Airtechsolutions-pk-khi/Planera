@@ -42,6 +42,8 @@ namespace Planera.Controllers
             return View();
         }
 
+      
+
         [Route("planera/activarbahrainold")]
         public ActionResult ActivarBH()
         {

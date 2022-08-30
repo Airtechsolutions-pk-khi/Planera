@@ -30,7 +30,7 @@ namespace Planera.Controllers
             //return RedirectToAction("/planera/comingsoon");
             return View();
         }
-        [Route("hermano/repair-maintenance/projects")]
+        [Route("hermano/repair-maintenance/gallery")]
         public ActionResult HermanoRMProjects()
         {
             //return RedirectToAction("/planera/comingsoon");

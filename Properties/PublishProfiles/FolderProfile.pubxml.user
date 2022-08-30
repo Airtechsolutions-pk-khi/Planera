@@ -4,8 +4,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\RAFI SIRAJUDDIN\Desktop\09planera</_PublishTargetUrl>
-    <History>True|2022-08-16T15:45:11.8204998Z;False|2022-08-16T18:44:34.7327906+03:00;True|2022-08-10T11:39:24.9163279+03:00;</History>
+    <_PublishTargetUrl>C:\Users\RAFI SIRAJUDDIN\Desktop\15planera</_PublishTargetUrl>
+    <History>True|2022-08-23T21:40:19.0904382Z;True|2022-08-16T18:45:11.8204998+03:00;False|2022-08-16T18:44:34.7327906+03:00;True|2022-08-10T11:39:24.9163279+03:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="assets/bg-ab-dubai.png">
@@ -1029,7 +1029,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:59</publishTime>
     </File>
     <File Include="assets/content/interiorv2/images/home_architect3_sectionbg2.png">
-      <publishTime>08/08/2022 17:02:59</publishTime>
+      <publishTime>08/24/2022 11:40:33</publishTime>
     </File>
     <File Include="assets/content/interiorv2/images/home_architect3_sectionbg3.png">
       <publishTime>08/08/2022 17:02:59</publishTime>
@@ -1715,6 +1715,12 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/cssActivrBH/custombh.css">
       <publishTime>08/08/2022 17:03:00</publishTime>
     </File>
+    <File Include="assets/cssActivrBH/fonts/FontsFree-Net-FontsFree-Net-Proxima-Nova-Sbold.ttf">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/cssActivrBH/fonts/FontsFree-Net-ProximaNova-Regular.ttf">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
     <File Include="assets/cssActivrBH/fonts/mfn-icons.eot">
       <publishTime>08/08/2022 17:03:00</publishTime>
     </File>
@@ -1727,6 +1733,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/cssActivrBH/fonts/mfn-icons.woff">
       <publishTime>08/08/2022 17:03:00</publishTime>
     </File>
+    <File Include="assets/cssActivrBH/fonts/Proxima Nova Font.otf">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
     <File Include="assets/cssActivrBH/photography2.css">
       <publishTime>08/08/2022 17:03:00</publishTime>
     </File>
@@ -1737,7 +1746,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:03:00</publishTime>
     </File>
     <File Include="assets/csshermano/custom.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/17/2022 10:24:02</publishTime>
     </File>
     <File Include="assets/csshermano/renovate4.css">
       <publishTime>08/08/2022 17:03:00</publishTime>
@@ -1800,7 +1809,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:03:00</publishTime>
     </File>
     <File Include="assets/cssplaneracareer/style.css">
-      <publishTime>08/08/2022 17:03:00</publishTime>
+      <publishTime>08/23/2022 18:59:15</publishTime>
     </File>
     <File Include="assets/cssplaneraconstruction/custom.css">
       <publishTime>08/08/2022 17:03:00</publishTime>
@@ -2086,6 +2095,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="assets/HomeV2/images/news1.jpg">
       <publishTime>08/08/2022 17:02:56</publishTime>
+    </File>
+    <File Include="assets/HomeV2/images/our business- clients.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
     </File>
     <File Include="assets/HomeV2/images/pg-logo-hor-black.png">
       <publishTime>08/08/2022 17:02:56</publishTime>
@@ -3392,14 +3404,44 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/images/wow-slider/tooltips/9boxed.jpg">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
+    <File Include="assets/ImagesActivarBH/-e-0-ad.png">
+      <publishTime>08/29/2022 22:10:09</publishTime>
+    </File>
     <File Include="assets/ImagesActivarBH/-e-006.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-1-ad.png">
+      <publishTime>08/29/2022 22:10:09</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-2-ad.png">
+      <publishTime>08/29/2022 22:10:09</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-3-ad.png">
+      <publishTime>08/29/2022 22:10:09</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-about-bg-ad.png">
+      <publishTime>08/29/2022 22:08:28</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-contact-bg-ad.png">
+      <publishTime>08/29/2022 22:20:40</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/-e-DS6A3414.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/-e-DSC00449.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-DSLR Camera.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-email.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-footer-logo-ad.png">
+      <publishTime>08/29/2022 22:05:17</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-Graphic Design Information.png">
+      <publishTime>08/30/2022 11:23:23</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/-e-Group 4.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -3409,6 +3451,51 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="assets/ImagesActivarBH/-e-IMG_0833.png">
       <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-insta.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-Layer 21.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-Manage.png">
+      <publishTime>08/30/2022 11:23:24</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-Managing Social.png">
+      <publishTime>08/30/2022 11:23:24</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-map.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-Media.png">
+      <publishTime>08/30/2022 11:23:25</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-Moleskine2.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-our-msg.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-our-vision.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-Pen holder.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-phone.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-Photographer.png">
+      <publishTime>08/30/2022 11:23:26</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-Promotion and.png">
+      <publishTime>08/30/2022 11:23:26</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-Public.png">
+      <publishTime>08/30/2022 11:23:27</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/-e-Rectangle 11 copy 3.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/-e-Vector Smart Object copy2 3.png">
       <publishTime>09/05/2022 20:51:28</publishTime>
@@ -3431,32 +3518,215 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/ImagesActivarBH/-e-Vector Smart Object5.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
+    <File Include="assets/ImagesActivarBH/-e-Video Shooting.png">
+      <publishTime>08/30/2022 11:23:27</publishTime>
+    </File>
     <File Include="assets/ImagesActivarBH/-e-_MG_7638.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/.DS_Store">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
+    <File Include="assets/ImagesActivarBH/01-gallery-ad.jpg">
+      <publishTime>08/30/2022 10:53:55</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/01.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/01L.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/01s.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/02-gallery-ad.jpg">
+      <publishTime>08/30/2022 10:53:55</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/02.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/02L.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/02s.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/03-gallery-ad.jpg">
+      <publishTime>08/30/2022 10:53:55</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/03.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/03L.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/03s.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/04-gallery-ad.jpg">
+      <publishTime>08/30/2022 10:53:55</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/04L.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/04s.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/05-gallery-ad.jpg">
+      <publishTime>08/30/2022 10:53:55</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/05L.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/05s.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/06-gallery-ad.jpg">
+      <publishTime>08/30/2022 10:53:55</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/06L.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/06s.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/07-gallery-ad.jpg">
+      <publishTime>08/30/2022 10:53:55</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/07L.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/07s.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/08-gallery-ad.jpg">
+      <publishTime>08/30/2022 10:53:55</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/08L.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/08s.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/09L.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/09s.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/1-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/10-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/10.JPG">
+      <publishTime>08/24/2022 13:03:37</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/11-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/11.JPG">
+      <publishTime>08/24/2022 13:03:37</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/12-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/12.jpg">
+      <publishTime>08/24/2022 13:03:37</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/13-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/13.jpg">
+      <publishTime>08/24/2022 13:03:37</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/14-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/14.JPG">
+      <publishTime>08/24/2022 13:03:37</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/15-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/15.jpg">
+      <publishTime>08/24/2022 13:03:37</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/16-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/16.jpg">
+      <publishTime>08/24/2022 13:03:37</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/17-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/17.JPG">
+      <publishTime>08/24/2022 13:03:37</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/18-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/18.JPG">
+      <publishTime>08/24/2022 13:03:37</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/19.jpg">
+      <publishTime>08/24/2022 13:03:37</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/2-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/20.JPG">
+      <publishTime>08/24/2022 13:03:37</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/3-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/4-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/5-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/6-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/7-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/8-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/9-ab-g.jpg">
+      <publishTime>08/30/2022 11:35:04</publishTime>
+    </File>
     <File Include="assets/ImagesActivarBH/ablogo.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
+    <File Include="assets/ImagesActivarBH/About-section3.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
     <File Include="assets/ImagesActivarBH/AcBHV1.mp4">
-      <publishTime>10/08/2022 13:07:34</publishTime>
+      <publishTime>08/10/2022 13:07:34</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/AcBHV2.mp4">
-      <publishTime>10/08/2022 13:07:34</publishTime>
+      <publishTime>08/10/2022 13:07:34</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/AcBHV3.mp4">
-      <publishTime>10/08/2022 13:07:34</publishTime>
+      <publishTime>08/10/2022 13:07:34</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/AcBHV4.mp4">
-      <publishTime>10/08/2022 13:07:34</publishTime>
+      <publishTime>08/10/2022 13:07:34</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/activar-bg.jpg">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/ad-gallery.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/ad-gallery1.png">
+      <publishTime>08/30/2022 01:29:22</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/ad-gallery2.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -3563,8 +3833,17 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/ImagesActivarBH/adagency2-small-logo.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
+    <File Include="assets/ImagesActivarBH/arrow.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
     <File Include="assets/ImagesActivarBH/bg-ab.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/bg-contact.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/bg-whoweare.jpg">
+      <publishTime>08/30/2022 11:05:48</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/black.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -3572,14 +3851,44 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/ImagesActivarBH/BLANCO.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
+    <File Include="assets/ImagesActivarBH/contact-us-header.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/detail-image.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
     <File Include="assets/ImagesActivarBH/favicon.ico">
       <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/FootBg.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/footbg2.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/footbg3.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/footer logo.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/FOOTER-LOGO.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/footerbg.png">
+      <publishTime>08/22/2022 00:26:56</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/gallery-header.jpg">
+      <publishTime>08/30/2022 11:06:20</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/green.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/grey.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/header-logo-ad.png">
+      <publishTime>08/29/2022 22:03:22</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/img1.jpg">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -3589,6 +3898,12 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="assets/ImagesActivarBH/other.png">
       <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/our-objectives.png">
+      <publishTime>08/30/2022 11:06:20</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/our-vision.png">
+      <publishTime>08/30/2022 11:06:18</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/photo2-about-guy.jpg">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -3600,13 +3915,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/photo2-contact-sub-bg.jpg">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/23/2022 18:59:14</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/photo2-footer-bg.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/photo2-gallery-sub-bg.jpg">
       <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/photo2-home-bg.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/photo2-home-bg.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -3728,38 +4046,86 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/ImagesActivarBH/robins.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
+    <File Include="assets/ImagesActivarBH/service-image1.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/service-image3.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/service-image4.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/service-image5.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/service-image6.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/service-image7.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/service-image8.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/services-header.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/services-image2.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/slider/00.png">
+      <publishTime>08/30/2022 11:29:52</publishTime>
+    </File>
     <File Include="assets/ImagesActivarBH/slider/01.jpg">
-      <publishTime>10/08/2022 13:09:17</publishTime>
+      <publishTime>08/10/2022 13:09:17</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/slider/02.jpg">
-      <publishTime>10/08/2022 13:09:17</publishTime>
+      <publishTime>08/10/2022 13:09:17</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/slider/03.jpg">
-      <publishTime>10/08/2022 13:09:17</publishTime>
+      <publishTime>08/10/2022 13:09:17</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/slider/04.jpg">
-      <publishTime>10/08/2022 13:09:17</publishTime>
+      <publishTime>08/10/2022 13:09:17</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/slider/05.jpg">
-      <publishTime>10/08/2022 13:09:17</publishTime>
+      <publishTime>08/10/2022 13:09:17</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/slider/06.jpg">
-      <publishTime>10/08/2022 13:09:17</publishTime>
+      <publishTime>08/10/2022 13:09:17</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/slider/07.jpg">
-      <publishTime>10/08/2022 13:09:17</publishTime>
+      <publishTime>08/10/2022 13:09:17</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/slider/08.jpg">
-      <publishTime>10/08/2022 13:09:17</publishTime>
+      <publishTime>08/10/2022 13:09:17</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/slider/09.jpg">
-      <publishTime>10/08/2022 13:09:17</publishTime>
+      <publishTime>08/10/2022 13:09:17</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/slider/10.jpg">
-      <publishTime>10/08/2022 13:09:17</publishTime>
+      <publishTime>08/10/2022 13:09:17</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/slider1.png">
+      <publishTime>08/23/2022 20:03:07</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/slider2.png">
+      <publishTime>08/23/2022 20:03:07</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/slider3.png">
+      <publishTime>08/23/2022 20:03:07</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/slider4.png">
+      <publishTime>08/23/2022 20:03:07</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/tanta.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/team-ad.jpg">
+      <publishTime>08/29/2022 22:13:26</publishTime>
+    </File>
+    <File Include="assets/ImagesActivarBH/team-slider-ab.png">
+      <publishTime>08/23/2022 19:52:05</publishTime>
     </File>
     <File Include="assets/ImagesActivarBH/vector-smart-object-5.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -3794,11 +4160,17 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/ImagesCompanyOverView/-e-Layer 270.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
+    <File Include="assets/ImagesCompanyOverView/chairman msg.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
     <File Include="assets/ImagesCompanyOverView/chairman-msg-bg.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesCompanyOverView/header-bg.jpg">
       <publishTime>08/08/2022 17:02:57</publishTime>
+    </File>
+    <File Include="assets/ImagesCompanyOverView/history.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
     </File>
     <File Include="assets/ImagesCompanyOverView/strategy-bg.jpg">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -3818,6 +4190,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/ImagesCompanyOverView/strategybg.png">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
+    <File Include="assets/ImagesCompanyOverView/vision mission.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
     <File Include="assets/ImagesCompanyOverView/vision-mission.jpg">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
@@ -3825,10 +4200,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesHermano/-e-Air Conditioner Maintenance Work.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/16/2022 12:30:56</publishTime>
     </File>
     <File Include="assets/ImagesHermano/-e-electrical work.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/16/2022 12:30:56</publishTime>
     </File>
     <File Include="assets/ImagesHermano/-e-Group 6.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -3837,13 +4212,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesHermano/-e-Plumbing Work.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/16/2022 12:30:56</publishTime>
     </File>
     <File Include="assets/ImagesHermano/-e-reno4-home-team.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesHermano/-e-Repair house hold appliances.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/16/2022 12:30:56</publishTime>
     </File>
     <File Include="assets/ImagesHermano/-e-Vector Smart Object-1.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -3857,23 +4232,65 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/ImagesHermano/-e-Vector Smart Object.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
+    <File Include="assets/ImagesHermano/01.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/02.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/03.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/04.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/05.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/06.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/07.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/08.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/09.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/10.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/11.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
     <File Include="assets/ImagesHermano/about-header.jpg">
-      <publishTime>09/08/2022 12:58:01</publishTime>
+      <publishTime>08/09/2022 12:58:01</publishTime>
     </File>
     <File Include="assets/ImagesHermano/aboutheader.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/17/2022 11:00:51</publishTime>
     </File>
     <File Include="assets/ImagesHermano/Air Conditioner Maintenance Work.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
+    <File Include="assets/ImagesHermano/air-conditiner.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
     <File Include="assets/ImagesHermano/bg-hiw.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 13:56:49</publishTime>
     </File>
     <File Include="assets/ImagesHermano/bg-hrm-s4.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/17/2022 11:31:40</publishTime>
     </File>
     <File Include="assets/ImagesHermano/bg-wm-hr.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/bgcontact.jpg">
+      <publishTime>08/24/2022 11:29:22</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/bgsection.png">
+      <publishTime>08/24/2022 11:29:22</publishTime>
     </File>
     <File Include="assets/ImagesHermano/building construction.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -3887,11 +4304,17 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/ImagesHermano/electrical work.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
+    <File Include="assets/ImagesHermano/electricity.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
     <File Include="assets/ImagesHermano/email.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesHermano/favicon.ico">
       <publishTime>08/08/2022 17:02:57</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/footer-logo.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
     </File>
     <File Include="assets/ImagesHermano/garden equipment.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -3902,74 +4325,83 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/ImagesHermano/group-7.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
+    <File Include="assets/ImagesHermano/header-logo.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/headerservice.jpg">
+      <publishTime>08/24/2022 11:31:16</publishTime>
+    </File>
     <File Include="assets/ImagesHermano/headerservice.png">
-      <publishTime>09/08/2022 12:58:01</publishTime>
+      <publishTime>08/09/2022 12:58:01</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hermano-logo.jpg">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hermano-logo.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 13:09:38</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hiw-img1.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 13:50:02</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hiw-img2.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 13:50:02</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hiw-img3.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 13:50:02</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/homepage-our- services.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hr-project-header.jpg">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/16/2022 13:09:54</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hrm-about-s2-img1.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/17/2022 11:17:06</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hrm-about-s2-img2.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/17/2022 11:17:06</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hrm-contact-img1.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 16:35:22</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hrm-header-bg.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 16:02:36</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hrm-icon-1.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 16:57:22</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hrm-icon-2.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 16:57:22</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hrm-icon1.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/17/2022 11:29:52</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hrm-icon2.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/17/2022 11:29:52</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hrm-icon3.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/17/2022 11:29:52</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hrm-service1.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 16:07:51</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hrm-service2.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 16:07:51</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hrm-service3.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 16:07:51</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hrm-service4.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 16:08:14</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hrm-step1.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 17:01:22</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hrm-step2.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 17:02:21</publishTime>
     </File>
     <File Include="assets/ImagesHermano/hrm-step3.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 17:01:22</publishTime>
     </File>
     <File Include="assets/ImagesHermano/landscape design.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -3980,14 +4412,26 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/ImagesHermano/msgicon.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
+    <File Include="assets/ImagesHermano/ourmission.png">
+      <publishTime>08/24/2022 11:29:22</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/ourvision.png">
+      <publishTime>08/24/2022 11:29:22</publishTime>
+    </File>
     <File Include="assets/ImagesHermano/phoneicon.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesHermano/Plumbing Work.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/plumbing-hrm.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesHermano/project-header.jpg">
-      <publishTime>09/08/2022 12:58:01</publishTime>
+      <publishTime>08/09/2022 12:58:01</publishTime>
+    </File>
+    <File Include="assets/ImagesHermano/reair of household.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
     </File>
     <File Include="assets/ImagesHermano/reno4-about-icon1.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -4035,7 +4479,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesHermano/reno4-home-homes-bg.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 13:15:28</publishTime>
     </File>
     <File Include="assets/ImagesHermano/reno4-home-icon1.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -4056,7 +4500,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesHermano/reno4-home-team.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 13:14:52</publishTime>
     </File>
     <File Include="assets/ImagesHermano/reno4-offer-icon1.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -4091,14 +4535,20 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/ImagesHermano/Repair house hold appliances.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
+    <File Include="assets/ImagesHermano/why choose.png">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
     <File Include="assets/ImagesHermanoContracting/.DS_Store">
       <publishTime>08/08/2022 17:02:57</publishTime>
+    </File>
+    <File Include="assets/ImagesHermanoContracting/bgcontact.jpg">
+      <publishTime>08/24/2022 11:30:10</publishTime>
     </File>
     <File Include="assets/ImagesHermanoContracting/bgfooter.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesHermanoContracting/bgsection.png">
-      <publishTime>08/08/2022 17:02:57</publishTime>
+      <publishTime>08/24/2022 11:29:51</publishTime>
     </File>
     <File Include="assets/ImagesHermanoContracting/dsc-09512.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -4159,6 +4609,42 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="assets/ImagesHermanoContracting/group-2.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
+    </File>
+    <File Include="assets/ImagesHermanoContracting/headerservice.jpg">
+      <publishTime>08/24/2022 11:30:10</publishTime>
+    </File>
+    <File Include="assets/ImagesHermanoContracting/hermano-gallery/01.jpg">
+      <publishTime>08/24/2022 11:07:19</publishTime>
+    </File>
+    <File Include="assets/ImagesHermanoContracting/hermano-gallery/02.jpg">
+      <publishTime>08/24/2022 11:07:19</publishTime>
+    </File>
+    <File Include="assets/ImagesHermanoContracting/hermano-gallery/03.jpg">
+      <publishTime>08/24/2022 11:07:19</publishTime>
+    </File>
+    <File Include="assets/ImagesHermanoContracting/hermano-gallery/04.jpg">
+      <publishTime>08/24/2022 11:07:19</publishTime>
+    </File>
+    <File Include="assets/ImagesHermanoContracting/hermano-gallery/05.jpg">
+      <publishTime>08/24/2022 11:07:19</publishTime>
+    </File>
+    <File Include="assets/ImagesHermanoContracting/hermano-gallery/06.jpg">
+      <publishTime>08/24/2022 11:07:19</publishTime>
+    </File>
+    <File Include="assets/ImagesHermanoContracting/hermano-gallery/07.jpg">
+      <publishTime>08/24/2022 11:07:19</publishTime>
+    </File>
+    <File Include="assets/ImagesHermanoContracting/hermano-gallery/08.jpg">
+      <publishTime>08/24/2022 11:07:19</publishTime>
+    </File>
+    <File Include="assets/ImagesHermanoContracting/hermano-gallery/09.jpg">
+      <publishTime>08/24/2022 11:07:19</publishTime>
+    </File>
+    <File Include="assets/ImagesHermanoContracting/hermano-gallery/10.jpg">
+      <publishTime>08/24/2022 11:07:19</publishTime>
+    </File>
+    <File Include="assets/ImagesHermanoContracting/hermano-gallery/11.jpg">
+      <publishTime>08/24/2022 11:07:19</publishTime>
     </File>
     <File Include="assets/ImagesHermanoContracting/hermano-img-box.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -4395,19 +4881,22 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesHermanoContracting/logofooter-hrm.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/17/2022 10:53:22</publishTime>
     </File>
     <File Include="assets/ImagesHermanoContracting/logofooter.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesHermanoContracting/logoheader.png">
-      <publishTime>09/08/2022 12:55:00</publishTime>
+      <publishTime>08/09/2022 12:55:00</publishTime>
     </File>
     <File Include="assets/ImagesHermanoContracting/ourmission.jpg">
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
+    <File Include="assets/ImagesHermanoContracting/ourmission.png">
+      <publishTime>08/24/2022 11:33:05</publishTime>
+    </File>
     <File Include="assets/ImagesHermanoContracting/ourvision.png">
-      <publishTime>08/08/2022 17:02:57</publishTime>
+      <publishTime>08/24/2022 11:33:05</publishTime>
     </File>
     <File Include="assets/ImagesHermanoContracting/reno4-reno-guys.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -4416,10 +4905,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:57</publishTime>
     </File>
     <File Include="assets/ImagesHermanoContracting/section2.png">
-      <publishTime>10/08/2022 11:19:09</publishTime>
+      <publishTime>08/10/2022 11:19:09</publishTime>
     </File>
     <File Include="assets/ImagesHermanoContracting/sectionOver.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 18:13:13</publishTime>
     </File>
     <File Include="assets/ImagesHermanoContracting/vector-smart-object.png">
       <publishTime>08/08/2022 17:02:57</publishTime>
@@ -4438,6 +4927,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="assets/ImagesHome/callicon.png">
       <publishTime>08/08/2022 17:02:58</publishTime>
+    </File>
+    <File Include="assets/ImagesHome/careers-header.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
     </File>
     <File Include="assets/ImagesHome/chiristmis.jpg">
       <publishTime>08/08/2022 17:02:58</publishTime>
@@ -4567,6 +5059,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="assets/ImagesHome/firm.png">
       <publishTime>08/08/2022 17:02:58</publishTime>
+    </File>
+    <File Include="assets/ImagesHome/get-in-touch-header.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
     </File>
     <File Include="assets/ImagesHome/group-14.png">
       <publishTime>08/08/2022 17:02:58</publishTime>
@@ -4836,10 +5331,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:58</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/address-icon.png">
-      <publishTime>10/08/2022 11:24:34</publishTime>
+      <publishTime>08/10/2022 11:24:34</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/bgcontact.jpg">
-      <publishTime>10/08/2022 11:21:32</publishTime>
+      <publishTime>08/24/2022 11:30:18</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/bgcontact.png">
       <publishTime>08/08/2022 17:02:58</publishTime>
@@ -4851,7 +5346,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:58</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/contact-icon.png">
-      <publishTime>10/08/2022 11:24:33</publishTime>
+      <publishTime>08/10/2022 11:24:33</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/developer2.png">
       <publishTime>08/08/2022 17:02:58</publishTime>
@@ -4865,11 +5360,14 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/ImagesPlaneraConstruction/footerlogo.png">
       <publishTime>08/08/2022 17:02:58</publishTime>
     </File>
+    <File Include="assets/ImagesPlaneraConstruction/headerservice.jpg">
+      <publishTime>08/24/2022 11:30:18</publishTime>
+    </File>
     <File Include="assets/ImagesPlaneraConstruction/headerservice.png">
       <publishTime>08/08/2022 17:02:58</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/hicon1.png">
-      <publishTime>09/08/2022 13:23:39</publishTime>
+      <publishTime>08/09/2022 13:23:39</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/hicon2.png">
       <publishTime>08/08/2022 18:44:00</publishTime>
@@ -4881,7 +5379,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:58</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/hicon5.png">
-      <publishTime>09/08/2022 13:24:16</publishTime>
+      <publishTime>08/09/2022 13:24:16</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/home_developer2_about1.jpg">
       <publishTime>08/08/2022 17:02:58</publishTime>
@@ -4983,10 +5481,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:58</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/leftsection.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 18:15:50</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/mission.png">
       <publishTime>08/08/2022 17:02:58</publishTime>
+    </File>
+    <File Include="assets/ImagesPlaneraConstruction/ourmission.png">
+      <publishTime>08/24/2022 11:30:43</publishTime>
+    </File>
+    <File Include="assets/ImagesPlaneraConstruction/ourvision.png">
+      <publishTime>08/24/2022 11:30:44</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/pc-logo-black.png">
       <publishTime>08/08/2022 17:02:58</publishTime>
@@ -5004,7 +5508,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:58</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/rightsection.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 18:15:23</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/service1.png">
       <publishTime>08/08/2022 17:02:58</publishTime>
@@ -5013,13 +5517,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:58</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/service3.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/16/2022 17:39:14</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/service4.png">
       <publishTime>08/08/2022 17:02:58</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/slideimg.jpg">
-      <publishTime>08/08/2022 17:02:58</publishTime>
+      <publishTime>08/24/2022 11:29:09</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraConstruction/slideimg.png">
       <publishTime>08/08/2022 17:02:58</publishTime>
@@ -5271,7 +5775,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraInterior/about-section1.png">
-      <publishTime>08/08/2022 17:02:58</publishTime>
+      <publishTime>08/24/2022 11:43:55</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraInterior/about-section2.jpg">
       <publishTime>08/08/2022 17:02:58</publishTime>
@@ -5373,13 +5877,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:58</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraInterior/consult.png">
-      <publishTime>08/08/2022 17:02:58</publishTime>
+      <publishTime>08/24/2022 11:49:17</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraInterior/consulting.png">
       <publishTime>08/08/2022 17:02:58</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraInterior/contact-us.jpg">
       <publishTime>08/08/2022 17:02:58</publishTime>
+    </File>
+    <File Include="assets/ImagesPlaneraInterior/contact-us.png">
+      <publishTime>08/24/2022 11:51:02</publishTime>
     </File>
     <File Include="assets/ImagesPlaneraInterior/contactimage.png">
       <publishTime>08/08/2022 17:02:58</publishTime>
@@ -11867,6 +12374,18 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/NewsEvents/css/structure.css">
       <publishTime>08/08/2022 17:02:59</publishTime>
     </File>
+    <File Include="assets/NewsEvents/event1.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/NewsEvents/event2.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/NewsEvents/event3.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/NewsEvents/event4.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
     <File Include="assets/NewsEvents/images/125x125.gif">
       <publishTime>08/08/2022 17:02:59</publishTime>
     </File>
@@ -12130,6 +12649,18 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="assets/NewsEvents/images/Thumbs.db">
       <publishTime>08/08/2022 17:02:59</publishTime>
+    </File>
+    <File Include="assets/NewsEvents/news1.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/NewsEvents/news2.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/NewsEvents/news3.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
+    <File Include="assets/NewsEvents/news4.jpg">
+      <publishTime>08/23/2022 18:59:14</publishTime>
     </File>
     <File Include="assets/OurBusinesses/css/custom.css">
       <publishTime>08/08/2022 17:02:59</publishTime>
@@ -18873,10 +19404,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:03:11</publishTime>
     </File>
     <File Include="bin/Planera.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/30/2022 12:14:03</publishTime>
     </File>
     <File Include="bin/Planera.pdb">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/30/2022 12:14:03</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>08/08/2022 17:03:11</publishTime>
@@ -19607,6 +20138,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="projects.html">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
+    <File Include="rev-s-gallery-news.html">
+      <publishTime>08/23/2022 18:59:15</publishTime>
+    </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>08/08/2022 17:02:55</publishTime>
     </File>
@@ -19655,35 +20189,50 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Template/PLANERAINTERIOR.pdf">
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
+    <File Include="Views/ActivarDubai/ActivarDubaiHome.cshtml">
+      <publishTime>08/30/2022 11:21:02</publishTime>
+    </File>
     <File Include="Views/Hermano/HermanoContracting.cshtml">
       <publishTime>08/05/2022 22:14:21</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoHome.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/24/2022 00:33:32</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMAbout.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/24/2022 13:35:38</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMAboutold.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/17/2022 10:54:25</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMContact.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/24/2022 00:20:41</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMProjects.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/24/2022 12:42:13</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMService.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/23/2022 18:59:14</publishTime>
     </File>
     <File Include="Views/Home/AboutInterior.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 16:07:00</publishTime>
     </File>
     <File Include="Views/Home/ActivarBH.cshtml">
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
+    <File Include="Views/Home/ActivarBHAbout.cshtml">
+      <publishTime>08/30/2022 11:16:56</publishTime>
+    </File>
+    <File Include="Views/Home/ActivarBHContact.cshtml">
+      <publishTime>08/24/2022 13:37:27</publishTime>
+    </File>
+    <File Include="Views/Home/ActivarBHGallery.cshtml">
+      <publishTime>08/30/2022 11:48:49</publishTime>
+    </File>
+    <File Include="Views/Home/ActivarBHService.cshtml">
+      <publishTime>08/24/2022 13:38:13</publishTime>
+    </File>
     <File Include="Views/Home/ActivarBHV2.cshtml">
-      <publishTime>08/08/2022 17:02:56</publishTime>
+      <publishTime>08/23/2022 20:14:12</publishTime>
     </File>
     <File Include="Views/Home/ActivarDubai.cshtml">
       <publishTime>08/08/2022 17:02:56</publishTime>
@@ -19695,31 +20244,31 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
     <File Include="Views/Home/CompanyOverview.cshtml">
-      <publishTime>08/08/2022 17:02:56</publishTime>
+      <publishTime>08/23/2022 18:59:14</publishTime>
     </File>
     <File Include="Views/Home/ContactInterior.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/24/2022 11:52:04</publishTime>
     </File>
     <File Include="Views/Home/ContactPlaneraGroup.cshtml">
-      <publishTime>08/08/2022 17:02:56</publishTime>
+      <publishTime>08/23/2022 18:59:14</publishTime>
     </File>
     <File Include="Views/Home/ContractingAbout.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/17/2022 11:44:45</publishTime>
     </File>
     <File Include="Views/Home/ContractingContact.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/15/2022 18:07:56</publishTime>
     </File>
     <File Include="Views/Home/ContractingProject.cshtml">
-      <publishTime>09/08/2022 14:10:07</publishTime>
+      <publishTime>08/24/2022 11:23:21</publishTime>
     </File>
     <File Include="Views/Home/ContractingService.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/24/2022 11:48:01</publishTime>
     </File>
     <File Include="Views/Home/Home.cshtml">
       <publishTime>09/05/2022 20:15:28</publishTime>
     </File>
     <File Include="Views/Home/Homev2.cshtml">
-      <publishTime>08/08/2022 17:02:56</publishTime>
+      <publishTime>08/30/2022 12:07:08</publishTime>
     </File>
     <File Include="Views/Home/InteriorService.cshtml">
       <publishTime>08/08/2022 17:02:56</publishTime>
@@ -19728,7 +20277,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
     <File Include="Views/Home/NewsEvents.cshtml">
-      <publishTime>08/08/2022 17:02:56</publishTime>
+      <publishTime>08/23/2022 18:59:14</publishTime>
     </File>
     <File Include="Views/Home/NewsEvents1.cshtml">
       <publishTime>09/05/2022 20:25:09</publishTime>
@@ -19736,11 +20285,14 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Views/Home/NewsEventsaa.cshtml">
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
+    <File Include="Views/Home/NewsEventsOld.cshtml">
+      <publishTime>08/23/2022 18:59:14</publishTime>
+    </File>
     <File Include="Views/Home/OurBusinesses.cshtml">
-      <publishTime>08/08/2022 17:02:56</publishTime>
+      <publishTime>08/30/2022 12:07:08</publishTime>
     </File>
     <File Include="Views/Home/PlaneraCareer.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/16/2022 17:37:30</publishTime>
     </File>
     <File Include="Views/Home/PlaneraCareer1.cshtml">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -19749,7 +20301,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
     <File Include="Views/Home/PlaneraConstruction.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/24/2022 11:35:46</publishTime>
     </File>
     <File Include="Views/Home/PlaneraGeneralTrading.cshtml">
       <publishTime>08/08/2022 17:02:56</publishTime>
@@ -19764,13 +20316,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
     <File Include="Views/Home/_AcBHOurWork.cshtml">
-      <publishTime>10/08/2022 13:13:04</publishTime>
+      <publishTime>08/30/2022 11:31:05</publishTime>
     </File>
     <File Include="Views/Home/_AcBHVideoSec.cshtml">
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
     <File Include="Views/Home/_AcBHVidSlider.cshtml">
-      <publishTime>10/08/2022 13:09:48</publishTime>
+      <publishTime>08/23/2022 19:26:39</publishTime>
     </File>
     <File Include="Views/Home/_InteriorOurProject.cshtml">
       <publishTime>08/08/2022 17:02:56</publishTime>
@@ -19787,20 +20339,26 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Views/Shared/_Layout.cshtml">
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
+    <File Include="Views/Shared/_LayoutActivarBAH.cshtml">
+      <publishTime>08/30/2022 11:50:20</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutActivarDUB.cshtml">
+      <publishTime>08/30/2022 11:50:21</publishTime>
+    </File>
     <File Include="Views/Shared/_LayoutConstruction.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/24/2022 12:23:13</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutHermano.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/24/2022 12:19:58</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutHermanoContracting.cshtml">
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutInterior.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/24/2022 00:37:17</publishTime>
     </File>
     <File Include="Views/Shared/_Layoutv2.cshtml">
-      <publishTime>08/08/2022 17:02:56</publishTime>
+      <publishTime>08/23/2022 18:59:14</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>08/08/2022 17:02:56</publishTime>
