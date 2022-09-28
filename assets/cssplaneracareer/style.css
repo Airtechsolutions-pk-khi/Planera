@@ -1621,10 +1621,10 @@ border-radius: 5px;}
 .post-navigation h4 a{ color: #050748;}
 /**contact page**/
 .banner-6 {
-    background: url(../../assets/ImagesHome/careers-header.jpg);
+    background: url(../../assets/Planeragroup/images/careers-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+   background-position: center center;
 }
 .contact-location{overflow:hidden;}
 .info-card { padding: 30px;
