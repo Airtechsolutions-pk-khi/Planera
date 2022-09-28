@@ -143,8 +143,14 @@ namespace Planera.Controllers
             return View();
         }
 
-        [Route("planera/ourbusiness")]
+        [Route("planera/ourbusiness1")]
         public ActionResult OurBusinesses()
+        {
+            //return RedirectToAction("comingsoon");
+            return View();
+        }
+        [Route("planera/ourbusiness")]
+        public ActionResult OurBusinessesV2()
         {
             //return RedirectToAction("comingsoon");
             return View();
