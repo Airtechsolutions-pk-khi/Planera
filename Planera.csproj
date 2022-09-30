@@ -812,10 +812,15 @@
     <Content Include="assets\Planeragroup\images\activarbah.png" />
     <Content Include="assets\Planeragroup\images\activardubai.png" />
     <Content Include="assets\Planeragroup\images\activerdubai.png" />
+    <Content Include="assets\Planeragroup\images\bahrainicon.png" />
     <Content Include="assets\Planeragroup\images\bahrainlogo.png" />
+    <Content Include="assets\Planeragroup\images\bh.png" />
     <Content Include="assets\Planeragroup\images\careers-header.jpg" />
     <Content Include="assets\Planeragroup\images\Client-Section.jpg" />
+    <Content Include="assets\Planeragroup\images\contact-bg.jpg" />
     <Content Include="assets\Planeragroup\images\country-flag.png" />
+    <Content Include="assets\Planeragroup\images\dubaiicon.png" />
+    <Content Include="assets\Planeragroup\images\emailicon1.png" />
     <Content Include="assets\Planeragroup\images\event.jpg" />
     <Content Include="assets\Planeragroup\images\event1.jpg" />
     <Content Include="assets\Planeragroup\images\event2.jpg" />
@@ -841,6 +846,7 @@
     <Content Include="assets\Planeragroup\images\home-bg.png" />
     <Content Include="assets\Planeragroup\images\home-watchmaker-greybg.png" />
     <Content Include="assets\Planeragroup\images\image2.png" />
+    <Content Include="assets\Planeragroup\images\locationicon.png" />
     <Content Include="assets\Planeragroup\images\news.jpg" />
     <Content Include="assets\Planeragroup\images\news1.jpg" />
     <Content Include="assets\Planeragroup\images\news2.jpg" />
@@ -853,6 +859,7 @@
     <Content Include="assets\Planeragroup\images\planeraconst.png" />
     <Content Include="assets\Planeragroup\images\planeragentrad.png" />
     <Content Include="assets\Planeragroup\images\team-slider-group.jpg" />
+    <Content Include="assets\Planeragroup\images\uae.png" />
     <Content Include="assets\Planeragroup\images\uaelogo.png" />
     <Content Include="assets\Planeragroup\images\video1.mp4" />
     <Content Include="assets\Planeragroup\images\watchmaker-flatbox-bg1.png" />
