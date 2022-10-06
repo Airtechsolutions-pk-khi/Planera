@@ -4,10 +4,511 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\RAFI SIRAJUDDIN\Desktop\15planera</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\RAFI SIRAJUDDIN\Desktop\02pg1</_PublishTargetUrl>
     <History>True|2022-08-23T21:40:19.0904382Z;True|2022-08-16T18:45:11.8204998+03:00;False|2022-08-16T18:44:34.7327906+03:00;True|2022-08-10T11:39:24.9163279+03:00;</History>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="assets/ActivarBH/css/custom.css">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/css/photography2.css">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/css/structure.css">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/fonts/FontsFree-Net-FontsFree-Net-Proxima-Nova-Sbold.ttf">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/fonts/FontsFree-Net-ProximaNova-Regular.ttf">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/-e-Graphic Design Information.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/-e-Manage.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/-e-Managing Social.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/-e-map.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/-e-Media.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/-e-Photographer.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/-e-Promotion and.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/-e-Public.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/-e-Rectangle 11 copy 3.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/-e-Video Shooting.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/01.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/02.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/1-ab-g.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/10-ab-g.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/10.JPG">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/11-ab-g.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/11.JPG">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/12-ab-g.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/12.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/13-ab-g.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/13.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/14-ab-g.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/14.JPG">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/15-ab-g.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/15.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/16-ab-g.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/16.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/17-ab-g.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/17.JPG">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/18.JPG">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/19.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/2-ab-g.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/20.JPG">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/3-ab-g.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/4-ab-g.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/5-ab-g.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/6-ab-g.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/7-ab-g.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/8-ab-g.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/9-ab-g.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/ab-home-bg-1.jpg">
+      <publishTime>10/05/2022 18:13:29</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/Activar-Team-Slider-Rev-1.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/adagency2-small-logo.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/arrow.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/bg-ab.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/bg-contact.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/bg-whoweare.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/contact-us-header.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/footbg2.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/footer logo.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/gallery-header.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/img1.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/interiInsta.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/our-message.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/our-objectives.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/our-vision.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/service-image1.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/service-image3.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/service-image4.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/service-image5.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/service-image6.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/service-image7.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/service-image8.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/services-header.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/services-image2.png">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/slider.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/slider1.jpg">
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/slider1.png">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/slider2.jpg">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/slider2.png">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/slider3.png">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/slider4.png">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/team-slider-ab.png">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/vector-smart-object-5.png">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/vector-smart-object2.png">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/vector-smart-object3.png">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/vector-smart-object4.png">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/images/vector-smart-object5.png">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/slider/00.png">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/slider/01.jpg">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/slider/02.jpg">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/slider/03.jpg">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/slider/04.jpg">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/slider/05.jpg">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/slider/06.jpg">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/slider/07.jpg">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/slider/08.jpg">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/slider/09.jpg">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/slider/10.jpg">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/01-1-1.m4v">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/20220702 Day01 V04-1-1.m4v">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/20220705 Day04-1-1.m4v">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/AcBHV1.mp4">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/AcBHV2.mp4">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/AcBHV3.mp4">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/AcBHV4.mp4">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/AcBHV5.m4v">
+      <publishTime>10/05/2022 19:08:09</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/AcBHV6.m4v">
+      <publishTime>10/05/2022 19:08:09</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/AcBHV7.m4v">
+      <publishTime>10/05/2022 19:08:09</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/AcBHV8.m4v">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/ad-vid-iconimg-1.png">
+      <publishTime>10/05/2022 19:12:20</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/ad-vid-iconimg-2.png">
+      <publishTime>10/05/2022 19:12:20</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/ad-vid-iconimg-3.m4v">
+      <publishTime>10/05/2022 19:11:25</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/ad-vid-iconimg-3.png">
+      <publishTime>10/05/2022 19:21:25</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/ad-vid-iconimg-4.png">
+      <publishTime>10/05/2022 19:12:20</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/ad-vid-iconimg-5.png">
+      <publishTime>10/05/2022 19:20:18</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/ad-vid-iconimg-7.png">
+      <publishTime>10/05/2022 19:24:01</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/Hermano-1-1.m4v">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/Iziq 15Ml Perfume V04-1-1.m4v">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/Iziq-1-1.m4v">
+      <publishTime>10/01/2022 02:14:15</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/The K Salmon Dish V01 -2-1.m4v">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/Thek Bakery-1-1.m4v">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarBH/video/Video 12 - Iii-1-1.m4v">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/css/custom.css">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/css/photography2.css">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/css/structure.css">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/fonts/FontsFree-Net-FontsFree-Net-Proxima-Nova-Sbold.ttf">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/fonts/FontsFree-Net-ProximaNova-Regular.ttf">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/footericons/insta.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/footericons/mail.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/footericons/phone.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/footericons/timing.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/footericons/website.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/footericons/youtube.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/-e-0-ad.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/-e-1-ad.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/-e-2-ad.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/-e-3-ad.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/-e-about-bg-ad.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/-e-contact-bg-ad.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/-e-footer-logo-ad.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/01-gallery-ad.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/02-gallery-ad.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/03-gallery-ad.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/04-gallery-ad.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/05-gallery-ad.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/06-gallery-ad.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/07-gallery-ad.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/08-gallery-ad.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/about-us.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/Auditing, Reviewing &amp; .png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/banner4.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/banner5.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/banner6.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/banner7.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/Computer Systems.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/e.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/footbg2.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/header-logo-ad.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/img1.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/Information Technology.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/interiInsta.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/IT Infrastructure.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/Marketing Services Via.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/Online Gaming.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/slider1.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/slider2.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/slider3.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/slider4.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/Social Media Applications.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/team-ad.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/ActivarDB/images/Website.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
     <File Include="assets/bg-ab-dubai.png">
       <publishTime>08/08/2022 17:02:59</publishTime>
     </File>
@@ -1894,6 +2395,492 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="assets/group-5.png">
       <publishTime>08/08/2022 17:03:00</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/css/custom.css">
+      <publishTime>10/05/2022 20:09:10</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/css/developer2.css">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/css/Lato-Regular.ttf">
+      <publishTime>10/05/2022 19:33:38</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/css/structure.css">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/bgcontact.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/bgfooter.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/bgsection.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/gallery1.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/gallery2.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/gallery3.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/gallery4.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/gallery5.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/gallery6.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/gallery7.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/gallery8.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/gallerytmb1.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/gallerytmb2.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/gallerytmb3.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/gallerytmb4.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/gallerytmb5.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/gallerytmb6.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/gallerytmb7.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/gallerytmb8.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/header-logo.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/headerservice.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Hermano-Team-Slider-Rev-1.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/hicon1.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/hicon5.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/icons/badge.svg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/icons/hi.svg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/icons/link.svg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/icons/teama.svg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/icons/tech.svg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/icons/tin.svg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/01.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/02.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/03.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/04.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/05.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/06.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/07.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/08.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/09.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/10.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/11.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/12.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/13.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/14.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/15.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/16.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/17.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/18.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/19.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/20.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/21.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/22.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/23.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/24.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Janabiya/25.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/leftsection.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/logo.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/logoheader.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/ourmission.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/ourvision.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Riffa landscape/01.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Riffa landscape/02.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Riffa landscape/03.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Riffa landscape/04.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Riffa landscape/05.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Riffa landscape/06.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Riffa landscape/07.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Riffa Views/01.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Riffa Views/02.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Riffa Views/03.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Riffa Views/04.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/Riffa Views/05.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/rightsection.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/section2.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/sectionOver.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/service1.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/service3.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/slider.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/slider2.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/slider3.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoContract/images/top-bg.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/css/custom.css">
+      <publishTime>10/05/2022 20:08:37</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/css/renovate4.css">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/css/structure.css">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/01.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/02.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/03.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/04.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/05.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/06.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/07.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/08.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/09.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/10.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/11.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/about-header.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/about-us.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/Air Conditioner Maintenance Work.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/air-conditiner.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/bg-hiw.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/bg-hrm-s4.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/bg-wm-hr.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/electrical work.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/electricity.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/footer-logo.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/group-5.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/group-6.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/group-7.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/header-logo-white.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/header-logo.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hermano-gallery/01.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hermano-gallery/02.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hermano-gallery/03.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hermano-gallery/04.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hermano-gallery/05.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hermano-gallery/06.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hermano-gallery/07.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hermano-gallery/08.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hermano-gallery/09.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hermano-gallery/10.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hermano-gallery/11.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/Hermano-Team-Slider-Rev-1.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/HermanoRMContact.cshtml">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hero-1-%281%29.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hero-1-%282%29.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hero-1-%283%29.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hero-1-%284%29.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hiw-img1.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hiw-img2.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hiw-img3.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/homepage-our- services.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hr-project-header.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hrm-about-s2-img1.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hrm-contact-img1.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hrm-header-bg.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hrm-icon-1.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hrm-icon-2.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hrm-icon1.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hrm-icon2.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hrm-icon3.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hrm-step1.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hrm-step2.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/hrm-step3.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/Layer-13-copy.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/logo.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/msgicon.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/ourmission.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/phoneicon.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/Plumbing Work.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/plumbing-hrm.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/project-header.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/reair of household.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/reno4-footer-bg.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/reno4-home-team.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/reno4-reno-guys.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/reno4-slider-bg.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/Repair house hold appliances.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/HarmanoRepair/images/why choose.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
     </File>
     <File Include="assets/HomeV2/css/custom.css">
       <publishTime>08/08/2022 17:02:56</publishTime>
@@ -12342,7 +13329,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="assets/js/scripts.js">
-      <publishTime>08/08/2022 17:03:00</publishTime>
+      <publishTime>09/27/2022 20:10:11</publishTime>
     </File>
     <File Include="assets/js/translate3d.js">
       <publishTime>08/08/2022 17:03:00</publishTime>
@@ -13135,6 +14122,555 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="assets/planera-group.png">
       <publishTime>08/08/2022 17:03:00</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/css/bootstrap.min.css">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/css/custom.css">
+      <publishTime>10/03/2022 20:24:01</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/css/fonts.css">
+      <publishTime>08/08/2022 17:02:56</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/css/structure.css">
+      <publishTime>08/08/2022 17:02:56</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/css/style.css">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/css/watchmaker.css">
+      <publishTime>08/08/2022 17:02:56</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/0001.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/10.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/11.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/12.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/13.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/2.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/7.JPG">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/8.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/9.JPG">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/activar-bahrain.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/activar-dubai.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/activarbah.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/activardubai.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/activerdubai.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/bahrainicon.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/bahrainlogo.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/bh.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/careers-header.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/Client-Section.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/contact-bg.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/country-flag.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/dubaiicon.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/emailicon1.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/event.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/event1.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/event10.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/event2.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/event3.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/event4.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/event5.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/event6.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/event7.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/event8.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/event9.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/generaltrading.png">
+      <publishTime>10/05/2022 17:43:20</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/get-in-touch-header.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/h2-logo2.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/h2-logo4.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/h2-logo5.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/h2-logo6.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/hermano-contracting.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/hermano-repair.jpg">
+      <publishTime>10/05/2022 17:59:00</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/hermano-repair.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/HermanoCon&amp;land.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/hermanocont.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/Hermanorepair&amp;Main.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/home-bg.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/home-watchmaker-greybg.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/image2.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/locationicon.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/news.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/news1.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/news2.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/news3.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/news4.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/our-business-header.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/pg-logo-hor-black.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/pg-logo-horizontal-white.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/planeraart.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/planeraconst.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/planeragentrad.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/team-slider-group.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/uae.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/uaelogo.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/video1.mp4">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/watchmaker-flatbox-bg1.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/watchmaker-flatbox-bg2.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/watchmaker-flatbox-bg3.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/who-we-are.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/١٠.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/١٢.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/٧.JPG">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/٨.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/٩.JPG">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/css/architect3.css">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/css/custom.css">
+      <publishTime>10/06/2022 02:35:14</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/css/structure.css">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/css/style.css">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/-e-banner1.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/-e-banner2.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/-e-banner3.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/-e-banner5.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/about-section1.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/about-section2.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/about-section2.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/about-section3.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/about-us.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/adhari-p2.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/atyab-almarshod-p3.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/badge.svg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/bahrain-bay-office-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/bedroom-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/bedroom1-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/boy-bedroom-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/boy-bedroom1-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/boy-bedroom2-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/buhair-garden-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/buhair1-p4.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/buhair2-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/buhair2-p5.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/careers-img.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/closet-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/consult.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/consulting.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/contact-us.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/dana-toilet-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/dubai-appartment-p5.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/durrah-p6.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/durrah-pantery-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/ext.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/exterior-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/exterior.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/favicon.ico">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/garden-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/garden1-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/garden2-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/girl-bathroom-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/girl-bathroom1-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/hi.svg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/home_architect3_about3.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/home_architect3_pic1.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/home_architect3_sectionbg1.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/home_architect3_sectionbg2.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/hp-s-1.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/hp-s-2.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/hp-s-3.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/hp-s-4.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/hp-s-5.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/hp-s-6.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/icon1.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/icon2.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/icon3.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/interiInsta.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/intservice2.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/intsmall2.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/islamic-bathroom-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/islamic-bedroom-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/iziq-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/janabiya-exterior-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/janabiya-landscape-p6.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/janabiya-palace.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/jaw-landscape.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/kids-room-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/kitchen-p7.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/landscape-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/landscape.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/landscape1-big.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/landscape1.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/lights.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/lights1.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/link.svg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/living-room-big.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/lobby-big.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/lobby1-big.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/majlis-big.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/majlis1-big.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/master-bedroom-big.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/pi-logo-white.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/pi-logo.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/Planera-Interior-Team-Slider.jpg">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/PlaneraLogo.png">
+      <publishTime>10/01/2022 02:14:16</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/project1.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/projects.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/ramada-expension-japanese.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/ramada-expension-neoclassic.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/reading-corner-big.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/sakhir-ajlis.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/sakhir-majlis.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/salman-city.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/services-bg.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/spa-big.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/supervising.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/supervising1.png">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/teama.svg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/tech.svg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/tin.svg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
+    </File>
+    <File Include="assets/PlaneraInterior/images/vwcat.jpg">
+      <publishTime>10/01/2022 02:14:17</publishTime>
     </File>
     <File Include="assets/plugins/rs-plugin-5.3.1/.DS_Store">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -19404,10 +20940,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:03:11</publishTime>
     </File>
     <File Include="bin/Planera.dll">
-      <publishTime>08/30/2022 12:14:03</publishTime>
+      <publishTime>10/06/2022 02:58:41</publishTime>
     </File>
     <File Include="bin/Planera.pdb">
-      <publishTime>08/30/2022 12:14:03</publishTime>
+      <publishTime>10/06/2022 02:58:41</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>08/08/2022 17:03:11</publishTime>
@@ -20190,52 +21726,52 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
     <File Include="Views/ActivarDubai/ActivarDubaiHome.cshtml">
-      <publishTime>08/30/2022 11:21:02</publishTime>
+      <publishTime>10/06/2022 01:03:09</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoContracting.cshtml">
       <publishTime>08/05/2022 22:14:21</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoHome.cshtml">
-      <publishTime>08/24/2022 00:33:32</publishTime>
+      <publishTime>10/05/2022 20:18:42</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMAbout.cshtml">
-      <publishTime>08/24/2022 13:35:38</publishTime>
+      <publishTime>10/06/2022 00:48:34</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMAboutold.cshtml">
-      <publishTime>08/17/2022 10:54:25</publishTime>
+      <publishTime>10/01/2022 02:14:14</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMContact.cshtml">
-      <publishTime>08/24/2022 00:20:41</publishTime>
+      <publishTime>10/05/2022 20:35:04</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMProjects.cshtml">
-      <publishTime>08/24/2022 12:42:13</publishTime>
+      <publishTime>10/05/2022 20:21:05</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMService.cshtml">
-      <publishTime>08/23/2022 18:59:14</publishTime>
+      <publishTime>10/05/2022 20:14:52</publishTime>
     </File>
     <File Include="Views/Home/AboutInterior.cshtml">
-      <publishTime>08/15/2022 16:07:00</publishTime>
+      <publishTime>10/06/2022 00:31:02</publishTime>
     </File>
     <File Include="Views/Home/ActivarBH.cshtml">
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
     <File Include="Views/Home/ActivarBHAbout.cshtml">
-      <publishTime>08/30/2022 11:16:56</publishTime>
+      <publishTime>10/06/2022 00:46:25</publishTime>
     </File>
     <File Include="Views/Home/ActivarBHContact.cshtml">
-      <publishTime>08/24/2022 13:37:27</publishTime>
+      <publishTime>10/05/2022 18:32:12</publishTime>
     </File>
     <File Include="Views/Home/ActivarBHGallery.cshtml">
-      <publishTime>08/30/2022 11:48:49</publishTime>
+      <publishTime>10/01/2022 23:53:19</publishTime>
     </File>
     <File Include="Views/Home/ActivarBHService.cshtml">
-      <publishTime>08/24/2022 13:38:13</publishTime>
+      <publishTime>10/01/2022 23:55:05</publishTime>
     </File>
     <File Include="Views/Home/ActivarBHV2.cshtml">
-      <publishTime>08/23/2022 20:14:12</publishTime>
+      <publishTime>10/06/2022 00:43:09</publishTime>
     </File>
     <File Include="Views/Home/ActivarDubai.cshtml">
-      <publishTime>08/08/2022 17:02:56</publishTime>
+      <publishTime>10/06/2022 02:58:39</publishTime>
     </File>
     <File Include="Views/Home/ComingSoon.cshtml">
       <publishTime>08/08/2022 17:02:56</publishTime>
@@ -20244,64 +21780,82 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
     <File Include="Views/Home/CompanyOverview.cshtml">
-      <publishTime>08/23/2022 18:59:14</publishTime>
+      <publishTime>10/01/2022 02:14:14</publishTime>
     </File>
     <File Include="Views/Home/ContactInterior.cshtml">
-      <publishTime>08/24/2022 11:52:04</publishTime>
+      <publishTime>10/06/2022 02:33:51</publishTime>
     </File>
     <File Include="Views/Home/ContactPlaneraGroup.cshtml">
-      <publishTime>08/23/2022 18:59:14</publishTime>
+      <publishTime>10/01/2022 02:14:14</publishTime>
     </File>
     <File Include="Views/Home/ContractingAbout.cshtml">
-      <publishTime>08/17/2022 11:44:45</publishTime>
+      <publishTime>10/01/2022 02:14:14</publishTime>
     </File>
     <File Include="Views/Home/ContractingContact.cshtml">
-      <publishTime>08/15/2022 18:07:56</publishTime>
+      <publishTime>10/01/2022 02:14:14</publishTime>
     </File>
     <File Include="Views/Home/ContractingProject.cshtml">
-      <publishTime>08/24/2022 11:23:21</publishTime>
+      <publishTime>10/01/2022 02:14:14</publishTime>
     </File>
     <File Include="Views/Home/ContractingService.cshtml">
-      <publishTime>08/24/2022 11:48:01</publishTime>
+      <publishTime>10/01/2022 02:14:14</publishTime>
+    </File>
+    <File Include="Views/Home/HermanoCAbout.cshtml">
+      <publishTime>10/03/2022 20:38:04</publishTime>
+    </File>
+    <File Include="Views/Home/HermanoCContact.cshtml">
+      <publishTime>10/05/2022 19:55:30</publishTime>
+    </File>
+    <File Include="Views/Home/HermanoCHome.cshtml">
+      <publishTime>10/03/2022 18:06:34</publishTime>
+    </File>
+    <File Include="Views/Home/HermanoCProject.cshtml">
+      <publishTime>10/05/2022 20:20:49</publishTime>
+    </File>
+    <File Include="Views/Home/HermanoCService.cshtml">
+      <publishTime>10/06/2022 00:47:25</publishTime>
     </File>
     <File Include="Views/Home/Home.cshtml">
       <publishTime>09/05/2022 20:15:28</publishTime>
     </File>
     <File Include="Views/Home/Homev2.cshtml">
-      <publishTime>08/30/2022 12:07:08</publishTime>
+      <publishTime>10/06/2022 00:28:10</publishTime>
     </File>
     <File Include="Views/Home/InteriorService.cshtml">
-      <publishTime>08/08/2022 17:02:56</publishTime>
+      <publishTime>10/06/2022 00:33:46</publishTime>
     </File>
     <File Include="Views/Home/Main.cshtml">
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
     <File Include="Views/Home/NewsEvents.cshtml">
-      <publishTime>08/23/2022 18:59:14</publishTime>
+      <publishTime>10/06/2022 02:22:49</publishTime>
     </File>
     <File Include="Views/Home/NewsEvents1.cshtml">
       <publishTime>09/05/2022 20:25:09</publishTime>
     </File>
     <File Include="Views/Home/NewsEventsaa.cshtml">
-      <publishTime>08/08/2022 17:02:56</publishTime>
+      <publishTime>10/01/2022 02:14:14</publishTime>
     </File>
     <File Include="Views/Home/NewsEventsOld.cshtml">
       <publishTime>08/23/2022 18:59:14</publishTime>
     </File>
     <File Include="Views/Home/OurBusinesses.cshtml">
-      <publishTime>08/30/2022 12:07:08</publishTime>
+      <publishTime>09/27/2022 18:49:13</publishTime>
+    </File>
+    <File Include="Views/Home/OurBusinessesV2.cshtml">
+      <publishTime>10/06/2022 01:52:32</publishTime>
     </File>
     <File Include="Views/Home/PlaneraCareer.cshtml">
-      <publishTime>08/16/2022 17:37:30</publishTime>
+      <publishTime>10/01/2022 02:14:14</publishTime>
     </File>
     <File Include="Views/Home/PlaneraCareer1.cshtml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Views/Home/PlaneraCareerpld.cshtml">
-      <publishTime>08/08/2022 17:02:56</publishTime>
+      <publishTime>10/05/2022 18:01:38</publishTime>
     </File>
     <File Include="Views/Home/PlaneraConstruction.cshtml">
-      <publishTime>08/24/2022 11:35:46</publishTime>
+      <publishTime>10/01/2022 02:14:14</publishTime>
     </File>
     <File Include="Views/Home/PlaneraGeneralTrading.cshtml">
       <publishTime>08/08/2022 17:02:56</publishTime>
@@ -20310,25 +21864,25 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
     <File Include="Views/Home/PlaneraInteriorv2.cshtml">
-      <publishTime>08/08/2022 19:33:53</publishTime>
+      <publishTime>10/06/2022 00:29:47</publishTime>
     </File>
     <File Include="Views/Home/ProjectInterior.cshtml">
-      <publishTime>08/08/2022 17:02:56</publishTime>
+      <publishTime>10/03/2022 20:13:48</publishTime>
     </File>
     <File Include="Views/Home/_AcBHOurWork.cshtml">
-      <publishTime>08/30/2022 11:31:05</publishTime>
+      <publishTime>10/01/2022 02:14:14</publishTime>
     </File>
     <File Include="Views/Home/_AcBHVideoSec.cshtml">
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
     <File Include="Views/Home/_AcBHVidSlider.cshtml">
-      <publishTime>08/23/2022 19:26:39</publishTime>
+      <publishTime>10/05/2022 19:24:33</publishTime>
     </File>
     <File Include="Views/Home/_InteriorOurProject.cshtml">
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
     <File Include="Views/Home/_PI-ImgSlider.cshtml">
-      <publishTime>08/08/2022 17:02:56</publishTime>
+      <publishTime>10/01/2022 02:14:14</publishTime>
     </File>
     <File Include="Views/HomeV2/HomeV2.cshtml">
       <publishTime>09/05/2022 20:25:09</publishTime>
@@ -20337,28 +21891,31 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2022 17:02:56</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>08/08/2022 17:02:56</publishTime>
+      <publishTime>10/06/2022 02:58:09</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutActivarBAH.cshtml">
-      <publishTime>08/30/2022 11:50:20</publishTime>
+      <publishTime>10/05/2022 18:57:26</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutActivarDUB.cshtml">
-      <publishTime>08/30/2022 11:50:21</publishTime>
+      <publishTime>10/06/2022 01:00:08</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutConstruction.cshtml">
-      <publishTime>08/24/2022 12:23:13</publishTime>
+      <publishTime>10/03/2022 01:29:27</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutHermaniCL.cshtml">
+      <publishTime>10/05/2022 20:00:48</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutHermano.cshtml">
-      <publishTime>08/24/2022 12:19:58</publishTime>
+      <publishTime>10/06/2022 02:25:24</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutHermanoContracting.cshtml">
-      <publishTime>08/08/2022 17:02:56</publishTime>
+      <publishTime>10/01/2022 02:14:14</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutInterior.cshtml">
-      <publishTime>08/24/2022 00:37:17</publishTime>
+      <publishTime>10/06/2022 02:32:13</publishTime>
     </File>
     <File Include="Views/Shared/_Layoutv2.cshtml">
-      <publishTime>08/23/2022 18:59:14</publishTime>
+      <publishTime>10/06/2022 02:58:23</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>08/08/2022 17:02:56</publishTime>

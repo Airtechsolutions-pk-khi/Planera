@@ -47,7 +47,7 @@ namespace Planera.Controllers
         {
             return View();
         }
-        public JsonResult SendEmailToAdmin(BookNow obj, string Subject)
+        public JsonResult SendEmailToAdminBookNow(BookNow obj, string Subject)
         {
             try
             {

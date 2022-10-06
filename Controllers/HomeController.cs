@@ -16,12 +16,16 @@ namespace Planera.Controllers
         {
             return View();
         }
-        //[Route("planera/home")]
+
+        
+        [Route("planera/homeold")]
         public ActionResult Home()
         {
             return View();
         }
-        //[Route("planera/homev2")]
+
+        [Route("")]
+        [Route("planera/home")]
         public ActionResult Homev2()
         {
             return View();
@@ -35,14 +39,12 @@ namespace Planera.Controllers
             return View();
         }
 
-        [Route("planera/activardubai")]
+        [Route("activardubai/home")]
         public ActionResult ActivarDubai()
         {
             //return RedirectToAction("comingsoon");
             return View();
         }
-
-      
 
         [Route("planera/activarbahrainold")]
         public ActionResult ActivarBH()
@@ -78,32 +80,32 @@ namespace Planera.Controllers
         {
             return View();
         }
-        [Route("planera/construction")]
-        public ActionResult PlaneraConstruction()
+        [Route("planera/hermano-contracting")]
+        public ActionResult HermanoCHome()
         {
             //return RedirectToAction("comingsoon");
             return View();
         }
-        [Route("contracting/about")]
-        public ActionResult ContractingAbout()
+        [Route("hermano-contracting/about")]
+        public ActionResult HermanoCAbout()
         {
             //return RedirectToAction("comingsoon");
             return View();
         }
-        [Route("contracting/contact")]
-        public ActionResult ContractingContact()
+        [Route("hermano-contracting/contact")]
+        public ActionResult HermanoCContact()
         {
             //return RedirectToAction("comingsoon");
             return View();
         }
-        [Route("contracting/projects")]
-        public ActionResult ContractingProject()
+        [Route("hermano-contracting/projects")]
+        public ActionResult HermanoCProject()
         {
             //return RedirectToAction("comingsoon");
             return View();
         }
-        [Route("contracting/services")]
-        public ActionResult ContractingService()
+        [Route("hermano-contracting/services")]
+        public ActionResult HermanoCService()
         {
             //return RedirectToAction("comingsoon");
             return View();
@@ -125,11 +127,11 @@ namespace Planera.Controllers
         [Route("planera/general-trading")]
         public ActionResult PlaneraGeneralTrading()
         {
-            //return RedirectToAction("comingsoon");
-            return View();
+            return RedirectToAction("comingsoon");
+            //return View();
         }
 
-        [Route("planera/planera-career")]
+        [Route("planera/career")]
         public ActionResult PlaneraCareer()
         {
             //return RedirectToAction("comingsoon");

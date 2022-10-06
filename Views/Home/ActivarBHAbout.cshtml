@@ -13,8 +13,8 @@
     <div class="section_wrapper clearfix">
         <div class="items_group clearfix"></div>
         <h1 class="">
-                ABOUT US
-            </h1>
+            ABOUT US
+        </h1>
     </div>
 </div>
 <div id="Content">
@@ -29,14 +29,12 @@
                                 <img src="~/assets/ImagesActivarBH/-e-DSLR Camera.png" />
                             </div>*@
                         <div class="column one-third" style="text-align:center"></div>
-                        <div class="column one-third" style="text-align:center">
+                        <div class="column one-third" style="text-align: center; margin-bottom: 15px;">
                             <h3 style="color:black">Who We Are</h3>
-
                             <p style="color: black; font-weight: 600; font-size: 16px; ">that provides comprehensive media services, production of images and videos, design and printing of all kinds</p>
+                            <p style="color: black; font-weight: 600; font-size: 16px;">it practice public relations, marketing, and perfumeryactivities. Its provide project management consultancy. Provide the best service to be the ideal choice for all clients.</p>
 
-                            <p style="color: black; font-weight: 600; font-size: 16px;">it practice public relations, marketing, and perfumeryactivities. Its provide project management consultancy.</p>
-
-                            <p style="color: black; font-weight: 600; font-size: 16px;">It seeks to be a success partner with its clients to their goals and desire and provide the best service to be the ideal choice for all clients.</p>
+                            @*<p style="color: black; font-weight: 600; font-size: 16px;">It seeks to be a success partner with its clients to their goals and desire and provide the best service to be the ideal choice for all clients.</p>*@
                         </div>
                         <div class="column one-third" style="text-align:center"></div>
                         @*<div class="column one-third" style="text-align:right">
@@ -158,12 +156,14 @@
                                     .wrapper {
                                         overflow: hidden;
                                     }
+
                                     .sliding-background {
                                         background: url(../../assets/ActivarBH/images/Activar-Team-Slider-Rev-1.jpg) repeat-x;
                                         height: 536px;
                                         width: 5076px;
                                         animation: slide 30s linear infinite;
                                     }
+
                                     @@keyframes slide {
                                         0% {
                                             transform: translate3d(0, 0, 0);
@@ -182,3 +182,8 @@
         </div>
     </div>
 </div>
+<script>
+    jQuery(document).ready(function () {
+        jQuery('#aboutuspage').addClass('hover');
+    })
+</script>
