@@ -9,7 +9,7 @@ namespace Planera.Controllers
     public class ActivarDubaiController : Controller
     {
         // GET: ActivarDubai
-        [Route("activardubai/home")]
+        [Route("planera/activardubai")]
         public ActionResult ActivarDubaiHome()
         {
             //return RedirectToAction("comingsoon");

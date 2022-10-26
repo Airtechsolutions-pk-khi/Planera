@@ -6,7 +6,7 @@
     <title>Hermano Repair and Maintenance</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Favicons -->
-    <link rel="shortcut icon" href="~/assets/ImagesHome/favicon.ico">
+    <link rel="shortcut icon" href="~/hermano.ico">
     <!-- FONTS -->
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,700'>
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Patua+One:100,300,400,400italic,700'>
@@ -157,7 +157,7 @@
         <!-- Footer-->
         <footer id="Footer" class="clearfix">
             <div class="container" style="padding:50px 0 0 0;">
-                <div class="column one-fifth" style="text-align:center">
+                <div class="column one-fifth" >
                     <aside class="widget widget_text">
                         <img src="~/assets/HarmanoRepair/images/logo.png" />
                     </aside>
@@ -204,6 +204,9 @@
                                     +973 37755200, +973 37755020
                                 </li>
                                 <li style="margin-bottom: 10px">
+                                    <span class="icon-instagram"><a href="https://instagram.com/hermano.contracting?igshid=NmNmNjAwNzg=">/ hermano.contracting</a></span>
+                                </li>
+                                <li style="margin-bottom: 10px">
                                     <span class="icon-mail"><a href="mailto:hermano@planerabh.com">hermano@planerabh.com</a></span>
                                 </li>
                                 <li style="margin-bottom: 10px">
@@ -218,7 +221,7 @@
                     </aside>
                 </div>
 
-                <div class="column one-fifth" style="text-align:center">
+                <div class="column one-fifth" >
                     <aside class="widget widget_text">
                         <img src="~/assets/HarmanoRepair/images/footer-logo.png" />
                     </aside>
@@ -247,7 +250,7 @@
                 @*<li class="facebook"> <a href="#" title="Facebook"><i class="icon-facebook"></i></a> </li>
                     <li class="linkedin"> <a href="#" title="LinkedIn"><i class="icon-linkedin"></i></a> </li>
                     <li class="pinterest"> <a href="#" title="Pinterest"><i class="icon-pinterest"></i></a> </li>*@
-                <li class="instagram"> <a href="https://www.instagram.com/hermano.landscaping/" target="_blank" title="Instagram"><i class="icon-instagram"></i></a> </li>
+                <li class="instagram"> <a href="https://instagram.com/hermano.contracting?igshid=NmNmNjAwNzg= " target="_blank" title="Instagram"><i class="icon-instagram"></i></a> </li>
             </ul>
         </div>
         <div id="body_overlay">
@@ -298,9 +301,11 @@
                             <div class="col-6">
                                 <select name="time" id="time" style="width: 100%; border: groove;" required>
                                     <option selected disabled>Select Time</option>
-                                    <option>11 AM</option>
-                                    <option>12 AM</option>
-                                    <option>01 pM</option>
+                                    <option>09am to 12pm</option>
+                                    <option>12pm to 03pm</option>
+                                    <option>03pm to 06pm</option>
+                                    <option>06pm to 09pm</option>
+
                                 </select>
                             </div>
                         </div>
@@ -314,7 +319,7 @@
                 </div>
                 <div class="modal-footer">
                     <div class="col-12 text-right">
-                        <input type="button" value="Submit" id="submit" onClick="SendEmail();" style="background-color: #275935; width: 100%; padding: 10px 40px; border-radius: 0;">
+                        <input type="button" value="Submit" id="submit" onClick="SendEmailBookNow();" style="background-color: #275935; width: 100%; padding: 10px 40px; border-radius: 0;">
                     </div>
                 </div>
             </div>
@@ -360,8 +365,8 @@
         }
     </style>
     <script>
-        (function ()
-                        var tpj = jQuery;
+        (function () {
+        var tpj = jQuery;
         var revapi50;
         tpj(document).ready(function () {
             if (tpj("#rev_slider_50_1").revolution == undefined) {
@@ -710,7 +715,7 @@
 
 
     <script>
-      function SendEmail() {
+      function SendEmailBookNow() {
 
              debugger
             var dataType = 'application/json; charset=utf-8';
@@ -726,7 +731,7 @@
             }
             $.ajax({
                 type: 'POST',
-                url: '@Url.Action("SendEmailToAdmin", "Hermano")',
+                url: '@Url.Action("SendEmailToAdminBookNow", "Hermano")',
                 dataType: 'json',
                 contentType: dataType,
                 data: JSON.stringify(obj),

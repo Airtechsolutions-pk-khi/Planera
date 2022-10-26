@@ -45,9 +45,12 @@
         }
 
         .list_right .desc {
-            line-height: 40px;
+            line-height: 25px;
             font-size: 15px;
             font-weight: 600;
+        }
+        .list_item .list_right {
+            padding: 13px 0 0;
         }
     </style>
     <link href="~/assets/css/sweetalert.css" rel="stylesheet" />
@@ -116,10 +119,13 @@
                                         </div>
                                         <div class="list_right">
                                             <div class="desc" style="color:#fff;">
-                                                Alliance Business Centers Network, 4th Floor, Block-B
+                                                Alliance Business Centers Network, <br />
+                                                4th Floor, Block-B
                                             </div>
                                         </div>
                                     </div>
+                                    <br />
+                                    <br />
                                     <div class="list_item lists_1 clearfix">
                                         <div class="list_left list_icon">
                                             <img src="~/assets/Planeragroup/images/emailicon1.png" width="40px" />
@@ -214,8 +220,8 @@
                                                 </div>
                                                 <input id="myinput" type="checkbox" />
                                                 <label for="myinput" class="indented-checkbox-text">I have read and accept the <a href="#">privicy policy</a></label>
-                                                <div class="column ">
-                                                    <input type="button" value="Submit" id="submit" onClick="SendEmail();" style="border: solid 1px #fff; background-color: #fff0; width: 100%; padding: 10px 40px; border-radius: 0;">
+                                                <div >
+                                                    <input type="button" value="Submit" id="submit" onClick="SendEmail();" style="border: solid 1px #fff; background-color: #fff0; width: 160px; margin: 0;">
                                                 </div>
                                             </form>
                                         </div>
@@ -234,20 +240,18 @@
         </div>
     </div>
 </div>
-<script src="~/assets/js/jquery-3.6.0.min.js"></script>
-<script src="~/assets/plugins/sweetalert.min.js"></script>
 <script>
       function SendEmail() {
             var dataType = 'application/json; charset=utf-8';
             var obj = {
-                "Name": $('#name').val(),
-                "Email": $('#email').val(),
-                "Subject": $('#subject').val(),
-                "Message": $('#message').val()
+                "Name": jQuery('#name').val(),
+                "Email": jQuery('#email').val(),
+                "Subject": jQuery('#subject').val(),
+                "Message": jQuery('#message').val()
             }
-            $.ajax({
+          jQuery.ajax({
                 type: 'POST',
-                url: '@Url.Action("SendEmailToAdmin", "Home")',
+                url: '@Url.Action("SendEmailAdminPlaneraGroup", "Email")',
                 dataType: 'json',
                 contentType: dataType,
                 data: JSON.stringify(obj),
@@ -280,9 +284,9 @@
 
         }
         function ClearFields() {
-            $('#name').val('');
-            $('#email').val('');
-            $('#subject').val('');
-            $('#message').val('');
+           jQuery('#name').val('');
+           jQuery('#email').val('');
+           jQuery('#subject').val('');
+           jQuery('#message').val('');
         }
 </script>

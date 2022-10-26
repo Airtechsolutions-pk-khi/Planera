@@ -5,7 +5,7 @@
 }
 <link href="~/assets/css/sweetalert.css" rel="stylesheet" />
 @*<link href="~/assets/css/factory3.css" rel="stylesheet" />
-<link href="~/assets/css/structureoverview.css" rel="stylesheet" />*@
+    <link href="~/assets/css/structureoverview.css" rel="stylesheet" />*@
 <style>
     .column, .columns {
         float: left;
@@ -104,9 +104,9 @@
     </div>
 </div>
 
-<div class="section mcb-section no-margin-h no-margin-v equal-height-wrap full-width" style="padding-top:60px;" >
+<div class="section mcb-section no-margin-h no-margin-v equal-height-wrap full-width" style="padding-top:60px;">
     <div class="section_wrapper mcb-section-inner">
-        
+
         <div class="wrap mcb-wrap one-second valign-middle clearfix" style="padding:50px 5% 50px 7%;background-image: url('../../assets/ImagesCompanyOverView/chairman-msg-bg.png'); background-repeat: no-repeat;background-size:cover;">
             @*background-color:#f3f4f6;*@
             <div class="mcb-wrap-inner">
@@ -122,18 +122,18 @@
                     </div>
                 </div>
                 <div class="animate fadeInLeft column mcb-column one column_column column-margin-10px">
-                    <div class="column_attr clearfix" style="background-image: url('../../assets/OurBusinesses/images/box.png'); background-repeat: no-repeat; background-position: left top; padding: 0 0 0 50px;">
+                    <div class="column_attr clearfix" style="background-image: url('../../assets/OurBusinesses/images/box.png'); background-repeat: no-repeat; background-position: left top; ">
                         <p style="color:white;font-size:16px;" class="text-justify">The purpose of the Planera Group is to serve the people and serve the community</p>
                         @*color:#01247d;*@
                     </div>
                 </div>
                 <div class="animate fadeInLeft column mcb-column one column_column column-margin-10px">
-                    <div class="column_attr clearfix" style="background-image: url('../../assets/OurBusinesses/images/box.png'); background-repeat: no-repeat; background-position: left top; padding: 0 0 0 50px;">
+                    <div class="column_attr clearfix" style="background-image: url('../../assets/OurBusinesses/images/box.png'); background-repeat: no-repeat; background-position: left top; ">
                         <p style="color:white;font-size:16px;" class="text-justify">Planera Group has always been one of flexibility and adaptation.</p>
                     </div>
                 </div>
                 <div class="animate fadeInLeft column mcb-column one column_column column-margin-40px">
-                    <div class="column_attr clearfix" style="background-image: url('../../assets/OurBusinesses/images/box.png'); background-repeat: no-repeat; background-position: left top; padding: 0 0 0 50px;">
+                    <div class="column_attr clearfix" style="background-image: url('../../assets/OurBusinesses/images/box.png'); background-repeat: no-repeat; background-position: left top; ">
                         <p style="color:white;font-size:16px;" class="text-justify">We grow to become a diversified multinational business with interest across multiple sectors</p>
                     </div>
                 </div>
@@ -157,7 +157,7 @@
 <div class="section_wrapper mcb-section-inner animate fadeInLeft">
     <div class="wrap mcb-wrap one valign-top move-up clearfix stretch" style="margin-top:80px">
         <div class="mcb-wrap-inner">
-            <div class="column mcb-column one-second column_column" >
+            <div class="column mcb-column one-second column_column">
                 <div class="column_attr clearfix" style="background-color:#fffdf6;padding:64px 10% 57px;">
                     <h2>Vision & </h2>
                     <h2>&nbsp;&nbsp; &nbsp; &nbsp; Mission</h2>
@@ -166,7 +166,7 @@
                     <p style="font-size: 16px; text-align: justify;">Our mission is whether we are entering new markets or meeting customers in new ways, we are constantly innovating to meet customer expectations.</p>
                 </div>
             </div>
-            <div class="column mcb-column one-second column_column" >
+            <div class="column mcb-column one-second column_column">
                 <div class="column_attr clearfix bg-cover" style="background-image: url('../../assets/ImagesCompanyOverView/vision mission.png');background-repeat: no-repeat;">
 
                     <hr class="no_line" style="margin:0 auto 460px">
@@ -323,18 +323,18 @@
                         </p>
                         <div class="column_attr clearfix">
                             <p style="font-size: 28px; line-height: 40px">
-                                <a href="#">
-                                    <i class="icon-facebook" style="color:white;"></i>
+                                @*<a href="#">
+                                        <i class="icon-facebook" style="color:white;"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="icon-twitter" style="color:white;"></i>
+                                    </a>*@
+                                <a href="https://instagram.com/planera_group?igshid=NmNmNjAwNzg=" target="_blank" style="color:white;font-size:20px">
+                                    <i class="icon-instagram" style="color:white"></i> /planera_group
                                 </a>
-                                <a href="#">
-                                    <i class="icon-twitter" style="color:white;"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="icon-instagram" style="color:white"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="icon-youtube" style="color:white"></i>
-                                </a>
+                                @*<a href="#">
+                                        <i class="icon-youtube" style="color:white"></i>
+                                    </a>*@
                             </p>
                         </div>
                     </div>
@@ -387,31 +387,24 @@
         </div>
     </div>
 </div>
-<script src="~/assets/js/jquery-3.6.0.min.js"></script>
-<script src="~/assets/plugins/sweetalert.min.js"></script>
 <script>
      function SendEmail() {
-
-             debugger
             var dataType = 'application/json; charset=utf-8';
             var obj = {
-                "Name": $('#name').val(),
-                "Email": $('#email').val(),
-                "Subject": $('#subject').val(),
-                "Message": $('#message').val()
+                "Name": jQuery('#name').val(),
+                "Email": jQuery('#email').val(),
+                "Subject": jQuery('#subject').val(),
+                "Message": jQuery('#message').val()
 
             }
-            $.ajax({
+         jQuery.ajax({
                 type: 'POST',
-                url: '@Url.Action("SendEmailToAdmin", "Home")',
+                url: '@Url.Action("SendEmailAdminPlaneraGroup", "Email")',
                 dataType: 'json',
                 contentType: dataType,
                 data: JSON.stringify(obj),
                 success: function (result) {
                     if (result.Success == true) {
-
-                        //alert("Email Has been Sent")
-
                         swal({
                             title: "We have received you query, our team will get back to you soon!",
                             //text: "",
@@ -420,7 +413,6 @@
                         ClearFields()
                     }
                     else {
-                        //alert("Error Occured While Sending an Email")
                         swal({
                             title: "Error !",
                             text: "Error Occured While Sending an Email",
@@ -435,13 +427,11 @@
                     }
                 }
             });
-
         }
-
         function ClearFields() {
-            $('#name').val('');
-            $('#email').val('');
-            $('#subject').val('');
-            $('#message').val('');
+           jQuery('#name').val('');
+           jQuery('#email').val('');
+           jQuery('#subject').val('');
+           jQuery('#message').val('');
         }
 </script>

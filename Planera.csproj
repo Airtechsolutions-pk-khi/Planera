@@ -238,6 +238,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ActivarDubaiController.cs" />
+    <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\HermanoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -248,6 +249,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="activar.ico" />
     <Content Include="assets\ActivarBH\css\custom.css" />
     <Content Include="assets\ActivarBH\css\photography2.css" />
     <Content Include="assets\ActivarBH\css\structure.css" />
@@ -280,6 +282,7 @@
     <Content Include="assets\ActivarBH\images\16.jpg" />
     <Content Include="assets\ActivarBH\images\17-ab-g.jpg" />
     <Content Include="assets\ActivarBH\images\17.JPG" />
+    <Content Include="assets\ActivarBH\images\18-ab-g.jpg" />
     <Content Include="assets\ActivarBH\images\18.JPG" />
     <Content Include="assets\ActivarBH\images\19.jpg" />
     <Content Include="assets\ActivarBH\images\2-ab-g.jpg" />
@@ -366,11 +369,13 @@
     <Content Include="assets\ActivarDB\css\custom.css" />
     <Content Include="assets\ActivarDB\css\photography2.css" />
     <Content Include="assets\ActivarDB\css\structure.css" />
+    <Content Include="assets\ActivarDB\footericons\address.png" />
+    <Content Include="assets\ActivarDB\footericons\email.png" />
     <Content Include="assets\ActivarDB\footericons\insta.png" />
+    <Content Include="assets\ActivarDB\footericons\tiktok.png" />
     <Content Include="assets\ActivarDB\footericons\timing.png" />
     <Content Include="assets\ActivarDB\footericons\website.png" />
     <Content Include="assets\ActivarDB\footericons\youtube.png" />
-    <Content Include="assets\ActivarDB\footericons\mail.png" />
     <Content Include="assets\ActivarDB\footericons\phone.png" />
     <Content Include="assets\ActivarDB\images\-e-0-ad.png" />
     <Content Include="assets\ActivarDB\images\-e-1-ad.png" />
@@ -388,6 +393,7 @@
     <Content Include="assets\ActivarDB\images\07-gallery-ad.jpg" />
     <Content Include="assets\ActivarDB\images\08-gallery-ad.jpg" />
     <Content Include="assets\ActivarDB\images\about-us.png" />
+    <Content Include="assets\ActivarDB\images\Activar-Team-Slider-Rev-1.jpg" />
     <Content Include="assets\ActivarDB\images\Auditing, Reviewing &amp; .png" />
     <Content Include="assets\ActivarDB\images\banner4.jpg" />
     <Content Include="assets\ActivarDB\images\banner5.jpg" />
@@ -823,6 +829,7 @@
     <Content Include="assets\Planeragroup\images\activarbah.png" />
     <Content Include="assets\Planeragroup\images\activardubai.png" />
     <Content Include="assets\Planeragroup\images\activerdubai.png" />
+    <Content Include="assets\Planeragroup\images\badge.svg" />
     <Content Include="assets\Planeragroup\images\bahrainicon.png" />
     <Content Include="assets\Planeragroup\images\bahrainlogo.png" />
     <Content Include="assets\Planeragroup\images\bh.png" />
@@ -833,10 +840,24 @@
     <Content Include="assets\Planeragroup\images\dubaiicon.png" />
     <Content Include="assets\Planeragroup\images\emailicon1.png" />
     <Content Include="assets\Planeragroup\images\event.jpg" />
+    <Content Include="assets\Planeragroup\images\event1-l.jpg" />
+    <Content Include="assets\Planeragroup\images\event1-s.jpg" />
     <Content Include="assets\Planeragroup\images\event1.jpg" />
+    <Content Include="assets\Planeragroup\images\event2-l.jpg" />
+    <Content Include="assets\Planeragroup\images\event2-s.jpg" />
     <Content Include="assets\Planeragroup\images\event2.jpg" />
+    <Content Include="assets\Planeragroup\images\event3-l.jpg" />
+    <Content Include="assets\Planeragroup\images\event3-s.jpg" />
     <Content Include="assets\Planeragroup\images\event3.jpg" />
+    <Content Include="assets\Planeragroup\images\event4-l.jpg" />
+    <Content Include="assets\Planeragroup\images\event4-s.jpg" />
     <Content Include="assets\Planeragroup\images\event4.jpg" />
+    <Content Include="assets\Planeragroup\images\event5-l.jpg" />
+    <Content Include="assets\Planeragroup\images\event5-s.jpg" />
+    <Content Include="assets\Planeragroup\images\event6-l.jpg" />
+    <Content Include="assets\Planeragroup\images\event6-s.JPG" />
+    <Content Include="assets\Planeragroup\images\event7-l.jpg" />
+    <Content Include="assets\Planeragroup\images\event7-s.JPG" />
     <Content Include="assets\Planeragroup\images\event8.jpg" />
     <Content Include="assets\Planeragroup\images\event9.jpg" />
     <Content Include="assets\Planeragroup\images\event10.jpg" />
@@ -855,22 +876,42 @@
     <Content Include="assets\Planeragroup\images\HermanoCon&amp;land.png" />
     <Content Include="assets\Planeragroup\images\hermanocont.png" />
     <Content Include="assets\Planeragroup\images\Hermanorepair&amp;Main.png" />
+    <Content Include="assets\Planeragroup\images\hi.svg" />
     <Content Include="assets\Planeragroup\images\home-bg.png" />
     <Content Include="assets\Planeragroup\images\home-watchmaker-greybg.png" />
     <Content Include="assets\Planeragroup\images\image2.png" />
+    <Content Include="assets\Planeragroup\images\link.svg" />
     <Content Include="assets\Planeragroup\images\locationicon.png" />
     <Content Include="assets\Planeragroup\images\news.jpg" />
+    <Content Include="assets\Planeragroup\images\news1-l.jpg" />
+    <Content Include="assets\Planeragroup\images\news1-s.jpg" />
     <Content Include="assets\Planeragroup\images\news1.jpg" />
+    <Content Include="assets\Planeragroup\images\news2-l.jpg" />
+    <Content Include="assets\Planeragroup\images\news2-s.jpg" />
     <Content Include="assets\Planeragroup\images\news2.jpg" />
+    <Content Include="assets\Planeragroup\images\news3-l.jpg" />
+    <Content Include="assets\Planeragroup\images\news3-s.jpg" />
     <Content Include="assets\Planeragroup\images\news3.jpg" />
+    <Content Include="assets\Planeragroup\images\news4-l.jpg" />
+    <Content Include="assets\Planeragroup\images\news4-s.jpg" />
     <Content Include="assets\Planeragroup\images\news4.jpg" />
+    <Content Include="assets\Planeragroup\images\news5-l.jpg" />
+    <Content Include="assets\Planeragroup\images\news5-s.jpg" />
+    <Content Include="assets\Planeragroup\images\news6-l.jpg" />
+    <Content Include="assets\Planeragroup\images\news6-s.jpg" />
+    <Content Include="assets\Planeragroup\images\news7-l.jpg" />
+    <Content Include="assets\Planeragroup\images\news7-s.jpg" />
     <Content Include="assets\Planeragroup\images\our-business-header.jpg" />
     <Content Include="assets\Planeragroup\images\pg-logo-hor-black.png" />
     <Content Include="assets\Planeragroup\images\pg-logo-horizontal-white.png" />
+    <Content Include="assets\Planeragroup\images\Planera-Interior-Team-Slider.jpg" />
     <Content Include="assets\Planeragroup\images\planeraart.png" />
     <Content Include="assets\Planeragroup\images\planeraconst.png" />
     <Content Include="assets\Planeragroup\images\planeragentrad.png" />
     <Content Include="assets\Planeragroup\images\team-slider-group.jpg" />
+    <Content Include="assets\Planeragroup\images\teama.svg" />
+    <Content Include="assets\Planeragroup\images\tech.svg" />
+    <Content Include="assets\Planeragroup\images\tin.svg" />
     <Content Include="assets\Planeragroup\images\uae.png" />
     <Content Include="assets\Planeragroup\images\uaelogo.png" />
     <Content Include="assets\Planeragroup\images\video1.mp4" />
@@ -984,6 +1025,7 @@
     <Content Include="assets\PlaneraInterior\images\supervising1.png" />
     <Content Include="assets\PlaneraInterior\images\teama.svg" />
     <Content Include="assets\PlaneraInterior\images\tech.svg" />
+    <Content Include="assets\PlaneraInterior\images\tik-tok.png" />
     <Content Include="assets\PlaneraInterior\images\tin.svg" />
     <Content Include="assets\PlaneraInterior\images\vwcat.jpg" />
     <Content Include="assets\plugins\rs-plugin-6.custom\assets\coloredbg-old.png" />
@@ -2611,6 +2653,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="hermano.ico" />
+    <Content Include="planera.ico" />
     <Content Include="rev-s-gallery-news.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -2713,7 +2757,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Template\booknow.txt" />
     <Content Include="Template\contact.txt" />
+    <Content Include="Views\Home\ProjectInterior.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -2725,18 +2771,15 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Home\Main.cshtml" />
-    <Content Include="Views\Home\ActivarBH.cshtml" />
     <Content Include="Views\Home\ActivarDubai.cshtml" />
     <Content Include="Views\Home\ContactPlaneraGroup.cshtml" />
     <Content Include="Views\Shared\_LayoutHermano.cshtml" />
     <Content Include="Views\Hermano\HermanoHome.cshtml" />
     <Content Include="Views\Home\HermanoCHome.cshtml" />
-    <Content Include="Views\Home\PlaneraInterior.cshtml" />
     <Content Include="Views\Home\PlaneraGeneralTrading.cshtml" />
     <Content Include="Views\Shared\_Layoutv2.cshtml" />
     <Content Include="Views\Home\Homev2.cshtml" />
     <Content Include="Views\Home\PlaneraInteriorv2.cshtml" />
-    <Content Include="Views\Home\PlaneraCareerpld.cshtml" />
     <Content Include="Views\Home\ActivarBHV2.cshtml" />
     <Content Include="Views\Home\_AcBHOurWork.cshtml" />
     <Content Include="Views\Home\_AcBHVideoSec.cshtml" />
@@ -2751,7 +2794,6 @@
     <Content Include="Views\Home\_PI-ImgSlider.cshtml" />
     <Content Include="Views\Shared\_LayoutInterior.cshtml" />
     <Content Include="Views\Home\AboutInterior.cshtml" />
-    <Content Include="Views\Home\ProjectInterior.cshtml" />
     <Content Include="Views\Home\ComingSoonInterior.cshtml" />
     <Content Include="Views\Shared\_LayoutHermaniCL.cshtml" />
     <Content Include="Views\Home\HermanoCAbout.cshtml" />
@@ -2778,6 +2820,7 @@
     <Folder Include="assets\NewsEvents\fonts\" />
     <Folder Include="assets\plugins\rs-plugin\assets\videos\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Email\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

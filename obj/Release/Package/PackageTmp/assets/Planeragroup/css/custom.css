@@ -1,3 +1,9 @@
+@media only screen and (min-width: 768px) {
+    #Top_bar.is-sticky {
+        height: 70px
+    }
+}
+
 .banner-img {
     box-sizing: border-box;
     display: inline-block;
@@ -12,9 +18,11 @@
     position: relative;
     width: 100%;
 }
+
 .column, .columns {
     margin: 0 1% 10px;
 }
+
 #Top_bar .menu > li > a, #Top_bar #menu ul li.submenu .menu-toggle {
     color: white !important;
 }
@@ -113,7 +121,7 @@ a:hover {
         display: none;
     }
 
-   /* .column_column {
+    /* .column_column {
         padding-bottom: 30px;
     }*/
 
@@ -147,25 +155,30 @@ a:hover {
     background: fixed;
 }
 
-.ourbusinessbox h4, .newsbox h2{
+.ourbusinessbox h4, .newsbox h2 {
     font-family: 'Montserrat' !important;
 }
 
 .header-transparent #Top_bar .menu > li > a {
     font-weight: 500;
 }
-.text-justify{
-    text-align:justify;
+
+.text-justify {
+    text-align: justify;
 }
+
 #contactform .column input, #contactform .column textarea {
     border-color: white;
 }
-#contactform ::placeholder{
-    color:#afafaf
+
+#contactform ::placeholder {
+    color: #afafaf
 }
+
 .style-simple .get_in_touch ul li .icon {
     top: 10px;
 }
+
 .masonry.tiles .post-item:not(.no-img) .post-photo-wrapper:after {
     background: rgba(0, 0, 0,0.59);
 }

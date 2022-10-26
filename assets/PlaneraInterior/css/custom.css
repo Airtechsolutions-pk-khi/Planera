@@ -8,7 +8,9 @@
         font-size: 50px !important;
     }
 }
-
+#Footer a {
+    color: white;
+}
 #Top_bar.is-sticky #logo img {
     height: 60px !important;
     max-height: 60px !important;

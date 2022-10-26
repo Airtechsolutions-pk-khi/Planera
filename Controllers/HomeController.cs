@@ -39,7 +39,7 @@ namespace Planera.Controllers
             return View();
         }
 
-        [Route("activardubai/home")]
+        [Route("activardubai/home/OLD")]
         public ActionResult ActivarDubai()
         {
             //return RedirectToAction("comingsoon");
@@ -186,7 +186,8 @@ namespace Planera.Controllers
             SubJect = obj.Subject.ToString();
             string BodyEmail = System.IO.File.ReadAllText(Server.MapPath("~/Template") + "\\" + "contact.txt");
             DateTime dateTime = DateTime.UtcNow.Date;
-            BodyEmail = BodyEmail.Replace("#Date#", dateTime.ToString("dd/MMM/yyyy"))
+            BodyEmail =  BodyEmail
+            .Replace("#Date#", dateTime.ToString("dd/MMM/yyyy"))
             .Replace("#Name#", obj.Name.ToString())
             .Replace("#Email#", obj.Email.ToString())
             .Replace("#Subject#", obj.Subject.ToString())
@@ -245,7 +246,7 @@ namespace Planera.Controllers
                 MailMessage mail = new MailMessage();
                 mail.To.Add(ToEmail);
                  
-                mail.From = new MailAddress(ConfigurationManager.AppSettings["From"].ToString());
+                mail.From = new MailAddress(ConfigurationManager.AppSettings["FromPG"].ToString());
                 mail.Subject = Subject;
                 string Body = BodyEmail;
                 mail.Body = Body;
@@ -265,7 +266,7 @@ namespace Planera.Controllers
                 smtp.Port = int.Parse(ConfigurationManager.AppSettings["SmtpPort"].ToString());
                 smtp.Host = ConfigurationManager.AppSettings["SmtpServer"].ToString(); //Or Your SMTP Server Address
                 smtp.Credentials = new System.Net.NetworkCredential
-                     (ConfigurationManager.AppSettings["From"].ToString(), ConfigurationManager.AppSettings["Password"].ToString());
+                     (ConfigurationManager.AppSettings["FromPG"].ToString(), ConfigurationManager.AppSettings["PasswordPG"].ToString());
 
                 smtp.EnableSsl = true;
 

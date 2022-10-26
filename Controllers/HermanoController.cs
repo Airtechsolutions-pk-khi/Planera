@@ -43,6 +43,7 @@ namespace Planera.Controllers
         //    return View();
         //}
         [Route("hermano/repair-maintenance/about")]
+
         public ActionResult HermanoRMAbout()
         {
             return View();
@@ -55,9 +56,9 @@ namespace Planera.Controllers
                 string ToEmail, SubJect, cc, Bcc;
                 cc = "";
                 Bcc = "";
-                ToEmail = ConfigurationManager.AppSettings["To"].ToString();
+                ToEmail = ConfigurationManager.AppSettings["ToH"].ToString();
                 SubJect = obj.Details.ToString();
-                string BodyEmail = System.IO.File.ReadAllText(Server.MapPath("~/Template") + "\\" + "contact.txt");
+                string BodyEmail = System.IO.File.ReadAllText(Server.MapPath("~/Template") + "\\" + "booknow.txt");
                 DateTime dateTime = DateTime.UtcNow.Date;
                 BodyEmail = BodyEmail.Replace("#Date#", dateTime.ToString("dd/MMM/yyyy"))
                 .Replace("#FName#", obj.FName.ToString())
@@ -65,7 +66,7 @@ namespace Planera.Controllers
                 .Replace("#Email#", obj.Email.ToString())
                 .Replace("#Phone#", obj.Phone.ToString())
                 .Replace("#Service#", obj.Service.ToString())
-                .Replace("#Time#", obj.Service.ToString())
+                .Replace("#Time#", obj.Time.ToString())
                 .Replace("#Details#", obj.Details.ToString());
 
 
@@ -73,7 +74,7 @@ namespace Planera.Controllers
                 mail.To.Add(ToEmail);
 
 
-                mail.From = new MailAddress(ConfigurationManager.AppSettings["From"].ToString());
+                mail.From = new MailAddress(ConfigurationManager.AppSettings["FromH"].ToString());
                 mail.Subject = Subject;
                 string Body = BodyEmail;
                 mail.Body = Body;
@@ -84,11 +85,13 @@ namespace Planera.Controllers
                 smtp.Port = int.Parse(ConfigurationManager.AppSettings["SmtpPort"].ToString());
                 smtp.Host = ConfigurationManager.AppSettings["SmtpServer"].ToString(); //Or Your SMTP Server Address
                 smtp.Credentials = new System.Net.NetworkCredential
-                     (ConfigurationManager.AppSettings["From"].ToString(), ConfigurationManager.AppSettings["Password"].ToString());
+                     (ConfigurationManager.AppSettings["FromH"].ToString(), ConfigurationManager.AppSettings["PasswordH"].ToString());
 
-                smtp.EnableSsl = true;
+                smtp.EnableSsl = false;
 
                 smtp.Send(mail);
+
+                sendemailcustomer(obj.Email.ToString(), "Planera Group | Hermano | Book Service", "H");
             }
             catch (Exception ex)
             {
@@ -96,6 +99,37 @@ namespace Planera.Controllers
             }
 
             return Json(new { Success = true });
+        }
+
+        public void sendemailcustomer(string toemail, string subject, string key)
+        {
+            try
+            {
+                MailMessage mail = new MailMessage();
+                mail.To.Add(toemail);
+
+
+                mail.From = new MailAddress(ConfigurationManager.AppSettings["From" + key].ToString());
+                mail.Subject = subject;
+                string Body = "Thankyou for contacting us, we have received your query. Our team will contact you soon.";
+                mail.Body = Body;
+                mail.IsBodyHtml = true;
+
+                SmtpClient smtp = new SmtpClient();
+                smtp.UseDefaultCredentials = false;
+                smtp.Port = int.Parse(ConfigurationManager.AppSettings["SmtpPort"].ToString());
+                smtp.Host = ConfigurationManager.AppSettings["SmtpServer"].ToString(); //Or Your SMTP Server Address
+                smtp.Credentials = new System.Net.NetworkCredential
+                     (ConfigurationManager.AppSettings["From" + key].ToString(), ConfigurationManager.AppSettings["Password" + key].ToString());
+
+                smtp.EnableSsl = false;
+
+                smtp.Send(mail);
+
+            }
+            catch (Exception)
+            {
+            }
         }
     }
 }

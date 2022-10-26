@@ -64,8 +64,10 @@
                         <div class="col-md-5">
                             <div class="column_attr clearfix mobile_align_center" style="padding: 10PX 0;">
                                 <h4 style="margin: 0;">
-                                    <a href="tel:+97337755020">+973 37755200</a><br />
-                                    <a href="tel:+97317004006">+973 17004006</a>
+                                    <a href="tel:+97337755200">+973 37755200</a><br />
+                                    <a href="tel:+97317004006">+973 17004006</a><br />
+                                    <a href="tel:+97337755188">+973 37755188</a><br />
+                                    <a href="tel:+97337755020">+973 37755020</a>
                                 </h4>
                             </div>
                         </div>
@@ -174,7 +176,7 @@
             }
             $.ajax({
                 type: 'POST',
-                url: '@Url.Action("SendEmailToAdmin", "Home")',
+                url: '@Url.Action("SendEmailAdminHermano", "Email")',
                 dataType: 'json',
                 contentType: dataType,
                 data: JSON.stringify(obj),
@@ -204,9 +206,7 @@
                     }
                 }
             });
-
         }
-
         function ClearFields() {
             $('#name').val('');
             $('#email').val('');
