@@ -64,8 +64,9 @@
                         <div class="col-md-5">
                             <div class="column_attr clearfix mobile_align_center" style="padding: 10PX 0;">
                                 <h4 style="margin: 0;">
-                                    <a href="tel:+97337755200">+973 37755200</a><br />
+
                                     <a href="tel:+97317004006">+973 17004006</a><br />
+                                    <a href="tel:+97337755200">+973 37755200</a><br />
                                     <a href="tel:+97337755188">+973 37755188</a><br />
                                     <a href="tel:+97337755020">+973 37755020</a>
                                 </h4>
@@ -102,7 +103,10 @@
                                 <div class="column one-second">
                                     <input placeholder="Your e-mail" id="email" type="email" name="Email" required maxlength="50">
                                 </div>
-                                <div class="column one">
+                                <div class="column one-second">
+                                    <input placeholder="Contact" id="phone" type="text" name="Phone" maxlength="50">
+                                </div>
+                                <div class="column one-second">
                                     <input placeholder="Subject" id="subject" type="text" name="Subject" maxlength="50">
                                 </div>
                                 <div class="column one">
@@ -170,6 +174,7 @@
             var obj = {
                 "Name": $('#name').val(),
                 "Email": $('#email').val(),
+                "Phone": $('#phone').val(),
                 "Subject": $('#subject').val(),
                 "Message": $('#message').val()
 

@@ -183,11 +183,12 @@ namespace Planera.Controllers
                 Bcc = "";
                 ToEmail = ConfigurationManager.AppSettings["ToH"].ToString();
                 SubJect = obj.Subject.ToString();
-                string BodyEmail = System.IO.File.ReadAllText(Server.MapPath("~/Template") + "\\" + "contact.txt");
+                string BodyEmail = System.IO.File.ReadAllText(Server.MapPath("~/Template") + "\\" + "contacthermano.txt");
                 DateTime dateTime = DateTime.UtcNow.Date;
                 BodyEmail = BodyEmail
                 .Replace("#Date#", dateTime.ToString("dd/MMM/yyyy"))
                 .Replace("#Name#", obj.Name.ToString())
+                .Replace("#Phone#", obj.Phone.ToString())
                 .Replace("#Email#", obj.Email.ToString())
                 .Replace("#Subject#", obj.Subject.ToString())
                 .Replace("#Message#", obj.Message.ToString());
