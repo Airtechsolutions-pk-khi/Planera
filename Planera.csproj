@@ -244,6 +244,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\DataTableEntensions.cs" />
+    <Compile Include="Helpers\DBHelper.cs" />
+    <Compile Include="Helpers\LINQtoDataTable.cs" />
+    <Compile Include="Helpers\ListExtensions.cs" />
     <Compile Include="Model\BookNow.cs" />
     <Compile Include="Model\ContactBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
