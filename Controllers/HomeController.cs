@@ -1,4 +1,5 @@
-﻿using Planera.Model;
+﻿using planera.Models.Service;
+using Planera.Model;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -7,11 +8,18 @@ using System.Linq;
 using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Services.Description;
 
 namespace Planera.Controllers
 {
     public class HomeController : Controller
     {
+        homeService _service;
+        public HomeController()
+        {
+            _service = new homeService();
+
+        }
         public ActionResult Main()
         {
             return View();
@@ -118,11 +126,20 @@ namespace Planera.Controllers
         }
 
         [Route("planera/interior")]
+        // [HttpGet("all/{brandid}")]
         public ActionResult PlaneraInteriorv2()
         {
-            //return RedirectToAction("comingsoon");
+            var PlnInt = HomePageBLL.GetAll();
+
+            ViewBag.InteriorHome = new SelectList(PlnInt, "Title", "ImagePath");
             return View();
         }
+
+        //public ActionResult PlaneraInteriorv2()
+        //{
+        //    //return RedirectToAction("comingsoon");
+        //    return View();
+        //}
 
         [Route("planera/general-trading")]
         public ActionResult PlaneraGeneralTrading()

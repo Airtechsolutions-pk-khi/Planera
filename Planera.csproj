@@ -237,6 +237,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="_Models\_Service\baseService.cs" />
+    <Compile Include="_Models\_Service\homeService.cs" />
     <Compile Include="Controllers\ActivarDubaiController.cs" />
     <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\HermanoController.cs" />
@@ -248,8 +250,9 @@
     <Compile Include="Helpers\DBHelper.cs" />
     <Compile Include="Helpers\LINQtoDataTable.cs" />
     <Compile Include="Helpers\ListExtensions.cs" />
-    <Compile Include="Model\BookNow.cs" />
-    <Compile Include="Model\ContactBLL.cs" />
+    <Compile Include="_Models\BLL\HomePageBLL.cs" />
+    <Compile Include="_Models\BLL\BookNow.cs" />
+    <Compile Include="_Models\BLL\ContactBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -2874,7 +2877,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="assets\NewsEvents\fonts\" />
     <Folder Include="assets\plugins\rs-plugin\assets\videos\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\Email\" />
   </ItemGroup>
   <ItemGroup>
