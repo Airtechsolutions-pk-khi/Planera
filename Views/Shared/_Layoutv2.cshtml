@@ -45,6 +45,56 @@
 
     <script src="~/assets/js/jquery-3.6.0.min.js"></script>
     <script src="~/assets/js/jquery-migrate-3.3.2.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var currLang = Cookies.get('lang');
+            if (currLang == null || currLang == "" || currLang == undefined) {
+
+                Cookies.set('lang', 'en', { expires: 365 });
+                ('#_lang').html('عربى');
+            }
+            if (currLang == "en") {
+                jQuery('#_lang').html("عربى");
+                jQuery("._arabic").css("direction", "ltr")
+                jQuery("._arabic-text").css("text-align", "left")
+                jQuery(".icon-media").css("left", "0")
+                jQuery(".icon-title").css("padding-left", "43px")
+            }
+            else {
+                jQuery('#_lang').html("English");
+                jQuery("._arabic").css("direction", "rtl")
+                //jQuery("p, h1, h2, h3, h4, h5, h6, a,div").css("font-family", "AvenirRegular")
+                jQuery("._arabic-text").css("text-align", "right")
+                jQuery(".icon-media").css("right", "0")
+                jQuery(".icon-title").css("padding-right", "43px")
+            }
+
+        });
+
+        function _lang() {
+            var currLang = Cookies.get('lang');
+            //var currLang = localStorage.getItem("_lang");
+            if (currLang == null || currLang == "") {
+                Cookies.set('lang', 'en', { expires: 365 });
+                jQuery('#_lang').html('عربى');
+            }
+            if (currLang == "en") {
+                Cookies.set('lang', 'ar', { expires: 365 });
+                jQuery('#_lang').html('English');
+                location.reload();
+            }
+            if (currLang == "ar") {
+                Cookies.set('lang', 'en', { expires: 365 });
+                jQuery('#_lang').html('عربى');
+                location.reload();
+            }
+        }
+
+
+    </script>
+
+
     <script src="~/assets/plugins/sweetalert.min.js"></script>
     <style>
         #Top_bar .top_bar_right a:not(.action_button) {
@@ -87,6 +137,10 @@
           "sameAs": "https://www.instagram.com/planera_group/"
         }
     </script>
+
+
+
+
 </head>
 
 <body class="style-simple button-flat layout-full-width one-page no-content-padding no-shadows header-transparent minimalist-header-no sticky-header sticky-tb-color ab-hide subheader-both-center menu-link-color menuo-no-borders menuo-right logo-no-sticky-padding mobile-tb-center mobile-side-slide mobile-mini-mr-ll tablet-sticky mobile-sticky">
@@ -110,13 +164,13 @@
                                     <nav id="menu">
                                         <ul id="menu-main-menu" class="menu menu-main">
                                             <li class="">
-                                                <a href="/" aria-current="page">Home</a>
+                                                <a href="/" aria-current="page" data-translate="a0a0">Home</a>
                                             </li>
                                             <li>
-                                                <a href="/planera/overview">Company Overview</a>
+                                                <a href="/planera/overview" data-translate="00aa2">Company Overview</a>
                                             </li>
                                             <li>
-                                                <a href="/planera/ourbusiness">Our Businesses</a>
+                                                <a href="/planera/ourbusiness" data-translate="a1">Our Businesses</a>
                                                 <ul class="sub-menu">
                                                     <li>
                                                         <a href="/planera/interior" target="_blank"><span>Planera Interior</span></a>
@@ -145,13 +199,16 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="/planera/newsevents">News & Events</a>
+                                                <a href="/planera/newsevents" data-translate="00a2">News & Events</a>
                                             </li>
                                             <li>
-                                                <a href="/planera/career">Careers</a>
+                                                <a href="/planera/career" data-translate="00a3">Careers</a>
                                             </li>
                                             <li>
-                                                <a href="/planera/contact">Get in Touch</a>
+                                                <a href="/planera/contact" data-translate="00a4">Get in Touch</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-icon-globe"></i><a onclick="_lang(); return false;" id="_lang" style="color:white">عربى</a>
                                             </li>
                                         </ul>
                                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
@@ -216,6 +273,9 @@
 
     <script src="~/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
     <script src="~/assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script src="~/assets/js/cookie/js.cookie.js"></script>
+    <script src="~/assets/js/cookie/js.cookie.min.js"></script>
 
     <script src="~/assets/plugins/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
     <script src="~/assets/plugins/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
@@ -536,5 +596,6 @@
             }
         }); /*ready*/
     </script>
+    <script src="~/language/translations.js"></script>
 </body>
 </html>
