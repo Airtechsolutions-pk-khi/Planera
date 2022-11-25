@@ -673,6 +673,15 @@
     <Content Include="assets\HarmanoRepair\images\Repair house hold appliances.png" />
     <Content Include="assets\HarmanoRepair\images\why choose.png" />
     <Content Include="assets\ImagesCompanyOverView\chairmanmsg.jpg" />
+    <Content Include="assets\ImagesPlaneraCareer\badge.svg" />
+    <Content Include="assets\ImagesPlaneraCareer\careers-img.png" />
+    <Content Include="assets\ImagesPlaneraCareer\hi.svg" />
+    <Content Include="assets\ImagesPlaneraCareer\link.svg" />
+    <Content Include="assets\ImagesPlaneraCareer\teama.svg" />
+    <Content Include="assets\ImagesPlaneraCareer\tech.svg" />
+    <Content Include="assets\ImagesPlaneraCareer\tin.svg" />
+    <Content Include="assets\js\cookie\js.cookie.js" />
+    <Content Include="assets\js\cookie\js.cookie.min.js" />
     <Content Include="assets\Planeragroup\css\bootstrap.min.css" />
     <Content Include="assets\Planeragroup\css\custom.css" />
     <Content Include="assets\Planeragroup\css\fonts.css" />
@@ -2711,6 +2720,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="hermano.ico" />
+    <Content Include="language\translations.js" />
     <Content Include="planera.ico" />
     <Content Include="rev-s-gallery-news.html" />
     <Content Include="Scripts\bootstrap.js" />
@@ -2803,6 +2813,10 @@
     <Content Include="assets\ActivarDB\fonts\FontsFree-Net-ProximaNova-Regular.ttf" />
     <Content Include="assets\HarmanoRepair\images\HermanoRMContact.cshtml" />
     <Content Include="assets\HarmanoContract\css\Lato-Regular.ttf" />
+    <Content Include="language\translations.json" />
+    <Content Include="language\translations.zip" />
+    <Content Include="assets\js\cookie\js.cookie.min.mjs" />
+    <Content Include="assets\js\cookie\js.cookie.mjs" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
