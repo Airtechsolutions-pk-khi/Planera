@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Planera.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,7 @@ namespace Planera.Controllers
         [Route("planera/activardubai")]
         public ActionResult ActivarDubaiHome()
         {
+            ViewBag.DubaiHome = HomePageBLL.GetACDB();
             //return RedirectToAction("comingsoon");
             return View();
         }

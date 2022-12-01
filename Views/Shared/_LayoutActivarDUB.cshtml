@@ -35,7 +35,7 @@
     <!-- JS -->
     <script src="~/assets/js/jquery-3.6.0.min.js"></script>
     <script src="~/assets/js/jquery-migrate-3.3.2.js"></script>
-
+    <script src="~/language/translations.js"></script>
     <link href="~/assets/css/sweetalert.css" rel="stylesheet" />
     <script src="~/assets/plugins/sweetalert.min.js"></script>
     <style>
@@ -80,10 +80,64 @@
         #Footer a {
             color: #000;
         }
-        ::placeholder{
-            color:dimgrey
+
+        ::placeholder {
+            color: dimgrey
         }
     </style>
+
+    <script>
+        jQuery(document).ready(function () {
+
+            var currLang = Cookies.get('lang');
+            if (currLang == null || currLang == "" || currLang == undefined) {
+
+                Cookies.set('lang', 'en', { expires: 365 });
+                jQuery('#_lang').html('عربى');
+            }
+            if (currLang == "en") {
+                jQuery('#_lang').html("عربى");
+                jQuery("._arabic").css("direction", "ltr")
+                jQuery("._arabic-text").css("text-align", "left")
+                jQuery(".icon-media").css("left", "0")
+                jQuery(".icon-title").css("padding-left", "43px")
+            }
+            else {
+                jQuery('#_lang').html("English");
+                jQuery('._ltrarabic').css("direction", "ltr")
+                jQuery("._arabic").css("direction", "rtl")
+                //jQuery("p, h1, h2, h3, h4, h5, h6, a,div").css("font-family", "AvenirRegular")
+                jQuery("._arabic-text").css("text-align", "right")
+                jQuery(".icon-media").css("right", "0")
+                jQuery(".icon-title").css("padding-right", "43px")
+                jQuery(".padding-left").css("padding-left", "25px")
+                jQuery(".padding-right").css("padding-right", "0px")
+                jQuery("._arwidth").css("width", "100%")
+                jQuery("._mrright").css("margin-right", "0px")
+                jQuery(".armgn-top").css("margin-top", "50px")
+            }
+        });
+
+        function _lang() {
+            var currLang = Cookies.get('lang');
+            //var currLang = localStorage.getItem("_lang");
+            if (currLang == null || currLang == "") {
+                Cookies.set('lang', 'en', { expires: 365 });
+                jQuery('#_lang').html('عربى');
+            }
+            if (currLang == "en") {
+                Cookies.set('lang', 'ar', { expires: 365 });
+                jQuery('#_lang').html('English');
+                location.reload();
+            }
+            if (currLang == "ar") {
+                Cookies.set('lang', 'en', { expires: 365 });
+                jQuery('#_lang').html('عربى');
+                location.reload();
+            }
+        }
+    </script>
+
 </head>
 <body class="home page template-slider style-simple button-flat layout-full-width if-zoom if-border-hide no-shadows header-classic header-fw minimalist-header-no sticky-header sticky-tb-color ab-hide subheader-both-left menu-line-below-80-1 menuo-right menuo-no-borders mobile-tb-center mobile-side-slide mobile-mini-mr-ll tablet-sticky mobile-header-mini mobile-sticky tr-header tr-menu">
     <div id="Wrapper">
@@ -239,13 +293,17 @@
         </ul>
     </div>
     <div id="body_overlay"></div>
-    
+
     <script src="~/assets/js/mfn.menu.js"></script>
     <script src="~/assets/js/jquery.plugins.js"></script>
     <script src="~/assets/js/jquery.jplayer.min.js"></script>
     <script src="~/assets/js/animations/animations.js"></script>
     <script src="~/assets/js/translate3d.js"></script>
     <script src="~/assets/js/scripts.js"></script>
+
+    <script src="~/assets/js/cookie/js.cookie.js"></script>
+    <script src="~/assets/js/cookie/js.cookie.min.js"></script>
+
     <script src="~/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
     <script src="~/assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <script src="~/assets/plugins/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
@@ -264,7 +322,7 @@
     </style>
     <script>
         function tiktok() {
-            window.location.href='https://www.tiktok.com/@@activarbahrain?_t=8W54wFHWOnK&_r=1';
+            window.location.href = 'https://www.tiktok.com/@@activarbahrain?_t=8W54wFHWOnK&_r=1';
         }
 
         (function () {
@@ -540,5 +598,6 @@
         }
         window.addEventListener("scroll", reveal);
     </script>
+    <script src="~/language/translations.js"></script>
 </body>
 </html>

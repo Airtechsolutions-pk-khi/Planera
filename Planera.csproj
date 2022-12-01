@@ -237,7 +237,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="_Models\BLL\NewsAlertBLL.cs" />
     <Compile Include="_Models\_Service\baseService.cs" />
+    <Compile Include="_Models\_Service\newsalertService.cs" />
     <Compile Include="_Models\_Service\homeService.cs" />
     <Compile Include="Controllers\ActivarDubaiController.cs" />
     <Compile Include="Controllers\EmailController.cs" />
@@ -672,6 +674,7 @@
     <Content Include="assets\HarmanoRepair\images\reno4-slider-bg.png" />
     <Content Include="assets\HarmanoRepair\images\Repair house hold appliances.png" />
     <Content Include="assets\HarmanoRepair\images\why choose.png" />
+    <Content Include="assets\image-not-found-icon.png" />
     <Content Include="assets\ImagesCompanyOverView\chairmanmsg.jpg" />
     <Content Include="assets\ImagesPlaneraCareer\badge.svg" />
     <Content Include="assets\ImagesPlaneraCareer\careers-img.png" />
@@ -2924,7 +2927,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>52345</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44326/</IISUrl>
+          <IISUrl>http://localhost:44326/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

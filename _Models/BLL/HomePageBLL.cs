@@ -46,6 +46,87 @@ namespace Planera.Model
             }
 
         }
+        public static List<HomePageBLL> GetACBH()
+        {
+            try
+            {
+                var lst = new List<HomePageBLL>();
+                _dt = (new DBHelper().GetTableFromSP)("sp_GetHomeImage_AcBah");
+                if (_dt != null)
+                {
+                    if (_dt.Rows.Count > 0)
+                    {
+                        lst = JArray.Parse(Newtonsoft.Json.JsonConvert.SerializeObject(_dt)).ToObject<List<HomePageBLL>>();
+                    }
+                }
+                return lst;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
 
+        }     
+        public static List<HomePageBLL> GetACDB()
+        {
+            try
+            {
+                var lst = new List<HomePageBLL>();
+                _dt = (new DBHelper().GetTableFromSP)("sp_GetHomeImage_AcDub");
+                if (_dt != null)
+                {
+                    if (_dt.Rows.Count > 0)
+                    {
+                        lst = JArray.Parse(Newtonsoft.Json.JsonConvert.SerializeObject(_dt)).ToObject<List<HomePageBLL>>();
+                    }
+                }
+                return lst;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+
+        }
+        public static List<HomePageBLL> GetCont()
+        {
+            try
+            {
+                var lst = new List<HomePageBLL>();
+                _dt = (new DBHelper().GetTableFromSP)("sp_GetHomeImage_HrCnt");
+                if (_dt != null)
+                {
+                    if (_dt.Rows.Count > 0)
+                    {
+                        lst = JArray.Parse(Newtonsoft.Json.JsonConvert.SerializeObject(_dt)).ToObject<List<HomePageBLL>>();
+                    }
+                }
+                return lst;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        public static List<HomePageBLL> GetHarmano()
+        {
+            try
+            {
+                var lst = new List<HomePageBLL>();
+                _dt = (new DBHelper().GetTableFromSP)("sp_GetHomeImage_HrRpr");
+                if (_dt != null)
+                {
+                    if (_dt.Rows.Count > 0)
+                    {
+                        lst = JArray.Parse(Newtonsoft.Json.JsonConvert.SerializeObject(_dt)).ToObject<List<HomePageBLL>>();
+                    }
+                }
+                return lst;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
     }
 }
