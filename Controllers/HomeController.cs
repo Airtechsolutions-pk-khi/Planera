@@ -90,6 +90,7 @@ namespace Planera.Controllers
         [Route("planera/activarbahrain/gallery")]
         public ActionResult ActivarBHGallery()
         {
+            ViewBag.Gallery = GalleryBLL.GetGalleryAcBah();
             return View();
         }
         [Route("planera/hermano-contracting")]
@@ -114,6 +115,7 @@ namespace Planera.Controllers
         [Route("hermano-contracting/projects")]
         public ActionResult HermanoCProject()
         {
+            ViewBag.Gallery = GalleryBLL.GetGalleryHrCnt();
             //return RedirectToAction("comingsoon");
             return View();
         }
@@ -333,6 +335,7 @@ namespace Planera.Controllers
         [Route("interior/services")]
         public ActionResult InteriorService()
         {
+            ViewBag.Service = ServiceBLL.GetAll();
             return View();
         }
         [Route("interior/Contact")]
@@ -343,6 +346,7 @@ namespace Planera.Controllers
         [Route("interior/project")]
         public ActionResult ProjectInterior()
         {
+            ViewBag.Project = GalleryBLL.GetAll();
             return View();
         }
         public ActionResult HomenewsAlert()

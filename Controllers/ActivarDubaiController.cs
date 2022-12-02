@@ -15,6 +15,7 @@ namespace Planera.Controllers
         {
             ViewBag.DubaiHome = HomePageBLL.GetACDB();
             //return RedirectToAction("comingsoon");
+            ViewBag.Gallery = GalleryBLL.GetGalleryAcDub();
             return View();
         }
     }

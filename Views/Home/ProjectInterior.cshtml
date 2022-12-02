@@ -79,30 +79,37 @@
             <div class="portfolio_wrapper isotope_wrapper">
                 <ul class="portfolio_group lm_wrapper isotope grid">
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-home category-appartment  ">
-                        <div class="portfolio-item-fw-bg">
-                            <div class="portfolio-item-fw-wrapper">
-                                <div class="image_frame scale-with-grid">
-                                    <div class="image_wrapper">
-                                        <a href="~/assets/PlaneraInterior/images/adhari-p2.jpg" class="zoom" rel="prettyphoto">
-                                            <div class="mask"></div><img width="650" height="650px" src="~/assets/PlaneraInterior/images/adhari-p2.jpg" class="scale-with-grid wp-post-image" />
-                                        </a>
-                                        <div class="image_links">
-                                            <a href="~/assets/PlaneraInterior/images/adhari-p2.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                    @foreach (var item in ViewBag.Project)
+                    {
+                        <li class="portfolio-item isotope-item category-home category-appartment  ">
+                            <div class="portfolio-item-fw-bg">
+                                <div class="portfolio-item-fw-wrapper">
+                                    <div class="image_frame scale-with-grid">
+                                        <div class="image_wrapper">
+                                            @*<a href="~/assets/PlaneraInterior/images/adhari-p2.jpg" class="zoom" rel="prettyphoto">
+                                                    <div class="mask"></div><img width="650" height="650px" src="~/assets/PlaneraInterior/images/adhari-p2.jpg" class="scale-with-grid wp-post-image" />
+                                                </a>*@
+                                            <a href="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" class="zoom" rel="prettyphoto">
+                                                <div class="mask"></div>
+                                                <img width="650" height="650px" src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" alt="@item.Title" class="scale-with-grid wp-post-image">
+                                            </a>
+                                            <div class="image_links">
+                                                <a href="~/assets/PlaneraInterior/images/adhari-p2.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="desc">
-                                    <div class="title_wrapper">
-                                        <h5 class="entry-title"><a href="">Adhari</a></h5>
+                                    <div class="desc">
+                                        <div class="title_wrapper">
+                                            <h5 class="entry-title"><a href="">@item.Title</a></h5>
+                                        </div>
+                                        <div class="desc-wrapper"></div>
                                     </div>
-                                    <div class="desc-wrapper"></div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
+                        </li>
+                    }
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-shop category-photography ">
+                    <!--<li class="portfolio-item isotope-item category-shop category-photography ">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
                                 <div class="image_frame scale-with-grid">
@@ -123,9 +130,9 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-home category-appartment">
+                    <!--<li class="portfolio-item isotope-item category-home category-appartment">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
                                 <div class="image_frame scale-with-grid">
@@ -148,9 +155,9 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-home category-photography category-appartment">
+                    <!--<li class="portfolio-item isotope-item category-home category-photography category-appartment">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
                                 <div class="image_frame scale-with-grid">
@@ -174,9 +181,9 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-home category-photography category-appartment">
+                    <!--<li class="portfolio-item isotope-item category-home category-photography category-appartment">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
                                 <div class="image_frame scale-with-grid">
@@ -199,9 +206,9 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-appartment category-home">
+                    <!--<li class="portfolio-item isotope-item category-appartment category-home">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
 
@@ -224,9 +231,9 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-appartment category-home">
+                    <!--<li class="portfolio-item isotope-item category-appartment category-home">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
 
@@ -250,9 +257,9 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-home category-appartment category-photography">
+                    <!--<li class="portfolio-item isotope-item category-home category-appartment category-photography">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
                                 <div class="image_frame scale-with-grid">
@@ -276,9 +283,9 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-home">
+                    <!--<li class="portfolio-item isotope-item category-home">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
                                 <div class="image_frame scale-with-grid">
@@ -1040,7 +1047,7 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </div>
