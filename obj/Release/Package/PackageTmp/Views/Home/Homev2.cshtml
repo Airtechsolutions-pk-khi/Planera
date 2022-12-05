@@ -153,7 +153,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="section mcb-section" style="padding-top:20px; padding-bottom:60px; ">
+                    <div class="section mcb-section _arabic" style="padding-top:20px; padding-bottom:60px;">
                         <div class="wrap mcb-wrap one valign-top clearfix">
                             <div class="mcb-wrap-inner">
                                 <div class=" ">
@@ -404,145 +404,142 @@
                                                     </div>
                                                 </div>
                                                 <div class="blog_wrapper isotope_wrapper clearfix newsbox">
+
                                                     <div class="posts_group lm_wrapper col-4 masonry tiles isotope">
-                                                        <div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
-                                                            <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
-                                                                @foreach (var item in ViewBag.NewsAlert)
-                                                                {
+                                                        @foreach (var item in ViewBag.NewsAlert)
+                                                        {
+                                                            <div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
+                                                                <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
                                                                     <img class="scale-with-grid wp-post-image " src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.Image" alt="@item.Name" width="800" height="813">
                                                                     @*<img width="800" height="813" src="~/assets/Planeragroup/images/news1-s.jpg" class="scale-with-grid wp-post-image " />*@
-                                                                }
-                                                            </div>
-                                                            <div class="post-desc-wrapper">
-                                                                <div class="post-desc">
-                                                                    <div class="post-title">
-                                                                        <h2 class="entry-title small">
-                                                                            <a href="/planera/newsevents">
-                                                                                Activar Bahrain has received a shield from the Bahrain Paralympic Committee in dedication to its efforts.
-                                                                            </a>
-                                                                        </h2>
+                                                                </div>
+                                                                <div class="post-desc-wrapper">
+                                                                    <div class="post-desc">
+                                                                        <div class="post-title">
+                                                                            <h2 class="entry-title small">
+                                                                                <a href="/planera/newsevents">
+                                                                                    @item.Description
+                                                                                </a>
+                                                                            </h2>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
-                                                            <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
-                                                                <img width="800" height="813" src="~/assets/Planeragroup/images/news2-s.jpg" class="scale-with-grid wp-post-image " />
-                                                            </div>
-                                                            <div class="post-desc-wrapper">
-                                                                <div class="post-desc">
-                                                                    <div class="post-title">
-                                                                        <h2 class="entry-title small">
-                                                                            <a href="/planera/newsevents">
-                                                                                The President of the Planera Group, Mr.Omar Bukmal, honored Ms. Zahraa Hussain for her efforts throughout her tenure at Actifar Bahrain Public Relations.
-                                                                            </a>
-                                                                        </h2>
+                                                        }
+                                                        @*<div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
+                                                                <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
+                                                                    <img width="800" height="813" src="~/assets/Planeragroup/images/news2-s.jpg" class="scale-with-grid wp-post-image " />
+                                                                </div>
+                                                                <div class="post-desc-wrapper">
+                                                                    <div class="post-desc">
+                                                                        <div class="post-title">
+                                                                            <h2 class="entry-title small">
+                                                                                <a href="/planera/newsevents">
+                                                                                    The President of the Planera Group, Mr.Omar Bukmal, honored Ms. Zahraa Hussain for her efforts throughout her tenure at Actifar Bahrain Public Relations.
+                                                                                </a>
+                                                                            </h2>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
-                                                            <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
-                                                                <img width="800" height="813" src="~/assets/Planeragroup/images/news3-s.jpg" class="scale-with-grid wp-post-image " />
-                                                            </div>
-                                                            <div class="post-desc-wrapper">
-                                                                <div class="post-desc">
-                                                                    <div class="post-title">
-                                                                        <h2 class="entry-title small">
-                                                                            <a href="/planera/newsevents">
-                                                                                Planera Interior Design has handed over one of its design and implementation projects to the client.
-                                                                            </a>
-                                                                        </h2>
+                                                            </div>*@
+                                                        @*<div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
+                                                                <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
+                                                                    <img width="800" height="813" src="~/assets/Planeragroup/images/news3-s.jpg" class="scale-with-grid wp-post-image " />
+                                                                </div>
+                                                                <div class="post-desc-wrapper">
+                                                                    <div class="post-desc">
+                                                                        <div class="post-title">
+                                                                            <h2 class="entry-title small">
+                                                                                <a href="/planera/newsevents">
+                                                                                    Planera Interior Design has handed over one of its design and implementation projects to the client.
+                                                                                </a>
+                                                                            </h2>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
-                                                            <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
-                                                                <img width="800" height="813" src="~/assets/Planeragroup/images/news4-s.jpg" class="scale-with-grid wp-post-image " />
-                                                            </div>
-                                                            <div class="post-desc-wrapper">
-                                                                <div class="post-desc">
-                                                                    <div class="post-title">
-                                                                        <h2 class="entry-title small">
+                                                            </div>*@
+                                                        @*<div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
+                                                                <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
+                                                                    <img width="800" height="813" src="~/assets/Planeragroup/images/news4-s.jpg" class="scale-with-grid wp-post-image " />
+                                                                </div>
+                                                                <div class="post-desc-wrapper">
+                                                                    <div class="post-desc">
+                                                                        <div class="post-title">
+                                                                            <h2 class="entry-title small">
 
-                                                                            <a href="/planera/newsevents">
-                                                                                Planera Group has appointed Mr.Raad Ahmed as Acting General Manager at Hermano Contracting Company.
-                                                                            </a>
-                                                                        </h2>
+                                                                                <a href="/planera/newsevents">
+                                                                                    Planera Group has appointed Mr.Raad Ahmed as Acting General Manager at Hermano Contracting Company.
+                                                                                </a>
+                                                                            </h2>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
-                                                            <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
-                                                                <img width="800" height="813" src="~/assets/Planeragroup/images/event1-s.jpg" class="scale-with-grid wp-post-image " />
-                                                            </div>
-                                                            <div class="post-desc-wrapper">
-                                                                <div class="post-desc">
-                                                                    <div class="post-title">
-                                                                        <h2 class="entry-title small">
-                                                                            <a href="/planera/newsevents">
-                                                                                Planera Group participated in the month of October to support breast cancer patients, coinciding with the Kingdom's celebrations of the International Day for Awareness against Breast Cancer
-                                                                            </a>
-                                                                        </h2>
+                                                            </div>*@
+                                                        @*<div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
+                                                                <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
+                                                                    <img width="800" height="813" src="~/assets/Planeragroup/images/event1-s.jpg" class="scale-with-grid wp-post-image " />
+                                                                </div>
+                                                                <div class="post-desc-wrapper">
+                                                                    <div class="post-desc">
+                                                                        <div class="post-title">
+                                                                            <h2 class="entry-title small">
+                                                                                <a href="/planera/newsevents">
+                                                                                    Planera Group participated in the month of October to support breast cancer patients, coinciding with the Kingdom's celebrations of the International Day for Awareness against Breast Cancer
+                                                                                </a>
+                                                                            </h2>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
+                                                            </div>*@
+                                                        @*<div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
+                                                                <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
+                                                                    <img width="800" height="813" src="~/assets/Planeragroup/images/event2-s.jpg" class="scale-with-grid wp-post-image " />
+                                                                </div>
+                                                                <div class="post-desc-wrapper">
+                                                                    <div class="post-desc">
+                                                                        <div class="post-title">
+                                                                            <h2 class="entry-title small">
 
-
-
-                                                        <div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
-                                                            <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
-                                                                <img width="800" height="813" src="~/assets/Planeragroup/images/event2-s.jpg" class="scale-with-grid wp-post-image " />
-                                                            </div>
-                                                            <div class="post-desc-wrapper">
-                                                                <div class="post-desc">
-                                                                    <div class="post-title">
-                                                                        <h2 class="entry-title small">
-
-                                                                            <a href="/planera/newsevents">
-                                                                                Planera Group employees celebrated Christmas on the morning of Sunday, December 26, in an atmosphere full of joy, distribution of gifts and breakfast.
-                                                                            </a>
-                                                                        </h2>
+                                                                                <a href="/planera/newsevents">
+                                                                                    Planera Group employees celebrated Christmas on the morning of Sunday, December 26, in an atmosphere full of joy, distribution of gifts and breakfast.
+                                                                                </a>
+                                                                            </h2>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
-                                                            <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
-                                                                <img width="800" height="813" src="~/assets/Planeragroup/images/event6-s.jpg" class="scale-with-grid wp-post-image " />
-                                                            </div>
-                                                            <div class="post-desc-wrapper">
-                                                                <div class="post-desc">
-                                                                    <div class="post-title">
-                                                                        <h2 class="entry-title small">
-                                                                            <a href="/planera/newsevents">
-                                                                                Actifar Bahrain Public Relations Company visited the Bahrain Combat Games Council on Sunday, August 14, where it met with the CEO of the Council, Mr. Jaafar Ali.
-                                                                            </a>
-                                                                        </h2>
+                                                            </div>*@
+                                                        @*<div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
+                                                                <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
+                                                                    <img width="800" height="813" src="~/assets/Planeragroup/images/event6-s.jpg" class="scale-with-grid wp-post-image " />
+                                                                </div>
+                                                                <div class="post-desc-wrapper">
+                                                                    <div class="post-desc">
+                                                                        <div class="post-title">
+                                                                            <h2 class="entry-title small">
+                                                                                <a href="/planera/newsevents">
+                                                                                    Actifar Bahrain Public Relations Company visited the Bahrain Combat Games Council on Sunday, August 14, where it met with the CEO of the Council, Mr. Jaafar Ali.
+                                                                                </a>
+                                                                            </h2>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
-                                                            <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
-                                                                <img width="800" height="813" src="~/assets/Planeragroup/images/event3-s.jpg" class="scale-with-grid wp-post-image " />
-                                                            </div>
-                                                            <div class="post-desc-wrapper">
-                                                                <div class="post-desc">
-                                                                    <div class="post-title">
-                                                                        <h2 class="entry-title small">
-                                                                            <a href="/planera/newsevents">
-                                                                                Planera Group organized the first meeting for all employees, where all company employees gathered for an Iftar meal, followed by some activities such as honoring, competitions, playing band and geraqoon on the ninth of the holy month of Ramadan
-                                                                            </a>
-                                                                        </h2>
+                                                            </div>*@
+                                                        @*<div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
+                                                                <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
+                                                                    <img width="800" height="813" src="~/assets/Planeragroup/images/event3-s.jpg" class="scale-with-grid wp-post-image " />
+                                                                </div>
+                                                                <div class="post-desc-wrapper">
+                                                                    <div class="post-desc">
+                                                                        <div class="post-title">
+                                                                            <h2 class="entry-title small">
+                                                                                <a href="/planera/newsevents">
+                                                                                    Planera Group organized the first meeting for all employees, where all company employees gathered for an Iftar meal, followed by some activities such as honoring, competitions, playing band and geraqoon on the ninth of the holy month of Ramadan
+                                                                                </a>
+                                                                            </h2>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
+                                                            </div>*@
 
                                                         <!-- One full width row-->
                                                         <div class="column one pager_wrapper pager_lm" style="padding-top:50px;padding-bottom:50px;">
@@ -550,6 +547,7 @@
                                                             <a class=" button button_js" href="@Url.Action("NewsEvents","Home")" style="background:#4D5063;color:white"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label" data-translate="0ldm01">Load more</span></a>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -579,10 +577,10 @@
                                 <div class="mcb-wrap-inner">
                                     <div class="column mcb-column five-sixth column_contact_box">
                                         <div class="get_in_touch" style="background-color:white;">
-                                            <h3 style="color:#1a3f8c !important;" data-translate="00aa4">CONTACT US</h3>
+                                            <h3 class="_arabic _arabic-text" style="color:#1a3f8c !important;" data-translate="00aa4">CONTACT US</h3>
                                             <div class="get_in_touch_wrapper">
                                                 <ul>
-                                                    <li class="address">
+                                                    <li class="address _arabic-text">
                                                         <span class="icon"><i class="icon-location"></i></span>
                                                         <span class="address_wrapper" style="color: #1a3f8c;" data-translate="0md01">
                                                             Mandarine Business Center
@@ -592,7 +590,7 @@
                                                             Alseef District (Bahrain)
                                                         </span>
                                                     </li>
-                                                    <li class="phone phone-1">
+                                                    <li class="phone phone-1 _arabic-text">
                                                         <span class="icon"><i class="icon-phone"></i></span>
                                                         <p>
                                                             <a href="tel:+97317004006" style="color:#1a3f8c !important;">+973 17004006</a>
@@ -602,13 +600,13 @@
                                                             <a href="tel:+97337750044" style="color:#1a3f8c !important;">+973 37750044</a>
                                                         </p>
                                                     </li>
-                                                    <li class="mail">
+                                                    <li class="mail _arabic-text">
                                                         <span class="icon"><i class="icon-mail"></i></span>
                                                         <p style="color: #1a3f8c;">
                                                             <a href="mailto:info@planerabh.com" style="color:#1a3f8c !important;"><span>info@planerabh.com</span></a>
                                                         </p>
                                                     </li>
-                                                    <li class="www">
+                                                    <li class="www _arabic-text">
                                                         <span class="icon"><i class="icon-link"></i></span>
                                                         <p style="color: #1a3f8c !important;">
                                                             <a target="_blank" href="http://www.planerabh.com/" style="color:#1a3f8c !important;">www.planerabh.com</a>
@@ -657,7 +655,7 @@
                         <div class="section_wrapper mcb-section-inner">
                             <div class="wrap mcb-wrap one-second valign-top clearfix" style="padding:60px 5% 30px 5%">
                                 <div class="mcb-wrap-inner">
-                                    <div class="column mcb-column one column_column">
+                                    <div class="column mcb-column one column_column _arabic">
                                         <div class="column_attr clearfix animate" data-anim-type="fadeInLeft">
                                             <h3 style="color:White; font-family:Cinzel" data-translate="0sm01">SEND A MESSAGE</h3>
                                             <div id="contactWrapper">
@@ -676,7 +674,7 @@
                                                     <div class="column one">
                                                         <textarea placeholder="Message" name="Message" id="message" style="width:100%; color:white;" rows="10" aria-invalid="false" required></textarea>
                                                     </div>
-                                                    <div class="column one">
+                                                    <div class="column one _ltrarabic">
                                                         <input type="button" value="Send A Message" id="submit" onclick="SendEmail();">
                                                     </div>
                                                 </form>

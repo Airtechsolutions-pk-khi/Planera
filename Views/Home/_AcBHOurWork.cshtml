@@ -19,7 +19,6 @@
                                 <!-- MAIN IMAGE -->
                                 @*<img src="~/assets/ActivarBH/slider/01.jpg" data-bgposition="30% 50%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">*@
                                 <img src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" alt="@item.Title" data-bgposition="30% 50%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
-
                             </li>
                             count += 1;
                         }

@@ -46,6 +46,7 @@
     <script src="~/assets/js/jquery-3.6.0.min.js"></script>
     <script src="~/assets/js/jquery-migrate-3.3.2.js"></script>
     <script src="~/assets/plugins/sweetalert.min.js"></script>
+
     <style>
         #Top_bar .top_bar_right a:not(.action_button) {
             color: rgb(12 9 53);
@@ -70,11 +71,17 @@
             }
             else {
                 jQuery('#_lang').html("English");
+                jQuery('._ltrarabic').css("direction", "ltr")
                 jQuery("._arabic").css("direction", "rtl")
-                jQuery("p, h1, h2, h3, h4, h5, h6, a,div").css("font-family", "AvenirRegular")
+                //jQuery("p, h1, h2, h3, h4, h5, h6, a,div").css("font-family", "AvenirRegular")
                 jQuery("._arabic-text").css("text-align", "right")
                 jQuery(".icon-media").css("right", "0")
                 jQuery(".icon-title").css("padding-right", "43px")
+                jQuery(".padding-left").css("padding-left", "25px")
+                jQuery(".padding-right").css("padding-right", "0px")
+                jQuery("._arwidth").css("width", "100%")
+                jQuery("._mrright").css("margin-right", "0px")
+                jQuery(".armgn-top").css("margin-top", "50px")
             }
         });
 
@@ -100,12 +107,12 @@
 
     <script type="application/ld+json">
         {
-          "@@context": "https://schema.org",
+          "@@context": "http://schema.org",
           "@@type": "LocalBusiness",
           "name": "Planera Group",
           "image": "",
           "@@id": "",
-          "url": "https://www.planerabh.com/",
+          "url": "http://www.planerabh.com/",
           "telephone": "1700 4006",
           "address": {
             "@@type": "PostalAddress",
@@ -131,7 +138,7 @@
             "opens": "09:00",
             "closes": "17:00"
           },
-          "sameAs": "https://www.instagram.com/planera_group/"
+          "sameAs": "http://www.instagram.com/planera_group/"
         }
     </script>
 </head>
@@ -221,6 +228,7 @@
                 </div>
             </header>
         </div>
+
         @RenderBody()
         <footer id="Footer" class="clearfix" style="background-color:white">
             <div class="widgets_wrapper" style="padding:20px 0;">
@@ -230,13 +238,16 @@
                             <div class="textwidget custom-html-widget">
                                 <div style="text-align:center">
                                     <img src="~/assets/Planeragroup/images/pg-logo-hor-black.png">
-                                    <p style="color:#666">
+                                    <p style="color:#666" data-translate="0mbc01">
                                         Mandarine Business Center -
                                         Alseef District (Bahrain)
-                                        <br><span style="color:#666">
-                                            +973 17004006 ||
-                                            +973 37750033 || +973 37750044
-                                        </span><br /> <a href="mailto:info@planerabh.com">info@planerabh.com</a>
+                                    </p>
+                                    <span style="color:#666">
+                                        +973 17004006 ||
+                                        +973 37750033 || +973 37750044
+                                    </span>
+                                    <p>
+                                        <a href="mailto:info@planerabh.com">info@planerabh.com</a>
                                     </p>
                                 </div>
                             </div>
@@ -246,7 +257,7 @@
             </div>
             <div class="footer_copy" style="border-top:1px solid #666">
                 <div class="container">
-                    <div class="column one" style="text-align:center;color:#666">
+                    <div class="column one" style="text-align:center;color:#666" data-translate="0ppg01">
                         <a id="back_to_top" class="button button_js" href="#"><i class="icon-up-open-big"></i></a>
                         &copy; Powered by Planera Group
                     </div>

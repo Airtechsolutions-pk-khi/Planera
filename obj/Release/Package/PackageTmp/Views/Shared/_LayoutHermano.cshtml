@@ -30,6 +30,7 @@
     <script src="~/assets/js/jquery-migrate-3.3.2.js"></script>
     <script src="~/assets/js/bootstrap.min.js"></script>
 
+
     <style>
         .bs-example {
             margin: 20px;
@@ -79,6 +80,60 @@
             color: #10293d !important;
         }
     </style>
+
+    <script>
+        jQuery(document).ready(function () {
+
+            var currLang = Cookies.get('lang');
+            if (currLang == null || currLang == "" || currLang == undefined) {
+
+                Cookies.set('lang', 'en', { expires: 365 });
+                jQuery('#_lang').html('عربى');
+            }
+            if (currLang == "en") {
+                jQuery('#_lang').html("عربى");
+                jQuery("._arabic").css("direction", "ltr")
+                jQuery("._arabic-text").css("text-align", "left")
+                jQuery(".icon-media").css("left", "0")
+                jQuery(".icon-title").css("padding-left", "43px")
+            }
+            else {
+                jQuery('#_lang').html("English");
+                jQuery('._ltrarabic').css("direction", "ltr")
+                jQuery("._arabic").css("direction", "rtl")
+                //jQuery("p, h1, h2, h3, h4, h5, h6, a,div").css("font-family", "AvenirRegular")
+                jQuery("._arabic-text").css("text-align", "right")
+                jQuery(".icon-media").css("right", "0")
+                jQuery(".icon-title").css("padding-right", "43px")
+                jQuery(".padding-left").css("padding-left", "25px")
+                jQuery(".padding-right").css("padding-right", "0px")
+                jQuery("._arwidth").css("width", "100%")
+                jQuery("._mrright").css("margin-right", "0px")
+                jQuery(".armgn-top").css("margin-top", "50px")
+            }
+        });
+
+        function _lang() {
+            var currLang = Cookies.get('lang');
+            //var currLang = localStorage.getItem("_lang");
+            if (currLang == null || currLang == "") {
+                Cookies.set('lang', 'en', { expires: 365 });
+                jQuery('#_lang').html('عربى');
+            }
+            if (currLang == "en") {
+                Cookies.set('lang', 'ar', { expires: 365 });
+                jQuery('#_lang').html('English');
+                location.reload();
+            }
+            if (currLang == "ar") {
+                Cookies.set('lang', 'en', { expires: 365 });
+                jQuery('#_lang').html('عربى');
+                location.reload();
+            }
+        }
+    </script>
+
+
     <script type="application/ld+json">
         {
           "@@context": "https://schema.org",
@@ -132,59 +187,71 @@
                                 <div class="menu_wrapper">
                                     <nav id="menu">
                                         <ul id="menu-main-menu" class="menu menu-main">
-                                            <li> <a href="/hermano/repair-maintenance" style="color:#fff;"><span>Home</span></a> </li>
-                                            <li> <a href="/hermano/repair-maintenance/about" style="color:#fff;"><span>About</span></a> </li>
-                                            <li> <a href="/hermano/repair-maintenance/services" style="color:#fff;"><span>Services</span></a> </li>
-                                            <li> <a href="/hermano/repair-maintenance/gallery" style="color:#fff;"><span>Gallery</span></a> </li>
-                                            @* <li> <a href="#"><span>Gallery</span></a> </li>*@
-                                            <li> <a href="/hermano/repair-maintenance/contact" style="color:#fff;"><span>Contact</span></a> </li>
+                                            <li id="homepage">
+                                                <a href="/hermano/repair-maintenance" style="color:#fff;" ><span data-translate="a0a0">Home</span></a>
+                                            </li>
+                                            <li id="aboutuspage">
+                                                <a href="/hermano/repair-maintenance/about" style="color:#fff;"><span data-translate="aa1">About</span></a>
+                                            </li>
+                                            <li id="servicespage">
+                                                <a href="/hermano/repair-maintenance/services" style="color:#fff;"><span data-translate="0ser01">Services</span></a>
+                                            </li>
+                                            <li id="projectpage">
+                                                <a href="/hermano/repair-maintenance/gallery" style="color:#fff;"><span data-translate="0gal1">Gallery</span></a>
+                                            </li>
+
+                                            <li id="contactpage">
+                                                <a href="/hermano/repair-maintenance/contact" style="color:#fff;"><span data-translate="00cn1">Contact</span></a>
+                                            </li>
+
+                                            <li>
+                                                <a onclick="_lang(); return false;" id="_lang" style="color:#fff;"><span>عربى</span></a>
+                                            </li>
                                         </ul>
                                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
                                 </div>
                             </div>
                             <div class="top_bar_right">
-                                <div class="top_bar_right_wrapper"> <button type="button" class="action_button" data-toggle="modal" data-target="#myModal" style="background-color:#275935;">Book Now</button> </div>
+                                <div class="top_bar_right_wrapper"> <button type="button" class="action_button" data-toggle="modal" data-target="#myModal" style="background-color:#275935;" data-translate="0bnw1">Book Now</button> </div>
                             </div>
                             <hr style="background-color:#fff;" />
                         </div>
                     </div>
                 </div>
-
             </header>
         </div>
-
         @RenderBody()
         <!-- Footer-->
         <footer id="Footer" class="clearfix">
-            <div class="container" style="padding:50px 0 0 0;">
-                <div class="column one-fifth" >
+            <div class="container _arabic-text _arabic" style="padding:50px 0 0 0;">
+                <div class="column one-fifth">
                     <aside class="widget widget_text">
                         <img src="~/assets/HarmanoRepair/images/logo.png" />
                     </aside>
                 </div>
                 <div class="column one-fifth">
                     <aside class="widget widget_text">
-                        <h4>Quick Links</h4>
+                        <h4 data-translate="00s7">Quick Link</h4>
                         <div class="textwidget">
 
                             <ul>
                                 <li style="margin-bottom: 10px">
-                                    <a href="/hermano/repair-maintenance">Home</a>
+                                    <a href="/hermano/repair-maintenance" data-translate="a0a0">Home</a>
                                 </li>
                                 <li style="margin-bottom: 10px">
-                                    <a href="/hermano/repair-maintenance/about">About us</a>
+                                    <a href="/hermano/repair-maintenance/about" data-translate="aa0">About us</a>
                                 </li>
                                 <li style="margin-bottom: 10px">
-                                    <a href="/hermano/repair-maintenance/services">Services</a>
+                                    <a href="/hermano/repair-maintenance/services" data-translate="0ser01">Services</a>
                                 </li>
                                 <li style="margin-bottom: 10px">
-                                    <a href="/hermano/repair-maintenance/gallery">Gallery</a>
+                                    <a href="/hermano/repair-maintenance/gallery" data-translate="0gal1">Gallery</a>
                                 </li>
                                 @*<li style="margin-bottom: 10px">
                                         <a href="#">Gallery</a>
                                     </li>*@
                                 <li style="margin-bottom: 10px">
-                                    <a href="/hermano/repair-maintenance/contact">Contact us</a>
+                                    <a href="/hermano/repair-maintenance/contact" data-translate="00cn0">Contact us</a>
                                 </li>
                             </ul>
                         </div>
@@ -193,7 +260,7 @@
 
                 <div class="column two-fifth">
                     <aside class="widget widget_text">
-                        <h4>Contact us</h4>
+                        <h4 data-translate="00cn0">Contact us</h4>
                         <div class="textwidget">
                             <ul>
                                 <li class="phone phone-1" style="margin-bottom: 10px">
@@ -210,7 +277,7 @@
                                     <span class="icon-mail"><a href="mailto:hermano@planerabh.com">hermano@planerabh.com</a></span>
                                 </li>
                                 <li style="margin-bottom: 10px">
-                                    <span class="icon-address">
+                                    <span class="icon-address" data-translate="0mb01">
                                         Mandarine Business Center,
                                         <br /> Alseef District
                                         Kingdom of Bahrain
@@ -221,7 +288,7 @@
                     </aside>
                 </div>
 
-                <div class="column one-fifth" >
+                <div class="column one-fifth">
                     <aside class="widget widget_text">
                         <img src="~/assets/HarmanoRepair/images/footer-logo.png" />
                     </aside>
@@ -231,7 +298,7 @@
                 <div class="container">
                     <div class="column one" style="text-align:center">
                         <a id="back_to_top" class="footer_button" href="#"><i class="icon-up-open-big"></i></a>
-                        <div class="copyright"> &copy; 2022 Powered by Planera group</div>
+                        <div class="copyright" data-translate="0ppg01"> &copy; 2022 Powered by Planera group</div>
                         <ul class="social">
                         </ul>
                     </div>
@@ -242,7 +309,7 @@
         <div id="Side_slide" class="right light" data-width="250">
             <div class="close-wrapper"> <a href="#" class="close"><i class="icon-cancel-fine"></i></a> </div>
             <div class="extras">
-                <a href="" class="action_button" target="_blank">Buy now</a>
+                <a href="" class="action_button" target="_blank" data-translate="00m47">Buy now</a>
                 <div class="extras-wrapper"></div>
             </div>
             <div class="menu_wrapper"></div>
@@ -265,7 +332,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-12 text-center">
-                                <h2 class="modal-title" style="color:white">Book Services</h2>
+                                <h2 class="modal-title" style="color:white" data-translate="0bks1">Book Service</h2>
                             </div>
                         </div>
                     </div>
@@ -294,7 +361,7 @@
                             </div>
                             <div class="col-6">
                                 <select name="time" id="time" style="width: 100%; border: groove;" required>
-                                    <option selected disabled>Select Time</option>
+                                    <option selected disabled data-translate="0st1">Select Time</option>
                                     <option>09am to 12pm</option>
                                     <option>12pm to 03pm</option>
                                     <option>03pm to 06pm</option>
@@ -304,15 +371,15 @@
                             </div>
                             <div class="col-12">
                                 <select name="service" id="service" style="width: 100%; border: groove;" required>
-                                    <option selected disabled>Select Services</option>
-                                    <option value="0">Household and appliances</option>
-                                    <option value="1">Electricity</option>
-                                    <option value="2">Plumbing Work</option>
-                                    <option value="3">Air Conditioner Work</option>
+                                    <option selected disabled data-translate="0ss1">Select Services</option>
+                                    <option value="0" data-translate="0hha1">Household and appliances</option>
+                                    <option value="1" data-translate="0elec1">Electricity</option>
+                                    <option value="2" data-translate="0plm1">Plumbing Work</option>
+                                    <option value="3" data-translate="0acw1">Air Conditioner Work</option>
                                 </select>
                             </div>
                         </div>
-                       
+
                         <div class="row form-group text-center">
                             <div class="col-12">
                                 <textarea name="details" id="details" placeholder="Tell us more about what you need" style="width: 100%; border: groove;" required></textarea>
@@ -352,6 +419,10 @@
     <script src="~/assets/js/animations/animations.js"></script>
     <script src="~/assets/js/translate3d.js"></script>
     <script src="~/assets/js/scripts.js"></script>
+
+    <script src="~/assets/js/cookie/js.cookie.js"></script>
+    <script src="~/assets/js/cookie/js.cookie.min.js"></script>
+
     <script src="~/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
     <script src="~/assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <script src="~/assets/plugins/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
@@ -363,72 +434,77 @@
     <script src="~/assets/plugins/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
     <script src="~/assets/plugins/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
     <script src="~/assets/plugins/rs-plugin/js/extensions/revolution.extension.carousel.min.js"></script>
+
+
+
     <style>
         .dmopMx {
             display: none
         }
     </style>
+
+
     <script>
         (function () {
-        var tpj = jQuery;
-        var revapi50;
-        tpj(document).ready(function () {
-            if (tpj("#rev_slider_50_1").revolution == undefined) {
-                revslider_showDoubleJqueryError("#rev_slider_50_1");
-            } else {
-                revapi50 = tpj("#rev_slider_50_1").show().revolution({
-                    sliderType: "carousel",
+            var tpj = jQuery;
+            var revapi50;
+            tpj(document).ready(function () {
+                if (tpj("#rev_slider_50_1").revolution == undefined) {
+                    revslider_showDoubleJqueryError("#rev_slider_50_1");
+                } else {
+                    revapi50 = tpj("#rev_slider_50_1").show().revolution({
+                        sliderType: "carousel",
 
-                    sliderLayout: "fullscreen",
-                    dottedOverlay: "none",
-                    delay: 1500,
-                    navigation: {
-                        keyboardNavigation: "off",
-                        keyboard_direction: "horizontal",
-                        onHoverStop: "off",
-                    },
-                    carousel: {
-                        maxRotation: 5,
-                        vary_rotation: "off",
-                        minScale: 15,
-                        vary_scale: "off",
-                        horizontal_align: "center",
-                        vertical_align: "center",
-                        fadeout: "on",
-                        vary_fade: "on",
-                        maxVisibleItems: 3,
-                        infinity: "on",
-                        space: -80,
-                        stretch: "off"
-                    },
-                    responsiveLevels: [1240, 1024, 778, 480],
-                    gridwidth: [1024, 900, 778, 480],
-                    gridheight: [868, 768, 960, 720],
-                    lazyType: "none",
-                    shadow: 0,
-                    spinner: "on",
-                    stopLoop: "off",
-                    stopAfterLoops: -1,
-                    stopAtSlide: -1,
-                    shuffle: "off",
-                    autoHeight: "off",
-                    fullScreenAlignForce: "off",
-                    fullScreenOffsetContainer: "",
-                    fullScreenOffset: "",
-                    disableProgressBar: "on",
-                    hideThumbsOnMobile: "off",
-                    hideSliderAtLimit: 0,
-                    hideCaptionAtLimit: 0,
-                    hideAllCaptionAtLilmit: 0,
-                    debugMode: false,
-                    fallbacks: {
-                        simplifyAll: "off",
-                        nextSlideOnWindowFocus: "off",
-                        disableFocusListener: false,
-                    }
-                });
-            }
-        }); /*ready*/</script>
+                        sliderLayout: "fullscreen",
+                        dottedOverlay: "none",
+                        delay: 1500,
+                        navigation: {
+                            keyboardNavigation: "off",
+                            keyboard_direction: "horizontal",
+                            onHoverStop: "off",
+                        },
+                        carousel: {
+                            maxRotation: 5,
+                            vary_rotation: "off",
+                            minScale: 15,
+                            vary_scale: "off",
+                            horizontal_align: "center",
+                            vertical_align: "center",
+                            fadeout: "on",
+                            vary_fade: "on",
+                            maxVisibleItems: 3,
+                            infinity: "on",
+                            space: -80,
+                            stretch: "off"
+                        },
+                        responsiveLevels: [1240, 1024, 778, 480],
+                        gridwidth: [1024, 900, 778, 480],
+                        gridheight: [868, 768, 960, 720],
+                        lazyType: "none",
+                        shadow: 0,
+                        spinner: "on",
+                        stopLoop: "off",
+                        stopAfterLoops: -1,
+                        stopAtSlide: -1,
+                        shuffle: "off",
+                        autoHeight: "off",
+                        fullScreenAlignForce: "off",
+                        fullScreenOffsetContainer: "",
+                        fullScreenOffset: "",
+                        disableProgressBar: "on",
+                        hideThumbsOnMobile: "off",
+                        hideSliderAtLimit: 0,
+                        hideCaptionAtLimit: 0,
+                        hideAllCaptionAtLilmit: 0,
+                        debugMode: false,
+                        fallbacks: {
+                            simplifyAll: "off",
+                            nextSlideOnWindowFocus: "off",
+                            disableFocusListener: false,
+                        }
+                    });
+                }
+            }); /*ready*/</script>
     <script>
         var revapi1, tpj;
         (function () {
@@ -778,7 +854,6 @@
     </script>
     <script>
         jQuery(document).ready(function () {
-            debugger
             if (jQuery('#Content').attr("contact") == '') {
                 jQuery('#logo .logo-main').attr("src", "../../assets/HarmanoRepair/images/header-logo.png");
             }
@@ -786,5 +861,6 @@
         });
 
     </script>
+    <script src="~/language/translations.js"></script>
 </body>
 </html>

@@ -11,74 +11,98 @@
     <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-source="gallery" style="background:#e9e9ea;padding:0px;">
         <div id="rev_slider_1_1" class="rev_slider fullscreenbanner homeheader" style="display:none;">
             <ul>
-                <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <img src="~/assets/HarmanoRepair/images/hero-1-(1).jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
-                         data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg">
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                        <span style="font-size:80px;">Home Maintenance</span>
-                    </div>
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                        <br /><br /><br /><span>  To Personal Assistance </span>
-                    </div>
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
-                        <a href="/hermano/repair-maintenance/services"> See Our Work ></a><br />
-                    </div>
-                    <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
+                @{
+                    var count = 1;
+                    foreach (var item in ViewBag.Home)
+                    {
+                        <li data-index="rs-@count" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
+                            data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <img src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" alt="@item.Title" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                             data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg">
+                            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                                <span style="font-size:80px;">@item.Title</span>
+                            </div>
+                            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                                <br /><br /><br /><span>  @item.Description </span>
+                            </div>
+                            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
+                                <a href="/hermano/repair-maintenance/services" data-translate="0sow01"> See Our Work ></a><br />
+                            </div>
+                            <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
 
-                    </div>
-                </li>
-                <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <img src="~/assets/HarmanoRepair/images/hero-1-(2).jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
-                         data-blurend="0" data-offsetstart="0 0" data-offsetend="10 20" data-bgparallax="4" class="rev-slidebg">
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                        <span style="font-size:80px;">Home Maintenance</span>
-                    </div>
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                        <br /><br /><br /><span>  To Personal Assistance </span>
-                    </div>
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
-                        <a href="/hermano/repair-maintenance/services"> See Our Work ></a><br />
-                    </div>
-                    <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
+                            </div>
+                        </li>
+                        count += 1;
+                    }
+                }
+                @*<li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
+                        data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <img src="~/assets/HarmanoRepair/images/hero-1-(1).jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                             data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg">
+                        <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                            <span style="font-size:80px;">Home Maintenance</span>
+                        </div>
+                        <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                            <br /><br /><br /><span>  To Personal Assistance </span>
+                        </div>
+                        <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
+                            <a href="/hermano/repair-maintenance/services"> See Our Work ></a><br />
+                        </div>
+                        <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
 
-                    </div>
-                </li>
-                <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <img src="~/assets/HarmanoRepair/images/hero-1-(3).jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
-                         data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg">
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                        <span style="font-size:80px;">
-                            Professional Maintainence
-                        </span>
-                    </div>
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                        <br /><br /><br /><span>  Affordable Price </span>
-                    </div>
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
-                        <a href="/hermano/repair-maintenance/services"> See Our Work ></a><br />
-                    </div>
-                    <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
-                    </div>
-                </li>
-                <li data-index="rs-4" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <img src="~/assets/HarmanoRepair/images/hero-1-(4).jpg" data-bgposition="center top" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
-                         data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg">
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                        <span style="font-size:80px;">We Are </span>
-                    </div>
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                        <br /><br /><br /><span>  Specialized </span>
-                    </div>
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
-                        <a href="/hermano/repair-maintenance/services"> See Our Work ></a><br />
-                    </div>
-                    <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
-                    </div>
-                </li>
+                        </div>
+                    </li>
+                    <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
+                        data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <img src="~/assets/HarmanoRepair/images/hero-1-(2).jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                             data-blurend="0" data-offsetstart="0 0" data-offsetend="10 20" data-bgparallax="4" class="rev-slidebg">
+                        <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                            <span style="font-size:80px;">Home Maintenance</span>
+                        </div>
+                        <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                            <br /><br /><br /><span>  To Personal Assistance </span>
+                        </div>
+                        <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
+                            <a href="/hermano/repair-maintenance/services"> See Our Work ></a><br />
+                        </div>
+                        <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
+
+                        </div>
+                    </li>
+                    <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
+                        data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <img src="~/assets/HarmanoRepair/images/hero-1-(3).jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                             data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg">
+                        <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                            <span style="font-size:80px;">
+                                Professional Maintainence
+                            </span>
+                        </div>
+                        <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                            <br /><br /><br /><span>  Affordable Price </span>
+                        </div>
+                        <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
+                            <a href="/hermano/repair-maintenance/services"> See Our Work ></a><br />
+                        </div>
+                        <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
+                        </div>
+                    </li>
+                    <li data-index="rs-4" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
+                        data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <img src="~/assets/HarmanoRepair/images/hero-1-(4).jpg" data-bgposition="center top" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                             data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg">
+                        <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                            <span style="font-size:80px;">We Are </span>
+                        </div>
+                        <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                            <br /><br /><br /><span>  Specialized </span>
+                        </div>
+                        <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
+                            <a href="/hermano/repair-maintenance/services"> See Our Work ></a><br />
+                        </div>
+                        <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
+                        </div>
+                    </li>*@
             </ul>
             <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
         </div>
@@ -86,17 +110,17 @@
 </div>
 <div id="Content">
     <div class="section mcb-section  bg-cover" style="padding:50px;">
-        <div class="container">
+        <div class="container _arabic _arabic-text">
             <div class="row ">
                 <div class="col-md-6 reveal fade-left " style="padding: 113px 8%; background-image: url('../../assets/HarmanoRepair/images/about-us.png'); background-repeat: no-repeat; background-position: right bottom; color: white;">
-                    <h3 style="color:white;">ABOUT US</h3>
-                    <p>
+                    <h3 style="color:white;" data-translate="aa0">ABOUT US</h3>
+                    <p data-translate="0wap01">
                         We are providing the most extensive range of services from home maintenance to personal assistance.
                         We make sure that your safety is never compromised. This is why we hire all the staff under the roof of
                         Hermano repair and maintainence company.
                     </p>
                     <hr class="no_line" style="margin:0 auto 20px">
-                    <a class="button button_size_2" href="/hermano/repair-maintenance/about" style="background-color:#ffd800;"><span class="" style="color:black;">Explore</span></a>
+                    <a class="button button_size_2" href="/hermano/repair-maintenance/about" style="background-color:#ffd800;"><span class="" style="color:black;" data-translate="0ex01">Explore</span></a>
                 </div>
                 <div class="col-md-6 reveal fade-right " style="align-self:center">
                     <img src="~/assets/HarmanoRepair/images/Layer-13-copy.jpg" alt="image" title="" />
@@ -106,20 +130,20 @@
     </div>
     <div class="section mcb-section  bg-cover" style="padding-bottom:50px;background-image:url(../assets/reno4-home-homes-bg.png);background-repeat:no-repeat;background-position:center top">
         <br /><br /><br />
-        <div class="container">
+        <div class="container _arabic _arabic-text">
             <div class="row ">
                 <div class="col-md-6 reveal fade-left " style="align-self:center">
                     <img src="~/assets/HarmanoRepair/images/reno4-home-team.png" alt="reno4-home-team" title="" />
                 </div>
                 <div class="col-md-6 reveal fade-right " style="padding: 90px 8%; background-image: url('../../assets/HarmanoRepair/images/homepage-our- services.png'); background-repeat: no-repeat; background-position: right bottom; color: white;">
-                    <h3 style="color:white;">OUR <br /> SERVICES</h3>
-                    <p>
+                    <h3 style="color:white;" data-translate="0oss1">OUR <br /> SERVICES</h3>
+                    <p data-translate="0wap01">
                         We are providing the most extensive range of services from home maintenance to personal assistance.
                         We make sure that your safety is never compromised. This is why we hire all the staff under the roof of
                         Hermano repair and maintainence company.
                     </p>
                     <hr class="no_line" style="margin:0 auto 20px">
-                    <a class="button button_size_2" href="/hermano/repair-maintenance/services" style="background-color:#ffd800;"><span class="" style="color:black;">Explore</span></a>
+                    <a class="button button_size_2" href="/hermano/repair-maintenance/services" style="background-color:#ffd800;"><span class="" style="color:black;" data-translate="0ex01">Explore</span></a>
                 </div>
             </div>
         </div>
@@ -129,7 +153,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="text-center mobile_align_center">
-                        <h2>
+                        <h2 data-translate="0oea01">
                             OUR EXPERTS ARE ON HAND
                         </h2>
                     </div>
@@ -147,7 +171,7 @@
                         </div>
                         <div class="col-12">
                             <div class="column_attr clearfix text-center">
-                                <h4>Repair House Hold and Appliances</h4>
+                                <h4 data-translate="0rhh01">Repair House Hold and Appliances</h4>
                             </div>
                         </div>
                     </div>
@@ -160,7 +184,7 @@
                         </div>
                         <div class="col-12">
                             <div class="column_attr clearfix text-center">
-                                <h4>Electricity</h4>
+                                <h4 data-translate="0elec1">Electricity</h4>
                             </div>
                         </div>
                     </div>
@@ -173,7 +197,7 @@
                         </div>
                         <div class="col-12">
                             <div class="column_attr clearfix text-center">
-                                <h4>Plumbing</h4>
+                                <h4 data-translate="0plm1">Plumbing</h4>
                             </div>
                         </div>
                     </div>
@@ -186,7 +210,7 @@
                         </div>
                         <div class="col-12">
                             <div class="column_attr clearfix text-center">
-                                <h4>Air Conditioner Maintenance</h4>
+                                <h4 data-translate="0acm1">Air Conditioner Maintenance</h4>
                             </div>
                         </div>
                     </div>
@@ -199,8 +223,8 @@
             <div class="row">
                 <div class="col-12 ">
                     <div class="text-center mobile_align_center text-light">
-                        <h5>HOW IT WORKS</h5>
-                        <h2>
+                        <h5 data-translate="0hiw1">HOW IT WORKS</h5>
+                        <h2 data-translate="0bs1">
                             Book services in just 3 steps!
                         </h2>
                     </div>
@@ -218,7 +242,7 @@
                         </div>
                         <div class="col-12 text-center">
                             <div class="column_attr clearfix mobile_align_center">
-                                <h4>Select the service</h4>
+                                <h4 data-translate="0sts1">Select the service</h4>
                             </div>
                         </div>
                     </div>
@@ -231,7 +255,7 @@
                         </div>
                         <div class="col-12 text-center">
                             <div class="column_attr clearfix mobile_align_center">
-                                <h4>Choose the slot</h4>
+                                <h4 data-translate="0cts1">Choose the slot</h4>
                             </div>
                         </div>
                     </div>
@@ -244,7 +268,7 @@
                         </div>
                         <div class="col-12 text-center">
                             <div class="column_attr clearfix mobile_align_center">
-                                <h4>Make payment and relax</h4>
+                                <h4 data-translate="0mpr1">Make payment and relax</h4>
                             </div>
                         </div>
                     </div>
@@ -255,7 +279,7 @@
 
                 <div class="col-4 offset-4 ">
                     <div class="text-center mobile_align_center" style="padding:6px 0%;">
-                        <a class="button button_full_width button_size_2" href="/hermano/repair-maintenance/services" style="background-color:#FFD800!important;color:#10293D;width:50%">Book Service</a>
+                        <a class="button button_full_width button_size_2" href="/hermano/repair-maintenance/services" style="background-color:#FFD800!important;color:#10293D;width:50%" data-translate="0bks1">Book Service</a>
                     </div>
 
                 </div>
@@ -266,7 +290,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="column_attr clearfix align_center" style="padding:20px 0 30px 0;">
-                    <h2>Take a look at our renovation</h2>
+                    <h2 data-translate="0tak1">Take a look at our renovation</h2>
                 </div>
             </div>
             <div class="col-12">
@@ -315,11 +339,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 sectionani reveal fade-left"> <img src="~/assets/HarmanoRepair/images/reno4-reno-guys.png" alt="reno4-reno-guys" title="" width="724" height="776" /> </div>
-                <div class="col-md-6   reveal fade-right" style="padding:30px;padding-top:120px;">
+                <div class="col-md-6 reveal fade-right _arabic _arabic-text" style="padding:30px;padding-top:120px;">
                     <div class="row">
                         <div class="col-12">
                             <div class="column_attr clearfix mobile_align_center">
-                                <h2>
+                                <h2 data-translate="0cal1">
                                     Call us
                                 </h2>
                             </div>
@@ -365,13 +389,13 @@
     <div class="bg-newsletter py-5">
         <div class="container">
             <div class="row justify-content-center ">
-                <h4 class="text-newsletter text-center text-black">Subscribe Our <span><br />Newsletter</span></h4>
+                <h4 class="text-newsletter text-center text-black" data-translate="0nws1">Subscribe Our <span><br />Newsletter</span></h4>
                 <div class="col-lg-6" style="padding-top:5px;">
 
                     <div class="input-group mb-3">
                         <input type="email" class="form-control" placeholder="Enter your email" style="background-color:white;border-top-left-radius: 10px;border-bottom-left-radius: 10px;border:none;height:50px;">
                         <div class="input-group-append">
-                            <button type="submit" style="margin:0;background-color:#275935;color:white;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">Submit</button>
+                            <button type="submit" style="margin:0;background-color:#275935;color:white;border-top-right-radius: 10px;border-bottom-right-radius: 10px;" data-translate="000co30">Submit</button>
                         </div>
 
                     </div>

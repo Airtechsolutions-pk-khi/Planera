@@ -137,6 +137,7 @@ namespace Planera.Controllers
         public ActionResult PlaneraInteriorv2()
         {
             ViewBag.InteriorHome = HomePageBLL.GetAll();
+            ViewBag.Gallery = GalleryBLL.GetAll();
             return View();
         }
 

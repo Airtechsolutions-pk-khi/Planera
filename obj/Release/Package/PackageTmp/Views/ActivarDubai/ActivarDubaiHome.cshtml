@@ -12,75 +12,101 @@
     <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-source="gallery" style="background:#e9e9ea;padding:0px;">
         <div id="rev_slider_1_1" class="rev_slider fullscreenbanner homeheader" style="display:none;">
             <ul>
-                <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <img src="~/assets/ActivarDB/images/banner4.jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
-                         data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg">
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                        <span style="font-size:80px;">We Are Passionate</span>
-                    </div>
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                        <br /><br /><br /><span> Visual Capabilities </span>
-                    </div>
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
-                        <a href="#service"> See our Services ></a><br />
-                    </div>
-                    <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
+                @{
+                    var count = 1;
+                    foreach (var item in ViewBag.DubaiHome)
+                    {
+                        <li data-index="rs-@count" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
+                            data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <img src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" alt="@item.Title" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                                 data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg">
+                            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                                <span style="font-size:80px;">@item.Title</span>
+                            </div>
+                            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                                <br /><br /><br /><span> @item.Description </span>
+                            </div>
+                            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
+                                <a href="/planera/activarbahrain/service"> See our Services ></a><br />
+                            </div>
+                            <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
 
-                        <a href="https://instagram.com/activar.bahrain" target="_blank"><img src="~/assets/ActivarDB/images/interiInsta.png" style="width:50px;height:50px;" /></a>
-                    </div>
-                </li>
-                <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <img src="~/assets/ActivarDB/images/banner5.jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
-                         data-blurend="0" data-offsetstart="0 0" data-offsetend="10 20" data-bgparallax="4" class="rev-slidebg">
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                        <span style="font-size:80px;">Our Executions</span>
-                    </div>
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                        <br /><br /><br /><span> Make A Difference </span>
-                    </div>
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
-                        <a href="#service"> See our Services ></a><br />
-                    </div>
-                    <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
-                        <a href="https://instagram.com/activar.bahrain" target="_blank"><img src="~/assets/ActivarDB/images/interiInsta.png" style="width:50px;height:50px;" /></a>
-                    </div>
-                </li>
-                <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <img src="~/assets/ActivarDB/images/banner6.jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
-                         data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg">
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                        <span style="font-size:80px;">We Dont Renovate</span>
-                    </div>
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                        <br /><br /><br /><span> We Transform </span>
-                    </div>
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
-                        <a href="#service"> See our Services ></a><br />
-                    </div>
-                    <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
-                        <a href="https://instagram.com/activar.bahrain" target="_blank"><img src="~/assets/ActivarDB/images/interiInsta.png" style="width:50px;height:50px;" /></a>
-                    </div>
-                </li>
-                <li data-index="rs-4" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <img src="~/assets/ActivarDB/images/banner7.jpg" data-bgposition="center top" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
-                         data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg">
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                        <span style="font-size:80px;">We Are Passionate</span>
-                    </div>
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                        <br /><br /><br /><span>To Style Your Space </span>
-                    </div>
-                    <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
-                        <a href="#service"> See our Services ></a><br />
-                    </div>
-                    <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
-                        <a href="https://instagram.com/activar.bahrain" target="_blank"><img src="~/assets/ActivarDB/images/interiInsta.png" style="width:50px;height:50px;" /></a>
-                    </div>
-                </li>
+                                <a href="https://instagram.com/activar.bahrain" target="_blank"><img src="~/assets/ActivarBH/images/interiInsta.png" style="width:50px;height:50px;" /></a>
+                            </div>
+                        </li>
+                        count += 1;
+                    }
+                }
+
+                @*<li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
+            data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+            <img src="~/assets/ActivarDB/images/banner4.jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                 data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg">
+            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                <span style="font-size:80px;">We Are Passionate</span>
+            </div>
+            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                <br /><br /><br /><span> Visual Capabilities </span>
+            </div>
+            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
+                <a href="#service"> See our Services ></a><br />
+            </div>
+            <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
+
+                <a href="https://instagram.com/activar.bahrain" target="_blank"><img src="~/assets/ActivarDB/images/interiInsta.png" style="width:50px;height:50px;" /></a>
+            </div>
+        </li>
+        <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
+            data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+            <img src="~/assets/ActivarDB/images/banner5.jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                 data-blurend="0" data-offsetstart="0 0" data-offsetend="10 20" data-bgparallax="4" class="rev-slidebg">
+            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                <span style="font-size:80px;">Our Executions</span>
+            </div>
+            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                <br /><br /><br /><span> Make A Difference </span>
+            </div>
+            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
+                <a href="#service"> See our Services ></a><br />
+            </div>
+            <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
+                <a href="https://instagram.com/activar.bahrain" target="_blank"><img src="~/assets/ActivarDB/images/interiInsta.png" style="width:50px;height:50px;" /></a>
+            </div>
+        </li>
+        <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
+            data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+            <img src="~/assets/ActivarDB/images/banner6.jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                 data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg">
+            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                <span style="font-size:80px;">We Dont Renovate</span>
+            </div>
+            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                <br /><br /><br /><span> We Transform </span>
+            </div>
+            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
+                <a href="#service"> See our Services ></a><br />
+            </div>
+            <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
+                <a href="https://instagram.com/activar.bahrain" target="_blank"><img src="~/assets/ActivarDB/images/interiInsta.png" style="width:50px;height:50px;" /></a>
+            </div>
+        </li>
+        <li data-index="rs-4" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
+            data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+            <img src="~/assets/ActivarDB/images/banner7.jpg" data-bgposition="center top" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                 data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg">
+            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                <span style="font-size:80px;">We Are Passionate</span>
+            </div>
+            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                <br /><br /><br /><span>To Style Your Space </span>
+            </div>
+            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
+                <a href="#service"> See our Services ></a><br />
+            </div>
+            <div class="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="right" data-hoffset="20" data-y="bottom" data-voffset="53" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-responsive_offset="on" style="z-index: 9;">
+                <a href="https://instagram.com/activar.bahrain" target="_blank"><img src="~/assets/ActivarDB/images/interiInsta.png" style="width:50px;height:50px;" /></a>
+            </div>
+        </li>*@
             </ul>
             <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
         </div>

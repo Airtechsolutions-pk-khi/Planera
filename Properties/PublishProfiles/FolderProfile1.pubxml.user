@@ -5,7 +5,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>E:\PlaneraWeb</_PublishTargetUrl>
-    <History>True|2022-11-25T14:16:23.3085118Z;</History>
+    <History>True|2022-12-02T15:09:35.8106477Z;True|2022-11-25T19:16:23.3085118+05:00;</History>
+    <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="activar.ico">
@@ -1406,6 +1407,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/HarmanoRepair/images/why choose.png">
       <publishTime>11/25/2022 12:00:16</publishTime>
     </File>
+    <File Include="assets/image-not-found-icon.png">
+      <publishTime>11/28/2022 22:44:42</publishTime>
+    </File>
     <File Include="assets/ImagesCompanyOverView/-e-DSC0712010.png">
       <publishTime>11/25/2022 12:00:16</publishTime>
     </File>
@@ -2055,7 +2059,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/25/2022 12:00:17</publishTime>
     </File>
     <File Include="assets/Planeragroup/css/style.css">
-      <publishTime>11/25/2022 12:00:17</publishTime>
+      <publishTime>11/29/2022 12:07:06</publishTime>
     </File>
     <File Include="assets/Planeragroup/css/watchmaker.css">
       <publishTime>11/25/2022 12:00:17</publishTime>
@@ -7293,10 +7297,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/25/2022 12:00:21</publishTime>
     </File>
     <File Include="bin/Planera.dll">
-      <publishTime>11/25/2022 19:16:15</publishTime>
+      <publishTime>12/02/2022 20:09:26</publishTime>
     </File>
     <File Include="bin/Planera.pdb">
-      <publishTime>11/25/2022 19:16:15</publishTime>
+      <publishTime>12/02/2022 20:09:26</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>11/25/2022 12:00:21</publishTime>
@@ -7998,10 +8002,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/25/2022 12:00:18</publishTime>
     </File>
     <File Include="language/translations.js">
-      <publishTime>11/25/2022 12:00:18</publishTime>
+      <publishTime>11/29/2022 17:14:20</publishTime>
     </File>
     <File Include="language/translations.json">
-      <publishTime>11/25/2022 17:33:27</publishTime>
+      <publishTime>12/01/2022 20:14:07</publishTime>
     </File>
     <File Include="language/translations.zip">
       <publishTime>11/25/2022 12:00:18</publishTime>
@@ -8010,7 +8014,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/25/2022 12:00:22</publishTime>
     </File>
     <File Include="rev-s-gallery-news.html">
-      <publishTime>11/25/2022 12:00:22</publishTime>
+      <publishTime>11/29/2022 16:02:31</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>11/25/2022 12:00:15</publishTime>
@@ -8064,25 +8068,25 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/25/2022 12:00:15</publishTime>
     </File>
     <File Include="Views/ActivarDubai/ActivarDubaiHome.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>11/30/2022 18:18:37</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoHome.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>12/01/2022 20:18:29</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMAbout.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>12/01/2022 19:00:41</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMContact.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>12/01/2022 20:14:42</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMProjects.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>12/02/2022 18:49:01</publishTime>
     </File>
     <File Include="Views/Hermano/HermanoRMService.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>12/01/2022 19:34:47</publishTime>
     </File>
     <File Include="Views/Home/AboutInterior.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>12/01/2022 12:46:15</publishTime>
     </File>
     <File Include="Views/Home/ActivarBHAbout.cshtml">
       <publishTime>11/25/2022 12:00:15</publishTime>
@@ -8091,13 +8095,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/25/2022 12:00:15</publishTime>
     </File>
     <File Include="Views/Home/ActivarBHGallery.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>12/02/2022 14:57:51</publishTime>
     </File>
     <File Include="Views/Home/ActivarBHService.cshtml">
       <publishTime>11/25/2022 12:00:15</publishTime>
     </File>
     <File Include="Views/Home/ActivarBHV2.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>11/30/2022 17:52:20</publishTime>
     </File>
     <File Include="Views/Home/ActivarDubai.cshtml">
       <publishTime>11/25/2022 12:00:15</publishTime>
@@ -8109,13 +8113,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/25/2022 12:00:15</publishTime>
     </File>
     <File Include="Views/Home/CompanyOverview.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>11/29/2022 19:49:48</publishTime>
     </File>
     <File Include="Views/Home/ContactInterior.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>12/01/2022 17:24:33</publishTime>
     </File>
     <File Include="Views/Home/ContactPlaneraGroup.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>11/30/2022 12:58:37</publishTime>
     </File>
     <File Include="Views/Home/HermanoCAbout.cshtml">
       <publishTime>11/25/2022 12:00:15</publishTime>
@@ -8124,43 +8128,43 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/25/2022 12:00:15</publishTime>
     </File>
     <File Include="Views/Home/HermanoCHome.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>11/30/2022 18:30:25</publishTime>
     </File>
     <File Include="Views/Home/HermanoCProject.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>12/02/2022 18:30:52</publishTime>
     </File>
     <File Include="Views/Home/HermanoCService.cshtml">
       <publishTime>11/25/2022 12:00:15</publishTime>
     </File>
     <File Include="Views/Home/Homev2.cshtml">
-      <publishTime>11/25/2022 19:15:07</publishTime>
+      <publishTime>11/29/2022 18:52:29</publishTime>
     </File>
     <File Include="Views/Home/InteriorService.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>12/02/2022 18:55:14</publishTime>
     </File>
     <File Include="Views/Home/Main.cshtml">
       <publishTime>11/25/2022 12:00:15</publishTime>
     </File>
     <File Include="Views/Home/NewsEvents.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>11/29/2022 16:39:54</publishTime>
     </File>
     <File Include="Views/Home/OurBusinessesV2.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>11/29/2022 20:22:39</publishTime>
     </File>
     <File Include="Views/Home/PlaneraCareer.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>11/29/2022 18:29:00</publishTime>
     </File>
     <File Include="Views/Home/PlaneraGeneralTrading.cshtml">
       <publishTime>11/25/2022 12:00:15</publishTime>
     </File>
     <File Include="Views/Home/PlaneraInteriorv2.cshtml">
-      <publishTime>11/25/2022 15:00:51</publishTime>
+      <publishTime>12/01/2022 11:56:18</publishTime>
     </File>
     <File Include="Views/Home/ProjectInterior.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>12/02/2022 14:57:58</publishTime>
     </File>
     <File Include="Views/Home/_AcBHOurWork.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>12/02/2022 17:50:18</publishTime>
     </File>
     <File Include="Views/Home/_AcBHVideoSec.cshtml">
       <publishTime>11/25/2022 12:00:15</publishTime>
@@ -8181,22 +8185,22 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/25/2022 12:00:15</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutActivarBAH.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>11/30/2022 19:50:44</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutActivarDUB.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>11/30/2022 19:51:03</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutHermaniCL.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>11/30/2022 20:19:13</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutHermano.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>12/01/2022 18:41:31</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutInterior.cshtml">
-      <publishTime>11/25/2022 12:00:15</publishTime>
+      <publishTime>12/01/2022 16:03:35</publishTime>
     </File>
     <File Include="Views/Shared/_Layoutv2.cshtml">
-      <publishTime>11/25/2022 17:06:55</publishTime>
+      <publishTime>12/01/2022 12:25:21</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>11/25/2022 12:00:15</publishTime>
@@ -8205,7 +8209,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/25/2022 12:00:15</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/25/2022 19:16:17</publishTime>
+      <publishTime>12/02/2022 20:09:28</publishTime>
     </File>
   </ItemGroup>
 </Project>

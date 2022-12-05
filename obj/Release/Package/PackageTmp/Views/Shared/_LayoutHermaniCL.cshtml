@@ -32,6 +32,60 @@
     <link href="~/assets/HarmanoContract/css/custom.css" rel="stylesheet" />
     <script src="~/assets/js/jquery-3.6.0.min.js"></script>
     <script src="~/assets/js/jquery-migrate-3.3.2.js"></script>
+
+
+    <script>
+        jQuery(document).ready(function () {
+
+            var currLang = Cookies.get('lang');
+            if (currLang == null || currLang == "" || currLang == undefined) {
+
+                Cookies.set('lang', 'en', { expires: 365 });
+                jQuery('#_lang').html('عربى');
+            }
+            if (currLang == "en") {
+                jQuery('#_lang').html("عربى");
+                jQuery("._arabic").css("direction", "ltr")
+                jQuery("._arabic-text").css("text-align", "left")
+                jQuery(".icon-media").css("left", "0")
+                jQuery(".icon-title").css("padding-left", "43px")
+            }
+            else {
+                jQuery('#_lang').html("English");
+                jQuery('._ltrarabic').css("direction", "ltr")
+                jQuery("._arabic").css("direction", "rtl")
+                //jQuery("p, h1, h2, h3, h4, h5, h6, a,div").css("font-family", "AvenirRegular")
+                jQuery("._arabic-text").css("text-align", "right")
+                jQuery(".icon-media").css("right", "0")
+                jQuery(".icon-title").css("padding-right", "43px")
+                jQuery(".padding-left").css("padding-left", "25px")
+                jQuery(".padding-right").css("padding-right", "0px")
+                jQuery("._arwidth").css("width", "100%")
+                jQuery("._mrright").css("margin-right", "0px")
+                jQuery(".armgn-top").css("margin-top", "50px")
+            }
+        });
+
+        function _lang() {
+            var currLang = Cookies.get('lang');
+            //var currLang = localStorage.getItem("_lang");
+            if (currLang == null || currLang == "") {
+                Cookies.set('lang', 'en', { expires: 365 });
+                jQuery('#_lang').html('عربى');
+            }
+            if (currLang == "en") {
+                Cookies.set('lang', 'ar', { expires: 365 });
+                jQuery('#_lang').html('English');
+                location.reload();
+            }
+            if (currLang == "ar") {
+                Cookies.set('lang', 'en', { expires: 365 });
+                jQuery('#_lang').html('عربى');
+                location.reload();
+            }
+        }
+    </script>
+
     <script type="application/ld+json">
         {
           "@@context": "https://schema.org",
@@ -90,20 +144,24 @@
                                     <nav id="menu" class="menu-main-menu-container">
                                         <ul id="menu-main-menu" class="menu">
                                             <li id="homepage">
-                                                <a href="/planera/hermano-contracting"><span>Home</span></a>
+                                                <a href="/planera/hermano-contracting"><span data-translate="a0a0">Home</span></a>
                                             </li>
                                             <li id="aboutuspage">
-                                                <a href="/hermano-contracting/about"><span>About Us</span></a>
+                                                <a href="/hermano-contracting/about"><span data-translate="aa0">About Us</span></a>
                                             </li>
                                             <li id="servicespage">
-                                                <a href="/hermano-contracting/services"><span>Services</span></a>
+                                                <a href="/hermano-contracting/services"><span data-translate="0ser01">Services</span></a>
                                             </li>
                                             <li id="projectpage">
-                                                <a href="/hermano-contracting/projects"><span>Projects</span></a>
+                                                <a href="/hermano-contracting/projects"><span data-translate="0prj01">Projects</span></a>
                                             </li>
 
                                             <li id="contactpage">
-                                                <a href="/hermano-contracting/contact"><span>Contact Us</span></a>
+                                                <a href="/hermano-contracting/contact"><span data-translate="00cn0">Contact Us</span></a>
+                                            </li>
+
+                                            <li>
+                                                <i class="fa fa-icon-globe"></i><a onclick="_lang(); return false;" id="_lang">عربى</a>
                                             </li>
                                         </ul>
                                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
@@ -133,30 +191,30 @@
                         </aside>
                     </div>
                     <div class="column one-fourth">
-                        <aside class="widget widget_text">
-                            <h4>Quick Links</h4>
+                        <aside class="widget widget_text _arabic-text">
+                            <h4 data-translate="00s7">Quick Links</h4>
                             <div class="textwidget">
                                 <ul>
                                     <li style="margin-bottom: 10px">
-                                        <a href="/hermano-contracting/about">About us</a>
+                                        <a href="/hermano-contracting/about" data-translate="aa0">About us</a>
                                     </li>
                                     <li style="margin-bottom: 10px">
-                                        <a href="/hermano-contracting/services">Services</a>
+                                        <a href="/hermano-contracting/services" data-translate="0ser01">Services</a>
                                     </li>
                                     <li style="margin-bottom: 10px">
-                                        <a href="/hermano-contracting/projects">Projects</a>
+                                        <a href="/hermano-contracting/projects" data-translate="0prj01">Projects</a>
                                     </li>
 
                                     <li style="margin-bottom: 10px">
-                                        <a href="/hermano-contracting/contact">Contact us</a>
+                                        <a href="/hermano-contracting/contact" data-translate="00cn0">Contact us</a>
                                     </li>
                                 </ul>
                             </div>
                         </aside>
                     </div>
                     <div class="column one-fourth">
-                        <aside class="widget widget_text">
-                            <h4>Contact us</h4>
+                        <aside class="widget widget_text _arabic-text _arabic">
+                            <h4 data-translate="00cn0">Contact us</h4>
                             <div class="textwidget">
                                 <ul>
                                     <li class="phone phone-1" style="margin-bottom: 10px">
@@ -170,7 +228,7 @@
                                         <span class="icon-mail"><a href="mailto:hermano@planerabh.com">hermano@planerabh.com</a></span>
                                     </li>
                                     <li style="margin-bottom: 10px">
-                                        <span class="icon-address">
+                                        <span class="icon-address" data-translate="0mbc01">
                                             Mandarine Business Center, Alseef District Kingdom of Bahrain
                                         </span>
                                     </li>
@@ -192,7 +250,7 @@
             <div class="footer_copy">
                 <div class="container">
                     <div class="column one" style="text-align:center">
-                        <div class="">
+                        <div class="" data-translate="0pg001">
                             &copy;  2022 Powered by Planera Group
                         </div>
                     </div>
@@ -206,6 +264,10 @@
     <script src="~/assets/js/jquery.jplayer.min.js"></script>
     <script src="~/assets/js/animations/animations.js"></script>
     <script src="~/assets/js/scripts.js"></script>
+
+    <script src="~/assets/js/cookie/js.cookie.js"></script>
+    <script src="~/assets/js/cookie/js.cookie.min.js"></script>
+
     <script src="~/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
     <script src="~/assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <script src="~/assets/plugins/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
@@ -402,5 +464,6 @@
 
         window.addEventListener("scroll", reveal);
     </script>
+    <script src="~/language/translations.js"></script>
 </body>
 </html>
