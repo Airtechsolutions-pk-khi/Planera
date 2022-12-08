@@ -30,8 +30,17 @@
     <script src="~/assets/js/jquery-migrate-3.3.2.js"></script>
     <script src="~/assets/js/bootstrap.min.js"></script>
 
-
     <style>
+        @@font-face {
+            font-family: 'cairo-bold !important';
+            src: url('../../assets/aracbicfont/cairo-bold.ttf') format('truetype');
+        }
+
+        @@font-face {
+            font-family: 'cairo-regular !important';
+            src: url('../../assets/aracbicfont/cairo-regular.ttf') format('truetype');
+        }
+
         .bs-example {
             margin: 20px;
         }
@@ -110,6 +119,9 @@
                 jQuery("._arwidth").css("width", "100%")
                 jQuery("._mrright").css("margin-right", "0px")
                 jQuery(".armgn-top").css("margin-top", "50px")
+                jQuery("body ,p, div, span, label, #menu>ul>li>a").css("font-family", "Cairo-Regular")
+                jQuery("h1,h2,h3,h4,h5,h6").css("font-family", "Cairo-Bold")
+                jQuery(".floatr").css("float", "right")
             }
         });
 
@@ -188,7 +200,7 @@
                                     <nav id="menu">
                                         <ul id="menu-main-menu" class="menu menu-main">
                                             <li id="homepage">
-                                                <a href="/hermano/repair-maintenance" style="color:#fff;" ><span data-translate="a0a0">Home</span></a>
+                                                <a href="/hermano/repair-maintenance" style="color:#fff;"><span data-translate="a0a0">Home</span></a>
                                             </li>
                                             <li id="aboutuspage">
                                                 <a href="/hermano/repair-maintenance/about" style="color:#fff;"><span data-translate="aa1">About</span></a>

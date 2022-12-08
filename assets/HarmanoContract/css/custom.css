@@ -7,7 +7,7 @@ h3,h4 {
 }
 
 * {
-    font-family: "Lato-Regular" !important;
+    font-family: "Lato-Regular";
 }
 #Footer .footer_copy .one {
     margin-bottom: 20px;
@@ -27,7 +27,7 @@ h3,h4 {
 }
 
 h1 {
-    font-family: "Lato-Bold" !important;
+    font-family: "Lato-Bold";
 }
 #Top_bar #logo img {
     vertical-align: middle !important;

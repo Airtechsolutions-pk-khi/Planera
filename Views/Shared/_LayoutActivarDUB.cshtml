@@ -40,12 +40,22 @@
     <script src="~/assets/plugins/sweetalert.min.js"></script>
     <style>
         @@font-face {
+            font-family: 'cairo-regular';
+            src: url('../../assets/aracbicfont/cairo-regular.ttf') format('truetype');
+        }
+
+        @@font-face {
+            font-family: 'cairo-bold';
+            src: url('../../assets/aracbicfont/cairo-bold.ttf') format('truetype');
+        }
+
+        @@font-face {
             font-family: 'FontsFree-Net-ProximaNova-Regular';
             src: url('../../assets/ActivarDB/fonts/FontsFree-Net-ProximaNova-Regular.ttf') format('truetype');
         }
 
         * {
-            font-family: FontsFree-Net-ProximaNova-Regular !important;
+            font-family: FontsFree-Net-ProximaNova-Regular;
         }
 
         @@font-face {
@@ -54,7 +64,7 @@
         }
 
         h1, h2 {
-            font-family: FontsFree-Net-FontsFree-Net-Proxima-Nova-Sbold !important;
+            font-family: FontsFree-Net-FontsFree-Net-Proxima-Nova-Sbold;
         }
 
         #Footer .footer_copy .one {
@@ -106,7 +116,6 @@
                 jQuery('#_lang').html("English");
                 jQuery('._ltrarabic').css("direction", "ltr")
                 jQuery("._arabic").css("direction", "rtl")
-                //jQuery("p, h1, h2, h3, h4, h5, h6, a,div").css("font-family", "AvenirRegular")
                 jQuery("._arabic-text").css("text-align", "right")
                 jQuery(".icon-media").css("right", "0")
                 jQuery(".icon-title").css("padding-right", "43px")
@@ -115,6 +124,11 @@
                 jQuery("._arwidth").css("width", "100%")
                 jQuery("._mrright").css("margin-right", "0px")
                 jQuery(".armgn-top").css("margin-top", "50px")
+                jQuery(".float").css("float", "right")
+                jQuery(".displayb").css("display", "block")
+                jQuery("body ,p, div, span, label, #menu>ul>li>a").css("font-family", "Cairo-Regular")
+                jQuery("h1,h2,h3,h4,h5,h6").css("font-family", "Cairo-Bold")
+                jQuery(".ourbusinessbox h4, .newsbox h2").css("font-family", "Cairo-Bold")
             }
         });
 
@@ -137,7 +151,6 @@
             }
         }
     </script>
-
 </head>
 <body class="home page template-slider style-simple button-flat layout-full-width if-zoom if-border-hide no-shadows header-classic header-fw minimalist-header-no sticky-header sticky-tb-color ab-hide subheader-both-left menu-line-below-80-1 menuo-right menuo-no-borders mobile-tb-center mobile-side-slide mobile-mini-mr-ll tablet-sticky mobile-header-mini mobile-sticky tr-header tr-menu">
     <div id="Wrapper">
@@ -154,21 +167,23 @@
                                         <img class="logo-mobile scale-with-grid" src="../../assets/ActivarDB/images/header-logo-ad.png" data-retina="../../assets/ActivarDB/images/header-logo-ad.png" data-height="100">
                                     </a>
                                 </div>
-                                <div class="menu_wrapper">
+                                <div class="menu_wrapper _arabic">
                                     <nav id="menu">
                                         <ul id="menu-menu" class="menu menu-main">
-                                            @*current-menu-item page_item current_page_item*@
                                             <li class=" ">
-                                                <a href="#home"><span>Home</span></a>
+                                                <a href="#home"><span data-translate="a0a0">Home</span></a>
                                             </li>
                                             <li>
-                                                <a href="#about"><span>About us</span></a>
+                                                <a href="#about"><span data-translate="aa0">About us</span></a>
                                             </li>
                                             <li>
-                                                <a href="#service"><span>Services</span></a>
+                                                <a href="#service"><span data-translate="0ser01">Services</span></a>
                                             </li>
                                             <li>
-                                                <a href="#gallery-activar"><span>Gallery</span></a>
+                                                <a href="#gallery-activar"><span data-translate="0gal1">Gallery</span></a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-icon-globe"></i><a onclick="_lang(); return false;" id="_lang">عربى</a>
                                             </li>
                                         </ul>
                                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
@@ -176,7 +191,7 @@
                             </div>
                             <div class="top_bar_right">
                                 <div class="top_bar_right_wrapper">
-                                    <a href="#contact" class="action_button" style="background-color:#bc955a !important">Contact us</a>
+                                    <a href="#contact" class="action_button" style="background-color:#bc955a !important" data-translate="00cn0">Contact us</a>
                                 </div>
                             </div>
                         </div>
@@ -185,7 +200,7 @@
             </header>
         </div>
         @RenderBody()
-        <footer id="Footer" class="clearfix" style="background: #e9e9e9; background-image: url(../../assets/ActivarDB/images/footbg2.jpg); background-repeat: no-repeat; background-size: contain; background-position-x: right; ">
+        <footer id="Footer" class="clearfix _arabic" style="background: #e9e9e9; background-image: url(../../assets/ActivarDB/images/footbg2.jpg); background-repeat: no-repeat; background-size: contain; background-position-x: right; ">
             <div class="widgets_wrapper" style="padding:60px 0 30px 0;">
                 <div class="container" style="line-height:20px">
                     <div class="column one-fourth" style="text-align:center ">
@@ -195,23 +210,23 @@
                     </div>
                     <div class="column one-fourth">
                         <aside class="widget widget_text">
-                            <h4 style="color:black"> Quick Links</h4>
+                            <h4 style="color:black" data-translate="00s7"> Quick Links</h4>
                             <div class="textwidget">
                                 <ul>
                                     <li style="margin-bottom: 10px">
-                                        <a href="#home" style="color:black">Home</a>
+                                        <a href="#home" style="color:black" data-translate="a0a0">Home</a>
                                     </li>
                                     <li style="margin-bottom: 10px">
-                                        <a href="#about" style="color:black">About us</a>
+                                        <a href="#about" style="color:black" data-translate="aa0">About us</a>
                                     </li>
                                     <li style="margin-bottom: 10px">
-                                        <a href="#service" style="color:black">Services</a>
+                                        <a href="#service" style="color:black" data-translate="0ser01">Services</a>
                                     </li>
                                     <li style="margin-bottom: 10px">
-                                        <a href="#gallery-activar" style="color:black">Gallery</a>
+                                        <a href="#gallery-activar" style="color:black" data-translate="0gal1">Gallery</a>
                                     </li>
                                     <li style="margin-bottom: 10px">
-                                        <a href="#contact" style="color:black">Contact us</a>
+                                        <a href="#contact" style="color:black" data-translate="00cn0">Contact us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -219,7 +234,7 @@
                     </div>
                     <div class="column one-fourth">
                         <aside class="widget widget_text">
-                            <h4 style="color:black"> Contact us</h4>
+                            <h4 style="color:black" data-translate="00cn0"> Contact us</h4>
                             <div class="textwidget">
 
                                 <ul style="color:black">
