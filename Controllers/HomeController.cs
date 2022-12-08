@@ -68,6 +68,7 @@ namespace Planera.Controllers
         public ActionResult ActivarBHV2()
         {
             ViewBag.Home = HomePageBLL.GetACBH();
+            ViewBag.Gallery = GalleryBLL.GetGalleryAcBah();
             //return RedirectToAction("comingsoon");
             return View();
         }
