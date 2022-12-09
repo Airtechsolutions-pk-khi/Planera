@@ -15,6 +15,7 @@ namespace Planera.Controllers
         [Route("hermano/repair-maintenance")] 
         public ActionResult HermanoHome()
         {
+            ViewBag.Home = HomePageBLL.GetHarmano();
             //return RedirectToAction("/planera/comingsoon");
             return View();
         }
@@ -33,6 +34,7 @@ namespace Planera.Controllers
         [Route("hermano/repair-maintenance/gallery")]
         public ActionResult HermanoRMProjects()
         {
+            ViewBag.Gallery = GalleryBLL.GetGalleryHrRpr();
             //return RedirectToAction("/planera/comingsoon");
             return View();
         }

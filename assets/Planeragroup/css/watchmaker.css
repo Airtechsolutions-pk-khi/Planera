@@ -1,3 +1,12 @@
+@font-face {
+	font-family: 'cairo-regular';
+	src: url('../../aracbicfont/cairo-regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'cairo-bold';
+	src: url('../../aracbicfont/cairo-bold.ttf') format('truetype');
+}
+
 @media only screen and (min-width: 1240px) {
 	body:not(.header-simple) #Top_bar #menu {
 		display: block !important
@@ -1630,6 +1639,7 @@ body, button, span.date_label, .timeline_items li h3 span, input[type="submit"],
 h1, h2, h3, h4, .text-logo #logo {
 	font-family: "Cinzel", Arial, Tahoma, sans-serif;
 }
+
 h5, h6 {
 	font-family: "Cinzel", Arial, Tahoma, sans-serif;
 }

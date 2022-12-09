@@ -977,6 +977,7 @@ D:\Projects\Planera\obj\Debug\Planera.csproj.CoreCompileInputs.cache
 D:\Projects\Planera\obj\Debug\Planera.csproj.CopyComplete
 D:\Projects\Planera\obj\Debug\Planera.dll
 D:\Projects\Planera\obj\Debug\Planera.pdb
+D:\Projects\PlaneraWeb\bin\Microsoft.AspNetCore.Mvc.Core.dll
 D:\Projects\PlaneraWeb\bin\Planera.dll.config
 D:\Projects\PlaneraWeb\bin\Planera.dll
 D:\Projects\PlaneraWeb\bin\Planera.pdb
@@ -1041,7 +1042,6 @@ D:\Projects\PlaneraWeb\bin\Microsoft.AspNetCore.Http.dll
 D:\Projects\PlaneraWeb\bin\Microsoft.AspNetCore.Http.Extensions.dll
 D:\Projects\PlaneraWeb\bin\Microsoft.AspNetCore.Http.Features.dll
 D:\Projects\PlaneraWeb\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
-D:\Projects\PlaneraWeb\bin\Microsoft.AspNetCore.Mvc.Core.dll
 D:\Projects\PlaneraWeb\bin\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
 D:\Projects\PlaneraWeb\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
 D:\Projects\PlaneraWeb\bin\Microsoft.AspNetCore.Routing.dll

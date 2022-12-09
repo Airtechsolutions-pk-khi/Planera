@@ -46,19 +46,73 @@
     <script src="~/assets/js/jquery-3.6.0.min.js"></script>
     <script src="~/assets/js/jquery-migrate-3.3.2.js"></script>
     <script src="~/assets/plugins/sweetalert.min.js"></script>
+
     <style>
         #Top_bar .top_bar_right a:not(.action_button) {
             color: rgb(12 9 53);
         }
     </style>
+
+    <script>
+        jQuery(document).ready(function () {
+
+            var currLang = Cookies.get('lang');
+            if (currLang == null || currLang == "" || currLang == undefined) {
+
+                Cookies.set('lang', 'en', { expires: 365 });
+                jQuery('#_lang').html('عربى');
+            }
+            if (currLang == "en") {
+                jQuery('#_lang').html("عربى");
+                jQuery("._arabic").css("direction", "ltr")
+                jQuery("._arabic-text").css("text-align", "left")
+                jQuery(".icon-media").css("left", "0")
+                jQuery(".icon-title").css("padding-left", "43px")
+            }
+            else {
+                jQuery('#_lang').html("English");
+                jQuery('._ltrarabic').css("direction", "ltr")
+                jQuery("._arabic").css("direction", "rtl")
+                //jQuery("p, h1, h2, h3, h4, h5, h6, a,div").css("font-family", "AvenirRegular")
+                jQuery("._arabic-text").css("text-align", "right")
+                jQuery(".icon-media").css("right", "0")
+                jQuery(".icon-title").css("padding-right", "43px")
+                jQuery(".padding-left").css("padding-left", "25px")
+                jQuery(".padding-right").css("padding-right", "0px")
+                jQuery("._arwidth").css("width", "100%")
+                jQuery("._mrright").css("margin-right", "0px")
+                jQuery(".armgn-top").css("margin-top", "50px")
+            }
+        });
+
+        function _lang() {
+            var currLang = Cookies.get('lang');
+            //var currLang = localStorage.getItem("_lang");
+            if (currLang == null || currLang == "") {
+                Cookies.set('lang', 'en', { expires: 365 });
+                jQuery('#_lang').html('عربى');
+            }
+            if (currLang == "en") {
+                Cookies.set('lang', 'ar', { expires: 365 });
+                jQuery('#_lang').html('English');
+                location.reload();
+            }
+            if (currLang == "ar") {
+                Cookies.set('lang', 'en', { expires: 365 });
+                jQuery('#_lang').html('عربى');
+                location.reload();
+            }
+        }
+    </script>
+
     <script type="application/ld+json">
         {
-          "@@context": "https://schema.org",
+          "@@context": "http://schema.org",
           "@@type": "LocalBusiness",
           "name": "Planera Group",
           "image": "",
           "@@id": "",
-          "url": "https://www.planerabh.com/",
+          "url": "http://www.planerabh.com/",
           "telephone": "1700 4006",
           "address": {
             "@@type": "PostalAddress",
@@ -84,7 +138,7 @@
             "opens": "09:00",
             "closes": "17:00"
           },
-          "sameAs": "https://www.instagram.com/planera_group/"
+          "sameAs": "http://www.instagram.com/planera_group/"
         }
     </script>
 </head>
@@ -110,33 +164,33 @@
                                     <nav id="menu">
                                         <ul id="menu-main-menu" class="menu menu-main">
                                             <li class="">
-                                                <a href="/" aria-current="page">Home</a>
+                                                <a href="/" aria-current="page" data-translate="a0a0">Home</a>
                                             </li>
                                             <li>
-                                                <a href="/planera/overview">Company Overview</a>
+                                                <a href="/planera/overview" data-translate="00aa2">Company Overview</a>
                                             </li>
                                             <li>
-                                                <a href="/planera/ourbusiness">Our Businesses</a>
+                                                <a href="/planera/ourbusiness" data-translate="a1">Our Businesses</a>
                                                 <ul class="sub-menu">
                                                     <li>
-                                                        <a href="/planera/interior" target="_blank"><span>Planera Interior</span></a>
+                                                        <a href="/planera/interior" target="_blank" data-translate="a1"><span>Planera Interior</span></a>
                                                     </li>
                                                     <li>
-                                                        <a href="/planera/general-trading" target="_blank"><span>Planera Trading</span></a>
+                                                        <a href="/planera/general-trading" target="_blank" data-translate="0pgt01"><span>Planera Trading</span></a>
                                                     </li>
                                                     <li>
-                                                        <a href="/planera/activarbahrain" target="_blank"><span>Activar Bahrain</span></a>
+                                                        <a href="/planera/activarbahrain" target="_blank" data-translate="0acb01"><span>Activar Bahrain</span></a>
                                                     </li>
                                                     <li>
-                                                        <a href="/planera/activardubai" target="_blank"><span>Activar Dubai</span></a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="/planera/hermano-contracting" target="_blank"><span>Hermano Contracting & Landsoaping</span></a>
+                                                        <a href="/planera/activardubai" target="_blank" data-translate="0acd01"><span>Activar Dubai</span></a>
                                                     </li>
 
                                                     <li>
-                                                        <a href="/hermano/repair-maintenance" target="_blank"><span>Hermano Repair & Maintenance</span></a>
+                                                        <a href="/planera/hermano-contracting" target="_blank" data-translate="0hcl01"><span>Hermano Contracting & Landsoaping</span></a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="/hermano/repair-maintenance" target="_blank" data-translate="0hrp01"><span>Hermano Repair & Maintenance</span></a>
                                                     </li>
                                                     @*<li>
                                                             <a href="/planera/construction" target="_blank"><span>Planera Construction</span></a>
@@ -144,14 +198,26 @@
 
                                                 </ul>
                                             </li>
+                                            @*<li>
+                                                    <a href="/planera/newsevents">News & Events</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/planera/career">Careers</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/planera/contact">Get in Touch</a>
+                                                </li>*@
                                             <li>
-                                                <a href="/planera/newsevents">News & Events</a>
+                                                <a href="/planera/newsevents" data-translate="00a2">News & Events</a>
                                             </li>
                                             <li>
-                                                <a href="/planera/career">Careers</a>
+                                                <a href="/planera/career" data-translate="00a3">Careers</a>
                                             </li>
                                             <li>
-                                                <a href="/planera/contact">Get in Touch</a>
+                                                <a href="/planera/contact" data-translate="00a4">Get in Touch</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-icon-globe"></i><a onclick="_lang(); return false;" id="_lang" style="color:white">عربى</a>
                                             </li>
                                         </ul>
                                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
@@ -162,6 +228,7 @@
                 </div>
             </header>
         </div>
+
         @RenderBody()
         <footer id="Footer" class="clearfix" style="background-color:white">
             <div class="widgets_wrapper" style="padding:20px 0;">
@@ -171,13 +238,16 @@
                             <div class="textwidget custom-html-widget">
                                 <div style="text-align:center">
                                     <img src="~/assets/Planeragroup/images/pg-logo-hor-black.png">
-                                    <p style="color:#666">
+                                    <p style="color:#666" data-translate="0mbc01">
                                         Mandarine Business Center -
                                         Alseef District (Bahrain)
-                                        <br><span style="color:#666">
-                                            +973 17004006 ||
-                                            +973 37750033 || +973 37750044
-                                        </span><br /> <a href="mailto:info@planerabh.com">info@planerabh.com</a>
+                                    </p>
+                                    <span style="color:#666">
+                                        +973 17004006 ||
+                                        +973 37750033 || +973 37750044
+                                    </span>
+                                    <p>
+                                        <a href="mailto:info@planerabh.com">info@planerabh.com</a>
                                     </p>
                                 </div>
                             </div>
@@ -187,7 +257,7 @@
             </div>
             <div class="footer_copy" style="border-top:1px solid #666">
                 <div class="container">
-                    <div class="column one" style="text-align:center;color:#666">
+                    <div class="column one" style="text-align:center;color:#666" data-translate="0ppg01">
                         <a id="back_to_top" class="button button_js" href="#"><i class="icon-up-open-big"></i></a>
                         &copy; Powered by Planera Group
                     </div>
@@ -216,6 +286,9 @@
 
     <script src="~/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
     <script src="~/assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script src="~/assets/js/cookie/js.cookie.js"></script>
+    <script src="~/assets/js/cookie/js.cookie.min.js"></script>
 
     <script src="~/assets/plugins/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
     <script src="~/assets/plugins/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
@@ -536,5 +609,6 @@
             }
         }); /*ready*/
     </script>
+    <script src="~/language/translations.js"></script>
 </body>
 </html>

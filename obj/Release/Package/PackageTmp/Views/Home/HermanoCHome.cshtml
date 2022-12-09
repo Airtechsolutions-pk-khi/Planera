@@ -6,22 +6,34 @@
     <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-source="gallery" style="background:#e9e9ea;padding:0px;">
         <div id="rev_slider_1_1" class="rev_slider fullscreenbanner homeheader" style="display:none;">
             <ul>
-                <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <img src="~/assets/HarmanoContract/images/slider.jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
-                         data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg">
+                @{
+                    var count = 1;
+                    foreach (var item in ViewBag.ContHome)
+                    {
+                        <li data-index="rs-@count" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
+                            data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <img src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" alt="@item.Title" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                                 data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg">
+                        </li>
+                        count += 1;
+                    }
+                }
+                @*<li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
+                        data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <img src="~/assets/HarmanoContract/images/slider.jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                             data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg">
 
-                </li>
-                <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <img src="~/assets/HarmanoContract/images/slider2.jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
-                         data-blurend="0" data-offsetstart="0 0" data-offsetend="10 20" data-bgparallax="4" class="rev-slidebg">
-                </li>
-                <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <img src="~/assets/HarmanoContract/images/slider3.jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
-                         data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg">
-                </li>
+                    </li>
+                    <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
+                        data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <img src="~/assets/HarmanoContract/images/slider2.jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                             data-blurend="0" data-offsetstart="0 0" data-offsetend="10 20" data-bgparallax="4" class="rev-slidebg">
+                    </li>
+                    <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="3500" data-rotate="0" data-saveperformance="off"
+                        data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <img src="~/assets/HarmanoContract/images/slider3.jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                             data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg">
+                    </li>*@
             </ul>
             <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
         </div>
@@ -266,6 +278,6 @@
 </div>
 <script>
     jQuery(document).ready(function () {
-        jQuery('#homepage > a > span').css('border-bottom','3px solid white');
+        jQuery('#homepage > a > span').css('border-bottom', '3px solid white');
     })
 </script>

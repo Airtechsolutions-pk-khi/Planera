@@ -15,9 +15,11 @@ namespace Planera.Controllers
     public class HomeController : Controller
     {
         homeService _service;
+        newsalertService _nservice;
         public HomeController()
         {
             _service = new homeService();
+            _nservice = new newsalertService();
 
         }
         public ActionResult Main()
@@ -25,7 +27,7 @@ namespace Planera.Controllers
             return View();
         }
 
-        
+
         [Route("planera/homeold")]
         public ActionResult Home()
         {
@@ -36,10 +38,11 @@ namespace Planera.Controllers
         [Route("planera/home")]
         public ActionResult Homev2()
         {
+            ViewBag.NewsAlert = _nservice.GetAll();
             return View();
         }
-       
-        
+
+
         [Route("planera/contact")]
         public ActionResult ContactPlaneraGroup()
         {
@@ -64,6 +67,8 @@ namespace Planera.Controllers
         [Route("planera/activarbahrain")]
         public ActionResult ActivarBHV2()
         {
+            ViewBag.Home = HomePageBLL.GetACBH();
+            ViewBag.Gallery = GalleryBLL.GetGalleryAcBah();
             //return RedirectToAction("comingsoon");
             return View();
         }
@@ -86,11 +91,13 @@ namespace Planera.Controllers
         [Route("planera/activarbahrain/gallery")]
         public ActionResult ActivarBHGallery()
         {
+            ViewBag.Gallery = GalleryBLL.GetGalleryAcBah();
             return View();
         }
         [Route("planera/hermano-contracting")]
         public ActionResult HermanoCHome()
         {
+            ViewBag.ContHome = HomePageBLL.GetCont();
             //return RedirectToAction("comingsoon");
             return View();
         }
@@ -109,6 +116,7 @@ namespace Planera.Controllers
         [Route("hermano-contracting/projects")]
         public ActionResult HermanoCProject()
         {
+            ViewBag.Gallery = GalleryBLL.GetGalleryHrCnt();
             //return RedirectToAction("comingsoon");
             return View();
         }
@@ -129,9 +137,8 @@ namespace Planera.Controllers
         // [HttpGet("all/{brandid}")]
         public ActionResult PlaneraInteriorv2()
         {
-            var PlnInt = HomePageBLL.GetAll();
-
-            ViewBag.InteriorHome = new SelectList(PlnInt, "Title", "ImagePath");
+            ViewBag.InteriorHome = HomePageBLL.GetAll();
+            ViewBag.Gallery = GalleryBLL.GetAll();
             return View();
         }
 
@@ -158,7 +165,8 @@ namespace Planera.Controllers
         [Route("planera/newsevents")]
         public ActionResult NewsEvents()
         {
-            //return RedirectToAction("comingsoon");
+            ViewBag.News = _nservice.GetNews();
+            ViewBag.Event = _nservice.GetEvents();
             return View();
         }
 
@@ -192,25 +200,25 @@ namespace Planera.Controllers
         }
 
         public JsonResult SendEmailToAdmin(ContactBLL obj, string Subject)
-         {
+        {
             try
             {
                 ViewBag.Contact = "";
-            string ToEmail, SubJect, cc, Bcc;
-            cc = "";
-            Bcc = "";
-            ToEmail = ConfigurationManager.AppSettings["To"].ToString();
-            SubJect = obj.Subject.ToString();
-            string BodyEmail = System.IO.File.ReadAllText(Server.MapPath("~/Template") + "\\" + "contact.txt");
-            DateTime dateTime = DateTime.UtcNow.Date;
-            BodyEmail =  BodyEmail
-            .Replace("#Date#", dateTime.ToString("dd/MMM/yyyy"))
-            .Replace("#Name#", obj.Name.ToString())
-            .Replace("#Email#", obj.Email.ToString())
-            .Replace("#Subject#", obj.Subject.ToString())
-            .Replace("#Message#", obj.Message.ToString());
+                string ToEmail, SubJect, cc, Bcc;
+                cc = "";
+                Bcc = "";
+                ToEmail = ConfigurationManager.AppSettings["To"].ToString();
+                SubJect = obj.Subject.ToString();
+                string BodyEmail = System.IO.File.ReadAllText(Server.MapPath("~/Template") + "\\" + "contact.txt");
+                DateTime dateTime = DateTime.UtcNow.Date;
+                BodyEmail = BodyEmail
+                .Replace("#Date#", dateTime.ToString("dd/MMM/yyyy"))
+                .Replace("#Name#", obj.Name.ToString())
+                .Replace("#Email#", obj.Email.ToString())
+                .Replace("#Subject#", obj.Subject.ToString())
+                .Replace("#Message#", obj.Message.ToString());
 
-            
+
                 MailMessage mail = new MailMessage();
                 mail.To.Add(ToEmail);
 
@@ -239,7 +247,7 @@ namespace Planera.Controllers
 
             return Json(new { Success = true });
         }
-        
+
         [HttpPost]
         public JsonResult SendEmailAdmin(ContactBLL obj, string Subject)
         {
@@ -254,24 +262,24 @@ namespace Planera.Controllers
                 string BodyEmail = System.IO.File.ReadAllText(Server.MapPath("~/Template") + "\\" + "contact.txt");
                 DateTime dateTime = DateTime.UtcNow.Date;
                 BodyEmail = BodyEmail.Replace("#Date#", dateTime.ToString("dd/MMM/yyyy"))
- 
+
                 .Replace("#Name#", obj.Name.ToString())
                 .Replace("#Email#", obj.Email.ToString())
                 .Replace("#Subject#", obj.Subject.ToString())
                 .Replace("#Message#", obj.Message.ToString());
-                 
+
                 MailMessage mail = new MailMessage();
                 mail.To.Add(ToEmail);
-                 
+
                 mail.From = new MailAddress(ConfigurationManager.AppSettings["FromPG"].ToString());
                 mail.Subject = Subject;
                 string Body = BodyEmail;
                 mail.Body = Body;
                 mail.IsBodyHtml = true;
-                 
+
                 //System.Net.Mail.Attachment attachment;
                 //string filename = System.IO.Path.GetFileName(FileName);
-              
+
                 //string filepathtoattach = "Images/" + filename;
                 //attachment = new System.Net.Mail.Attachment(Server.MapPath(filepathtoattach));
                 //mail.Attachments.Add(attachment);
@@ -298,7 +306,7 @@ namespace Planera.Controllers
         }
 
         public JsonResult uploadFile()
-        {            
+        {
             if (Request.Files.Count > 0)
             {
                 try
@@ -329,6 +337,7 @@ namespace Planera.Controllers
         [Route("interior/services")]
         public ActionResult InteriorService()
         {
+            ViewBag.Service = ServiceBLL.GetAll();
             return View();
         }
         [Route("interior/Contact")]
@@ -339,6 +348,12 @@ namespace Planera.Controllers
         [Route("interior/project")]
         public ActionResult ProjectInterior()
         {
+            ViewBag.Project = GalleryBLL.GetAll();
+            return View();
+        }
+        public ActionResult HomenewsAlert()
+        {
+            ViewBag.NewsAlert = new newsalertService().GetAll();
             return View();
         }
     }

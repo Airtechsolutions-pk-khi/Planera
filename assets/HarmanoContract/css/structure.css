@@ -31,11 +31,18 @@ body {
     min-width: 1240px;
     padding: 25px 0;
 }
-
+@font-face {
+    font-family: 'cairo-regular';
+    src: url('../../aracbicfont/cairo-regular.ttf') format('truetype');
+}
 #Wrapper {
     width: 1240px;
     margin: 0px auto;
     overflow: hidden;
+}
+@font-face {
+    font-family: 'cairo-bold';
+    src: url('../../aracbicfont/cairo-bold.ttf') format('truetype');
 }
 
 .layout-full-width {

@@ -9,45 +9,52 @@
                     <!-- MAIN IMAGE -->
                     <!--<img src="~/assets/ActivarBH/slider/00.png" data-bgposition="30% 50%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
 
-    </li>-->
+                    </li>-->
                     <!-- SLIDE -->
-                    <li data-index="rs-183" data-transition="slideoververtical" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-thumb="~/assets/ActivarBH/slider/photography1-100x50.jpg" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Intro" data-description="">
-                        <!-- MAIN IMAGE -->
-                        <img src="~/assets/ActivarBH/slider/01.jpg" data-bgposition="30% 50%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
-
-                    </li>
+                    @{
+                        var count = 1;
+                        foreach (var item in ViewBag.Gallery)
+                        {
+                            <li data-index="rs-@count" data-transition="slideoververtical" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-thumb="~/assets/ActivarBH/slider/photography1-100x50.jpg" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Intro" data-description="">
+                                <!-- MAIN IMAGE -->
+                                @*<img src="~/assets/ActivarBH/slider/01.jpg" data-bgposition="30% 50%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">*@
+                                <img src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" alt="@item.Title" data-bgposition="30% 50%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+                            </li>
+                            count += 1;
+                        }
+                    }
                     <!-- SLIDE -->
                     <!-- SLIDE -->
-                    <li data-index="rs-186" data-transition="slideoverhorizontal" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-thumb="~/assets/ActivarBH/slider/photography4-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Project 2" data-description="">
+                    <!--<li data-index="rs-186" data-transition="slideoverhorizontal" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-thumb="~/assets/ActivarBH/slider/photography4-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Project 2" data-description="">
 
                         <img src="~/assets/ActivarBH/slider/04.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
 
-                    </li>
+                    </li>-->
                     <!-- SLIDE -->
-                    <li data-index="rs-187" data-transition="slideoverhorizontal" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-thumb="~/assets/ActivarBH/slider/photography5-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Project 3" data-description="">
+                    <!--<li data-index="rs-187" data-transition="slideoverhorizontal" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-thumb="~/assets/ActivarBH/slider/photography5-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Project 3" data-description="">-->
                         <!-- MAIN IMAGE -->
-                        <img src="~/assets/ActivarBH/slider/05.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+                        <!--<img src="~/assets/ActivarBH/slider/05.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">-->
                         <!-- LAYERS -->
-                      
-                    </li>
-                    <!-- SLIDE -->
-                    <li data-index="rs-190" data-transition="slideoverhorizontal" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-thumb="~/assets/ActivarBH/slider/photography6-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Project 4" data-description="">
-                        <!-- MAIN IMAGE -->
-                        <img src="~/assets/ActivarBH/slider/06.jpg" data-bgposition="70% 50%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
-                    </li>
-                    <!-- SLIDE -->
-                    <li data-index="rs-191" data-transition="slideoververtical" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-thumb="~/assets/ActivarBH/slider/photography9-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="About" data-description="&lt;p&gt;&lt;br data-mce-bogus=\&quot;1\&quot;&gt;&lt;/p&gt;
-						">
-                        <!-- MAIN IMAGE -->
-                        <img src="~/assets/ActivarBH/slider/09.jpg" data-bgposition="left center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
 
-                    </li>
+                    <!--</li>-->
                     <!-- SLIDE -->
-                   
+                    <!--<li data-index="rs-190" data-transition="slideoverhorizontal" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-thumb="~/assets/ActivarBH/slider/photography6-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Project 4" data-description="">-->
+                        <!-- MAIN IMAGE -->
+                        <!--<img src="~/assets/ActivarBH/slider/06.jpg" data-bgposition="70% 50%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+                    </li>-->
+                    <!-- SLIDE -->
+                    <!--<li data-index="rs-191" data-transition="slideoververtical" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-thumb="~/assets/ActivarBH/slider/photography9-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="About" data-description="&lt;p&gt;&lt;br data-mce-bogus=\&quot;1\&quot;&gt;&lt;/p&gt;
+						">-->
+                        <!-- MAIN IMAGE -->
+                        <!--<img src="~/assets/ActivarBH/slider/09.jpg" data-bgposition="left center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+
+                    </li>-->
+                    <!-- SLIDE -->
+
 
 
                 </ul>
-                
+
                 <div class="tp-static-layers">
 
 
@@ -75,7 +82,7 @@
                     <div class="tp-caption photography-ImageHover2 tp-static-layer" id="slide-20-layer-14" data-x="['right','right','center','center']" data-hoffset="['120','120','105','105']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['50','50','50','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','off']" data-transform_idle="o:1;" data-transform_hover="o:0.5;sX:0.8;sY:0.8;rX:0;rY:0;rZ:0;z:0;s:500;e:Back.easeOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);cursor:pointer;" data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;s:1000;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="900" data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-191","delay":""}]' data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-startslide="2" data-endslide="7" style="z-index: 18; line-height: 22px;font-family:Arial;border-color:rgba(255, 255, 255, 0);">
                         <img src="~/assets/ActivarBH/slider/09.jpg" width="300" height="200" data-ww="['70px','70px','70px','70px']" data-hh="['47px','47px','47px','47px']">
                     </div>
-                  
+
                 </div>
                 <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
             </div>

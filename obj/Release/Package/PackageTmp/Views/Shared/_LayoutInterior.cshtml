@@ -20,7 +20,7 @@
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,700'>
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Patua+One:100,300,400,400italic,700'>
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900'>
-    <link href="~/assets/cssplanerainterior/fonts.css" rel="stylesheet" />
+    @*<link href="~/assets/cssplanerainterior/fonts.css" rel="stylesheet" />*@
     @*<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Poppins:100,300,400,400italic,500,600,700,700italic'>*@
 
     <!-- CSS -->
@@ -37,6 +37,61 @@
 
     <script src="~/assets/js/jquery-3.6.0.min.js"></script>
     <script src="~/assets/js/jquery-migrate-3.3.2.js"></script>
+
+
+    <script>
+        jQuery(document).ready(function () {
+
+            var currLang = Cookies.get('lang');
+            if (currLang == null || currLang == "" || currLang == undefined) {
+
+                Cookies.set('lang', 'en', { expires: 365 });
+                jQuery('#_lang').html('عربى');
+            }
+            if (currLang == "en") {
+                jQuery('#_lang').html("عربى");
+                jQuery("._arabic").css("direction", "ltr")
+                jQuery("._arabic-text").css("text-align", "left")
+                jQuery(".icon-media").css("left", "0")
+                jQuery(".icon-title").css("padding-left", "43px")
+            }
+            else {
+                jQuery('#_lang').html("English");
+                jQuery('._ltrarabic').css("direction", "ltr")
+                jQuery("._arabic").css("direction", "rtl")
+                //jQuery("p, h1, h2, h3, h4, h5, h6, a,div").css("font-family", "AvenirRegular")
+                jQuery("._arabic-text").css("text-align", "right")
+                jQuery(".icon-media").css("right", "0")
+                jQuery(".icon-title").css("padding-right", "43px")
+                jQuery(".padding-left").css("padding-left", "25px")
+                jQuery(".padding-right").css("padding-right", "0px")
+                jQuery("._arwidth").css("width", "100%")
+                jQuery("._mrright").css("margin-right", "0px")
+                jQuery(".armgn-top").css("margin-top", "50px")
+            }
+        });
+
+        function _lang() {
+            var currLang = Cookies.get('lang');
+            //var currLang = localStorage.getItem("_lang");
+            if (currLang == null || currLang == "") {
+                Cookies.set('lang', 'en', { expires: 365 });
+                jQuery('#_lang').html('عربى');
+            }
+            if (currLang == "en") {
+                Cookies.set('lang', 'ar', { expires: 365 });
+                jQuery('#_lang').html('English');
+                location.reload();
+            }
+            if (currLang == "ar") {
+                Cookies.set('lang', 'en', { expires: 365 });
+                jQuery('#_lang').html('عربى');
+                location.reload();
+            }
+        }
+    </script>
+
+
     <script type="application/ld+json">
         {
           "@@context": "https://schema.org",
@@ -95,22 +150,25 @@
                                     <nav id="menu">
                                         <ul id="menu-main-menu" class="menu menu-main">
                                             <li id="homepage">
-                                                <a href="/planera/interior" aria-current="page">Home</a>
+                                                <a href="/planera/interior" aria-current="page" data-translate="a0a0">Home</a>
                                             </li>
                                             <li id="aboutuspage">
-                                                <a href="/interior/about">About us</a>
+                                                <a href="/interior/about" data-translate="aa0">About us</a>
                                             </li>
                                             <li id="servicespage">
-                                                <a href="/interior/services">Services</a>
+                                                <a href="/interior/services" data-translate="0ser01">Services</a>
                                             </li>
                                             <li id="projectpage">
-                                                <a href="/interior/project">Projects</a>
+                                                <a href="/interior/project" data-translate="0prj01">Projects</a>
                                             </li>
                                             <li>
-                                                <a href="/interior/comingsoon">Art</a>
+                                                <a href="/interior/comingsoon" data-translate="0art01">Art</a>
                                             </li>
                                             <li id="contactpage">
-                                                <a href="/interior/Contact">Contact us</a>
+                                                <a href="/interior/Contact" data-translate="00cn0">Contact Us</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-icon-globe"></i><a onclick="_lang(); return false;" id="_lang" style="color:white">عربى</a>
                                             </li>
                                         </ul>
                                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
@@ -124,7 +182,7 @@
         </div>
         @RenderBody()
     </div>
-    <footer id="Footer" class="clearfix" style="background:black">
+    <footer id="Footer" class="clearfix _arabic-text _arabic" style="background:black">
         <div class="widgets_wrapper" style="padding:40px 0 20px 0">
             <div class="container">
                 <div class="column one-fourth">
@@ -141,21 +199,21 @@
                 <div class="column one-fourth">
                     <aside class="widget_text widget widget_custom_html">
                         <div class="textwidget custom-html-widget">
-                            <h4 style="color:white;">Quick Links</h4>
+                            <h4 style="color:white;" data-translate="00s7">Quick Links</h4>
                             <br />
                             <ul>
                                 <li style="margin-bottom: 10px">
-                                    <span style="color:white;margin-right:10px">→</span><a href="/interior/about" style="color:white;">About us</a>
+                                    <span style="color:white;margin-right:10px">→</span><a href="/interior/about" style="color:white;" data-translate="aa0">About us</a>
                                 </li>
                                 <li style="margin-bottom: 10px">
-                                    <span style="color:#d5d5d5;margin-right:10px">→</span><a href="/interior/services" style="color:white;">Services</a>
+                                    <span style="color:#d5d5d5;margin-right:10px">→</span><a href="/interior/services" style="color:white;" data-translate="0ser01">Services</a>
                                 </li>
                                 <li style="margin-bottom: 10px">
-                                    <span style="color:#d5d5d5;margin-right:10px">→</span><a href="/interior/project" style="color:white;">Projects</a>
+                                    <span style="color:#d5d5d5;margin-right:10px">→</span><a href="/interior/project" style="color:white;" data-translate="0prj01">Projects</a>
                                 </li>
 
                                 <li style="margin-bottom: 10px">
-                                    <span style="color:#d5d5d5;margin-right:10px">→</span><a href="/interior/contact" style="color:white;">Contact us</a>
+                                    <span style="color:#d5d5d5;margin-right:10px">→</span><a href="/interior/contact" style="color:white;" data-translate="00cn0">Contact us</a>
                                 </li>
                             </ul>
                         </div>
@@ -165,7 +223,7 @@
                     <aside class="widget_text widget widget_custom_html">
                         <div class="textwidget custom-html-widget">
                             <hr class="no_line" style="margin:0 auto 5px">
-                            <h4 style="color:white;">Contact us</h4>
+                            <h4 style="color:white;" data-translate="00cn0">Contact Us</h4>
                             <br />
                             <ul>
                                 <li class="phone phone-1" style="margin-bottom: 10px">
@@ -174,7 +232,7 @@
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:97337755011">+973 37755011</a>
                                     <br />
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:97337750222">+973 37750222</a>
-                                   
+
                                 </li>
                                 <li style="margin-bottom: 10px">
                                     <a href="mailto:interior@planerabh.com"><i class="icon-mail">Interior@planerabh.com</i></a>
@@ -192,11 +250,6 @@
                     <aside class="widget_text widget widget_custom_html">
                         <div class="textwidget custom-html-widget" style="text-align:center">
                             <img src="~/assets/PlaneraInterior/images/pi-logo-white.png" style="width:139px;height:99px;padding-bottom:10px;" />
-
-                            @*<p style="margin-right: 10%">
-                                    Planera Interior Design Company was established with design
-                                    and execution services for residential and commercial projects.
-                                </p>*@
                         </div>
                     </aside>
                 </div>
@@ -207,7 +260,7 @@
             <div class="container">
                 <div class="column one">
                     <a id="back_to_top" class="button button_js" href="#"><i class="icon-up-open-big"></i></a>
-                    <div class="copyright">
+                    <div class="copyright" data-translate="0arr01">
                         &copy; All Rights Reserved
                     </div>
                 </div>
@@ -232,6 +285,9 @@
     <script src="~/assets/js/animations/animations.js"></script>
     <script src="~/assets/js/translate3d.js"></script>
     <script src="~/assets/js/scripts.js"></script>
+
+    <script src="~/assets/js/cookie/js.cookie.js"></script>
+    <script src="~/assets/js/cookie/js.cookie.min.js"></script>
 
     <script src="~/assets/js/email.js"></script>
 
@@ -432,5 +488,6 @@
             }
         }); /*ready*/
     </script>
+    <script src="~/language/translations.js"></script>
 </body>
 </html>

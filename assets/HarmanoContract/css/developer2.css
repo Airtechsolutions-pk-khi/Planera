@@ -11,6 +11,14 @@
 	border-style: none;
 	border-radius: 0px 0px 0px 0px
 }
+@font-face {
+	font-family: 'cairo-regular';
+	src: url('../../aracbicfont/cairo-regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'cairo-bold';
+	src: url('../../aracbicfont/cairo-bold.ttf') format('truetype');
+}
 .tp-caption.mfnrs_developer2_subtitle, .mfnrs_developer2_subtitle {
 	color: rgba(0, 0, 0, 1.00);
 	font-size: 20px;

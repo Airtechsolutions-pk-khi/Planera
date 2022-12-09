@@ -4,7 +4,7 @@ var lang = Cookies.get('lang'),
 translate; // Container of all translations
 
 // Call translations json file and populate translate variable  
-jQuery.getJSON("https://localhost:44326/language/translations.json", function (texts) {
+jQuery.getJSON("http://localhost:44326/language/translations.json", function (texts) {
     
     translate=texts;
 

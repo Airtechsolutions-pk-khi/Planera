@@ -18,9 +18,16 @@
     font-family: 'Michroma-Regular';
     src: url('../../assets/fonts/ActivarDubai/Michroma-Regular.ttf') format('truetype');
 }
-
+@font-face {
+    font-family: 'cairo-bold';
+    src: url('../../aracbicfont/cairo-bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cairo-regular';
+    src: url('../../aracbicfont/cairo-regular.ttf') format('truetype');
+}
 * {
-    font-family: "Michroma-Regular" !important;
+    font-family: "Michroma-Regular";
 }
 
 

@@ -28,7 +28,7 @@
     <div class="section full-width center dark flv_sections_53" style="background-image: url(../../assets/HarmanoRepair/images/hr-project-header.jpg);background-size: cover;background-repeat: no-repeat;" data-stellar-background-ratio="0.5">
         <div class="section_wrapper clearfix">
             <div class="items_group clearfix"></div>
-            <h2 class="mobView">
+            <h2 class="mobView" data-translate="0gal1">
                 Gallery
             </h2>
         </div>
@@ -38,29 +38,29 @@
             <!-- One full width row-->
             <div id="Filters" class="column one isotope-filters">
                 <ul class="filters_buttons">
-                    <li class="label">
+                    <li class="label" data-translate="0fb01">
                         Filter by
                     </li>
                     <li class="categories">
-                        <a class="open" href="#"><i class="icon-docs"></i>Categories<i class="icon-down-dir"></i></a>
+                        <a class="open" href="#" data-translate="00h7"><i class="icon-docs"></i>Categories<i class="icon-down-dir"></i></a>
                     </li>
                     <li class="reset">
-                        <a class="close" data-rel="*" href="#"><i class="icon-cancel"></i> Show all</a>
+                        <a class="close" data-rel="*" href="#" data-translate="0sa01"><i class="icon-cancel"></i> Show all</a>
                     </li>
                 </ul>
                 <div class="filters_wrapper" style="display: block;">
                     <ul class="categories">
                         <li class="current-cat">
-                            <a data-rel=".category-home" href="#">Repair</a>
+                            <a data-rel=".category-home" href="#" data-translate="0rpr1">Repair</a>
                         </li>
                         <li>
-                            <a data-rel=".category-appartment" href="#">Plumbing</a>
+                            <a data-rel=".category-appartment" href="#" data-translate="0plm1">Plumbing</a>
                         </li>
                         <li>
-                            <a data-rel=".category-shop" href="#">Maintainence</a>
+                            <a data-rel=".category-shop" href="#" data-translate="0mnt1">Maintainence</a>
                         </li>
                         <li>
-                            <a data-rel=".category-photography" href="#">Others</a>
+                            <a data-rel=".category-photography" href="#" data-translate="0oth1">Others</a>
                         </li>
                         @*<li>
                     <a data-rel=".category-print" href="#">Category 5</a>
@@ -78,201 +78,206 @@
                 <div class="portfolio_wrapper isotope_wrapper">
                     <ul class="portfolio_group lm_wrapper isotope grid">
                         <!-- Portfolio item -->
-                        <li class="portfolio-item isotope-item category-home category-appartment  ">
-                            <div class="portfolio-item-fw-bg">
-                                <div class="portfolio-item-fw-wrapper">
+                        @foreach (var item in ViewBag.Gallery)
+                        {
+                            <li class="portfolio-item isotope-item category-home category-appartment  ">
+                                <div class="portfolio-item-fw-bg">
+                                    <div class="portfolio-item-fw-wrapper">
 
-                                    <div class="image_frame scale-with-grid">
-                                        <div class="image_wrapper">
-                                            <a href="~/assets/ImagesPlaneraInterior/adhari-p2.jpg" class="zoom" rel="prettyphoto">
-                                                <div class="mask"></div><img width="650" height="650px" src="~/assets/HarmanoRepair/images/hermano-gallery/01.jpg" class="scale-with-grid wp-post-image" />
-                                            </a>
-                                            <div class="image_links">
-                                                <a href="~/assets/HarmanoRepair/images/hermano-gallery/01.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                                        <div class="image_frame scale-with-grid">
+                                            <div class="image_wrapper">
+                                                <a href="~/assets/ImagesPlaneraInterior/adhari-p2.jpg" class="zoom" rel="prettyphoto">
+                                                    <div class="mask"></div>
+                                                    @*<img width="650" height="650px" src="~/assets/HarmanoRepair/images/hermano-gallery/01.jpg" class="scale-with-grid wp-post-image" />*@
+                                                    <img width="650" height="650px" src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" alt="@item.Title" class="scale-with-grid wp-post-image">
+                                                </a>
+                                                <div class="image_links">
+                                                    <a href="~/assets/HarmanoRepair/images/hermano-gallery/01.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                                                </div>
                                             </div>
                                         </div>
+
                                     </div>
-                                   
                                 </div>
-                            </div>
-                        </li>
+                            </li>
+                        }
                         <!-- Portfolio item -->
-                        <li class="portfolio-item isotope-item category-shop category-photography ">
-                            <div class="portfolio-item-fw-bg">
-                                <div class="portfolio-item-fw-wrapper">
-                                    <div class="image_frame scale-with-grid">
-                                        <div class="image_wrapper">
-                                            <a href="">
-                                                <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/02.jpg" class="scale-with-grid wp-post-image" />
-                                            </a>
-                                            <div class="image_links ">
-                                                <a href="~/assets/HarmanoRepair/images/hermano-gallery/02.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        </li>
+                        <!--<li class="portfolio-item isotope-item category-shop category-photography ">
+        <div class="portfolio-item-fw-bg">
+            <div class="portfolio-item-fw-wrapper">
+                <div class="image_frame scale-with-grid">
+                    <div class="image_wrapper">
+                        <a href="">
+                            <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/02.jpg" class="scale-with-grid wp-post-image" />
+                        </a>
+                        <div class="image_links ">
+                            <a href="~/assets/HarmanoRepair/images/hermano-gallery/02.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </li>-->
                         <!-- Portfolio item -->
-                        <li class="portfolio-item isotope-item category-home category-appartment">
-                            <div class="portfolio-item-fw-bg">
-                                <div class="portfolio-item-fw-wrapper">
-                                    <div class="image_frame scale-with-grid">
-                                        <div class="image_wrapper">
-                                            <a href="">
-                                                <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/03.jpg" class="scale-with-grid wp-post-image" />
-                                            </a>
-                                            <div class="image_links  ">
-                                                <a href="~/assets/HarmanoRepair/images/hermano-gallery/03.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="" class="link"><i class="icon-link"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                  
-                                </div>
-                            </div>
-                        </li>
+                        <!--<li class="portfolio-item isotope-item category-home category-appartment">
+        <div class="portfolio-item-fw-bg">
+            <div class="portfolio-item-fw-wrapper">
+                <div class="image_frame scale-with-grid">
+                    <div class="image_wrapper">
+                        <a href="">
+                            <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/03.jpg" class="scale-with-grid wp-post-image" />
+                        </a>
+                        <div class="image_links  ">
+                            <a href="~/assets/HarmanoRepair/images/hermano-gallery/03.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="" class="link"><i class="icon-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </li>-->
                         <!-- Portfolio item -->
-                        <li class="portfolio-item isotope-item category-home category-photography category-appartment">
-                            <div class="portfolio-item-fw-bg">
-                                <div class="portfolio-item-fw-wrapper">
-                                    <div class="image_frame scale-with-grid">
-                                        <div class="image_wrapper">
-                                            <a href="">
-                                                <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/04.jpg" class="scale-with-grid wp-post-image" />
-                                            </a>
-                                            <div class="image_links ">
-                                                <a href="~/assets/HarmanoRepair/images/hermano-gallery/04.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="" class="link"><i class="icon-link"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                  
-                                </div>
-                            </div>
-                        </li>
+                        <!--<li class="portfolio-item isotope-item category-home category-photography category-appartment">
+        <div class="portfolio-item-fw-bg">
+            <div class="portfolio-item-fw-wrapper">
+                <div class="image_frame scale-with-grid">
+                    <div class="image_wrapper">
+                        <a href="">
+                            <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/04.jpg" class="scale-with-grid wp-post-image" />
+                        </a>
+                        <div class="image_links ">
+                            <a href="~/assets/HarmanoRepair/images/hermano-gallery/04.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="" class="link"><i class="icon-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </li>-->
                         <!-- Portfolio item -->
-                        <li class="portfolio-item isotope-item category-home category-photography category-appartment">
-                            <div class="portfolio-item-fw-bg">
-                                <div class="portfolio-item-fw-wrapper">
-                                    <div class="image_frame scale-with-grid">
-                                        <div class="image_wrapper">
-                                            <a href="">
-                                                <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/05.jpg" class="scale-with-grid wp-post-image" />
-                                            </a>
-                                            <div class="image_links  ">
-                                                <a href="~/assets/HarmanoRepair/images/hermano-gallery/05.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        </li>
+                        <!--<li class="portfolio-item isotope-item category-home category-photography category-appartment">
+        <div class="portfolio-item-fw-bg">
+            <div class="portfolio-item-fw-wrapper">
+                <div class="image_frame scale-with-grid">
+                    <div class="image_wrapper">
+                        <a href="">
+                            <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/05.jpg" class="scale-with-grid wp-post-image" />
+                        </a>
+                        <div class="image_links  ">
+                            <a href="~/assets/HarmanoRepair/images/hermano-gallery/05.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </li>-->
                         <!-- Portfolio item -->
-                        <li class="portfolio-item isotope-item category-appartment category-home">
-                            <div class="portfolio-item-fw-bg">
-                                <div class="portfolio-item-fw-wrapper">
-                                    <div class="image_frame scale-with-grid">
-                                        <div class="image_wrapper">
-                                            <a href="">
-                                                <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/06.jpg" class="scale-with-grid wp-post-image" />
-                                            </a>
-                                            <div class="image_links ">
-                                                <a href="~/assets/HarmanoRepair/images/hermano-gallery/06.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="" class="link"><i class="icon-link"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        </li>
+                        <!--<li class="portfolio-item isotope-item category-appartment category-home">
+        <div class="portfolio-item-fw-bg">
+            <div class="portfolio-item-fw-wrapper">
+                <div class="image_frame scale-with-grid">
+                    <div class="image_wrapper">
+                        <a href="">
+                            <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/06.jpg" class="scale-with-grid wp-post-image" />
+                        </a>
+                        <div class="image_links ">
+                            <a href="~/assets/HarmanoRepair/images/hermano-gallery/06.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="" class="link"><i class="icon-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </li>-->
                         <!-- Portfolio item -->
-                        <li class="portfolio-item isotope-item category-home category-appartment category-photography">
-                            <div class="portfolio-item-fw-bg">
-                                <div class="portfolio-item-fw-wrapper">
-                                    <div class="image_frame scale-with-grid">
-                                        <div class="image_wrapper">
-                                            <a href="">
-                                                <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/07.jpg" class="scale-with-grid wp-post-image" />
-                                            </a>
-                                            <div class="image_links  ">
-                                                <a href="~/assets/HarmanoRepair/images/hermano-gallery/07.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </li>
+                        <!--<li class="portfolio-item isotope-item category-home category-appartment category-photography">
+        <div class="portfolio-item-fw-bg">
+            <div class="portfolio-item-fw-wrapper">
+                <div class="image_frame scale-with-grid">
+                    <div class="image_wrapper">
+                        <a href="">
+                            <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/07.jpg" class="scale-with-grid wp-post-image" />
+                        </a>
+                        <div class="image_links  ">
+                            <a href="~/assets/HarmanoRepair/images/hermano-gallery/07.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </li>-->
                         <!-- Portfolio item -->
-                        <li class="portfolio-item isotope-item category-home">
-                            <div class="portfolio-item-fw-bg">
-                                <div class="portfolio-item-fw-wrapper">
-                                    <div class="image_frame scale-with-grid">
-                                        <div class="image_wrapper">
-                                            <a href="">
-                                                <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/08.jpg" class="scale-with-grid wp-post-image" />
-                                            </a>
-                                            <div class="image_links  ">
-                                                <a href="~/assets/HarmanoRepair/images/hermano-gallery/08.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        </li>
-                        <li class="portfolio-item isotope-item category-home">
-                            <div class="portfolio-item-fw-bg">
-                                <div class="portfolio-item-fw-wrapper">
-                                    <div class="image_frame scale-with-grid">
-                                        <div class="image_wrapper">
-                                            <a href="">
-                                                <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/09.jpg" class="scale-with-grid wp-post-image" />
-                                            </a>
-                                            <div class="image_links  ">
-                                                <a href="~/assets/HarmanoRepair/images/hermano-gallery/09.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        </li>
-                        <li class="portfolio-item isotope-item category-home">
-                            <div class="portfolio-item-fw-bg">
-                                <div class="portfolio-item-fw-wrapper">
-                                    <div class="image_frame scale-with-grid">
-                                        <div class="image_wrapper">
-                                            <a href="">
-                                                <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/10.jpg" class="scale-with-grid wp-post-image" />
-                                            </a>
-                                            <div class="image_links  ">
-                                                <a href="~/assets/HarmanoRepair/images/hermano-gallery/10.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        </li>
-                        <li class="portfolio-item isotope-item category-home">
-                            <div class="portfolio-item-fw-bg">
-                                <div class="portfolio-item-fw-wrapper">
-                                    <div class="image_frame scale-with-grid">
-                                        <div class="image_wrapper">
-                                            <a href="">
-                                                <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/11.jpg" class="scale-with-grid wp-post-image" />
-                                            </a>
-                                            <div class="image_links  ">
-                                                <a href="~/assets/HarmanoRepair/images/hermano-gallery/11.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                  
-                                </div>
-                            </div>
-                        </li>
+                        <!--<li class="portfolio-item isotope-item category-home">
+        <div class="portfolio-item-fw-bg">
+            <div class="portfolio-item-fw-wrapper">
+                <div class="image_frame scale-with-grid">
+                    <div class="image_wrapper">
+                        <a href="">
+                            <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/08.jpg" class="scale-with-grid wp-post-image" />
+                        </a>
+                        <div class="image_links  ">
+                            <a href="~/assets/HarmanoRepair/images/hermano-gallery/08.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </li>
+    <li class="portfolio-item isotope-item category-home">
+        <div class="portfolio-item-fw-bg">
+            <div class="portfolio-item-fw-wrapper">
+                <div class="image_frame scale-with-grid">
+                    <div class="image_wrapper">
+                        <a href="">
+                            <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/09.jpg" class="scale-with-grid wp-post-image" />
+                        </a>
+                        <div class="image_links  ">
+                            <a href="~/assets/HarmanoRepair/images/hermano-gallery/09.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </li>
+    <li class="portfolio-item isotope-item category-home">
+        <div class="portfolio-item-fw-bg">
+            <div class="portfolio-item-fw-wrapper">
+                <div class="image_frame scale-with-grid">
+                    <div class="image_wrapper">
+                        <a href="">
+                            <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/10.jpg" class="scale-with-grid wp-post-image" />
+                        </a>
+                        <div class="image_links  ">
+                            <a href="~/assets/HarmanoRepair/images/hermano-gallery/10.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </li>
+    <li class="portfolio-item isotope-item category-home">
+        <div class="portfolio-item-fw-bg">
+            <div class="portfolio-item-fw-wrapper">
+                <div class="image_frame scale-with-grid">
+                    <div class="image_wrapper">
+                        <a href="">
+                            <div class="mask"></div><img width="640" height="500" src="~/assets/HarmanoRepair/images/hermano-gallery/11.jpg" class="scale-with-grid wp-post-image" />
+                        </a>
+                        <div class="image_links  ">
+                            <a href="~/assets/HarmanoRepair/images/hermano-gallery/11.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </li>-->
                     </ul>
                     <!-- One full width row-->
                 </div>

@@ -55,7 +55,7 @@
 <div class="section full-width center dark flv_sections_53" style="background-image: url(../../assets/ActivarBH/images/gallery-header.jpg);background-size: cover;background-repeat: no-repeat;" data-stellar-background-ratio="0.5">
     <div class="section_wrapper clearfix">
         <div class="items_group clearfix"></div>
-        <h1 class="mobView">
+        <h1 class="mobView" data-translate="0gal1">
             GALLERY
         </h1>
     </div>
@@ -65,33 +65,33 @@
         <!-- One full width row-->
         <div id="Filters" class="column one isotope-filters">
             <ul class="filters_buttons">
-                <li class="label">
+                <li class="label" data-translate="0fb01">
                     Filter by
                 </li>
                 <li class="categories">
-                    <a class="open" href="#"><i class="icon-docs"></i>Categories<i class="icon-down-dir"></i></a>
+                    <a class="open" href="#" data-translate="00h7"><i class="icon-docs"></i>Categories<i class="icon-down-dir"></i></a>
                 </li>
                 <li class="reset">
-                    <a class="open" data-rel="*" href="#"><i class="icon-cancel"></i> Show all</a>
+                    <a class="open" data-rel="*" href="#" data-translate="0sa01"><i class="icon-cancel"></i> Show all</a>
                 </li>
             </ul>
             <div class="filters_wrapper" style="display: block;">
                 <ul class="categories">
                     <li class="current-cat">
-                        <a data-rel=".category-all" href="#">All</a>
+                        <a data-rel=".category-all" href="#" data-translate="0all0">All</a>
                     </li>
                     <li>
-                        <a data-rel=".category-abaya" href="#">Abaya</a>
+                        <a data-rel=".category-abaya" href="#" data-translate="00aby">Abaya</a>
                     </li>
                     <li>
-                        <a data-rel=".category-event" href="#">Event</a>
+                        <a data-rel=".category-event" href="#" data-translate="00evn">Event</a>
                     </li>
                     <li>
-                        <a data-rel=".category-perfume" href="#">Perfumes</a>
+                        <a data-rel=".category-perfume" href="#" data-translate="00per">Perfumes</a>
                     </li>
 
                     <li>
-                        <a data-rel=".category-sports" href="#">Sports</a>
+                        <a data-rel=".category-sports" href="#" data-translate="00spr">Sports</a>
                     </li>
                     <li class="open">
                         <a href="#"><i class="icon-cancel"></i></a>
@@ -102,24 +102,29 @@
         <div class="column one column_portfolio">
             <div class="portfolio_wrapper isotope_wrapper">
                 <ul class="portfolio_group lm_wrapper isotope grid">
-                    <li class="portfolio-item isotope-item category-all category-event">
-                        <div class="portfolio-item-fw-bg">
-                            <div class="portfolio-item-fw-wrapper">
-                                <div class="image_frame scale-with-grid">
-                                    <div class="image_wrapper">
-                                        <a href="~/assets/ActivarBH/images/event8.jpg" class="zoom" rel="prettyphoto">
-                                            <div class="mask"></div><img width="100%" height="500" src="~/assets/ActivarBH/images/event8.jpg" class="scale-with-grid wp-post-image" />
-                                        </a>
-                                        <div class="image_links  ">
-                                            <a href="~/assets/ActivarBH/images/event8.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                    @foreach (var item in ViewBag.Gallery)
+                    {
+                        <li class="portfolio-item isotope-item category-all category-event">
+                            <div class="portfolio-item-fw-bg">
+                                <div class="portfolio-item-fw-wrapper">
+                                    <div class="image_frame scale-with-grid">
+                                        <div class="image_wrapper">
+                                            <a href="~/assets/ActivarBH/images/event8.jpg" class="zoom" rel="prettyphoto">
+                                                <div class="mask"></div>
+                                                @*<img width="100%" height="500" src="~/assets/ActivarBH/images/event8.jpg" class="scale-with-grid wp-post-image" />*@
+                                                <img width="100%" height="500" src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" alt="@item.Title" class="scale-with-grid wp-post-image">
+                                            </a>
+                                            <div class="image_links  ">
+                                                <a href="~/assets/ActivarBH/images/event8.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                  
-                    <li class="portfolio-item isotope-item category-all category-event">
+                        </li>
+
+                    }
+                    <!--<li class="portfolio-item isotope-item category-all category-event">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
                                 <div class="image_frame scale-with-grid">
@@ -135,7 +140,6 @@
                             </div>
                         </div>
                     </li>
-
                     <li class="portfolio-item isotope-item category-all category-abaya">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
@@ -235,7 +239,6 @@
                             </div>
                         </div>
                     </li>
-
                     <li class="portfolio-item isotope-item category-all category-abaya">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
@@ -335,7 +338,6 @@
                             </div>
                         </div>
                     </li>
-
                     <li class="portfolio-item isotope-item category-all category-perfume">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
@@ -404,7 +406,6 @@
                             </div>
                         </div>
                     </li>
-
                     <li class="portfolio-item isotope-item category-all category-event">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
@@ -586,9 +587,9 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-all  category-perfume">
+                    <!--<li class="portfolio-item isotope-item category-all  category-perfume">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
 
@@ -604,9 +605,9 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-all category-perfume">
+                    <!--<li class="portfolio-item isotope-item category-all category-perfume">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
                                 <div class="image_frame scale-with-grid">
@@ -621,9 +622,9 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-all category-perfume">
+                    <!--<li class="portfolio-item isotope-item category-all category-perfume">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
                                 <div class="image_frame scale-with-grid">
@@ -638,9 +639,9 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-all category-perfume">
+                    <!--<li class="portfolio-item isotope-item category-all category-perfume">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
                                 <div class="image_frame scale-with-grid">
@@ -689,9 +690,9 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-all category-perfume">
+                    <!--<li class="portfolio-item isotope-item category-all category-perfume">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
                                 <div class="image_frame scale-with-grid">
@@ -706,9 +707,9 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-all category-perfume">
+                    <!--<li class="portfolio-item isotope-item category-all category-perfume">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
 
@@ -724,9 +725,9 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-all category-perfume">
+                    <!--<li class="portfolio-item isotope-item category-all category-perfume">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
 
@@ -742,9 +743,9 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-all category-perfume">
+                    <!--<li class="portfolio-item isotope-item category-all category-perfume">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
 
@@ -776,10 +777,9 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
-
+                    </li>-->
                     <!-- Portfolio item -->
-                    <li class="portfolio-item isotope-item category-all category-event">
+                    <!--<li class="portfolio-item isotope-item category-all category-event">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
                                 <div class="image_frame scale-with-grid">
@@ -827,7 +827,6 @@
                             </div>
                         </div>
                     </li>
-
                     <li class="portfolio-item isotope-item category-all category-sports">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
@@ -988,7 +987,6 @@
                             </div>
                         </div>
                     </li>
-
                     <li class="portfolio-item isotope-item category-all category-sports">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
@@ -1021,7 +1019,6 @@
                             </div>
                         </div>
                     </li>
-
                     <li class="portfolio-item isotope-item category-all category-perfume">
                         <div class="portfolio-item-fw-bg">
                             <div class="portfolio-item-fw-wrapper">
@@ -1085,8 +1082,7 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
-
+                    </li>-->
                 </ul>
             </div>
         </div>
