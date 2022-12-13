@@ -37,7 +37,17 @@
 
     <script src="~/assets/js/jquery-3.6.0.min.js"></script>
     <script src="~/assets/js/jquery-migrate-3.3.2.js"></script>
+    <style>
+        @@font-face {
+            font-family: 'cairo-bold !important';
+            src: url('../../assets/aracbicfont/cairo-bold.ttf') format('truetype');
+        }
 
+        @@font-face {
+            font-family: 'cairo-regular !important';
+            src: url('../../assets/aracbicfont/cairo-regular.ttf') format('truetype');
+        }
+    </style>
 
     <script>
         jQuery(document).ready(function () {
@@ -63,11 +73,15 @@
                 jQuery("._arabic-text").css("text-align", "right")
                 jQuery(".icon-media").css("right", "0")
                 jQuery(".icon-title").css("padding-right", "43px")
+                jQuery(".pright").css("padding-right", "70px")
+                jQuery("._fright").css("float", "right")
                 jQuery(".padding-left").css("padding-left", "25px")
                 jQuery(".padding-right").css("padding-right", "0px")
                 jQuery("._arwidth").css("width", "100%")
                 jQuery("._mrright").css("margin-right", "0px")
                 jQuery(".armgn-top").css("margin-top", "50px")
+                jQuery("body ,p, div, span, label, #menu>ul>li>a").css("font-family", "Cairo-Regular")
+                jQuery("h1,h2,h3,h4,h5,h6").css("font-family", "Cairo-Bold")
             }
         });
 

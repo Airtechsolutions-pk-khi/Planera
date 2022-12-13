@@ -21,6 +21,9 @@
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Patua+One:100,300,400,400italic,700'>
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:100,300,400,400italic,700,700italic,900,italic'>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400">
+    <link rel="stylesheet" href="~/assets/aracbicfont/Cairo-Bold.ttf">
+    <link rel="stylesheet" href="~/assets/aracbicfont/Cairo-Regular.ttf">
+
     <!-- CSS -->
     <link rel='stylesheet' href='~/assets/css/global.css'>
     <link href="~/assets/HarmanoContract/css/developer2.css" rel="stylesheet" />
@@ -32,8 +35,20 @@
     <link href="~/assets/HarmanoContract/css/custom.css" rel="stylesheet" />
     <script src="~/assets/js/jquery-3.6.0.min.js"></script>
     <script src="~/assets/js/jquery-migrate-3.3.2.js"></script>
-
-
+    <style>
+        @@font-face {
+            font-family: 'cairo-bold !important';
+            src: url('../../assets/aracbicfont/cairo-bold.ttf') format('truetype');
+        }
+        @@font-face {
+            font-family: 'cairo-regular !important';
+            src: url('../../assets/aracbicfont/cairo-regular.ttf') format('truetype');
+        }
+        #Top_bar .menu > li > a, #Top_bar #menu ul li.submenu .menu-toggle {
+            
+            color: white;
+        }
+    </style>
     <script>
         jQuery(document).ready(function () {
 
@@ -54,7 +69,6 @@
                 jQuery('#_lang').html("English");
                 jQuery('._ltrarabic').css("direction", "ltr")
                 jQuery("._arabic").css("direction", "rtl")
-                //jQuery("p, h1, h2, h3, h4, h5, h6, a,div").css("font-family", "AvenirRegular")
                 jQuery("._arabic-text").css("text-align", "right")
                 jQuery(".icon-media").css("right", "0")
                 jQuery(".icon-title").css("padding-right", "43px")
@@ -63,6 +77,11 @@
                 jQuery("._arwidth").css("width", "100%")
                 jQuery("._mrright").css("margin-right", "0px")
                 jQuery(".armgn-top").css("margin-top", "50px")
+                jQuery(".float").css("float", "right")
+                jQuery(".displayb").css("display", "block")
+                jQuery("body ,p, div, span, label, #menu>ul>li>a").css("font-family", "Cairo-Regular")
+                jQuery("h1,h2,h3,h4,h5,h6").css("font-family", "Cairo-Bold")
+                jQuery(".ourbusinessbox h4, .newsbox h2").css("font-family", "Cairo-Bold")
             }
         });
 
@@ -140,7 +159,7 @@
                                         <img class="logo-mobile-sticky scale-with-grid" src="~/assets/HarmanoContract/images/logoheader.png" />
                                     </a>
                                 </div>
-                                <div class="menu_wrapper">
+                                <div class="menu_wrapper _arabic">
                                     <nav id="menu" class="menu-main-menu-container">
                                         <ul id="menu-main-menu" class="menu">
                                             <li id="homepage">

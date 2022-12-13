@@ -76,6 +76,10 @@
     "ar": "فلاور لينك  مجمع الطويلة – الجفير البحرين ",
     "en": "Flower Center, Al Taweela Complex, Building 20, Road 4101 Juffair, Kingdom of Bahrain"
   },
+  "00kb8": {
+    "ar": "الجفير البحرين",
+    "en": "Kingdom of Bahrain"
+  },
   "h0": {
     "ar": "إختر باقتك و اضفها للسلة",
     "en": "Choose your flower then click order in the website."
@@ -179,6 +183,10 @@
   "00ch2": {
     "ar": "اضف كوبون",
     "en": "Apply coupon"
+  },
+  "00apn2": {
+    "ar": "قدم الآن",
+    "en": "Apply Now"
   },
   "00ch3": {
     "ar": "عنوان التوصيل",
@@ -1547,5 +1555,338 @@
   "0mpar1": {
     "ar": "ادفع واسترخي",
     "en": "Make payment <br /> and relax"
+  },
+  "0hcl1": {
+    "ar": "شركة هيرمانو للمقاولات وتنسيق الحدائق هي شركة رائدة في تقديم الخدمات المتعددة التي تلبي احتياجاتك 360 يحتاج بجودة مضمونة.",
+    "en": "Hermano contracting and landscaping company is a leading multiple service provider catering to your 360 needs with quality guaranteed."
+  },
+  "0wwd1": {
+    "ar": "الذي نفعله",
+    "en": "What We Do?"
+  },
+  "0bwc": {
+    "ar": "أعمال تشييد المباني",
+    "en": "Building Construction Work"
+  },
+  "0lde": {
+    "ar": "تصميم وتنفيذ المناظر الطبيعية",
+    "en": "Landscapíng Design and Execution"
+  },
+  "0ode": {
+    "ar": "مطورونا يجسدون شعارهم للجودة والسرعة ورضا العميل! يبدأ كل مشروع برؤية ، ويحقق هدفًا واحدًا.",
+    "en": "Our developers embody their motto of quality, speed & client satisfaction! Every project begins with a vision, bringing alive one goal."
+  },
+  "0hcle": {
+    "ar": "هيرمانو للمقاولات والمناظر الطبيعية خبراء في بناء وصيانة جميع أنواع المشاريع الصناعية والتجارية والسكنية بما في ذلك فنادق بورش عالية الجودة وأحدث المباني التكنولوجية والفيلات والشقق الراقية هي خبرتنا.",
+    "en": "Hermano Contracting and Landscaping are experts in constructing and maintaining all kind of Industrial, Commercial, and residential projects including Porsche quality hotels, latest Tech buildings, high end villas and apartments are our expertise."
+  },
+  "0Iat": {
+    "ar": "بالإضافة إلى أعمال البناء لدينا ، نحن بارعون في تقديم خدمات الصيانة مثل الكهرباء والسباكة والأعمال الأخرى ذات الصلة من خلال سيارة متنقلة متوفرة عند الطلب المعدات والمواد الكاملة المطلوبة لأعمال الصيانة.",
+    "en": "In addition to our construction business, we are proficient in providing maintenance services such as electricity, plumbing and other related works through a mobile car available on call complete equipment and material required for the maintenance work."
+  },
+  "0odet0": {
+    "ar": "مطورونا يجسدون شعارهم للجودة والسرعة ورضا العميل! يبدأ كل مشروع برؤية ، ويحقق هدفًا واحدًا.",
+    "en": "Our developers embody their motto of quality, speed & client satisfaction! Every project begins with a vision, bringing alive one goal."
+  },
+  "0om0": {
+    "ar": "مهمتنا",
+    "en": "Our Mission"
+  },
+  "0omi0": {
+    "ar": "مهمتنا هي أعمال البناء إضافة الهياكل إلى مناطق الأرض بطريقة قديمة أو مصممة بطريقة تقنية حديثة أو مخصصة حسب الظواهر الطبيعية.",
+    "en": "Our mission is to construction work add the structures to areas of land in an old fashioned or newly tech designed ways or customized as per the natural phenomena."
+  },
+  "0was0": {
+    "ar": "نحن متخصصون",
+    "en": "WE ARE SPECIALISTS"
+  },
+  "0sic0": {
+    "ar": "متخصصة في مقاولات والمناظر الطبيعية",
+    "en": "Specializing in Contracting and Landscaping"
+  },
+  "0shc0": {
+    "ar": "منذ تأسيس شركة Hermano ، نقدم سجلاً حافلًا من التصميم الإبداعي والجودة في تنسيق الحدائق والصيانة. لقد خدمنا واكتسبنا سمعة كوننا أحد المنافسين الرائدين في السوق في مجال المناظر الطبيعية السكنية والتجارية.",
+    "en": "Since Hermano company was founded, we offers a proven track record of creative, quality design in Landscaping and maintenance. We have served and earned the reputation of being one of the market leading competitors in residential and commercial landscaping."
+  },
+  "0wae0": {
+    "ar": "نحن متميزون",
+    "en": "WE ARE EXPRIENCED"
+  },
+  "0wh0": {
+    "ar": "لماذا هيرمانو",
+    "en": "Why Hermano"
+  },
+  "0weg0": {
+    "ar": "لقد توسعنا بشكل كبير بسبب جودة عملنا ، ولدينا الآن عملاء للمناظر الطبيعية وشركات في جميع أنحاء البحرين.",
+    "en": "We expanded greatly because of our quality work, and now have domestic and corporate landscaping and gardening clients all over Bahrain."
+  },
+  "0wao0": {
+    "ar": "نحن نقدم مستوى عاليًا من المعرفة والقيمة الحقيقية مقابل المال. اليوم نحافظ على أكثر من 50 موقعًا ، مما يجعلنا إحدى الشركات الرائدة في مجال الخدمات الخضراء في البحرين.",
+    "en": "We are offering a high level of knowledge and real value for money. Today we maintain over 50+ sites, making us one the leading green services companies in Bahrain."
+  },
+  "0wbt0": {
+    "ar": "نعتقد أن هذا لا يرجع فقط إلى الحفاظ على معايير عالية من التصميم الإبداعي والبناء الماهر ، ولكن أيضًا بسبب التركيز الذي نوليه للعناية والاهتمام بالعميل ومنزلهم",
+    "en": "We believe that this is due to, not only maintaining high standards of creative design and skilled construction, but also the emphasis we put on care and consideration for the customer and their home"
+  },
+  "0oai0": {
+    "ar": "هدفنا هو جعل تجربتك في المشروع إيجابية ومرضية قدر الإمكان. تأتي معظم مشاريعنا إلينا من توصيات العملاء. نعتقد أن هذا لا يرجع فقط إلى الحفاظ على معايير عالية من التصميم الإبداعي والبناء الماهر ، ولكن أيضًا بسبب التركيز الذي نوليه للعناية والاهتمام بالعميل ومنزلهم.",
+    "en": "Our aim is to make your experience of the project as positive and pleasing as possible. Most of our projects come to us from customer recommendation. We believe that this is due to, not only maintaining high standards of creative design and skilled construction, but also the emphasis we put on care and consideration for the customer and their home."
+  },
+  "0sas0": {
+    "ar": "اطلع على جميع الخدمات",
+    "en": "SEE ALL SERVICES"
+  },
+  "0spc0": {
+    "ar": "متخصصة في المقاولات وتنسيق الحدائق في البحرين",
+    "en": "Specializing in Contracting & Landscaping in Bahrain"
+  },
+  "0hca0": {
+    "ar": "يستخدم خبراء هيرمانو للمقاولات والمناظر الطبيعية أحدث الأدوات والتقنيات لضمان الجودة والدقة والدقة والكفاءة العالية للمشروع وجعله يصل إلى علامته. تؤمن شركتنا بالاختلاف والموثوقية والاستدامة.",
+    "en": "Hermano Contracting and Landscaping’s experts use the latest tools and techniques to ensure quality, precision, accuracy, and high efficiency of the project and make it up to its mark. Our company believes in Difference, Reliability, and Sustainability."
+  },
+  "0obc0": {
+    "ar": "تضيف أعمال البناء الخاصة بنا الهياكل إلى مناطق الأرض بطريقة قديمة أو مصممة بطريقة تقنية حديثة أو مخصصة وفقًا للظواهر الطبيعية",
+    "en": "Our Building construction work add the structures to areas of land in an old fashioned or newly tech designed ways or customized as per the natural phenomena"
+  },
+  "0ood0": {
+    "ar": "طريقة التصميم والبناء الخاصة بنا هي تحول تدريجي بعيدًا عن الأساليب التقليدية. يضمن إشراك كل من المهندس المعماري والمقاول في وقت مبكر في العملية الحصول على منتج عالي الجودة في فترة زمنية أقصر.",
+    "en": "Our own Design-Build method is a progressive shift away from more traditional methods. Involving both the architect and the contractor early on in the process ensures a higher quality product in a shorter amount of time."
+  },
+  "0wah0": {
+    "ar": "نحن فريق ذو خبرة عالية من المتخصصين في تنسيق الحدائق مع سجل حافل في إنشاء وصيانة المناظر الطبيعية المرموقة عبر أجزاء مختلفة من الشرق الأوسط.",
+    "en": "We are a highly experienced team of landscaping specialists with a proven track record for constructing and maintaining prestigious landscapes across various parts of middle east ."
+  },
+  "0ros0": {
+    "ar": "بغض النظر عن الحجم أو التعقيد ، سواء كنت بحاجة إلى خدمات تصميم مناظر طبيعية موثوقة أو صيانة احترافية ، فإننا نقدم نهجًا مرنًا ، مصممًا وفقًا للاحتياجات المحددة لمشروعك",
+    "en": "Regardless of size or complexity, whether you require a trusted landscaping design services or professional maintenance, we offer a flexible approach, tailored to the specific needs of your project"
+  },
+  "0jnb0": {
+    "ar": "جانبية",
+    "en": "Janabiya"
+  },
+  "0rlnd0": {
+    "ar": "الرفاع لاندسكيب",
+    "en": "Riffa Landscape"
+  },
+  "0rvw0": {
+    "ar": "الرفاع فيوز",
+    "en": "Riffa Views"
+  },
+  "0oth0": {
+    "ar": "آحرون",
+    "en": "Others"
+  },
+  "0ayu0": {
+    "ar": "هل أنت جاهز للترقية",
+    "en": "Are you ready to upgrade"
+  },
+  "0waht0": {
+    "ar": "نحن هنا لمساعدتك",
+    "en": "We are here to help you"
+  },
+  "0wtc0": {
+    "ar": "هل تريد الدردشة؟",
+    "en": "Want to chat?"
+  },
+  "0wlt0": {
+    "ar": "يسعدنا أن نسمع منك! تواصل مع فريق نجاح العملاء لدينا للاستفسار عن الخدمات أو المشاريع أو الأسعار أو فقط قل مرحبًا.",
+    "en": "We’d love to hear from you! Get in touch with our Customer Success Team to inquire about services, projects, rates, or just say hello."
+  },
+  "0sum0": {
+    "ar": "أرسل لنا رسالة",
+    "en": "Send us a Message"
+  },
+  "0fft0": {
+    "ar": "لا تتردد في الاتصال بنا",
+    "en": "Feel Free To Contact With Us"
+  },
+  "0vdw0": {
+    "ar": "عمل بالفيديو",
+    "en": "Videography Work"
+  },
+  "0ptw0": {
+    "ar": "عمل التصوير",
+    "en": "Photography Work"
+  },
+  "0waf0": {
+    "ar": "نحن لجميع التحديات!",
+    "en": "We are for all challenges!"
+  },
+  "0tfo": {
+    "ar": "التي تركز على توفير الحلول الرقمية لمستخدمي وسائل التواصل الاجتماعي وتقدم خدمات التسويق والتصميم والتطوير المتعلقة بالشبكة والعالم الاجتماعي",
+    "en": "that focuses on providing digital solutions for Social Media users and offers its Marketing, designing and development services related to the network and social world"
+  },
+  "0sos0": {
+    "ar": "انظر خدماتنا",
+    "en": "See our Services"
+  },
+  "0oyo0": {
+    "ar": "أكثر من 30 عامًا من الخبرة المكتسبة",
+    "en": "OVER 30 YEARS OF EXPERIENCE GAINED"
+  },
+  "0tpc0": {
+    "ar": "التي تقدم خدمات إعلامية شاملة وإنتاج الصور والفيديو والتصميم والطباعة بكافة أنواعها",
+    "en": "that provides comprehensive media services, production of images and videos, design and printing of all kinds"
+  },
+  "0ipp0": {
+    "ar": "تمارس العلاقات العامة وأنشطة التسويق والعطور وتقدم استشارات إدارة المشاريع",
+    "en": "it practices public relations, marketing and perfume activities, it provides project management consultancy"
+  },
+  "0ist0": {
+    "ar": "تسعى إلى أن تكون شريك نجاح مع عملائها لتحقيق أهدافهم ورغباتهم وتقديم أفضل الخدمات لتكون الخيار الأمثل لجميع العملاء",
+    "en": "It seeks to be a success partner with its clients to achieve their goals and desires and provide the best services to be the ideal choice for all clients"
+  },
+  "0art0": {
+    "ar": "مراجعة المراجعة واختبار المخاطر السيبرانية",
+    "en": "Auditing Reviewing & <br />Testing Cyber Risk"
+  },
+  "0sma0": {
+    "ar": "تطوير وإدارة تطبيقات الوسائط الاجتماعية",
+    "en": "Social Media Applications <br /> Development & Management"
+  },
+  "0it0": {
+    "ar": "البنية التحتية لتكنولوجيا المعلومات",
+    "en": "IT Infrastructure"
+  },
+  "0itn0": {
+    "ar": "خدمات شبكة تقنية المعلومات",
+    "en": "Information Technology <br /> Network Services"
+  },
+  "0mss0": {
+    "ar": "خدمة التسويق عبر وسائل التواصل الاجتماعي",
+    "en": " Marketing Service Via <br /> Social Media"
+  },
+  "0css0": {
+    "ar": "خدمات إسكان أنظمة الكمبيوتر",
+    "en": "Computer Systems <br /> Housing Services"
+  },
+  "0wd0": {
+    "ar": "ختصميم الموقع",
+    "en": "Website <br /> Design"
+  },
+  "0ogs0": {
+    "ar": "خدمات الألعاب عبر الإنترنت",
+    "en": "Online Gaming <br /> Services"
+  },
+  "0bap0": {
+    "ar": "كن جزءًا من عائلة Activar",
+    "en": "Be A Part of Activar Family"
+  },
+  "0itc0": {
+    "ar": "تكنولوجيا المعلومات وخدمات الكمبيوتر",
+    "en": "Information Technology & Computer Services"
+  },
+  "0smm0": {
+    "ar": "إدارة وسائل التواصل الاجتماعي",
+    "en": "Social Media Management"
+  },
+  "0pm0": {
+    "ar": "الترويج والتسويق",
+    "en": "Promotion and Marketing"
+  }
+  ,
+  "0pr0": {
+    "ar": "العلاقات العامة",
+    "en": "Public Relations"
+  },
+  "0mc0": {
+    "ar": "تغطية إعلامية",
+    "en": "Media Coverage"
+  },
+  "0mac0": {
+    "ar": "إدارة البطولة",
+    "en": "Manage Tournament"
+  },
+  "0all0": {
+    "ar": "الجميع",
+    "en": "All"
+  },
+  "00aby": {
+    "ar": "عباية",
+    "en": "Abaya"
+  },
+  "00evn": {
+    "ar": "حدث",
+    "en": "Event"
+  },
+  "00per": {
+    "ar": "عطور",
+    "en": "Perfumes"
+  },
+  "00spr": {
+    "ar": "رياضات",
+    "en": "Sports"
+  },
+  "00oobj": {
+    "ar": "",
+    "en": "Our Objectives"
+  },
+  "00wwt": {
+    "ar": "نعمل على مواكبة تقدم الكلمة الالكترونية وتلبية متطلبات عملائك حسب احتياجاتهم بأعلى درجة من الشخصية",
+    "en": "We work to keep pace with the progress of the electronic word and meet the requirements of your customers to their suit need with the highest degree of personalism"
+  },
+  "00csf": {
+    "ar": "",
+    "en": "Customer Satisfaction First"
+  },
+  "00Inh": {
+    "ar": "",
+    "en": "Integrity and honesty"
+  },
+  "00cts": {
+    "ar": "",
+    "en": "Commitment to social responsibility"
+  },
+  "00ohb": {
+    "ar": "",
+    "en": "One Hand to acheive the best"
+  },
+  "00ddi": {
+    "ar": "",
+    "en": "Diversity, distinction and Innovation"
+  },
+  "00ycd": {
+    "ar": "",
+    "en": "YOU CAN DO THIS WITH US!"
+  },
+  "00los": {
+    "ar": "",
+    "en": "Like our services?"
+  },
+  "00fftc": {
+    "ar": "",
+    "en": "Feel free to contact us"
+  },
+  "00ocis": {
+    "ar": "",
+    "en": "Our company is recognized as a decisive and robust name in the region. We have assisted thousands of brands by providing them best-demanded services as per their business nature."
+  },
+  "00oyw": {
+    "ar": "",
+    "en": "Do you want to give an exclusive touch to your brands, we promise you that our services range from high-quality video production, 4K Videos, Destination shoots, testimonial shoots as well as Top Impact Editing and Copy Editing we meet your demand."
+  },
+  "00wof": {
+    "ar": "",
+    "en": "We offer our services to individuals and brands. We re-imagine our experience with your brand, with clear digital directions and get an understanding of your brand’s goals and objectives, and help to reach the next highest level."
+  },
+  "00wat": {
+    "ar": "",
+    "en": "We aim to invent and execute unique brand experiences and get the best result out of them. Use our services to experience the creative ways to attract consumers & shoppers with your offered brands."
+  },
+  "00get": {
+    "ar": "",
+    "en": "Get our photography services to capture your important moments for future"
+  },
+  "00hut": {
+    "ar": "",
+    "en": "Hire us to deliver the right message to the right people at the right time that is exactly what we do for your brand"
+  },
+  "00occ": {
+    "ar": "",
+    "en": "Our company can develop and steer your brand's relationship with the media in the right direction. Hire our team to get the best media coverage for your event."
+  },
+  "00fsf": {
+    "ar": "",
+    "en": "From start to finish, we are experts in managing events. Our company is known for being able to customize the perfect funfilled tournaments for your company and with other companies"
   }
 }

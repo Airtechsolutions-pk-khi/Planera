@@ -7,20 +7,27 @@ h3,h4 {
 }
 
 * {
-    font-family: "Lato-Regular" !important;
+    font-family: "Lato-Regular";
 }
 #Footer .footer_copy .one {
     margin-bottom: 20px;
     padding-top: 10px;
 }
-
+@font-face {
+    font-family: 'cairo-bold';
+    src: url('../../aracbicfont/cairo-bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cairo-regular';
+    src: url('../../aracbicfont/cairo-regular.ttf') format('truetype');
+}
 @font-face {
     font-family: 'Lato-Bold';
     src: url('../../assets/fonts/PlaneraConstruction/Lato-Bold.ttf') format('truetype');
 }
 
 h1 {
-    font-family: "Lato-Bold" !important;
+    font-family: "Lato-Bold";
 }
 #Top_bar #logo img {
     vertical-align: middle !important;

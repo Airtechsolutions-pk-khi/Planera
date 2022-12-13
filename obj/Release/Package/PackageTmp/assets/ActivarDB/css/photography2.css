@@ -3,6 +3,15 @@ input[type="date"], input[type="email"], input[type="number"], input[type="passw
 	box-shadow: unset;
 	resize: none;
 }
+@font-face {
+	font-family: 'cairo-bold';
+	src: url('../../aracbicfont/cairo-bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'cairo-regular';
+	src: url('../../aracbicfont/cairo-regular.ttf') format('truetype');
+}
 a.action_button{
 	top:30px;  
 	border-radius:0;

@@ -2,40 +2,52 @@
 
 <div id="rev_slider_30_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="media-carousel-autoplay30" style="margin:0px auto;background-color:#26292b;padding:0px;margin-top:0px;margin-bottom:0px;">
     <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
-    <div id="rev_slider_30_1" class="rev_slider fullwidthabanner" style="display:none;"   data-version="5.0.7">
+    <div id="rev_slider_30_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
         <ul>
+            @{
+                var count = 122;
+                foreach (var item in ViewBag.Gallery)
+                {
+                    <li data-index="rs-@count"data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="../../assets/PlaneraInterior/images/janabiya-palace.jpg" data-rotate="0" data-saveperformance="off" data-title="@item.Title" data-param1="INTERIOR" data-description="" >
+                        <!-- MAIN IMAGE -->
+                        @*<img src="~/assets/ActivarBH/slider/01.jpg" data-bgposition="30% 50%" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">*@
+                        <img src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" alt="@item.Title"  data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+                    </li>
+                    count += 1;
+                }
+            }
 
-            <li  data-index="rs-122" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="../../assets/PlaneraInterior/images/janabiya-palace.jpg" data-rotate="0" data-saveperformance="off" data-title="Janabiya Palace" data-param1="INTERIOR" data-description="" >
-                <!-- MAIN IMAGE -->
-                <img src="../../assets/PlaneraInterior/images/janabiya-palace.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
-                <!-- LAYERS -->
-            </li>
-            <li data-index="rs-123" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="../../assets/PlaneraInterior/images/jaw-landscape.jpg" data-rotate="0" data-saveperformance="off" data-title="Jaw Landscape" data-param1="INTERIOR" data-description="">
-                <!-- MAIN IMAGE -->
-                <img src="~/assets/PlaneraInterior/images/jaw-landscape.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
-                <!-- LAYERS -->
-            </li>
-            <li data-index="rs-124" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="../../assets/PlaneraInterior/images/ramada-expension-japanese.jpg" data-rotate="0" data-saveperformance="off" data-title="Ramada Expension Japanese" data-param1="INTERIOR" data-description="">
-                <!-- MAIN IMAGE -->
-                <img src="~/assets/PlaneraInterior/images/ramada-expension-japanese.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
-                <!-- LAYERS -->
-            </li>
+            <!--<li  data-index="rs-122" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="../../assets/PlaneraInterior/images/janabiya-palace.jpg" data-rotate="0" data-saveperformance="off" data-title="Janabiya Palace" data-param1="INTERIOR" data-description="" >-->
+            <!-- MAIN IMAGE -->
+            <!--<img src="../../assets/PlaneraInterior/images/janabiya-palace.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">-->
+            <!-- LAYERS -->
+            <!--</li>
+            <li data-index="rs-123" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="../../assets/PlaneraInterior/images/jaw-landscape.jpg" data-rotate="0" data-saveperformance="off" data-title="Jaw Landscape" data-param1="INTERIOR" data-description="">-->
+            <!-- MAIN IMAGE -->
+            <!--<img src="~/assets/PlaneraInterior/images/jaw-landscape.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">-->
+            <!-- LAYERS -->
+            <!--</li>
+            <li data-index="rs-124" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="../../assets/PlaneraInterior/images/ramada-expension-japanese.jpg" data-rotate="0" data-saveperformance="off" data-title="Ramada Expension Japanese" data-param1="INTERIOR" data-description="">-->
+            <!-- MAIN IMAGE -->
+            <!--<img src="~/assets/PlaneraInterior/images/ramada-expension-japanese.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">-->
+            <!-- LAYERS -->
+            <!--</li>
 
-            <li data-index="rs-125" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="../../assets/PlaneraInterior/images/ramada-expension-neoclassic.jpg" data-rotate="0" data-saveperformance="off" data-title="Ramada Expension Neoclassic" data-param1="INTERIOR" data-description="">
-                <!-- MAIN IMAGE -->
-                <img src="~/assets/PlaneraInterior/images/ramada-expension-neoclassic.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
-                <!-- LAYERS -->
-            </li>
-            <li data-index="rs-126" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="../../assets/PlaneraInterior/images/sakhir-ajlis.jpg" data-rotate="0" data-saveperformance="off" data-title="Sakhir Majlis" data-param1="INTERIOR" data-description="">
-                <!-- MAIN IMAGE -->
-                <img src="~/assets/PlaneraInterior/images/sakhir-ajlis.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
-                <!-- LAYERS -->
-            </li>
-            <li data-index="rs-127" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="../../assets/PlaneraInterior/images/salman-city.jpg" data-rotate="0" data-saveperformance="off" data-title="Salman City" data-param1="INTERIOR" data-description="">
-                <!-- MAIN IMAGE -->
-                <img src="~/assets/PlaneraInterior/images/salman-city.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
-                <!-- LAYERS -->
-            </li>
+            <li data-index="rs-125" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="../../assets/PlaneraInterior/images/ramada-expension-neoclassic.jpg" data-rotate="0" data-saveperformance="off" data-title="Ramada Expension Neoclassic" data-param1="INTERIOR" data-description="">-->
+            <!-- MAIN IMAGE -->
+            <!--<img src="~/assets/PlaneraInterior/images/ramada-expension-neoclassic.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">-->
+            <!-- LAYERS -->
+            <!--</li>
+            <li data-index="rs-126" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="../../assets/PlaneraInterior/images/sakhir-ajlis.jpg" data-rotate="0" data-saveperformance="off" data-title="Sakhir Majlis" data-param1="INTERIOR" data-description="">-->
+            <!-- MAIN IMAGE -->
+            <!--<img src="~/assets/PlaneraInterior/images/sakhir-ajlis.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">-->
+            <!-- LAYERS -->
+            <!--</li>
+            <li data-index="rs-127" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="../../assets/PlaneraInterior/images/salman-city.jpg" data-rotate="0" data-saveperformance="off" data-title="Salman City" data-param1="INTERIOR" data-description="">-->
+            <!-- MAIN IMAGE -->
+            <!--<img src="~/assets/PlaneraInterior/images/salman-city.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">-->
+            <!-- LAYERS -->
+            <!--</li>-->
 
         </ul>
         <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>

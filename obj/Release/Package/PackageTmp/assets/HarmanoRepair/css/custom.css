@@ -4,7 +4,7 @@
 }
 
 h1, h2 {
-    font-family: "Comfortaa-Medium" !important;
+    font-family: "Comfortaa-Medium";
 }
 
 @font-face {
@@ -13,7 +13,7 @@ h1, h2 {
 }
 
 * {
-    font-family: "Comfortaa-Regular" !important;
+    font-family: "Comfortaa-Regular";
 }
 
 /*animation*/
