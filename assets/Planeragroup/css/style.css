@@ -8,11 +8,11 @@ File Description: Main CSS file of the template*/
 }
 
 ::-webkit-scrollbar-track {
-    background: #e8e8e8;
+    background: #606565;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #fb5496;
+    background: rgba(0, 0, 0, 0.059);
 }
 
 /*::-webkit-scrollbar-thumb {
@@ -6278,10 +6278,10 @@ html .pb140 {
 }
 
 .bg-btn {
-    background: #ffbd84;
-    background: -moz-linear-gradient(left, #ffbd84 0%, #ff1f8e 100%);
-    background: -webkit-linear-gradient(left, #ffbd84 0%,#ff1f8e 100%);
-    background: linear-gradient(to right, #ffbd84 0%,#ff1f8e 100%);
+    background: #6a6a8e;
+    background: -moz-linear-gradient(left, #6a6a8e 0%, #ff1f8e 100%);
+    background: -webkit-linear-gradient(left, #6a6a8e 0%,#ff1f8e 100%);
+    background: linear-gradient(to right, #6a6a8e 0%,#ff1f8e 100%);
     -webkit-box-shadow: 0 10px 15px 0px rgba(175, 0, 87, .2);
     box-shadow: 0 10px 15px 0px rgba(175, 0, 87, .2);
 }
@@ -6352,7 +6352,7 @@ html .pb140 {
 }
 
 .bg-a {
-    background-image: linear-gradient(to right, #ff1f8e 0%,#ffbd84 36%,#ffbd84 65%,#ff1f8e 100%);
+    background-image: linear-gradient(to right, #ff1f8e 0%,#6a6a8e 36%,#6a6a8e 65%,#ff1f8e 100%);
 }
 
 .bg-b {
@@ -8135,7 +8135,7 @@ html .mt15 {
 }
 
 .innidv2 {
-    background: linear-gradient(to right, #ffbd84 0%,#ff1f8e 100%)
+    background: linear-gradient(to right, #6a6a8e 0%,#ff1f8e 100%)
 }
 
 .innidv3 {
@@ -8167,7 +8167,7 @@ html .mt15 {
     width: 8px;
     height: 8px;
     z-index: 21474836490;
-    background: linear-gradient(to right, #ffbd84 0%,#ff1f8e 100%);
+    background: linear-gradient(to right, #6a6a8e 0%,#ff1f8e 100%);
     -webkit-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
     -o-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
     transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
@@ -8179,7 +8179,7 @@ html .mt15 {
         margin-top: -40px;
         width: 80px;
         height: 80px;
-        background-color: #ffbd84;
+        background-color: #6a6a8e;
         opacity: .2;
     }
 
@@ -8188,7 +8188,7 @@ html .mt15 {
     margin-top: -19px;
     width: 38px;
     height: 38px;
-    border: 1px solid #ffbd84;
+    border: 1px solid #6a6a8e;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     z-index: 21474836490;
