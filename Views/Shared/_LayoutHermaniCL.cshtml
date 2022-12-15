@@ -48,6 +48,7 @@
             
             color: white;
         }
+       
     </style>
     <script>
         jQuery(document).ready(function () {
@@ -78,6 +79,7 @@
                 jQuery("._mrright").css("margin-right", "0px")
                 jQuery(".armgn-top").css("margin-top", "50px")
                 jQuery(".float").css("float", "right")
+                jQuery("._fleft").css("float", "left")
                 jQuery(".displayb").css("display", "block")
                 jQuery("body ,p, div, span, label, #menu>ul>li>a").css("font-family", "Cairo-Regular")
                 jQuery("h1,h2,h3,h4,h5,h6").css("font-family", "Cairo-Bold")
@@ -180,7 +182,7 @@
                                             </li>
 
                                             <li>
-                                                <i class="fa fa-icon-globe"></i><a onclick="_lang(); return false;" id="_lang">عربى</a>
+                                                <i class="fa fa-icon-globe"></i><a onclick="_lang(); return false;" id="_lang" style="cursor:pointer; ">عربى</a>
                                             </li>
                                         </ul>
                                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>

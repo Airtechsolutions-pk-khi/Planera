@@ -109,13 +109,13 @@
                                 <div class="portfolio-item-fw-wrapper">
                                     <div class="image_frame scale-with-grid">
                                         <div class="image_wrapper">
-                                            <a href="~/assets/ActivarBH/images/event8.jpg" class="zoom" rel="prettyphoto">
+                                            <a href="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" class="zoom" rel="prettyphoto">
                                                 <div class="mask"></div>
                                                 @*<img width="100%" height="500" src="~/assets/ActivarBH/images/event8.jpg" class="scale-with-grid wp-post-image" />*@
                                                 <img width="100%" height="500" src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" alt="@item.Title" class="scale-with-grid wp-post-image">
                                             </a>
                                             <div class="image_links  ">
-                                                <a href="~/assets/ActivarBH/images/event8.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                                                <a href="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
                                             </div>
                                         </div>
                                     </div>

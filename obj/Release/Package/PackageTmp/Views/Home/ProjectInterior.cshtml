@@ -94,7 +94,7 @@
                                                 <img width="650" height="650px" src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" alt="@item.Title" class="scale-with-grid wp-post-image">
                                             </a>
                                             <div class="image_links">
-                                                <a href="~/assets/PlaneraInterior/images/adhari-p2.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                                                <a href="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
                                             </div>
                                         </div>
                                     </div>
