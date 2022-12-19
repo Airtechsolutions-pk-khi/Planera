@@ -977,7 +977,7 @@
     "en": "Upload Your Resume"
   },
   "0ppg01": {
-    "ar": "مدعوم من مجموعة بلانيرا",
+    "ar": "2022 مدعوم من مجموعة بلانيرا",
     "en": "Powered by Planera Group"
   },
   "0mbc01": {
@@ -1888,5 +1888,53 @@
   "00fsf": {
     "ar": "",
     "en": "From start to finish, we are experts in managing events. Our company is known for being able to customize the perfect funfilled tournaments for your company and with other companies"
+  },
+  "00ss": {
+    "ar": "شركة بحرينية متخصصة في عدة مجالات",
+    "en": "A Bahraini Company Specialized in Several Fields"
+  },
+  "00prb": {
+    "ar": "العلاقات العامة والعلامات التجارية والتسويق وأنشطة العطور. نحن نقدم استشارات إدارة المشاريع.",
+    "en": "Public relations, Branding and Marketing, and Perfumery activities. We offer Project Management Consultancy."
+  },
+  "00oc": {
+    "ar": "مجموعتنا",
+    "en": "Our Collection"
+  },
+  "00npl": {
+    "ar": "الان العب",
+    "en": "Now Playing"
+  },
+  "00apc": {
+    "ar": "لجنة الشلل الأسيوي",
+    "en": "ASIAN PARALYMPIC COMMITTEE"
+  },
+  "00ayp": {
+    "ar": "لعبة الشباب الآسيوية بارا",
+    "en": "ASIAN YOUTH PARA GAME"
+  },
+  "00abc": {
+    "ar": "شبكة مراكز أعمال التحالف ، الطابق الرابع ، بلوك ب ، صندوق بريد 183125 ، قرية الأعمال ، دبي ، الإمارات العربية المتحدة",
+    "en": "Alliance Business Centers Network, 4th Floor, Block-B, P.o.Box 183125,Business village ,Dubai UAE"
+  },
+  "00cre": {
+    "ar": "مصداقية",
+    "en": "Credibility"
+  },
+  "00twrk": {
+    "ar": "العمل بروح الفريق الواحد",
+    "en": "Teamwork"
+  },
+  "00crt": {
+    "ar": "إِبداع",
+    "en": "Creativity"
+  },
+  "00exp": {
+    "ar": "خبرة",
+    "en": "Experience"
+  },
+  "00rsor": {
+    "ar": "نتيجة المنحى",
+    "en": "Result Oriented"
   }
 }

@@ -122,6 +122,15 @@
                 jQuery("body ,p, div, span, label, #menu>ul>li>a").css("font-family", "Cairo-Regular")
                 jQuery("h1,h2,h3,h4,h5,h6").css("font-family", "Cairo-Bold")
                 jQuery(".floatr").css("float", "right")
+                jQuery(".newsletter").css("padding-top", "18px")
+                jQuery(".brd-right").css({
+                    'border-top-right-radius': '10px',
+                    'border-bottom-right-radius': '10px'
+                })
+                jQuery(".brd-left").css({
+                    'border-top-left-radius': '10px, !important',
+                    'border-bottom-left-radius': '10px, !important'
+                })
             }
         });
 
@@ -234,8 +243,8 @@
         </div>
         @RenderBody()
         <!-- Footer-->
-        <footer id="Footer" class="clearfix">
-            <div class="container _arabic-text _arabic" style="padding:50px 0 0 0;">
+        <footer id="Footer" class="clearfix _arabic-text">
+            <div class="container" style="padding:50px 0 0 0;">
                 <div class="column one-fifth">
                     <aside class="widget widget_text">
                         <img src="~/assets/HarmanoRepair/images/logo.png" />
