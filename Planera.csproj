@@ -2819,7 +2819,6 @@
     <Content Include="assets\HarmanoRepair\images\HermanoRMContact.cshtml" />
     <Content Include="assets\HarmanoContract\css\Lato-Regular.ttf" />
     <Content Include="language\translations.json" />
-    <Content Include="language\translations.zip" />
     <Content Include="assets\js\cookie\js.cookie.min.mjs" />
     <Content Include="assets\js\cookie\js.cookie.mjs" />
     <Content Include="assets\aracbicfont\Cairo-Black.ttf" />

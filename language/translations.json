@@ -4,31 +4,31 @@
     "en": "Home"
   },
   "a1": {
-    "ar": "أعمالنا",
+    "ar": "خدماتنا",
     "en": "Our Businesses"
   },
   "00a2": {
-    "ar": "أخبار وأحداث",
+    "ar": "الأخبارو الأحداث",
     "en": "News & Events"
   },
   "00a3": {
-    "ar": "وظائف",
+    "ar": "فرص العمل",
     "en": "Careers"
   },
   "00a4": {
-    "ar": "ابقى على تواصل ",
+    "ar": "اتصل بنا",
     "en": "Get in Touch"
   },
   "aa0": {
-    "ar": "معلومات عنا",
+    "ar": "عن الشركة",
     "en": "About Us"
   },
   "aa1": {
-    "ar": "عنا",
+    "ar": "عن",
     "en": "About"
   },
   "00aa2": {
-    "ar": "نبذة عن الشركة",
+    "ar": "لمحة عامة  عن الشركة",
     "en": "Company Overview"
   },
   "00aa3": {
@@ -41,11 +41,11 @@
     "en": "Subscribe Our Newsletter"
   },
   "00cn0": {
-    "ar": "الاتصال بنا ",
+    "ar": "اتصل بنا",
     "en": "Contact Us"
   },
   "00cn1": {
-    "ar": "الاتصال بنا",
+    "ar": "للإتصال",
     "en": "Contact"
   },
   "00cn2": {
@@ -65,7 +65,7 @@
     "en": "Email : "
   },
   "00cn6": {
-    "ar": "الهاتف : ",
+    "ar": "ال الهاتف ",
     "en": "Telephone : "
   },
   "00cn7": {
@@ -73,11 +73,11 @@
     "en": "Mobile : "
   },
   "00cn8": {
-    "ar": "فلاور لينك  مجمع الطويلة – الجفير البحرين ",
+    "ar": "فلاور سنتر, مجمع الطويلة,   المبنى رقم  20 ,   شارع رقم 4101, الجفير , مملكة البحرين ",
     "en": "Flower Center, Al Taweela Complex, Building 20, Road 4101 Juffair, Kingdom of Bahrain"
   },
   "00kb8": {
-    "ar": "الجفير البحرين",
+    "ar": "مملكة البحرين",
     "en": "Kingdom of Bahrain"
   },
   "h0": {
@@ -93,7 +93,7 @@
     "en": "Make payment according to the price listed on your order."
   },
   "00h3": {
-    "ar": "تم استلام طلبك و سيتم توصيله حسب الوقت المطلوب",
+    "ar": "تم استلام طلبك و سيتم توصيله  إلى عنوانك",
     "en": "Your flowers is ready to process & delivery to your address."
   },
   "00h4": {
@@ -121,7 +121,7 @@
     "en": "Subscribe Our Newsletter"
   },
   "00h10": {
-    "ar": "",
+    "ar": "لماذا فلاور سنتر",
     "en": "WHY FLOWER CENTER?"
   },
   "00h11": {
@@ -133,7 +133,7 @@
     "en": "All Products"
   },
   "00h12": {
-    "ar": "مشاهدة الكل",
+    "ar": "مشاهدة كل المنتجات",
     "en": "View All"
   },
   "00ca0": {
@@ -169,19 +169,19 @@
     "en": "Continue Shopping"
   },
   "00ca8": {
-    "ar": "المتابعة للدفع",
+    "ar": "المتابعة لإتمام الطلب",
     "en": "Proceed to checkout"
   },
   "00ch0": {
-    "ar": "الدفع",
+    "ar": "إتمام الطلب",
     "en": "Checkout"
   },
   "00ch1": {
-    "ar": "اصغط هنا لإضافه الكود",
+    "ar": "إظغط هنا لإضافة الكود",
     "en": "Click here to enter your code"
   },
   "00ch2": {
-    "ar": "اضف كوبون",
+    "ar": "اضف  قسيمة الشراء",
     "en": "Apply coupon"
   },
   "00apn2": {
@@ -197,11 +197,11 @@
     "en": "Cart Subtotal"
   },
   "00ch5": {
-    "ar": "سعر التوصيل",
+    "ar": "رسوم التوصيل",
     "en": "Delivery Charges"
   },
   "00ch6": {
-    "ar": "تخفيض الكوبون",
+    "ar": "تخفيض قسيمة الشراء",
     "en": "Coupon Discount"
   },
   "00ch7": {
@@ -217,7 +217,7 @@
     "en": "Tax Amount"
   },
   "00ch10": {
-    "ar": "تفاصيل التسليم",
+    "ar": "تفاصيل التوصيل",
     "en": "Delivery Details"
   },
   "00ch11": {
@@ -229,11 +229,11 @@
     "en": "PRODUCT"
   },
   "00ch13": {
-    "ar": "مجموع",
+    "ar": "المجموع",
     "en": "TOTAL"
   },
   "00mo0": {
-    "ar": "طلبي",
+    "ar": "قائمة طلباتي",
     "en": "My Orders"
   },
   "00mo1": {
@@ -293,7 +293,7 @@
     "en": "Back to shop"
   },
   "00od0": {
-    "ar": "مجموع الطلب",
+    "ar": "تفاصيل الطلب",
     "en": "Order Details"
   },
   "00od1": {
@@ -305,11 +305,11 @@
     "en": "-- Order Details --"
   },
   "00od3": {
-    "ar": "تفاصيل الطلب",
+    "ar": "معلومات الطلب",
     "en": "Order Information"
   },
   "00od4": {
-    "ar": "تفاصيل العميل",
+    "ar": "معلومات الزبون",
     "en": "Customer Information"
   },
   "00od5": {
@@ -317,7 +317,7 @@
     "en": "Order Details."
   },
   "00od6": {
-    "ar": "تفاصيل التوصيل",
+    "ar": "تفاصيل الفوترة",
     "en": "Billing Information"
   },
   "00od7": {
@@ -325,7 +325,7 @@
     "en": "Back to Orders"
   },
   "00pd0": {
-    "ar": "منتج وحيد",
+    "ar": "تفاصيل المنتج",
     "en": "Product Detail"
   },
   "00pd1": {
@@ -341,7 +341,7 @@
     "en": "ADD GIFT"
   },
   "00w0": {
-    "ar": "قائمة التنمي",
+    "ar": "قائمة الرغبات",
     "en": "Wishlist"
   },
   "00w1": {
@@ -385,7 +385,7 @@
     "en": "Logout"
   },
   "00s0": {
-    "ar": "وصلتك للمناسبة السعيدة",
+    "ar": "المتجر عبر الانترنت",
     "en": "Online Flower Shop"
   },
   "00s1": {
@@ -393,19 +393,19 @@
     "en": "Shop"
   },
   "00s3": {
-    "ar": "الاسم من أ ?-? ي",
+    "ar": "الاسم (ا ء ي)",
     "en": "Name(A - Z)"
   },
   "00s4": {
-    "ar": "الاسم من أ - ي",
+    "ar": "الاسم (ا ء ي)",
     "en": "Name(Z - A)"
   },
   "00s5": {
-    "ar": "السعر ?(? الاقل ?>? الاكثر?)?",
+    "ar": "السعر (من الأرخص الى الأغلى)",
     "en": "Price(Low > High)"
   },
   "00s6": {
-    "ar": "السعر ?(الاكثر >? الاقل ?)",
+    "ar": "السعر (من الأغلى الى الأرخص )",
     "en": "Price(High > Low)"
   },
   "00s7": {
@@ -413,7 +413,7 @@
     "en": "QUICK LINK"
   },
   "00s8": {
-    "ar": "الاتصال سريعا",
+    "ar": "للإتصال السريع",
     "en": "QUICK CONTACT"
   },
   "00s9": {
@@ -429,11 +429,11 @@
     "en": "عربى"
   },
   "000a3": {
-    "ar": "تسوق الآن,",
+    "ar": "مشاهدة,",
     "en": "View"
   },
   "000a4": {
-    "ar": "منقي",
+    "ar": "فرز",
     "en": "Filter"
   },
   "000aa5": {
@@ -441,7 +441,7 @@
     "en": "VIEW CART"
   },
   "000aa6": {
-    "ar": "الدفع",
+    "ar": "إتمام الطلب",
     "en": "CHECKOUT"
   },
   "000aa7": {
@@ -457,11 +457,11 @@
     "en": "Sender Name * "
   },
   "000co2": {
-    "ar": "البريد الإلكتروني المرسل ",
+    "ar": "البريد الإلكتروني للمرسل",
     "en": "Sender Email * "
   },
   "000co3": {
-    "ar": "جهة اتصال المرسل ",
+    "ar": "رقم هاتف المرسل",
     "en": "Sender Contact * "
   },
   "000co4": {
@@ -469,7 +469,7 @@
     "en": "Recipient Name * "
   },
   "000co5": {
-    "ar": "جهة اتصال المستلم ",
+    "ar": "رقم هاتف المستلم",
     "en": "Recipient Contact * "
   },
   "000co6": {
@@ -481,11 +481,11 @@
     "en": "Delivery Time"
   },
   "000co8": {
-    "ar": "بلد ",
+    "ar": "البلد ",
     "en": "Country * "
   },
   "000co9": {
-    "ar": "مدينة ",
+    "ar": "المدينة ",
     "en": "City  * "
   },
   "000co10": {
@@ -545,7 +545,7 @@
     "en": "Sub-Total :"
   },
   "000co24": {
-    "ar": "مجموع",
+    "ar": "المجموع",
     "en": "Total :"
   },
   "000co25": {
@@ -561,7 +561,7 @@
     "en": "Friday : Closed"
   },
   "000co28": {
-    "ar": "هاتف :",
+    "ar": " الهاتف",
     "en": "Telephone :"
   },
   "000co29": {
@@ -581,11 +581,11 @@
     "en": "Cart Totals"
   },
   "000co33": {
-    "ar": "سياسات",
+    "ar": "سياسة الشركة",
     "en": "Policy"
   },
   "00m34": {
-    "ar": "الطلبالتاريخ",
+    "ar": "تاريخ الطلب",
     "en": "Order Date"
   },
   "00m35": {
@@ -661,7 +661,7 @@
     "en": "Sender Details"
   },
   "00m53": {
-    "ar": "وصف التخصيص",
+    "ar": "تخصيص الوصف",
     "en": "Customization Description"
   },
   "00m54": {
@@ -741,15 +741,15 @@
     "en": "Flower Center was established in the UAE in 2012 when we started importing artificial flowers and distributing them in the market. In year 2015, we opened our first branch for direct retail selling followed by a second branch. After that, we have started contracting with factories abroad to manufacture products according to our own specifications for wholesale and retail selling. In addition to that, we began our journey in selling natural roses and coordinating parties until this day."
   },
   "0fc016": {
-    "ar": "لماذا نحن؟",
+    "ar": "لماذا فلاور سنتر?",
     "en": "WHY FLOWER CENTER?"
   },
   "0fc017": {
-    "ar": "نحن متخصصون في الخروج بأفكار إبداعية لجميع المناسبات والمناسبات وكذلك تنفيذ الديكورات الداخلية والخارجية المكونة من الزهور الاصطناعية والينابيع والخضروات الاصطناعية والديكورات وتنسيقات الزهور الطبيعية المميزة",
+    "ar": " نحن متخصصون في إقتراح أفكار إبداعية لجميع المناسبات و الأحداث, و كذلك تنفيذ الديكورات الداخلية والخارجية المكونة من الزهور الاصطناعية والينابيع والخضروات الاصطناعية والديكورات وتنسيقات الزهور الطبيعية المميزة ",
     "en": "We are specialized in coming up with creative ideas for all events and occasions as well as the implementation of interior and exterior decoration consisted of artificial flowers, springs, artificial vegetables, decorations, and distinctive natural flowers arrangements"
   },
   "0fc018": {
-    "ar": "اشترك في النشرة الإخبارية لدينا ودائمًا ما تكون على اطلاع دائم بالمنتجات الجديدة والعروض الترويجية",
+    "ar": "اشترك في النشرة الإخبارية معنا وكن على اطلاع دائم بالمنتجات الجديدة والعروض الترويجية",
     "en": "Subscribe to our newsletter and always upto date about new products and promos."
   },
   "0fc019": {
@@ -765,15 +765,15 @@
     "en": "Creative flowers arrangements"
   },
   "0fc022": {
-    "ar": "بطاقة",
+    "ar": "سلة التسوق",
     "en": "Cart"
   },
   "0fc023": {
-    "ar": "الدفع",
+    "ar": "إتمام الطلب",
     "en": "Checkout"
   },
   "0fc024": {
-    "ar": "طريقة الدفع",
+    "ar": "الدفع",
     "en": "Payment"
   },
   "0fc025": {
@@ -789,11 +789,11 @@
     "en": "Kindly add items in your cart then place order"
   },
   "0fc028": {
-    "ar": "رمز الكوبون",
+    "ar": "رقم  قسيمة الشراء",
     "en": "Coupon code"
   },
   "0fc029": {
-    "ar": "كوبون غير صحيح",
+    "ar": "قسيمة الشراء غير صالحة",
     "en": "Invalid Coupon"
   },
   "0fc030": {
@@ -841,7 +841,7 @@
     "en": "Who We Are"
   },
   "0pgh01": {
-    "ar": "المجموعة لديها أعمال متنوعة مملوكة متعددة الجنسيات",
+    "ar": "المجموعة لديها أعمال متنوعة و متعددة الجنسيات",
     "en": "Planera group is having diversified multinational-owned businesses,"
   },
   "0lmp01": {
@@ -857,7 +857,7 @@
     "en": "Since 2019"
   },
   "0est01": {
-    "ar": "تأسست في عام 2019 في مجال البناء وحققنا ثقة كبيرة في مجال البناء. حاليًا ، أعلنا عن مشاريع فيلات فاخرة لعملائنا الحصريين في مناطق مختلفة من مملكة البحرين.",
+    "ar": "تأ سسنا في  عام2019  وحققنا ثقة كبيرة في مجال البناء. و أعلنا عن مشاريع فيلات فاخرة لعملائنا الحصريين في مناطق مختلفة من مملكة البحرين.تأ سسنا في  عام2019  وحققنا ثقة كبيرة في مجال البناء. و أعلنا عن مشاريع فيلات فاخرة لعملائنا الحصريين في مناطق مختلفة من مملكة البحرين.",
     "en": "Established in 2019 in the field of construction we accomplished substantial confidence in the field of construction. Currently, we have announced luxurious villas projects for our exclusive customers in different areas of the Bahrain Kingdom."
   },
   "0str01": {
@@ -885,7 +885,7 @@
     "en": "HERMANO CONTRACTING AND LANDSCAPING"
   },
   "0hrp01": {
-    "ar": "إصلاح وصيانة هيرمانو",
+    "ar": "هيرمانو للإصلاح والصيانة",
     "en": "HERMANO REPAIR AND MAINTENANCE"
   },
   "0acd01": {
@@ -937,11 +937,11 @@
     "en": "Perks To Work With Planera"
   },
   "0ohs01": {
-    "ar": "حل محور واحد ونقطة اتصال واحدة",
+    "ar": "محور واحد لكل الحلول ونقطة واحدة لكل الإتصالات",
     "en": "One Hub Solution and One Point of Contact"
   },
   "0ms01": {
-    "ar": "عمل أكثر رضاءًا مع تنسيق أقل",
+    "ar": "عمل مع قناعة أكثر و تنسيق أقل",
     "en": "More Satisfied work with Less Coordination"
   },
   "0kp01": {
@@ -957,7 +957,7 @@
     "en": "Well Planned and properly executed"
   },
   "0es01": {
-    "ar": "عمل فعال ومرضي",
+    "ar": "قناعة و فعالية في العمل",
     "en": "Efficient and Satisfying work"
   },
   "0syr01": {
@@ -989,7 +989,7 @@
     "en": "Planera Group"
   },
   "0ea01": {
-    "ar": "تأسست عام 2020 في مجال البناء ، وحققت نجاحًا كبيرًا من خلال العمل على الظروف المعيشية ، والتنوع في المجتمعات والمناطق الحضرية. ثم قررت الشركة جمع عملياتها معًا تحت مظلة واحدة لمجموعة بلانيرا مثل Planera Arts , Activar Bahrain Public Relations من خلال رؤية مؤسسها ، والتوجه الاستراتيجي ، والالتزام الثابت ، حققت مجموعة بلانيرا أهدافها في أعمال البناء والآن توسع المجموعة محفظتها في التصميم الداخلي ، ومبيعات العطور ، والإعلان عبر وسائل التواصل الاجتماعي ، والتصوير الفوتوغرافي ، والفيديو ، والاستشارات التسويقية والإدارية مجال بدأنا بموظف واحد ، والآن تتكون  المجموعة من أكثر من 50 موظفًا من جميع أنحاء العالم يعملون معًا بهدف مشترك. نحقق أهدافنا بقيادة عمر عبد العزيز ، قائد عظيم ورجل أعمال ناجح. تعمل مجموعة بلانيرا الآن في البناء والتصميم الداخلي ومبيعات العطور والإعلان على وسائل التواصل الاجتماعي والتصويرالفوتوغرافي والفيديو ، كما تعمل في مجال الاستشارات التسويقية والإدارية.",
+    "ar": "تأسست الشركة عام 2020 في مجال البناء ، وحققت نجاحًا كبيرًا من خلال العمل على الظروف المعيشية ، والتنوع في المجتمعات والمناطق الحضرية. ثم قررت الشركة جمع عملياتها معًا تحت مظلة واحدة لمجموعة بلانيرا مثل Planera Arts , Activar Bahrain Public Relations من خلال رؤية مؤسسها ، والتوجه الاستراتيجي ، والالتزام الثابت ، حققت مجموعة بلانيرا أهدافها في أعمال البناء والآن توسع المجموعة محفظتها في التصميم الداخلي ، ومبيعات العطور ، والإعلان عبر وسائل التواصل الاجتماعي ، والتصوير الفوتوغرافي ، والفيديو ، والاستشارات التسويقية  و مجال الإدارية .",
     "en": "Established in 2020 in the field of construction, and achieved great success by working on living conditions, and versatility in urban communities and areas. Then the company decided to bring its operations together under one umbrella of Planera Group such as Planera Arts and Activar Bahrain Public Relations Through its founder's vision, strategic direction, and unwavering commitment, the Planera group achieved its goals in the construction business and now The Group expands its Portfolio in interior design, perfume sales, social media advertising, photography, and video, and Marketing and Management consultancy field We started with one employee, and now the group consists of more than 50 employees from around the world working together with a common goal. We achieve our goals under the leadership of Omar Abdulaziz, a great leader and successful businessman. The Planera Group now works in construction, interior design, perfume sales, social media advertising, photography and video, and also works in marketing and management consulting."
   },
   "0cm01": {
@@ -997,7 +997,7 @@
     "en": "CHAIRMAN MESSAGE"
   },
   "0om01": {
-    "ar": "يعتقد السيد عمر بوكمال أنه إذا لم تتغير الشركة فلن تستمر ، وبالتالي فإن فلسفة القيادة لمجموعة بلانيرا كانت دائمًا واحدة من المرونة والتكيف.",
+    "ar": "يعتقد السيد عمر بوكمال أنه إذا لم تتغير الشركة فلن تستمر ، وبالتالي فإن فلسفة القيادة لمجموعة بلانيرا كانت دائمًا فلسلفة المرونة والتكيف.",
     "en": "Mr. Omar Bukamal believes that if a company does not change it will not survive and therefore the leadership philosophy of Planera Group has always been one of flexibility and adaptation."
   },
   "0pp01": {
@@ -1009,7 +1009,7 @@
     "en": "Planera Group has always been one of flexibility and adaptation."
   },
   "0wg01": {
-    "ar": "نحن ننمو لنصبح شركة متنوعة ومتعددة الجنسيات مع الاهتمام عبر قطاعات متعددة",
+    "ar": "نحن ننمو لنصبح شركة متنوعة ومتعددة الجنسيات مع الاهتمام بقطاعات متعددة",
     "en": "We grow to become a diversified multinational business with interest across multiple sectors"
   },
   "0vs01": {
@@ -1021,7 +1021,7 @@
     "en": "Mission"
   },
   "0rgn1": {
-    "ar": "أن نكون الرائد الإقليمي من خلال وضع معايير للمنتجات عالية الجودة والخدمات المبتكرة والموثوقية ورضا العملاء وإحداث فرق كبير للأشخاص الذين لديهم أحلام كبيرة",
+    "ar": "أن نكون الرائد الإقليمي من خلال وضع معايير للمنتجات العالية الجودة والخدمات المبتكرة والموثوقة وقناعة العملاء و تحقيق فرق كبير للأشخاص الذين لديهم أحلام كبيرة",
     "en": "To be the regional leader by setting benchmarks for superior quality products, innovative services, reliability, and customer satisfaction and make a big difference for people with a big dreams"
   },
   "0om1": {
@@ -1049,7 +1049,7 @@
     "en": "Transferring knowledge and skills to new and existing markets"
   },
   "0as1": {
-    "ar": "توفير قدرة بناء عالية الجودة بنظام تسليم المفتاح",
+    "ar": "توفير قدرة بناء عالية الجودة وجاهزة للتسليم",
     "en": "Providing a turnkey high-quality construction capability"
   },
   "0pgp1": {
@@ -1065,7 +1065,7 @@
     "en": "OUR Clients"
   },
   "0ex01": {
-    "ar": "يكتشف",
+    "ar": "اكتشف",
     "en": "Explore"
   },
   "0pgi01": {
@@ -1089,11 +1089,11 @@
     "en": "Hermano Contracting and Landscaping Company works on constructing and maintaining buildings of all kinds, such as hotels, buildings, villas and apartments"
   },
   "0hm1": {
-    "ar": "هيرمانو لخدمات الصيانة للكهرباء والسباكة يعمل من خلال فريق عمل متخصص وذوي خبرة من خلال ميني باص بجميع معداتهم",
+    "ar": "هيرمانو لخدمات الصيانة للكهرباء والسباكة تعمل من خلال فريق عمل متخصص وذو  خبرة , يستعمل ميني باص مجهز بجميع المعدات",
     "en": "Hermano maintenance services for electricity and plumbing that works through a specialized and experienced team through a mini bus with all their equipment"
   },
   "0cp1": {
-    "ar": "الاتصال بلانيرا",
+    "ar": "للإتصال ببلانيرا",
     "en": "CONTACT PLANERA"
   },
   "0sl01": {
@@ -1101,7 +1101,7 @@
     "en": "Sales"
   },
   "0in01": {
-    "ar": "يستفسر",
+    "ar": "للإستفسار",
     "en": "Inquires"
   },
   "0wva1": {
@@ -1157,7 +1157,7 @@
     "en": "See our Projects"
   },
   "0oex01": {
-    "ar": "إعدامنا",
+    "ar": "إنجازاتنا",
     "en": "Our Executions"
   },
   "0mad1": {
@@ -1177,7 +1177,7 @@
     "en": "To Style Your Space"
   },
   "0pid1": {
-    "ar": "تصميم داخلي بلانيرا",
+    "ar": "بلانيرا للتصميم الداخلي",
     "en": "Planera Interior Design"
   },
   "0dyd1": {
@@ -1189,7 +1189,7 @@
     "en": "Our primary aim is to create designs by focusing on the aesthetic side and ensuring the execution of our work with full perfection."
   },
   "0oda1": {
-    "ar": "تم تصميم تصميماتنا من قبل محترفين ونحن متحمسون لتلبية تطلعات عملائنا.",
+    "ar": "تم تحقيق تصميماتنا من قبل محترفين ونحن متحمسون لتلبية رغبات عملائنا.",
     "en": "Our designs are made by professionals and we are passionate to meet the aspiration of our customers."
   },
   "0oss1": {
@@ -1229,11 +1229,11 @@
     "en": "Our Vision"
   },
   "0wat01": {
-    "ar": "نحن نهدف إلى رسم خيالك من خلال الشكل النهائي للتطور. نحن نصمم أسلوب حياتك. نحن متحمسون لتلبية تطلعات عملائنا",
+    "ar": "نحن نهدف إلى رسم خيالك من خلال الشكل النهائي و الرفيع المُستوى. نحن نصمم أسلوب حياتك. نحن متحمسون لتلبية رغبات عملائنا",
     "en": "We aim to sketch your imagination through the ultimate form of sophistication. We design your lifestyle. we are passionate to meet the aspiration of our customers."
   },
   "0inq01": {
-    "ar": "مطلوب الان",
+    "ar": "استفسر الآن",
     "en": "Inquire Now"
   },
   "0od01": {
@@ -1257,11 +1257,11 @@
     "en": "Planera interior transforms your standards that purely connect with people by marrying unbounded creativity with intelligent utility. Our designs are professional and passionate to meet the ambition of our customers."
   },
   "0wpi01": {
-    "ar": "لماذا التصميم الداخلي بلانيرا",
+    "ar": "لماذا بلانيرا للتصميم الداخلي",
     "en": "Why Planera Interior"
   },
   "0wwo01": {
-    "ar": "نحن نعمل على الابتكارات والابتكارات تفعل الأشياء الإبداعية لتبدو مختلفة.",
+    "ar": "نحن نعمل على الابتكارات اللتي تجعل الأشياء الإبداعية تبدو مختلفة.",
     "en": "We work on innovations and innovations does creative things to look differently."
   },
   "0ww01": {
@@ -1273,7 +1273,7 @@
     "en": "View Our Projects"
   },
   "0sow01": {
-    "ar": "انظر عملنا",
+    "ar": "إكتشف أعمالنا",
     "en": "See Our Work"
   },
   "0wap01": {
@@ -1305,7 +1305,7 @@
     "en": "2022 Powered by Planera Group"
   },
   "0bft1": {
-    "ar": "موجز ، أول شيء تحدده المفهوم والنموذج الذي تريده.",
+    "ar": "إحاطة   ، أول شيء تحدده المفهوم والنموذج الذي تريده.",
     "en": "<b>Briefing</b>, First thing you determine the concept and model you want."
   },
   "0bfw1": {
@@ -1325,7 +1325,7 @@
     "en": "Our completed projects carried to an extreme and become elegance. We aim to create aesthetic and sophisticated designs."
   },
   "0vp01": {
-    "ar": "عرض المحفظة",
+    "ar": "عرض الحافظة",
     "en": "View Portfolio"
   },
   "0yhs01": {
