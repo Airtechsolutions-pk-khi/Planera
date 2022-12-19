@@ -68,9 +68,11 @@
             else {
                 jQuery('#_lang').html("English");
                 jQuery('._ltrarabic').css("direction", "ltr")
+                jQuery('._hide').css("display", "none")
                 jQuery("._arabic").css("direction", "rtl")
                 //jQuery("p, h1, h2, h3, h4, h5, h6, a,div").css("font-family", "AvenirRegular")
                 jQuery("._arabic-text").css("text-align", "right")
+                jQuery("._arabic-text-center").css("text-align", "center")
                 jQuery(".icon-media").css("right", "0")
                 jQuery(".icon-title").css("padding-right", "43px")
                 jQuery(".pright").css("padding-right", "70px")
@@ -182,7 +184,7 @@
                                                 <a href="/interior/Contact" data-translate="00cn0">Contact Us</a>
                                             </li>
                                             <li>
-                                                <i class="fa fa-icon-globe"></i><a onclick="_lang(); return false;" id="_lang" style="color:white">عربى</a>
+                                                <i class="fa fa-icon-globe"></i><a onclick="_lang(); return false;" id="_lang" style="color:white; cursor:pointer;">عربى</a>
                                             </li>
                                         </ul>
                                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
@@ -217,17 +219,17 @@
                             <br />
                             <ul>
                                 <li style="margin-bottom: 10px">
-                                    <span style="color:white;margin-right:10px">→</span><a href="/interior/about" style="color:white;" data-translate="aa0">About us</a>
+                                    <span style="color:white;margin-right:10px" class="_hide">→</span><a href="/interior/about" style="color:white;" data-translate="aa0">About us</a>
                                 </li>
                                 <li style="margin-bottom: 10px">
-                                    <span style="color:#d5d5d5;margin-right:10px">→</span><a href="/interior/services" style="color:white;" data-translate="0ser01">Services</a>
+                                    <span style="color:#d5d5d5;margin-right:10px" class="_hide">→</span><a href="/interior/services" style="color:white;" data-translate="0ser01">Services</a>
                                 </li>
                                 <li style="margin-bottom: 10px">
-                                    <span style="color:#d5d5d5;margin-right:10px">→</span><a href="/interior/project" style="color:white;" data-translate="0prj01">Projects</a>
+                                    <span style="color:#d5d5d5;margin-right:10px" class="_hide">→</span><a href="/interior/project" style="color:white;" data-translate="0prj01">Projects</a>
                                 </li>
 
                                 <li style="margin-bottom: 10px">
-                                    <span style="color:#d5d5d5;margin-right:10px">→</span><a href="/interior/contact" style="color:white;" data-translate="00cn0">Contact us</a>
+                                    <span style="color:#d5d5d5;margin-right:10px" class="_hide">→</span><a href="/interior/contact" style="color:white;" data-translate="00cn0">Contact us</a>
                                 </li>
                             </ul>
                         </div>

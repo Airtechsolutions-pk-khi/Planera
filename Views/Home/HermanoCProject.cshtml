@@ -85,13 +85,13 @@
 
                                     <div class="image_frame scale-with-grid">
                                         <div class="image_wrapper">
-                                            <a href="~/assets/HarmanoContract/images/Janabiya/01.jpg" class="zoom" rel="prettyphoto">
+                                            <a href="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" class="zoom" rel="prettyphoto">
                                                 <div class="mask"></div>
                                                 <img width="650" height="650px" src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" alt="@item.Title" class="scale-with-grid wp-post-image">
                                                 @*<img width="650" height="650px" src="~/assets/HarmanoContract/images/Janabiya/01.jpg" class="scale-with-grid wp-post-image" />*@
                                             </a>
                                             <div class="image_links">
-                                                <a href="~/assets/HarmanoContract/images/Janabiya/01.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
+                                                <a href="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a>
                                             </div>
                                         </div>
                                     </div>
