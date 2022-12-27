@@ -935,6 +935,13 @@
     <Content Include="assets\Planeragroup\images\event5.jpg" />
     <Content Include="assets\Planeragroup\images\event6.jpg" />
     <Content Include="assets\Planeragroup\images\event7.jpg" />
+    <Content Include="assets\Planeragroup\images\g1 %281%29.png" />
+    <Content Include="assets\Planeragroup\images\g1 %282%29.png" />
+    <Content Include="assets\Planeragroup\images\g1 %283%29.png" />
+    <Content Include="assets\Planeragroup\images\Ganjatna-Bg.png" />
+    <Content Include="assets\Planeragroup\images\ganjatna.png" />
+    <Content Include="assets\Planeragroup\images\Ganjatnaback.png" />
+    <Content Include="assets\Planeragroup\images\GanjatnaLogo.png" />
     <Content Include="assets\Planeragroup\images\generaltrading.png" />
     <Content Include="assets\Planeragroup\images\get-in-touch-header.jpg" />
     <Content Include="assets\Planeragroup\images\h2-logo2.png" />
@@ -972,6 +979,9 @@
     <Content Include="assets\Planeragroup\images\news6-s.jpg" />
     <Content Include="assets\Planeragroup\images\news7-l.jpg" />
     <Content Include="assets\Planeragroup\images\news7-s.jpg" />
+    <Content Include="assets\Planeragroup\images\oud.png" />
+    <Content Include="assets\Planeragroup\images\Oudback.png" />
+    <Content Include="assets\Planeragroup\images\OudLogo.png" />
     <Content Include="assets\Planeragroup\images\our-business-header.jpg" />
     <Content Include="assets\Planeragroup\images\pg-logo-hor-black.png" />
     <Content Include="assets\Planeragroup\images\pg-logo-horizontal-white.png" />
@@ -979,6 +989,9 @@
     <Content Include="assets\Planeragroup\images\planeraart.png" />
     <Content Include="assets\Planeragroup\images\planeraconst.png" />
     <Content Include="assets\Planeragroup\images\planeragentrad.png" />
+    <Content Include="assets\Planeragroup\images\Rentacar.png" />
+    <Content Include="assets\Planeragroup\images\rentacarback.png" />
+    <Content Include="assets\Planeragroup\images\RentBg.png" />
     <Content Include="assets\Planeragroup\images\team-slider-group.jpg" />
     <Content Include="assets\Planeragroup\images\teama.svg" />
     <Content Include="assets\Planeragroup\images\tech.svg" />
@@ -995,6 +1008,7 @@
     <Content Include="assets\Planeragroup\images\7.JPG" />
     <Content Include="assets\Planeragroup\images\8.jpg" />
     <Content Include="assets\Planeragroup\images\9.JPG" />
+    <Content Include="assets\Planeragroup\images\Oudbg.png" />
     <Content Include="assets\PlaneraInterior\css\architect3.css" />
     <Content Include="assets\PlaneraInterior\css\custom.css" />
     <Content Include="assets\PlaneraInterior\css\structure.css" />
