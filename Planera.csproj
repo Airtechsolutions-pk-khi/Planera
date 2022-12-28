@@ -938,6 +938,8 @@
     <Content Include="assets\Planeragroup\images\g1 %281%29.png" />
     <Content Include="assets\Planeragroup\images\g1 %282%29.png" />
     <Content Include="assets\Planeragroup\images\g1 %283%29.png" />
+    <Content Include="assets\Planeragroup\images\ganjanbg.png" />
+    <Content Include="assets\Planeragroup\images\ganjanbus.png" />
     <Content Include="assets\Planeragroup\images\Ganjatna-Bg.png" />
     <Content Include="assets\Planeragroup\images\ganjatna.png" />
     <Content Include="assets\Planeragroup\images\Ganjatnaback.png" />
@@ -991,7 +993,11 @@
     <Content Include="assets\Planeragroup\images\planeragentrad.png" />
     <Content Include="assets\Planeragroup\images\Rentacar.png" />
     <Content Include="assets\Planeragroup\images\rentacarback.png" />
+    <Content Include="assets\Planeragroup\images\rentacarbgbus.png" />
+    <Content Include="assets\Planeragroup\images\rentalogo.png" />
     <Content Include="assets\Planeragroup\images\RentBg.png" />
+    <Content Include="assets\Planeragroup\images\rentcarlogo.png" />
+    <Content Include="assets\Planeragroup\images\rentlogo.png" />
     <Content Include="assets\Planeragroup\images\team-slider-group.jpg" />
     <Content Include="assets\Planeragroup\images\teama.svg" />
     <Content Include="assets\Planeragroup\images\tech.svg" />
@@ -2948,7 +2954,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>52345</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:44326/</IISUrl>
+          <IISUrl>http://localhost:9090/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

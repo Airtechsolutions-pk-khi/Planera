@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\Publish\Planera</_PublishTargetUrl>
-    <History>True|2022-10-28T16:42:24.7778416Z;True|2022-10-10T01:06:44.7767045+03:00;True|2022-08-24T00:40:19.0904382+03:00;True|2022-08-16T18:45:11.8204998+03:00;False|2022-08-16T18:44:34.7327906+03:00;True|2022-08-10T11:39:24.9163279+03:00;</History>
+    <History>True|2022-12-28T07:39:23.0888741Z;True|2022-10-28T21:42:24.7778416+05:00;True|2022-10-10T03:06:44.7767045+05:00;True|2022-08-24T02:40:19.0904382+05:00;True|2022-08-16T20:45:11.8204998+05:00;False|2022-08-16T20:44:34.7327906+05:00;True|2022-08-10T13:39:24.9163279+05:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="activar.ico">
@@ -14498,6 +14498,12 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/Planeragroup/images/g1 %283%29.png">
       <publishTime>12/27/2022 19:18:40</publishTime>
     </File>
+    <File Include="assets/Planeragroup/images/ganjanbg.png">
+      <publishTime>12/28/2022 12:26:10</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/ganjanbus.png">
+      <publishTime>12/28/2022 12:34:32</publishTime>
+    </File>
     <File Include="assets/Planeragroup/images/Ganjatna-Bg.png">
       <publishTime>12/27/2022 18:59:48</publishTime>
     </File>
@@ -14660,8 +14666,20 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="assets/Planeragroup/images/rentacarback.png">
       <publishTime>12/27/2022 19:38:25</publishTime>
     </File>
+    <File Include="assets/Planeragroup/images/rentacarbgbus.png">
+      <publishTime>12/28/2022 12:35:48</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/rentalogo.png">
+      <publishTime>12/28/2022 12:37:42</publishTime>
+    </File>
     <File Include="assets/Planeragroup/images/RentBg.png">
       <publishTime>12/27/2022 18:47:36</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/rentcarlogo.png">
+      <publishTime>12/28/2022 12:27:15</publishTime>
+    </File>
+    <File Include="assets/Planeragroup/images/rentlogo.png">
+      <publishTime>12/28/2022 12:26:10</publishTime>
     </File>
     <File Include="assets/Planeragroup/images/team-slider-group.jpg">
       <publishTime>12/14/2022 18:26:54</publishTime>
@@ -21291,10 +21309,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/14/2022 18:26:57</publishTime>
     </File>
     <File Include="bin/Planera.dll">
-      <publishTime>12/27/2022 19:41:09</publishTime>
+      <publishTime>12/28/2022 12:39:17</publishTime>
     </File>
     <File Include="bin/Planera.pdb">
-      <publishTime>12/27/2022 19:41:09</publishTime>
+      <publishTime>12/28/2022 12:39:17</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>12/14/2022 18:26:57</publishTime>
@@ -22191,7 +22209,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/05/2022 20:15:28</publishTime>
     </File>
     <File Include="Views/Home/Homev2.cshtml">
-      <publishTime>12/27/2022 19:03:59</publishTime>
+      <publishTime>12/28/2022 12:38:00</publishTime>
     </File>
     <File Include="Views/Home/InteriorService.cshtml">
       <publishTime>12/14/2022 18:26:52</publishTime>
@@ -22215,7 +22233,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/27/2022 18:49:13</publishTime>
     </File>
     <File Include="Views/Home/OurBusinessesV2.cshtml">
-      <publishTime>12/27/2022 19:40:10</publishTime>
+      <publishTime>12/28/2022 12:36:39</publishTime>
     </File>
     <File Include="Views/Home/PlaneraCareer.cshtml">
       <publishTime>12/14/2022 18:26:52</publishTime>
