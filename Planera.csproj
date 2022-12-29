@@ -2847,6 +2847,7 @@
     <Content Include="assets\aracbicfont\Cairo-Light.ttf" />
     <Content Include="assets\aracbicfont\Cairo-Regular.ttf" />
     <Content Include="assets\aracbicfont\Cairo-SemiBold.ttf" />
+    <Content Include="language\translationsnew.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
