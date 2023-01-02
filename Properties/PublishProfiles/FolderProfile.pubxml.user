@@ -4,8 +4,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>D:\Publish\Planera</_PublishTargetUrl>
-    <History>True|2022-12-28T07:39:23.0888741Z;True|2022-10-28T21:42:24.7778416+05:00;True|2022-10-10T03:06:44.7767045+05:00;True|2022-08-24T02:40:19.0904382+05:00;True|2022-08-16T20:45:11.8204998+05:00;False|2022-08-16T20:44:34.7327906+05:00;True|2022-08-10T13:39:24.9163279+05:00;</History>
+    <_PublishTargetUrl>D:\Publish\Planera\2</_PublishTargetUrl>
+    <History>True|2022-12-29T07:30:39.3174731Z;True|2022-12-28T12:39:23.0888741+05:00;True|2022-10-28T21:42:24.7778416+05:00;True|2022-10-10T03:06:44.7767045+05:00;True|2022-08-24T02:40:19.0904382+05:00;True|2022-08-16T20:45:11.8204998+05:00;False|2022-08-16T20:44:34.7327906+05:00;True|2022-08-10T13:39:24.9163279+05:00;</History>
+    <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="activar.ico">
@@ -21309,10 +21310,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/14/2022 18:26:57</publishTime>
     </File>
     <File Include="bin/Planera.dll">
-      <publishTime>12/28/2022 12:39:17</publishTime>
+      <publishTime>12/29/2022 17:14:26</publishTime>
     </File>
     <File Include="bin/Planera.pdb">
-      <publishTime>12/28/2022 12:39:17</publishTime>
+      <publishTime>12/29/2022 17:14:26</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>12/14/2022 18:26:57</publishTime>
@@ -22052,6 +22053,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="language/translations.zip">
       <publishTime>12/14/2022 15:25:16</publishTime>
     </File>
+    <File Include="language/translationsnew.json">
+      <publishTime>12/27/2022 14:21:17</publishTime>
+    </File>
     <File Include="planera.ico">
       <publishTime>12/14/2022 18:26:57</publishTime>
     </File>
@@ -22209,7 +22213,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/05/2022 20:15:28</publishTime>
     </File>
     <File Include="Views/Home/Homev2.cshtml">
-      <publishTime>12/28/2022 12:38:00</publishTime>
+      <publishTime>12/29/2022 17:04:09</publishTime>
     </File>
     <File Include="Views/Home/InteriorService.cshtml">
       <publishTime>12/14/2022 18:26:52</publishTime>
@@ -22233,7 +22237,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/27/2022 18:49:13</publishTime>
     </File>
     <File Include="Views/Home/OurBusinessesV2.cshtml">
-      <publishTime>12/28/2022 12:36:39</publishTime>
+      <publishTime>12/29/2022 16:07:32</publishTime>
     </File>
     <File Include="Views/Home/PlaneraCareer.cshtml">
       <publishTime>12/14/2022 18:26:52</publishTime>
@@ -22284,28 +22288,28 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/14/2022 18:26:52</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutActivarBAH.cshtml">
-      <publishTime>12/19/2022 16:06:55</publishTime>
+      <publishTime>12/29/2022 16:20:31</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutActivarDUB.cshtml">
-      <publishTime>12/19/2022 16:57:26</publishTime>
+      <publishTime>12/29/2022 16:20:31</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutConstruction.cshtml">
       <publishTime>10/03/2022 01:29:27</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutHermaniCL.cshtml">
-      <publishTime>12/19/2022 17:11:06</publishTime>
+      <publishTime>12/29/2022 16:20:31</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutHermano.cshtml">
-      <publishTime>12/19/2022 17:49:29</publishTime>
+      <publishTime>12/29/2022 16:20:31</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutHermanoContracting.cshtml">
       <publishTime>10/01/2022 02:14:14</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutInterior.cshtml">
-      <publishTime>12/19/2022 14:19:35</publishTime>
+      <publishTime>12/29/2022 16:20:31</publishTime>
     </File>
     <File Include="Views/Shared/_Layoutv2.cshtml">
-      <publishTime>12/19/2022 14:00:49</publishTime>
+      <publishTime>12/29/2022 16:20:31</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>12/14/2022 18:26:52</publishTime>

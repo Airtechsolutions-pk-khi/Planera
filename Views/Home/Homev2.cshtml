@@ -367,7 +367,7 @@
                                                 </div>
                                                 <div class="desc_wrapper">
                                                     <h4 style="color:white;">
-                                                        GANJATNA
+                                                        GHANCHATNA
                                                     </h4>
                                                 </div>
                                             </a>
@@ -462,25 +462,28 @@
                                                 <div class="blog_wrapper isotope_wrapper clearfix newsbox">
 
                                                     <div class="posts_group lm_wrapper col-4 masonry tiles isotope">
-                                                        @foreach (var item in ViewBag.NewsAlert)
-                                                        {
-                                                            <div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
-                                                                <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
-                                                                    <img class="scale-with-grid wp-post-image " src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.Image" alt="@item.Name" width="800" height="813">
-                                                                    @*<img width="800" height="813" src="~/assets/Planeragroup/images/news1-s.jpg" class="scale-with-grid wp-post-image " />*@
-                                                                </div>
-                                                                <div class="post-desc-wrapper">
-                                                                    <div class="post-desc">
-                                                                        <div class="post-title">
-                                                                            <h2 class="entry-title small">
-                                                                                <a href="/planera/newsevents">
-                                                                                    @item.Description
-                                                                                </a>
-                                                                            </h2>
+                                                        @{
+
+                                                            foreach (var item in ViewBag.NewsAlert)
+                                                            {
+                                                                <div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
+                                                                    <div class="post-photo-wrapper scale-with-grid zoomEffect_2">
+                                                                        <img class="scale-with-grid wp-post-image " src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.Image" alt="@item.Name" width="800" height="813">
+                                                                        @*<img width="800" height="813" src="~/assets/Planeragroup/images/news1-s.jpg" class="scale-with-grid wp-post-image " />*@
+                                                                    </div>
+                                                                    <div class="post-desc-wrapper">
+                                                                        <div class="post-desc">
+                                                                            <div class="post-title">
+                                                                                <h2 class="entry-title small">
+                                                                                    <a href="/planera/newsevents">
+                                                                                        @item.Description
+                                                                                    </a>
+                                                                                </h2>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
+                                                            }
                                                         }
                                                         <!-- One full width row-->
                                                         <div class="column one pager_wrapper pager_lm" style="padding-top:50px;padding-bottom:50px;">
