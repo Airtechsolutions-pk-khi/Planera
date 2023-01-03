@@ -90,6 +90,16 @@
         #Footer a {
             color: #000;
         }
+        @@media only screen and (max-width: 479px) {
+           
+            .ptop {
+                padding-top: 30px;
+            }
+
+            .tacenter {
+                text-align: center !important;
+            }
+        }
     </style>
 
     <script>
@@ -118,6 +128,8 @@
                 jQuery(".icon-title").css("padding-right", "43px")
                 jQuery(".padding-left").css("padding-left", "25px")
                 jQuery(".padding-right").css("padding-right", "0px")
+                jQuery("._mrright").css("margin-right", "0px")
+                jQuery("._fright").css("float", "right")
                 jQuery("._arwidth").css("width", "100%")
                 jQuery("._mrright").css("margin-right", "0px")
                 jQuery(".armgn-top").css("margin-top", "50px")
@@ -217,9 +229,9 @@
                                             <li id="gallerypage">
                                                 <a href="/planera/activarbahrain/gallery"><span data-translate="0gal1">Gallery</span></a>
                                             </li>
-                                            @*<li>
+                                            <li>
                                                 <a onclick="_lang(); return false;" id="_lang" style="color:#fff;cursor:pointer;"><span>عربى</span></a>
-                                            </li>*@
+                                            </li>
                                         </ul>
                                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
                                 </div>
@@ -244,7 +256,7 @@
                         </aside>
                     </div>
                     <div class="column one-fourth">
-                        <aside class="widget widget_text">
+                        <aside class="widget widget_text tacenter">
                             <h4 style="color:black" data-translate="00s7"> Quick Links</h4>
                             <div class="textwidget">
                                 <ul>
@@ -268,13 +280,13 @@
                         </aside>
                     </div>
                     <div class="column one-fourth">
-                        <aside class="widget widget_text">
+                        <aside class="widget widget_text tacenter">
                             <h4 style="color:black" data-translate="00cn0">Contact Us</h4>
                             <div class="textwidget">
 
                                 <ul style="color:black">
                                     <li class="phone phone-1" style="margin-bottom: 10px; color: black; font-size: 19px; ">
-                                        <span class="icon-phone">
+                                        <span class="icon-phone ">
                                         </span>
                                         <a href="tel:+97317004006">+973 17004006</a>
                                         <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -283,7 +295,7 @@
                                         <a href="tel:+97337755001">+973 37755001</a>
 
                                     </li>
-                                    <li style="margin-bottom: 10px; color: black">
+                                    <li class="_arabic" style="margin-bottom: 10px; color: black">
                                         <a href="mailto:info@activarbh.com" style="font-size: 19px; vertical-align: middle; color: black">
                                             <span class="icon-mail" style="vertical-align: text-bottom; ">
                                                 activar@planerabh.com
@@ -291,7 +303,7 @@
                                         </a>
                                     </li>
 
-                                    <li style="margin-bottom: 10px; color: black">
+                                    <li class="_arabic" style="margin-bottom: 10px; color: black">
                                         <a onclick="tiktok()" style="cursor:pointer;vertical-align:middle">
                                             <img src="~/assets/PlaneraInterior/images/tik-tok.png" style="width: 25px; vertical-align: middle" />
                                         </a>

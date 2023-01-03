@@ -22,14 +22,14 @@
         <div id="rev_slider_34_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="news-gallery34" style="margin:0px auto;background-color:#fff;padding:0px;margin-top:0px;margin-bottom:0px;">
             <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
             <div id="rev_slider_34_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
-                <ul>
+                <ul >
                     <!-- SLIDE -->
 
                     @{
                         var count = 129;
                         foreach (var item in ViewBag.News)
                         {
-                            <li data-index="rs-@count" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/news1-l.jpg" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Activar Bahrain" data-description="Activar Bahrain has received a shield from the Bahrain Paralympic Committee ">
+                            <li  data-index="rs-@count" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/news1-l.jpg" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Activar Bahrain" data-description="Activar Bahrain has received a shield from the Bahrain Paralympic Committee ">
                                 <!-- MAIN IMAGE -->
                                 <img src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.Image" alt="@item.Name" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">
 
@@ -39,13 +39,27 @@
                                 <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-@count-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
                                 </div>
                                 <!-- LAYER NR. 2 -->
-                                <div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-@count-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['165','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
-                                    @item.Description
+                                <div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0 " id="slide-@count-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['165','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
+                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                    {
+                                        @item.Description
+                                    }
+                                    else
+                                    {
+                                        @item.ArabicDescription
+                                    }
                                     @*Activar Bahrain has received a shield from the Bahrain Paralympic Committee in dedication to its efforts in the media committee of the Asian Paralympic Games for Youth that was held in Bahrain last December.*@
                                 </div>
                                 <!-- LAYER NR. 3 -->
-                                <div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-@count-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                                    @item.Name
+                                <div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0 " id="slide-@count-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
+                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                    {
+                                        @item.Name
+                                    }
+                                    else
+                                    {
+                                        @item.ArabicName
+                                    }
                                     @*Activar Bahrain*@
                                 </div>
                                 <!-- LAYER NR. 4 -->
@@ -192,13 +206,27 @@
                                 </div>
                                 <!-- LAYER NR. 2 -->
                                 <div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-@cnt-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['165','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
-                                    @item.Description
+                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                    {
+                                        @item.Description
+                                    }
+                                    else
+                                    {
+                                        @item.ArabicDescription
+                                    }
                                     @*Planera Group participated in the month of October to support breast cancer patients, coinciding with the Kingdom's celebrations of the International Day for Awareness against Breast Cancer, which falls on the 10th of October each year, in the presence of President Omar Boukamal and a number of the company's employees.*@
                                 </div>
                                 <!-- LAYER NR. 3 -->
                                 <div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-@cnt-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
                                     @*Planera Group*@
-                                    @item.Name
+                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                    {
+                                        @item.Name
+                                    }
+                                    else
+                                    {
+                                        @item.ArabicName
+                                    }
                                 </div>
                                 <!-- LAYER NR. 4 -->
                             </li>

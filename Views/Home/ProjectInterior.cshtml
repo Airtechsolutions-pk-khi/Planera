@@ -86,9 +86,7 @@
                                 <div class="portfolio-item-fw-wrapper">
                                     <div class="image_frame scale-with-grid">
                                         <div class="image_wrapper">
-                                            @*<a href="~/assets/PlaneraInterior/images/adhari-p2.jpg" class="zoom" rel="prettyphoto">
-                                                    <div class="mask"></div><img width="650" height="650px" src="~/assets/PlaneraInterior/images/adhari-p2.jpg" class="scale-with-grid wp-post-image" />
-                                                </a>*@
+                                          
                                             <a href="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" class="zoom" rel="prettyphoto">
                                                 <div class="mask"></div>
                                                 <img width="650" height="650px" src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" alt="@item.Title" class="scale-with-grid wp-post-image">
@@ -100,7 +98,14 @@
                                     </div>
                                     <div class="desc">
                                         <div class="title_wrapper">
-                                            <h5 class="entry-title"><a href="">@item.Title</a></h5>
+                                            @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                            {
+                                                <h5 class="entry-title"><a href="">@item.Title</a></h5>
+                                            }
+                                            else
+                                            {
+                                                <h5 class="entry-title"><a href="">@item.ArabicTitle</a></h5>
+                                            }
                                         </div>
                                         <div class="desc-wrapper"></div>
                                     </div>

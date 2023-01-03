@@ -354,20 +354,49 @@
                             <form id="contactform">
                                 <!-- One Second (1/2) Column -->
                                 <div class="column one-second">
-                                    <input placeholder="Your name" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" style="color:white !important;" required />
+                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                    {
+                                        <input placeholder="Your name" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" style="color:white !important;" required />
+                                    }
+                                    else
+                                    {
+                                        <input placeholder="اسمك" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" style="color:white !important;" required />
+                                    }
                                 </div>
                                 <!-- One Second (1/2) Column -->
                                 <div class="column one-second">
-                                    <input placeholder="Your e-mail" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" style="color: white !important;" required />
+                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                    {
+                                        <input placeholder="Your e-mail" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" style="color: white !important;" required />
+                                    }
+                                    else
+                                    {
+                                        <input placeholder="بريدك الالكتروني" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" style="color: white !important;" required />
+                                    }
                                 </div>
                                 <div class="column one">
-                                    <input placeholder="Subject" type="text" name="subject" id="subject" size="40" aria-invalid="false" style="color: white !important;" required />
+                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                    {
+                                        <input placeholder="Subject" type="text" name="subject" id="subject" size="40" aria-invalid="false" style="color: white !important;" required />
+                                    }
+                                    else
+                                    {
+                                        <input placeholder="موضوعات" type="text" name="subject" id="subject" size="40" aria-invalid="false" style="color: white !important;" required />
+                                    }
                                 </div>
                                 <div class="column one">
-                                    <textarea placeholder="Message" name="Message" id="message" style="width:100%; color:white;" rows="10" aria-invalid="false" required></textarea>
+                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                    {
+                                        <textarea placeholder="Message" name="Message" id="message" style="width:100%; color:white;" rows="10" aria-invalid="false" required></textarea>
+                                    }
+                                    else
+                                    {
+                                        <textarea placeholder="رسالة" name="Message" id="message" style="width:100%; color:white;" rows="10" aria-invalid="false" required></textarea>
+                                    }
                                 </div>
                                 <div class="column one ">
-                                    <input class="_mrright" style="background-color: #c07757 !important;" type="button" value="Send A Message" id="submit" onclick="SendEmail();">
+                                    @*<input class="_mrright" style="background-color: #c07757 !important;" type="button" value="Send A Message" id="submit" onclick="SendEmail();">*@
+                                    <button class="_mrright" style="background-color: #c07757 !important;"  id="submit" onclick="SendEmail();" data-translate="0sm01">Send A Message</button>
                                 </div>
                             </form>
                         </div>

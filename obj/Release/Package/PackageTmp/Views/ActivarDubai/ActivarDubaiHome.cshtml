@@ -21,10 +21,24 @@
                             <img src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" alt="@item.Title" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
                                  data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg">
                             <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                                <span style="font-size:80px;">@item.Title</span>
+                                @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                {
+                                    <span style="font-size:80px;">@item.Title</span>
+                                }
+                                else
+                                {
+                                    <span style="font-size:80px;">@item.ArabicTitle</span>
+                                }
                             </div>
                             <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                                <br /><br /><br /><span> @item.Description </span>
+                                @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                {
+                                    <br /><br /><br /><span> @item.Description </span>
+                                }
+                                else
+                                {
+                                    <br /><br /><br /><span> @item.ArabicDescription </span>
+                                }
                             </div>
                             <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
                                 <a href="/planera/activarbahrain/service" data-translate="0sos0"> See our Services ></a><br />
@@ -351,20 +365,49 @@
                                         <form id="contactform">
                                             <!-- One Second (1/2) Column -->
                                             <div class="column one-second">
-                                                <input placeholder="Your name" type="text" name="Name" id="name" size="40" aria-required="true" aria-invalid="false" style="background-color: #eff0f0" />
+                                                @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                {
+                                                    <input placeholder="Your name" type="text" name="Name" id="name" size="40" aria-required="true" aria-invalid="false" style="background-color: #eff0f0" />
+                                                }
+                                                else
+                                                {
+                                                    <input placeholder="اسمك" type="text" name="Name" id="name" size="40" aria-required="true" aria-invalid="false" style="background-color: #eff0f0" />
+                                                }
                                             </div>
                                             <!-- One Second (1/2) Column -->
                                             <div class="column one-second">
-                                                <input placeholder="Your e-mail" type="email" name="Email" id="email" size="40" aria-required="true" aria-invalid="false" style="background-color: #eff0f0" />
+                                                @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                {
+                                                    <input placeholder="Your e-mail" type="email" name="Email" id="email" size="40" aria-required="true" aria-invalid="false" style="background-color: #eff0f0" />
+                                                }
+                                                else
+                                                {
+                                                    <input placeholder="بريدك الالكتروني" type="email" name="Email" id="email" size="40" aria-required="true" aria-invalid="false" style="background-color: #eff0f0" />
+                                                }
                                             </div>
                                             <div class="column one">
-                                                <input placeholder="Subject" type="text" name="Subject" id="subject" size="40" aria-invalid="false" style="background-color: #eff0f0" />
+                                                @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                {
+                                                    <input placeholder="Subject" type="text" name="Subject" id="subject" size="40" aria-invalid="false" style="background-color: #eff0f0" />
+                                                }
+                                                else
+                                                {
+                                                    <input placeholder="موضوعات" type="text" name="Subject" id="subject" size="40" aria-invalid="false" style="background-color: #eff0f0" />
+                                                }
                                             </div>
                                             <div class="column one">
-                                                <textarea placeholder="Message" name="Message" id="message" style="width: 100%; background-color: #eff0f0 " rows="10" aria-invalid="false"></textarea>
+                                                @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                {
+                                                    <textarea placeholder="Message" name="Message" id="message" style="width: 100%; background-color: #eff0f0 " rows="10" aria-invalid="false"></textarea>
+                                                }
+                                                else
+                                                {
+                                                    <textarea placeholder="رسالة" name="Message" id="message" style="width: 100%; background-color: #eff0f0 " rows="10" aria-invalid="false"></textarea>
+                                                }
                                             </div>
                                             <div class="column one">
-                                                <input class="_mrright" type="button" value="Send A Message" id="submit" onClick="SendEmail();" style="background-color: #e4b37e">
+                                                @*<input class="_mrright" type="button" value="Send A Message" id="submit" onClick="SendEmail();" style="background-color: #e4b37e">*@
+                                                <button class="_mrright"  id="submit" onClick="SendEmail();" style="background-color: #e4b37e">Send A Message</button>
                                             </div>
                                         </form>
                                     </div>

@@ -1783,8 +1783,7 @@
   "0pm0": {
     "ar": "الترويج والتسويق",
     "en": "Promotion and Marketing"
-  }
-  ,
+  },
   "0pr0": {
     "ar": "العلاقات العامة",
     "en": "Public Relations"
@@ -1936,5 +1935,53 @@
   "00rsor": {
     "ar": "نتيجة المنحى",
     "en": "Result Oriented"
+  },
+  "00rsoa": {
+    "ar": "عود بوتيك",
+    "en": "OUD BOUTIQUE"
+  },
+  "00rsob": {
+    "ar": "أكتيفار لتأجير السيارات",
+    "en": "ACTIVAR RENT A CAR"
+  },
+  "00rsoc": {
+    "ar": "غانشاتنا",
+    "en": "GHANCHATNA"
+  },
+  "00rsod": {
+    "ar": "اسمك",
+    "en": "Your name"
+  },
+  "00rsoe": {
+    "ar": "۲۰۱۹",
+    "en": "2019"
+  },
+  "00rsof": {
+    "ar": "۲۰۲۰",
+    "en": "2020"
+  },
+  "00rsog": {
+    "ar": "۲۰۲۲",
+    "en": "2022"
+  },
+  "00rsoh": {
+    "ar": "لقد قرأت ووافقت على سياسة الخصوصية",
+    "en": "I have read and accept the privacy policy"
+  },
+  "00rsoi": {
+    "ar": "عزيق",
+    "en": "IZIQ"
+  },
+  "00rsoj": {
+    "ar": "غنشاتنا",
+    "en": "Ghanchatna"
+  },
+  "00rsok": {
+    "ar": "أكتفار لتأجير السيارات",
+    "en": "Activar Rent a Car"
+  },
+  "00rsol": {
+    "ar": "عود بوتيك",
+    "en": "Oud Boutiquer"
   }
 }

@@ -97,23 +97,59 @@
                             <form method="post" id="reused_form">
                                 <!-- One Second (1/2) Column -->
                                 <div class="column one-second">
-                                    <input placeholder="Your name" id="name" type="text" name="Name" required maxlength="50">
+                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                    {
+                                        <input placeholder="Your name" id="name" type="text" name="Name" required maxlength="50">
+                                    }
+                                    else
+                                    {
+                                        <input placeholder="اسمك" id="name" type="text" name="Name" required maxlength="50">
+                                    }
                                 </div>
                                 <!-- One Second (1/2) Column -->
                                 <div class="column one-second">
-                                    <input placeholder="Your e-mail" id="email" type="email" name="Email" required maxlength="50">
+                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                    {
+                                        <input placeholder="Your e-mail" id="email" type="email" name="Email" required maxlength="50">
+                                    }
+                                    else
+                                    {
+                                        <input placeholder="بريدك الالكتروني" id="email" type="email" name="Email" required maxlength="50">
+                                    }
                                 </div>
                                 <div class="column one-second">
-                                    <input placeholder="Contact" id="phone" type="text" name="Phone" maxlength="50">
+                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                    {
+                                        <input placeholder="Contact" id="phone" type="text" name="Phone" maxlength="50">
+                                    }
+                                    else
+                                    {
+                                        <input placeholder="اتصال" id="phone" type="text" name="Phone" maxlength="50">
+                                    }
                                 </div>
                                 <div class="column one-second">
-                                    <input placeholder="Subject" id="subject" type="text" name="Subject" maxlength="50">
+                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                    {
+                                        <input placeholder="Subject" id="subject" type="text" name="Subject" maxlength="50">
+                                    }
+                                    else
+                                    {
+                                        <input placeholder="موضوعات" id="subject" type="text" name="Subject" maxlength="50">
+                                    }
                                 </div>
                                 <div class="column one">
-                                    <textarea placeholder="Message" id="message" name="Message" rows="10" maxlength="6000" required></textarea>
+                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                    {
+                                        <textarea placeholder="Message" id="message" name="Message" rows="10" maxlength="6000" required></textarea>
+                                    }
+                                    else
+                                    {
+                                        <textarea placeholder="رسالة" id="message" name="Message" rows="10" maxlength="6000" required></textarea>
+                                    }
                                 </div>
                                 <div class="column one">
-                                    <input class="button-primary _mrright" type="button" style="background-color: white; color: #267535" value="Submit" id="submit" onClick="SendEmail();">
+                                    @*<input class="button-primary _mrright" type="button" style="background-color: white; color: #267535" value="Submit" id="submit" onClick="SendEmail();">*@
+                                    <button class="button-primary _mrright"  style="background-color: white; color: #267535" id="submit" onClick="SendEmail();" data-translate="000co30">Submit</button>
                                 </div>
                             </form>
                             <div id="success_message" style="display:none">

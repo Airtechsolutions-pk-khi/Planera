@@ -73,8 +73,8 @@
                                     <h3 style="color: #fff; font-weight: 700; margin-bottom: 120px;" data-translate="0bh1">
                                         <img src="~/assets/Planeragroup/images/bahrainicon.png" /> &nbsp;  BAHRAIN
                                     </h3>
-                                    <div class="list_item lists_1 clearfix">
-                                        <div class="list_left list_icon">
+                                    <div class="list_item lists_1 clearfix ">
+                                        <div class="list_left list_icon _fright">
                                             <img src="~/assets/Planeragroup/images/locationicon.png" width="40px" />
                                         </div>
                                         <div class="list_right">
@@ -85,7 +85,7 @@
                                         </div>
                                     </div>
                                     <div class="list_item lists_1 clearfix">
-                                        <div class="list_left list_icon">
+                                        <div class="list_left list_icon _fright">
                                             <img src="~/assets/Planeragroup/images/emailicon1.png" width="40px" />
                                         </div>
                                         <div class="list_right">
@@ -114,10 +114,10 @@
                                         <img src="~/assets/Planeragroup/images/dubaiicon.png" /> &nbsp;  DUBAI
                                     </h3>
                                     <div class="list_item lists_1 clearfix">
-                                        <div class="list_left list_icon">
+                                        <div class="list_left list_icon _fright">
                                             <img src="~/assets/Planeragroup/images/locationicon.png" width="40px" />
                                         </div>
-                                        <div class="list_right">
+                                        <div class="list_right _fright">
                                             <div class="desc" style="color:#fff;" data-translate="0ac1">
                                                 Alliance Business Centers Network, <br />
                                                 4th Floor, Block-B
@@ -127,10 +127,10 @@
                                     <br />
                                     <br />
                                     <div class="list_item lists_1 clearfix">
-                                        <div class="list_left list_icon">
+                                        <div class="list_left list_icon _fright">
                                             <img src="~/assets/Planeragroup/images/emailicon1.png" width="40px" />
                                         </div>
-                                        <div class="list_right">
+                                        <div class="list_right _fright">
                                             <div class="desc" style="color:#fff;">
                                                 info@planerabh.com
                                             </div>
@@ -165,7 +165,7 @@
                                     <hr class="no_line" style="margin: 0 auto 10px">
                                     <h3 style="color:#1f438f;" data-translate="0sl01">Sales</h3>
                                     <div class="list_item lists_1 clearfix">
-                                        <div class="list_left list_icon">
+                                        <div class="list_left list_icon _fright">
                                             <img src="~/assets/HarmanoRepair/images/msgicon.png" width="25px" />
                                         </div>
                                         <div class="list_right" style="padding: 10px 0 0;">
@@ -177,7 +177,7 @@
                                     <hr class="no_line" />
                                     <h3 style="color:#1f438f;" data-translate="0in01">Inquires</h3>
                                     <div class="list_item lists_1 clearfix">
-                                        <div class="list_left list_icon">
+                                        <div class="list_left list_icon _fright">
                                             <img src="~/assets/HarmanoRepair/images/phoneicon.png" width="25px" />
                                         </div>
                                         <div class="list_right" style="padding: 10px 0 0;">
@@ -187,7 +187,7 @@
                                             <div class="desc" style="font-size:18px;line-height: 27px;">
                                                 +973 37750033
                                             </div>
-                                            <div class="desc" style="font-size:18px;line-height: 27px;">
+                                            <div class="desc _mrrighttxt" style="font-size:18px;line-height: 27px;">
                                                 +973 37750044
                                             </div>
                                         </div>
@@ -206,22 +206,51 @@
                                             <form id="contactform">
                                                 <!-- One Second (1/2) Column -->
                                                 <div class="column one-second">
-                                                    <input placeholder="Your name" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" />
+                                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                    {
+                                                        <input placeholder="Your name" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
+                                                    else
+                                                    {
+                                                        <input placeholder="اسمك" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
                                                 </div>
                                                 <!-- One Second (1/2) Column -->
                                                 <div class="column one-second">
-                                                    <input placeholder="Your e-mail" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" />
+                                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                    {
+                                                        <input placeholder="Your e-mail" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
+                                                    else
+                                                    {
+                                                        <input placeholder="بريدك الالكتروني" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
                                                 </div>
                                                 <div class="column one">
-                                                    <input placeholder="Subject" type="text" name="subject" id="subject" size="40" aria-required="true" aria-invalid="false" />
+                                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                    {
+                                                        <input placeholder="Subject" type="text" name="subject" id="subject" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
+                                                    else
+                                                    {
+                                                        <input placeholder="موضوعات" type="text" name="subject" id="subject" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
                                                 </div>
                                                 <div class="column one">
-                                                    <textarea placeholder="Message" name="message" id="message" style="width:100%;border-radius:5px;" rows="10" aria-invalid="false"></textarea>
+                                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                    {
+                                                        <textarea placeholder="Message" name="message" id="message" style="width:100%;border-radius:5px;" rows="10" aria-invalid="false"></textarea>
+                                                    }
+                                                    else
+                                                    {
+                                                        <textarea placeholder="رسالة" name="message" id="message" style="width:100%;border-radius:5px;" rows="10" aria-invalid="false"></textarea>
+                                                    }
                                                 </div>
                                                 <input id="myinput" type="checkbox" />
-                                                <label for="myinput" class="indented-checkbox-text">I have read and accept the <a href="#">privacy policy</a></label>
-                                                <div >
-                                                    <input type="button" value="Submit" id="submit" onClick="SendEmail();" style="border: solid 1px #fff; background-color: #fff0; width: 160px; margin: 0;">
+                                                <label for="myinput" class="indented-checkbox-text" data-translate="00rsoh">I have read and accept the privacy policy</label>
+                                                <div>
+                                                    @*<input type="button" value="Submit" id="submit" onClick="SendEmail();" style="border: solid 1px #fff; background-color: #fff0; width: 160px; margin: 0;">*@
+                                                    <button  id="submit" onClick="SendEmail();" style="border: solid 1px #fff; background-color: #fff0; width: 160px; margin: 0;" data-translate="000co30">Submit</button>
                                                 </div>
                                             </form>
                                         </div>

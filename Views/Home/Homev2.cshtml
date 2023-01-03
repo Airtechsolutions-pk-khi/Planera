@@ -86,7 +86,7 @@
                                     <div class="column mcb-column one-fifth column_column _fright _arabic-text" style="margin: 0 1% 10px;">
                                         <div class="column_attr clearfix">
                                             <b>
-                                                <p style="color: #1f438f;font-size:20px;">
+                                                <p style="color: #1f438f;font-size:20px;" data-translate="00rsoe">
                                                     2019
                                                 </p>
                                             </b>
@@ -106,7 +106,7 @@
                                 <div class="column mcb-column one-fifth column_column _fright _arabic-text" style="margin: 0 1% 10px;">
                                     <div class="column_attr clearfix ">
                                         <b>
-                                            <p style="color: #1f438f;font-size:20px;">
+                                            <p style="color: #1f438f;font-size:20px;" data-translate="00rsof">
                                                 2020
                                             </p>
                                         </b>
@@ -124,7 +124,7 @@
                                 <div class="column mcb-column one-fifth column_column _fright _arabic-text" style="margin: 0 1% 10px;">
                                     <div class="column_attr clearfix">
                                         <b>
-                                            <p style="color: #1f438f;font-size:20px;">
+                                            <p style="color: #1f438f;font-size:20px;" data-translate="00rsog">
                                                 2022
                                             </p>
                                         </b>
@@ -200,7 +200,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section mcb-section" id="offer" style="padding-top:80px; padding-bottom:10px;  background-image:url(../../assets/Planeragroup/images/home-watchmaker-greybg.png); background-position:right top">
+                <div class="section mcb-section" id="offer" style="padding-top:80px; padding-bottom:10px;  background-image:url(../../assets/Planeragroup/images/home-watchmaker-greybg.png); background-position:right top; background-size:contain;">
                     <div class="section_wrapper mcb-section-inner">
                         <div class="wrap mcb-wrap one  column-margin-50px valign-top clearfix ourbusinessbox">
                             <div class="mcb-wrap-inner ">
@@ -330,7 +330,7 @@
                                                     <img class="photo scale-with-grid" src="~/assets/Planeragroup/images/Oudbg.png">
                                                 </div>
                                                 <div class="desc_wrapper">
-                                                    <h4 style="color:white;">OUD BOUTIQUE</h4>
+                                                    <h4 style="color:white;" data-translate="00rsoa">OUD BOUTIQUE</h4>
                                                 </div>
                                             </a>
                                         </div>
@@ -347,7 +347,7 @@
                                                     <img class="photo scale-with-grid" src="~/assets/Planeragroup/images/RentBg.png">
                                                 </div>
                                                 <div class="desc_wrapper">
-                                                    <h4 style="color:white;">
+                                                    <h4 style="color:white;"data-translate="00rsob">
                                                        ACTIVAR RENT A CAR
                                                     </h4>
                                                 </div>
@@ -366,7 +366,7 @@
                                                     <img class="photo scale-with-grid" src="~/assets/Planeragroup/images/ganjanbg.png">
                                                 </div>
                                                 <div class="desc_wrapper">
-                                                    <h4 style="color:white;">
+                                                    <h4 style="color:white;"data-translate="00rsoc">
                                                         GHANCHATNA
                                                     </h4>
                                                 </div>
@@ -463,7 +463,6 @@
 
                                                     <div class="posts_group lm_wrapper col-4 masonry tiles isotope">
                                                         @{
-
                                                             foreach (var item in ViewBag.NewsAlert)
                                                             {
                                                                 <div class="post-item isotope-item clearfix post format-standard has-post-thumbnail  category-lifestyle category-technology tag-video">
@@ -476,7 +475,14 @@
                                                                             <div class="post-title">
                                                                                 <h2 class="entry-title small">
                                                                                     <a href="/planera/newsevents">
-                                                                                        @item.Description
+                                                                                        @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                                                        {
+                                                                                            @item.Description
+                                                                                        }
+                                                                                        else
+                                                                                        {
+                                                                                            @item.ArabicDescription
+                                                                                        }
                                                                                     </a>
                                                                                 </h2>
                                                                             </div>
@@ -524,8 +530,8 @@
                                             <h3 class="_arabic _arabic-text" style="color:#1a3f8c !important;" data-translate="00aa4">CONTACT US</h3>
                                             <div class="get_in_touch_wrapper">
                                                 <ul>
-                                                    <li class="address _arabic-text">
-                                                        <span class="icon .icon-media"><i class="icon-location"></i></span>
+                                                    <li class="address _arabic">
+                                                        <span class="icon "><i class="icon-location"></i></span>
                                                         <span class="address_wrapper" style="color: #1a3f8c;" data-translate="0md01">
                                                             Mandarine Business Center
                                                         </span>
@@ -599,20 +605,48 @@
                                                 <form id="contactform">
                                                     <!-- One Second (1/2) Column -->
                                                     <div class="column one-second">
-                                                        <input placeholder="Your name" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" style="color:white !important;" required />
+                                                        @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                        {
+                                                            <input placeholder="Your name" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" style="color:white !important;" required data-translate="00rsod" />
+                                                        }
+                                                        else
+                                                        {
+                                                            <input placeholder="اسمك" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" style="color:white !important;" required  />
+                                                        }
                                                     </div>
                                                     <!-- One Second (1/2) Column -->
                                                     <div class="column one-second">
-                                                        <input placeholder="Your e-mail" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" style="color: white !important;" required />
+                                                        @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                        {
+                                                            <input placeholder="Your e-mail" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" style="color: white !important;" required />
+                                                        }
+                                                        else
+                                                        {
+                                                            <input placeholder="بريدك الالكتروني" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" style="color: white !important;" required />
+                                                        }
                                                     </div>
                                                     <div class="column one">
-                                                        <input placeholder="Subject" type="text" name="subject" id="subject" size="40" aria-invalid="false" style="color: white !important;" required />
+                                                        @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                        {
+                                                            <input placeholder="Subject" type="text" name="subject" id="subject" size="40" aria-invalid="false" style="color: white !important;" required />
+                                                        }
+                                                        else
+                                                        {
+                                                            <input placeholder="موضوعات" type="text" name="subject" id="subject" size="40" aria-invalid="false" style="color: white !important;" required />
+                                                        }
                                                     </div>
                                                     <div class="column one">
-                                                        <textarea placeholder="Message" name="Message" id="message" style="width:100%; color:white;" rows="10" aria-invalid="false" required></textarea>
+                                                        @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                        {
+                                                            <textarea placeholder="Message" name="Message" id="message" style="width:100%; color:white;" rows="10" aria-invalid="false" required></textarea>
+                                                        }
+                                                        else
+                                                        {
+                                                            <textarea placeholder="رسالة" name="Message" id="message" style="width:100%; color:white;" rows="10" aria-invalid="false" required></textarea>
+                                                        }
                                                     </div>
                                                     <div class="column one _ltrarabic">
-                                                        <input type="button" value="Send A Message" id="submit" onclick="SendEmail();">
+                                                        <button id="submit" onclick="SendEmail();" data-translate="0sm01">Send A Message</button>
                                                     </div>
                                                 </form>
                                             </div>

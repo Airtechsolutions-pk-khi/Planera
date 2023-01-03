@@ -94,6 +94,16 @@
         ::placeholder {
             color: dimgrey
         }
+        @@media only screen and (max-width: 479px) {
+
+            .ptop {
+                padding-top: 30px;
+            }
+
+            .tacenter {
+                text-align: center !important;
+            }
+        }
     </style>
 
     <script>
@@ -121,8 +131,10 @@
                 jQuery(".icon-title").css("padding-right", "43px")
                 jQuery(".padding-left").css("padding-left", "25px")
                 jQuery(".padding-right").css("padding-right", "0px")
+                jQuery("._mrrighttxt").css("margin-right", "15px")
                 jQuery("._arwidth").css("width", "100%")
                 jQuery("._mrright").css("margin-right", "0px")
+                jQuery("._fright").css("float", "right")
                 jQuery(".armgn-top").css("margin-top", "50px")
                 jQuery(".float").css("float", "right")
                 jQuery(".displayb").css("display", "block")
@@ -209,7 +221,7 @@
                         </aside>
                     </div>
                     <div class="column one-fourth">
-                        <aside class="widget widget_text">
+                        <aside class="widget widget_text tacenter">
                             <h4 style="color:black" data-translate="00s7"> Quick Links</h4>
                             <div class="textwidget">
                                 <ul>
@@ -233,22 +245,22 @@
                         </aside>
                     </div>
                     <div class="column one-fourth">
-                        <aside class="widget widget_text">
+                        <aside class="widget widget_text tacenter">
                             <h4 style="color:black" data-translate="00cn0"> Contact us</h4>
                             <div class="textwidget">
 
                                 <ul style="color:black">
                                     <li class="phone phone-1" style="margin-bottom: 10px; color: black">
-                                        <img src="~/assets/ActivarDB/footericons/phone.png"> &nbsp;
+                                        <img src="~/assets/ActivarDB/footericons/phone.png" class="_fright"> &nbsp;
                                         <a href="tel:+97142306040">+971 42306040</a>
                                         <br /> &nbsp;&nbsp;&nbsp;
-                                        &nbsp;&nbsp; <a href="tel:+971566257787">+971 566257787</a>
+                                        &nbsp;&nbsp; <a href="tel:+971566257787" class="_mrrighttxt">+971 566257787</a>
                                     </li>
-                                    <li style="margin-bottom: 10px; color: black">
+                                    <li class="_arabic" style="margin-bottom: 10px; color: black">
                                         <img src="~/assets/ActivarDB/footericons/email.png">  &nbsp;
                                         <span><a href="mailto:activar@planerabh.com" style="color: black">activar@planerabh.com</a></span>
                                     </li>
-                                    <li style="margin-bottom: 10px; color: black">
+                                    <li class="_arabic" style="margin-bottom: 10px; color: black">
                                         <a href="http://planerabh.com/" target="_blank"><img src="~/assets/ActivarDB/footericons/website.png"> &nbsp;</a>
                                         <a href="https://www.youtube.com/channel/UCw7YZ5T4pZyBv4WsgB8-gLA/featured" target="_blank"><img src="~/assets/ActivarDB/footericons/youtube.png"> &nbsp;</a>
                                         <a href="https://instagram.com/activar.bahrain?igshid=NmNmNjAwNzg=" target="_blank"><img src="~/assets/ActivarDB/footericons/insta.png"> &nbsp;</a>
@@ -256,13 +268,13 @@
 
                                         <span><a href="https://instagram.com/activar.bahrain?igshid=NmNmNjAwNzg=" target="_blank" style="color: black">/activar.bahrain</a></span>
                                     </li>
-                                    <li style="margin-bottom: 10px; color: black;">
+                                    <li class="_arabic" style="margin-bottom: 10px; color: black;">
                                         <img src="~/assets/ActivarDB/footericons/timing.png">  &nbsp;&nbsp;
                                         <span><a style="color: black">Sunday - Thursday,<br />   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; from: 9AM - 5PM</a></span>
                                     </li>
-                                    <li>
+                                    <li class="_arabic">
                                         <img src="~/assets/ActivarDB/footericons/address.png"> &nbsp;&nbsp;
-                                        <span data-translate="00abc">
+                                        <span data-translate="00abc" >
                                             Alliance Business Centers Network, 4th Floor, Block-B
                                             P.o.Box 183125,Business village ,Dubai UAE
                                         </span>

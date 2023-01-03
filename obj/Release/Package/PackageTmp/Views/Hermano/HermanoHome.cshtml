@@ -20,10 +20,24 @@
                             <img src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.ImagePath" alt="@item.Title" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
                              data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg">
                             <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                                <span style="font-size:80px;">@item.Title</span>
+                                @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                {
+                                    <span style="font-size:80px;">@item.Title</span>
+                                }
+                                else
+                                {
+                                    <span style="font-size:80px;">@item.ArabicTitle</span>
+                                }
                             </div>
                             <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
-                                <br /><br /><br /><span>  @item.Description </span>
+                                @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                {
+                                    <br /><br /><br /><span>  @item.Description </span>
+                                }
+                                else
+                                {
+                                    <br /><br /><br /><span>  @item.ArabicDescription </span>
+                                }
                             </div>
                             <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
                                 <a href="/hermano/repair-maintenance/services" data-translate="0sow01"> See Our Work ></a><br />
@@ -325,7 +339,14 @@
                 <div class="col-lg-6" style="padding-top:5px;">
 
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Enter your email" style="background-color:white;border-top-left-radius: 10px;border-bottom-left-radius: 10px;border:none;height:50px;">
+                        @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                        {
+                            <input type="email" class="form-control" placeholder="Enter your email" style="background-color:white;border-top-left-radius: 10px;border-bottom-left-radius: 10px;border:none;height:50px;">
+                        }
+                        else
+                        {
+                            <input dir="rtl" type="email" class="form-control" placeholder="أدخل بريدك الإلكتروني" style="background-color:white;border-top-left-radius: 10px;border-bottom-left-radius: 10px;border:none;height:50px;">
+                        }
                         <div class="input-group-append">
                             <button class="" type="submit" style="margin:0;background-color:#275935;color:white;border-top-right-radius: 10px;border-bottom-right-radius: 10px;" data-translate="000co30">Submit</button>
                         </div>

@@ -47,6 +47,20 @@
             font-family: 'cairo-regular !important';
             src: url('../../assets/aracbicfont/cairo-regular.ttf') format('truetype');
         }
+        @@media only screen and (max-width: 479px) {
+            imgmob {
+                align-items:center !important;
+            }
+            .mob {
+                background-color:black;
+            }
+            .ptop{
+                padding-top:30px;
+            }
+            .tacenter{
+                text-align:center !important;
+            }
+        }
     </style>
 
     <script>
@@ -153,7 +167,7 @@
                 <div id="container">
                     <div id="Top_bar">
                         <div class="column one">
-                            <div class=" clearfix">
+                            <div class=" clearfix mob" >
                                 <div class="logo">
                                     <a id="logo" href="/planera/interior" title="logo" data-height="60" style="height:60px !important;" data-padding="15">
                                         <img class="logo-main scale-with-grid" src="../../assets/PlaneraInterior/images/pi-logo.png" data-retina="../../assets/PlaneraInterior/images/pi-logo.png" data-height="58" alt="renovate4_logo2" data-no-retina />
@@ -214,7 +228,7 @@
                 </div>
                 <div class="column one-fourth">
                     <aside class="widget_text widget widget_custom_html">
-                        <div class="textwidget custom-html-widget">
+                        <div class="textwidget custom-html-widget tacenter">
                             <h4 style="color:white;" data-translate="00s7">Quick Links</h4>
                             <br />
                             <ul>
@@ -237,23 +251,23 @@
                 </div>
                 <div class="column one-fourth">
                     <aside class="widget_text widget widget_custom_html">
-                        <div class="textwidget custom-html-widget">
+                        <div class="textwidget custom-html-widget tacenter">
                             <hr class="no_line" style="margin:0 auto 5px">
                             <h4 style="color:white;" data-translate="00cn0">Contact Us</h4>
                             <br />
                             <ul>
-                                <li class="phone phone-1" style="margin-bottom: 10px">
-                                    <a href="tel:97317004006"><i class="icon-phone">+973 17004006</i></a>
+                                <li class="phone phone-1 _arabic" style="margin-bottom: 10px">
+                                    <a href="tel:97317004006"><i class="icon-phone ">+973 17004006</i></a>
                                     <br />
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:97337755011">+973 37755011</a>
                                     <br />
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:97337750222">+973 37750222</a>
 
                                 </li>
-                                <li style="margin-bottom: 10px">
+                                <li class="_arabic" style="margin-bottom: 10px">
                                     <a href="mailto:interior@planerabh.com"><i class="icon-mail">Interior@planerabh.com</i></a>
                                 </li>
-                                <li style="margin-bottom: 10px">
+                                <li class="_arabic" style="margin-bottom: 10px">
                                     @*<a href="" ><img src="~/assets/PlaneraInterior/images/tik-tok.png" style="width:15px" /></a>*@
                                     <a href="https://instagram.com/planera.interior?igshid=NmNmNjAwNzg=" target="_blank"><i class="icon-instagram"> planera.interior</i></a>
                                 </li>

@@ -19,13 +19,26 @@
                                  data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg">
                             @*<img src="/assets/PlaneraInterior/images/-e-banner1.jpg" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="170" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
                                 data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg">*@
-                        <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">                           
-                           
-                            <span style="font-size:80px;">@item.Title</span>
+                        <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 60px; line-height: 60px; font-weight: 600; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                            @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                            {
+                                <span style="font-size:80px;">@item.Title</span>
+                            }
+                            else
+                            {
+                                <span style="font-size:80px;">@item.ArabicTitle</span>
+                            }
                         </div>
-                            <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                        <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-2" data-x="center" data-hoffset="0" data-y="center" data-voffset="0" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 50px; line-height: 60px; font-weight: 300; color: rgba(255, 255, 255, 0.5);border-color:rgba(255, 255, 255, 1.00);">
+                            @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                            {
                                 <br /><br /><br /><span> @item.Description </span>
-                            </div>
+                            }
+                            else
+                            {
+                                <br /><br /><br /><span> @item.ArabicDescription </span>
+                            }
+                        </div>
                             <div class="tp-caption app_large_white tp-resizeme" id="slide-1-layer-4" data-x="left" data-y="bottom" data-voffset="59" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="" data-transform_out="" data-start="" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; font-size: 20px; line-height: 60px;  color: rgba(255, 255, 255, 1.00); border-color:rgba(255, 255, 255, 1.00);">
                                 <a href="/interior/project" data-translate="0sop01"> See our Projects ></a><br />
                             </div>

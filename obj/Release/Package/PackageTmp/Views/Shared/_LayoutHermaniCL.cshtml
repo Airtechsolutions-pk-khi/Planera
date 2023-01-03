@@ -45,10 +45,35 @@
             src: url('../../assets/aracbicfont/cairo-regular.ttf') format('truetype');
         }
         #Top_bar .menu > li > a, #Top_bar #menu ul li.submenu .menu-toggle {
-            
+
             color: white;
         }
-       
+        @@media only screen and (max-width: 1239px) {
+            #Top_bar #menu ul li a span {
+                border: none;
+                line-height: 48px;
+                display: inline;
+                padding: 0;
+                color: black;
+            }
+        }
+        @@media only screen and (max-width: 1239px) {
+            #Top_bar #menu ul li a {
+                padding: 0 20px;
+                margin: 0;
+                display: block;
+                height: auto;
+                line-height: normal;
+                border: none;
+                color: black;
+            }
+        }
+        @@media only screen and (max-width: 479px) {
+ 
+            .tacenter {
+                text-align: center !important;
+            }
+        }
     </style>
     <script>
         jQuery(document).ready(function () {
@@ -181,9 +206,9 @@
                                                 <a href="/hermano-contracting/contact"><span data-translate="00cn0">Contact Us</span></a>
                                             </li>
 
-                                            @*<li>
+                                            <li>
                                                 <i class="fa fa-icon-globe"></i><a onclick="_lang(); return false;" id="_lang" style="cursor:pointer; ">عربى</a>
-                                            </li>*@
+                                            </li>
                                         </ul>
                                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
                                 </div>
@@ -213,8 +238,8 @@
                     </div>
                     <div class="column one-fourth">
                         <aside class="widget widget_text _arabic-text">
-                            <h4 data-translate="00s7">Quick Links</h4>
-                            <div class="textwidget">
+                            <h4 data-translate="00s7" class="tacenter">Quick Links</h4>
+                            <div class="textwidget tacenter">
                                 <ul>
                                     <li style="margin-bottom: 10px">
                                         <a href="/hermano-contracting/about" data-translate="aa0">About us</a>
@@ -234,11 +259,11 @@
                         </aside>
                     </div>
                     <div class="column one-fourth">
-                        <aside class="widget widget_text _arabic-text">
+                        <aside class="widget widget_text _arabic-text tacenter">
                             <h4 data-translate="00cn0">Contact us</h4>
-                            <div class="textwidget">
+                            <div class="textwidget tacenter">
                                 <ul>
-                                    <li class="phone phone-1" style="margin-bottom: 10px">
+                                    <li class="phone phone-1 _arabic-text" style="margin-bottom: 10px">
                                         <span class="icon-phone">
                                         </span>
                                         +973 17004006, +973 37755188
@@ -248,12 +273,12 @@
                                     <li style="margin-bottom: 10px">
                                         <span class="icon-mail"><a href="mailto:hermano@planerabh.com">hermano@planerabh.com</a></span>
                                     </li>
-                                    <li style="margin-bottom: 10px">
+                                    <li style="margin-bottom: 10px" class="_arabic">
                                         <span class="icon-address" data-translate="0mbc01">
                                             Mandarine Business Center, Alseef District Kingdom of Bahrain
                                         </span>
                                     </li>
-                                    <li style="margin-bottom: 10px">
+                                    <li style="margin-bottom: 10px" class="_arabic">
                                         <span class="icon-instagram"><a href="https://instagram.com/hermano.contracting?igshid=NmNmNjAwNzg=" target="_blank">Hermano.landscaping</a></span>
                                     </li>
 

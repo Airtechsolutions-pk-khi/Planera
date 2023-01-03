@@ -100,22 +100,51 @@
                                             <form id="contactform">
                                                 <!-- One Second (1/2) Column -->
                                                 <div class="column one-second">
-                                                    <input placeholder="Your name" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" />
+                                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                    {
+                                                        <input placeholder="Your name" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
+                                                    else
+                                                    {
+                                                        <input dir="rtl" placeholder="اسمك" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
                                                 </div>
                                                 <!-- One Second (1/2) Column -->
                                                 <div class="column one-second">
-                                                    <input placeholder="Your e-mail" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" />
+                                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                    {
+                                                        <input placeholder="Your e-mail" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
+                                                    else
+                                                    {
+                                                        <input dir="rtl" placeholder="بريدك الالكتروني" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
                                                 </div>
 
                                                 <div class="column one">
-                                                    <input placeholder="Subject" type="text" name="subject" id="subject" size="40" aria-required="true" aria-invalid="false" />
+                                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                    {
+                                                        <input placeholder="Subject" type="text" name="subject" id="subject" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
+                                                    else
+                                                    {
+                                                        <input dir="rtl" placeholder="موضوعات" type="text" name="subject" id="subject" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
                                                 </div>
                                                 <div class="column one">
-                                                    <textarea placeholder="Message" name="message" id="message" style="width:100%;border-radius:5px;" rows="10" aria-invalid="false"></textarea>
+                                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                    {
+                                                        <textarea placeholder="Message" name="message" id="message" style="width:100%;border-radius:5px;" rows="10" aria-invalid="false"></textarea>
+                                                    }
+                                                    else
+                                                    {
+                                                        <textarea dir="rtl" placeholder="رسالة" name="message" id="message" style="width:100%;border-radius:5px;" rows="10" aria-invalid="false"></textarea>
+                                                    }
                                                 </div>
 
                                                 <div class="column ">
-                                                    <input type="button" value="Send a message" id="submit" onClick="SendEmail();" style="background-color: black;color:white;border-radius:5px; width: 100%; padding: 10px 40px; ">
+                                                    @*<input type="button" value="Send a message" id="submit" onClick="SendEmail();" style="background-color: black;color:white;border-radius:5px; width: 100%; padding: 10px 40px; ">*@
+                                                    <button id="submit" onClick="SendEmail();" style="background-color: black;color:white;border-radius:5px; width: 100%; padding: 10px 40px; " data-translate="0sm01">Send a message</button>
                                                 </div>
                                             </form>
                                         </div>

@@ -88,22 +88,58 @@
                                         <div id="contactWrapper">
                                             <form id="contactform">
                                                 <div class="column one-second">
-                                                    <input placeholder="Your name" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" />
+                                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                    {
+                                                        <input placeholder="Your name" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
+                                                    else
+                                                    {
+                                                        <input placeholder="اسمك" type="text" name="name" id="name" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
                                                 </div>
                                                 <div class="column one-second">
-                                                    <input placeholder="Your e-mail" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" />
+                                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                    {
+                                                        <input placeholder="Your e-mail" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
+                                                    else
+                                                    {
+                                                        <input placeholder="بريدك الالكتروني" type="email" name="email" id="email" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
                                                 </div>
                                                 <div class="column one-second">
-                                                    <input placeholder="Subject" type="text" name="subject" id="subject" size="40" aria-invalid="false" />
+                                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                    {
+                                                        <input placeholder="Subject" type="text" name="subject" id="subject" size="40" aria-invalid="false" />
+                                                    }
+                                                    else
+                                                    {
+                                                        <input placeholder="موضوعات" type="text" name="subject" id="subject" size="40" aria-invalid="false" />
+                                                    }
                                                 </div>
                                                 <div class="column one-second">
-                                                    <input placeholder="Your Contact" type="text" name="phone" id="phone" size="40" aria-required="true" aria-invalid="false" />
+                                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                    {
+                                                        <input placeholder="Your Contact" type="text" name="phone" id="phone" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
+                                                    else
+                                                    {
+                                                        <input placeholder="جهة الاتصال الخاصة بك" type="text" name="phone" id="phone" size="40" aria-required="true" aria-invalid="false" />
+                                                    }
                                                 </div>
                                                 <div class="column one">
-                                                    <textarea placeholder="Message" name="message" id="message" style="width:100%;" rows="10" aria-invalid="false"></textarea>
+                                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                    {
+                                                        <textarea placeholder="Message" name="message" id="message" style="width:100%;" rows="10" aria-invalid="false"></textarea>
+                                                    }
+                                                    else
+                                                    {
+                                                        <textarea placeholder="رسالة" name="message" id="message" style="width:100%;" rows="10" aria-invalid="false"></textarea>
+                                                    }
                                                 </div>
                                                 <div class="column one">
-                                                    <input class="_mrright" type="button" value="Submit" id="submit" onClick="SendEmail();">
+                                                    @*<input class="_mrright" type="button" value="Submit" id="submit" onClick="SendEmail();">*@
+                                                    <button class="_mrright" id="submit" onClick="SendEmail();" data-translate="000co30">Submit</button>
                                                 </div>
                                             </form>
                                         </div>
