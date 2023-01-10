@@ -22,7 +22,7 @@
                      data-frames='[{"delay":300,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['right','right','right','right']"
                      data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 80px; line-height: 50px; font-weight: 400; color: #ffd0ae; letter-spacing: 0px;font-family:Cinzel;">
                     <div style="color:white;padding-left:600px;text-align:center;padding-top:80px;">
-                        <p class="fontsss" style="font-size:75px;line-height:57px;">PLANERA GROUP</p>
+                        <p class="fontsss" style="font-size:75px;line-height:57px;" data-translate="0pg01">PLANERA GROUP</p>
                         <p class="fontsss" style="font-size:45px;line-height:66px;" data-translate="0svc01">The Largest group in the Services industry</p>
                         <p style="font-size:45px;" data-translate="0exp01"> Our Business Expansions witnesses our Vision </p>
                     </div>
@@ -475,7 +475,9 @@
                                                                             <div class="post-title">
                                                                                 <h2 class="entry-title small">
                                                                                     <a href="/planera/newsevents">
+                                                                                        
                                                                                         @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                                                                            
                                                                                         {
                                                                                             @item.Description
                                                                                         }
@@ -530,7 +532,7 @@
                                             <h3 class="_arabic _arabic-text" style="color:#1a3f8c !important;" data-translate="00aa4">CONTACT US</h3>
                                             <div class="get_in_touch_wrapper">
                                                 <ul>
-                                                    <li class="address _arabic">
+                                                    <li class="address _arabic-text">
                                                         <span class="icon "><i class="icon-location"></i></span>
                                                         <span class="address_wrapper" style="color: #1a3f8c;" data-translate="0md01">
                                                             Mandarine Business Center
@@ -540,6 +542,7 @@
                                                             Alseef District (Bahrain)
                                                         </span>
                                                     </li>
+                                                    
                                                     <li class="phone phone-1 _arabic-text">
                                                         <span class="icon"><i class="icon-phone"></i></span>
                                                         <p>
@@ -673,6 +676,7 @@
 </div>
 
 <script>
+  
     var $ = jQuery;
          function SendEmail() {
             var dataType = 'application/json; charset=utf-8';

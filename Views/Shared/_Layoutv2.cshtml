@@ -53,25 +53,37 @@
             color: rgb(12 9 53);
         }
     </style>
-
-    <script>
+    
+       
+    <script> 
+        debugger
         jQuery(document).ready(function () {
+        var currLang = Cookies.get('lang');
+        if (currLang == null || currLang == "" || currLang == undefined) {
 
+            Cookies.set('lang', 'en', { expires: 365 });
+           
+        }
+        });
+
+
+        jQuery(document).ready(function () {
+            
             var currLang = Cookies.get('lang');
             if (currLang == null || currLang == "" || currLang == undefined) {
 
-                Cookies.set('lang', 'en', { expires: 365 });
+            Cookies.set('lang', 'en', { expires: 365 });
                 jQuery('#_lang').html('عربى');
             }
             if (currLang == "en") {
-                jQuery('#_lang').html("عربى");
+            jQuery('#_lang').html("عربى");
                 jQuery("._arabic").css("direction", "ltr")
                 jQuery("._arabic-text").css("text-align", "left")
                 jQuery(".icon-media").css("left", "0")
                 jQuery(".icon-title").css("padding-left", "43px")
             }
             else {
-                jQuery('#_lang').html("English");
+            jQuery('#_lang').html("English");
                 jQuery('._ltrarabic').css("direction", "ltr")
                 jQuery("._arabic").css("direction", "rtl")
                 //jQuery("p, h1, h2, h3, h4, h5, h6, a,div").css("font-family", "AvenirRegular")
@@ -101,22 +113,23 @@
             var currLang = Cookies.get('lang');
             //var currLang = localStorage.getItem("_lang");
             if (currLang == null || currLang == "") {
-                Cookies.set('lang', 'en', { expires: 365 });
+            Cookies.set('lang', 'en', { expires: 365 });
                 jQuery('#_lang').html('عربى');
             }
             if (currLang == "en") {
-                Cookies.set('lang', 'ar', { expires: 365 });
+            Cookies.set('lang', 'ar', { expires: 365 });
                 jQuery('#_lang').html('English');
                 location.reload();
             }
             if (currLang == "ar") {
-                Cookies.set('lang', 'en', { expires: 365 });
+                
+            Cookies.set('lang', 'en', { expires: 365 });
                 jQuery('#_lang').html('عربى');
                 location.reload();
             }
         }
     </script>
-    
+
     <script type="application/ld+json">
         {
           "@@context": "http://schema.org",

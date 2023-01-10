@@ -237,6 +237,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="_Models\BLL\ServiceBLL.cs" />
     <Compile Include="_Models\BLL\GalleryBLL.cs" />
     <Compile Include="_Models\BLL\NewsAlertBLL.cs" />
@@ -2922,6 +2923,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="assets\NewsEvents\fonts\" />
     <Folder Include="assets\plugins\rs-plugin\assets\videos\" />
+    <Folder Include="Views\Base\" />
     <Folder Include="Views\Email\" />
   </ItemGroup>
   <ItemGroup>

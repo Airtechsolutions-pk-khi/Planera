@@ -12,14 +12,16 @@ using System.Web.Services.Description;
 
 namespace Planera.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         homeService _service;
         newsalertService _nservice;
         public HomeController()
         {
+
             _service = new homeService();
             _nservice = new newsalertService();
+
 
         }
         public ActionResult Main()
@@ -38,6 +40,11 @@ namespace Planera.Controllers
         [Route("planera/home")]
         public ActionResult Homev2()
         {
+            //HttpCookie lang = new HttpCookie("lang");
+            //lang.Value = "en";
+            //lang.Expires = DateTime.Now.AddHours(1);
+            //Response.Cookies.Add(lang);
+            //Response.Flush();
             ViewBag.NewsAlert = _nservice.GetAll();
             return View();
         }
