@@ -577,6 +577,7 @@
     <Content Include="assets\HarmanoContract\images\Janabiya\25.jpg" />
     <Content Include="assets\HarmanoContract\images\leftsection.png" />
     <Content Include="assets\HarmanoContract\images\logo.png" />
+    <Content Include="assets\HarmanoContract\images\logo1.png" />
     <Content Include="assets\HarmanoContract\images\logoheader.png" />
     <Content Include="assets\HarmanoContract\images\ourmission.png" />
     <Content Include="assets\HarmanoContract\images\ourvision.png" />
@@ -664,6 +665,7 @@
     <Content Include="assets\HarmanoRepair\images\hrm-step3.png" />
     <Content Include="assets\HarmanoRepair\images\Layer-13-copy.jpg" />
     <Content Include="assets\HarmanoRepair\images\logo.png" />
+    <Content Include="assets\HarmanoRepair\images\logo1.png" />
     <Content Include="assets\HarmanoRepair\images\msgicon.png" />
     <Content Include="assets\HarmanoRepair\images\ourmission.png" />
     <Content Include="assets\HarmanoRepair\images\phoneicon.png" />
@@ -987,7 +989,9 @@
     <Content Include="assets\Planeragroup\images\OudLogo.png" />
     <Content Include="assets\Planeragroup\images\our-business-header.jpg" />
     <Content Include="assets\Planeragroup\images\pg-logo-hor-black.png" />
+    <Content Include="assets\Planeragroup\images\pg-logo-hor-black1.png" />
     <Content Include="assets\Planeragroup\images\pg-logo-horizontal-white.png" />
+    <Content Include="assets\Planeragroup\images\pg-logo-horizontal-white1.png" />
     <Content Include="assets\Planeragroup\images\Planera-Interior-Team-Slider.jpg" />
     <Content Include="assets\Planeragroup\images\planeraart.png" />
     <Content Include="assets\Planeragroup\images\planeraconst.png" />
@@ -1103,6 +1107,7 @@
     <Content Include="assets\PlaneraInterior\images\pi-logo.png" />
     <Content Include="assets\PlaneraInterior\images\Planera-Interior-Team-Slider.jpg" />
     <Content Include="assets\PlaneraInterior\images\PlaneraLogo.png" />
+    <Content Include="assets\PlaneraInterior\images\PlaneraLogo1.png" />
     <Content Include="assets\PlaneraInterior\images\project1.jpg" />
     <Content Include="assets\PlaneraInterior\images\projects.png" />
     <Content Include="assets\PlaneraInterior\images\ramada-expension-japanese.jpg" />
