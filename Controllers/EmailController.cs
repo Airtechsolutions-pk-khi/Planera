@@ -59,7 +59,7 @@ namespace Planera.Controllers
 
                 smtp.Send(mail);
 
-                sendemailcustomer(obj.Email.ToString(),"Planera Group | Inquiry","PG");
+                sendemailcustomer(obj.Email.ToString(),"Planera Holding | Inquiry","PG");
             }
             catch (Exception ex)
             {
@@ -163,7 +163,7 @@ namespace Planera.Controllers
 
                 smtp.Send(mail);
 
-                sendemailcustomer(obj.Email.ToString(), "Planera Group | Activar | Inquiry", "A");
+                sendemailcustomer(obj.Email.ToString(), "Planera Holding | Activar | Inquiry", "A");
             }
             catch (Exception ex)
             {
@@ -215,7 +215,7 @@ namespace Planera.Controllers
 
                 smtp.Send(mail);
 
-                sendemailcustomer(obj.Email.ToString(), "Planera Group | Hermano | Inquiry", "H");
+                sendemailcustomer(obj.Email.ToString(), "Planera Holding | Hermano | Inquiry", "H");
             }
             catch (Exception ex)
             {
@@ -291,7 +291,7 @@ namespace Planera.Controllers
 
                         smtp.Send(mail);
 
-                        sendemailcustomer(obj.Email.ToString(), "Planera Group | Job Application", "PGC");
+                        sendemailcustomer(obj.Email.ToString(), "Planera Holding | Job Application", "PGC");
                     }
                     // Returns message that successfully uploaded  
                     return Json(new { Success = true });

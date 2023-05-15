@@ -93,7 +93,7 @@ namespace Planera.Controllers
 
                 smtp.Send(mail);
 
-                sendemailcustomer(obj.Email.ToString(), "Planera Group | Hermano | Book Service", "H");
+                sendemailcustomer(obj.Email.ToString(), "Planera Holding | Hermano | Book Service", "H");
             }
             catch (Exception ex)
             {

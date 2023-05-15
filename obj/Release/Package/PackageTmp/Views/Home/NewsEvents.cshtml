@@ -22,67 +22,89 @@
         <div id="rev_slider_34_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="news-gallery34" style="margin:0px auto;background-color:#fff;padding:0px;margin-top:0px;margin-bottom:0px;">
             <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
             <div id="rev_slider_34_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
-                <ul >
+                <ul>
                     <!-- SLIDE -->
 
                     @{
-                        var count = 129;
-                        foreach (var item in ViewBag.News)
+                        if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
                         {
-                            <li  data-index="rs-@count" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/news1-l.jpg" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Activar Bahrain" data-description="Activar Bahrain has received a shield from the Bahrain Paralympic Committee ">
-                                <!-- MAIN IMAGE -->
-                                <img src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.Image" alt="@item.Name" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">
 
-                                <!--<img src="~/assets/Planeragroup/images/news1-l.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">-->
-                                <!-- LAYERS -->
-                                <!-- LAYER NR. 1 -->
-                                <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-@count-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
-                                </div>
-                                <!-- LAYER NR. 2 -->
-                                <div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0 " id="slide-@count-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['165','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
-                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
-                                    {
-                                        @item.Description
-                                    }
-                                    else
-                                    {
-                                        @item.ArabicDescription
-                                    }
-                                    @*Activar Bahrain has received a shield from the Bahrain Paralympic Committee in dedication to its efforts in the media committee of the Asian Paralympic Games for Youth that was held in Bahrain last December.*@
-                                </div>
-                                <!-- LAYER NR. 3 -->
-                                <div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0 " id="slide-@count-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                                    @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
-                                    {
+                            var count = 129;
+                            foreach (var item in ViewBag.News)
+                            {
+                                <li data-index="rs-@count" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/news1-l.jpg" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="@item.Name" data-description="@item.Description.ToString().Substring(0, 70)">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.Image" alt="@item.Name" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">
+
+
+                                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-@count-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                                    </div>
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0 " id="slide-@count-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['165','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
+                                        @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
+                                        {
+                                            @item.Description
+                                        }
+                                        else
+                                        {
+                                            @item.ArabicDescription
+                                        }
+                                       
+                                    </div>
+                                    <!-- LAYER NR. 3 -->
+                                    <div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0 " id="slide-@count-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
                                         @item.Name
-                                    }
-                                    else
-                                    {
+
+                                    </div>
+
+                                </li>
+                                count += 1;
+                            }
+                        }
+                        else
+                        {
+                            var count = 129;
+                            foreach (var item in ViewBag.News)
+                            {
+                                <li data-index="rs-@count" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/news1-l.jpg" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="@item.ArabicName" data-description="@item.ArabicDescription.ToString().Substring(0, 70)">
+                                    <!-- MAIN IMAGE -->
+                                    <img src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.Image" alt="@item.ArabicName" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">
+
+
+                                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-@count-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                                    </div>
+                                    <!-- LAYER NR. 2 -->
+                                    <div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0 " id="slide-@count-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['165','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
+                                        @item.ArabicDescription
+                                        
+                                    </div>
+                                    <!-- LAYER NR. 3 -->
+                                    <div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0 " id="slide-@count-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
                                         @item.ArabicName
-                                    }
-                                    @*Activar Bahrain*@
-                                </div>
-                                <!-- LAYER NR. 4 -->
-                            </li>
-                            count += 1;
+
+                                    </div>
+
+                                </li>
+                                count += 1;
+                            }
                         }
                     }
                     <!-- SLIDE -->
-                    <!--<li data-index="rs-130" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/news2-l.jpg" data-rotate="0" data-saveperformance="off" data-title="Planera Group" data-description="The President, Mr.Omar Bukmal, honored Ms.Zahraa Hussain for her efforts">-->
+                    <!--<li data-index="rs-130" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/news2-l.jpg" data-rotate="0" data-saveperformance="off" data-title="Planera Holding" data-description="The President, Mr.Omar Bukmal, honored Ms.Zahraa Hussain for her efforts">-->
                     <!-- MAIN IMAGE -->
                     <!--<img src="~/assets/Planeragroup/images/news2-l.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">-->
                     <!-- LAYERS -->
                     <!-- LAYER NR. 1 -->
                     <!--<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-130-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
-                    </div>-->
+    </div>-->
                     <!-- LAYER NR. 2 -->
                     <!--<div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-130-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['155','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
-                        The President of the Planera Group, Mr.Omar Bukmal, honored Ms. Zahraa Hussain for her efforts throughout her tenure at Actifar Bahrain Public Relations and offered her a reward in recognition of her efforts and dedication to work.
-                    </div>-->
+        The President of the Planera Holding, Mr.Omar Bukmal, honored Ms. Zahraa Hussain for her efforts throughout her tenure at Actifar Bahrain Public Relations and offered her a reward in recognition of her efforts and dedication to work.
+    </div>-->
                     <!-- LAYER NR. 3 -->
                     <!--<div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-130-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                        Planera Group
-                    </div>-->
+        Planera Holding
+    </div>-->
                     <!-- LAYER NR. 4 -->
                     <!--</li>-->
                     <!-- SLIDE -->
@@ -92,33 +114,33 @@
                     <!-- LAYERS -->
                     <!-- LAYER NR. 1 -->
                     <!--<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-131-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
-                    </div>-->
+    </div>-->
                     <!-- LAYER NR. 2 -->
                     <!--<div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-131-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['165','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['45','45','45','25']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
-                        Planera Interior Design has handed over one of its design and implementation projects to the client.
-                    </div>-->
+        Planera Interior Design has handed over one of its design and implementation projects to the client.
+    </div>-->
                     <!-- LAYER NR. 3 -->
                     <!--<div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-131-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                        Planera Interior
-                    </div>-->
+        Planera Interior
+    </div>-->
                     <!-- LAYER NR. 4 -->
                     <!--</li>-->
                     <!-- SLIDE -->
-                    <!--<li data-index="rs-132" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/news4-l.jpg" data-rotate="0" data-saveperformance="off" data-title="Planera Group" data-description="Planera Group has appointed Mr.Raad Ahmed.">-->
+                    <!--<li data-index="rs-132" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/news4-l.jpg" data-rotate="0" data-saveperformance="off" data-title="Planera Holding" data-description="Planera Holding has appointed Mr.Raad Ahmed.">-->
                     <!-- MAIN IMAGE -->
                     <!--<img src="~/assets/Planeragroup/images/news4-l.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">-->
                     <!-- LAYERS -->
                     <!-- LAYER NR. 1 -->
                     <!--<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
-                    </div>-->
+    </div>-->
                     <!-- LAYER NR. 2 -->
                     <!--<div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['165','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
-                        Planera Group has appointed Mr.Raad Ahmed as Acting General Manager at Hermano Contracting Company.
-                    </div>-->
+        Planera Holding has appointed Mr.Raad Ahmed as Acting General Manager at Hermano Contracting Company.
+    </div>-->
                     <!-- LAYER NR. 3 -->
                     <!--<div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                        Planera Group
-                    </div>-->
+        Planera Holding
+    </div>-->
                     <!-- LAYER NR. 4 -->
                     <!--</li>-->
                     <!--<li data-index="rs-133" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/news5-l.jpg" data-rotate="0" data-saveperformance="off" data-title="Planera Interior Design & Arts" data-description="Planera Interior Design & Arts Company has received the first customer from Saudia Arabia">-->
@@ -127,15 +149,15 @@
                     <!-- LAYERS -->
                     <!-- LAYER NR. 1 -->
                     <!--<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
-                    </div>-->
+    </div>-->
                     <!-- LAYER NR. 2 -->
                     <!--<div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['165','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
-                        Planera Interior Design & Arts Company has received the first customer from the Kingdom of Saudi Arabia, where Planera attracts its customers from all the Arab Gulf countries.
-                    </div>-->
+        Planera Interior Design & Arts Company has received the first customer from the Kingdom of Saudi Arabia, where Planera attracts its customers from all the Arab Gulf countries.
+    </div>-->
                     <!-- LAYER NR. 3 -->
                     <!--<div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                        Planera Interior Design & Arts
-                    </div>-->
+        Planera Interior Design & Arts
+    </div>-->
                     <!-- LAYER NR. 4 -->
                     <!--</li>-->
                     <!--<li data-index="rs-134" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/news6-l.jpg" data-rotate="0" data-saveperformance="off" data-title="Hermano Contracting" data-description="Hermano Contracting Company has inaugurated its second branch">-->
@@ -144,15 +166,15 @@
                     <!-- LAYERS -->
                     <!-- LAYER NR. 1 -->
                     <!--<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
-                    </div>-->
+    </div>-->
                     <!-- LAYER NR. 2 -->
                     <!--<div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['165','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
-                        Hermano Contracting Company has inaugurated its second branch for maintenance and repair work.
-                    </div>-->
+        Hermano Contracting Company has inaugurated its second branch for maintenance and repair work.
+    </div>-->
                     <!-- LAYER NR. 3 -->
                     <!--<div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                        Hermano Contracting Company
-                    </div>-->
+        Hermano Contracting Company
+    </div>-->
                     <!-- LAYER NR. 4 -->
                     <!--</li>-->
                     <!--<li data-index="rs-135" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/news7-l.jpg" data-rotate="0" data-saveperformance="off" data-title=" Hermano Contracting Company" data-description="Hermano Contracting Company has started its new project in Riffa Views.">-->
@@ -161,15 +183,15 @@
                     <!-- LAYERS -->
                     <!-- LAYER NR. 1 -->
                     <!--<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
-                    </div>-->
+    </div>-->
                     <!-- LAYER NR. 2 -->
                     <!--<div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['165','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
-                        Hermano Contracting Company has started its new project in Riffa Views, where the company continues to develop through large and small projects.
-                    </div>-->
+        Hermano Contracting Company has started its new project in Riffa Views, where the company continues to develop through large and small projects.
+    </div>-->
                     <!-- LAYER NR. 3 -->
                     <!--<div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                        Hermano Contracting Company
-                    </div>-->
+        Hermano Contracting Company
+    </div>-->
                     <!-- LAYER NR. 4 -->
                     <!--</li>-->
 
@@ -196,7 +218,7 @@
 
                         foreach (var item in ViewBag.Event)
                         {
-                            <li data-index="rs-@cnt" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/event1-l.jpg" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Planera Group" data-description="Planera Group participated to support breast cancer patients">
+                            <li data-index="rs-@cnt" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/event1-l.jpg" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Planera Holding" data-description="Planera Holding participated to support breast cancer patients">
                                 <!-- MAIN IMAGE -->
                                 <img src="@System.Configuration.ConfigurationManager.AppSettings["Image"].ToString()@item.Image" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">
                                 @*<img src="~/assets/Planeragroup/images/event1-l.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">*@
@@ -214,11 +236,11 @@
                                     {
                                         @item.ArabicDescription
                                     }
-                                    @*Planera Group participated in the month of October to support breast cancer patients, coinciding with the Kingdom's celebrations of the International Day for Awareness against Breast Cancer, which falls on the 10th of October each year, in the presence of President Omar Boukamal and a number of the company's employees.*@
+                                    @*Planera Holding participated in the month of October to support breast cancer patients, coinciding with the Kingdom's celebrations of the International Day for Awareness against Breast Cancer, which falls on the 10th of October each year, in the presence of President Omar Boukamal and a number of the company's employees.*@
                                 </div>
                                 <!-- LAYER NR. 3 -->
                                 <div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-@cnt-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                                    @*Planera Group*@
+                                    @*Planera Holding*@
                                     @if (HttpContext.Current.Request.Cookies["lang"].Value == "en")
                                     {
                                         @item.Name
@@ -234,7 +256,7 @@
                         }
                     }
                     <!-- SLIDE -->
-                    <!--<li data-index="rs-130" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/event2-l.jpg" data-rotate="0" data-saveperformance="off" data-title="Planera Group" data-description="Planera Group employees celebrated Christmas">-->
+                    <!--<li data-index="rs-130" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/event2-l.jpg" data-rotate="0" data-saveperformance="off" data-title="Planera Holding" data-description="Planera Holding employees celebrated Christmas">-->
                     <!-- MAIN IMAGE -->
                     <!--<img src="~/assets/Planeragroup/images/event2-l.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">-->
                     <!-- LAYERS -->
@@ -243,102 +265,102 @@
                     </div>-->
                     <!-- LAYER NR. 2 -->
                     <!--<div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-130-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['155','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
-                        Planera Group employees celebrated Christmas on the morning of Sunday, December 26, in an atmosphere full of joy, distribution of gifts and breakfast.
+                        Planera Holding employees celebrated Christmas on the morning of Sunday, December 26, in an atmosphere full of joy, distribution of gifts and breakfast.
                     </div>-->
                     <!-- LAYER NR. 3 -->
                     <!--<div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-130-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                        Planera Group
+                        Planera Holding
                     </div>-->
                     <!-- LAYER NR. 4 -->
                     <!--</li>-->
                     <!-- SLIDE -->
-                    <!--<li data-index="rs-131" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/event3-l.jpg" data-rotate="0" data-saveperformance="off" data-title="Planera Group" data-description="Planera Group organized the first meeting for all employees,.">-->
-                        <!-- MAIN IMAGE -->
-                        <!--<img src="~/assets/Planeragroup/images/event3-l.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">-->
-                        <!-- LAYERS -->
-                        <!-- LAYER NR. 1 -->
-                        <!--<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-131-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
-                        </div>-->
-                        <!-- LAYER NR. 2 -->
-                        <!--<div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-131-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['165','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
-                            Planera Group organized the first meeting for all employees, where all company employees gathered for an Iftar meal, followed by some activities such as honoring, competitions, playing band and geraqoon on the ninth of the holy month of Ramadan.
-                        </div>-->
-                        <!-- LAYER NR. 3 -->
-                        <!--<div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-131-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                            Planera Group Meeting
-                        </div>-->
-                        <!-- LAYER NR. 4 -->
+                    <!--<li data-index="rs-131" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/event3-l.jpg" data-rotate="0" data-saveperformance="off" data-title="Planera Holding" data-description="Planera Holding organized the first meeting for all employees,.">-->
+                    <!-- MAIN IMAGE -->
+                    <!--<img src="~/assets/Planeragroup/images/event3-l.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">-->
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+                    <!--<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-131-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                    </div>-->
+                    <!-- LAYER NR. 2 -->
+                    <!--<div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-131-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['165','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
+                        Planera Holding organized the first meeting for all employees, where all company employees gathered for an Iftar meal, followed by some activities such as honoring, competitions, playing band and geraqoon on the ninth of the holy month of Ramadan.
+                    </div>-->
+                    <!-- LAYER NR. 3 -->
+                    <!--<div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-131-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
+                        Planera Holding Meeting
+                    </div>-->
+                    <!-- LAYER NR. 4 -->
                     <!--</li>-->
                     <!-- SLIDE -->
-                    <!--<li data-index="rs-132" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/event4-l.jpg" data-rotate="0" data-saveperformance="off" data-title="Sports Day Planera Group" data-description="The Planera Group participated in the sports day">-->
-                        <!-- MAIN IMAGE -->
-                        <!--<img src="~/assets/Planeragroup/images/event4-l.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">-->
-                        <!-- LAYERS -->
-                        <!-- LAYER NR. 1 -->
-                        <!--<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
-                        </div>-->
-                        <!-- LAYER NR. 2 -->
-                        <!--<div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['155','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
-                            The Planera Group participated in the sports day, where the activities started from the main office, starting with a walk in the area and then moving to (Van Land) and having lunch together.
-                        </div>-->
-                        <!-- LAYER NR. 3 -->
-                        <!--<div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                            Sports Day Planera Group
-                        </div>-->
-                        <!-- LAYER NR. 4 -->
+                    <!--<li data-index="rs-132" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/event4-l.jpg" data-rotate="0" data-saveperformance="off" data-title="Sports Day Planera Holding" data-description="The Planera Holding participated in the sports day">-->
+                    <!-- MAIN IMAGE -->
+                    <!--<img src="~/assets/Planeragroup/images/event4-l.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">-->
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+                    <!--<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                    </div>-->
+                    <!-- LAYER NR. 2 -->
+                    <!--<div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['155','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
+                        The Planera Holding participated in the sports day, where the activities started from the main office, starting with a walk in the area and then moving to (Van Land) and having lunch together.
+                    </div>-->
+                    <!-- LAYER NR. 3 -->
+                    <!--<div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
+                        Sports Day Planera Holding
+                    </div>-->
+                    <!-- LAYER NR. 4 -->
                     <!--</li>-->
                     <!--<li data-index="rs-133" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/event5-l.jpg" data-rotate="0" data-saveperformance="off" data-title="Activar Bahrain" data-description="Asian Jiu-Jitsu Championship and their success">-->
-                        <!-- MAIN IMAGE -->
-                        <!--<img src="~/assets/Planeragroup/images/event5-l.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">-->
-                        <!-- LAYERS -->
-                        <!-- LAYER NR. 1 -->
-                        <!--<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
-                        </div>-->
-                        <!-- LAYER NR. 2 -->
-                        <!--<div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['155','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
-                            The management team of the Bahrain Jiu-Jitsu Federation thanked Activar Bahrain for its distinction in the media committee of the Asian Jiu-Jitsu Championship and their success in marketing the tournament and bringing it out to the people in a distinctive way.
+                    <!-- MAIN IMAGE -->
+                    <!--<img src="~/assets/Planeragroup/images/event5-l.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">-->
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+                    <!--<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                    </div>-->
+                    <!-- LAYER NR. 2 -->
+                    <!--<div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['155','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
+                        The management team of the Bahrain Jiu-Jitsu Federation thanked Activar Bahrain for its distinction in the media committee of the Asian Jiu-Jitsu Championship and their success in marketing the tournament and bringing it out to the people in a distinctive way.
 
-                        </div>-->
-                        <!-- LAYER NR. 3 -->
-                        <!--<div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                            Bahrain Jiu-Jitsu Federation thanked Activar Bahrain
-                        </div>-->
-                        <!-- LAYER NR. 4 -->
+                    </div>-->
+                    <!-- LAYER NR. 3 -->
+                    <!--<div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
+                        Bahrain Jiu-Jitsu Federation thanked Activar Bahrain
+                    </div>-->
+                    <!-- LAYER NR. 4 -->
                     <!--</li>-->
                     <!-- SLIDE -->
                     <!--<li data-index="rs-134" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/event6-l.jpg" data-rotate="0" data-saveperformance="off" data-title=" Public Relations" data-description="Public Relations Company visited the Bahrain Combat Games Council">-->
-                        <!-- MAIN IMAGE -->
-                        <!--<img src="~/assets/Planeragroup/images/event6-l.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">-->
-                        <!-- LAYERS -->
-                        <!-- LAYER NR. 1 -->
-                        <!--<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
-                        </div>-->
-                        <!-- LAYER NR. 2 -->
-                        <!--<div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['165','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
-                            Activar Bahrain Public Relations Company visited the Bahrain Combat Games Council on Sunday, August 14, where it met with the CEO of the Council, Mr. Jaafar Ali.
-                        </div>-->
-                        <!-- LAYER NR. 3 -->
-                        <!--<div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                            Activar Bahrain Public Relations
-                        </div>-->
-                        <!-- LAYER NR. 4 -->
+                    <!-- MAIN IMAGE -->
+                    <!--<img src="~/assets/Planeragroup/images/event6-l.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">-->
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+                    <!--<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                    </div>-->
+                    <!-- LAYER NR. 2 -->
+                    <!--<div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['165','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
+                        Activar Bahrain Public Relations Company visited the Bahrain Combat Games Council on Sunday, August 14, where it met with the CEO of the Council, Mr. Jaafar Ali.
+                    </div>-->
+                    <!-- LAYER NR. 3 -->
+                    <!--<div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
+                        Activar Bahrain Public Relations
+                    </div>-->
+                    <!-- LAYER NR. 4 -->
                     <!--</li>-->
                     <!--<li data-index="rs-135" data-transition="parallaxvertical" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/assets/Planeragroup/images/event7-l.jpg" data-rotate="0" data-saveperformance="off" data-title="Activar Bahrain" data-description="Public Relations Company presented a souvenir to the Ambassador of the Sultanate of Oman">-->
-                        <!-- MAIN IMAGE -->
-                        <!--<img src="~/assets/Planeragroup/images/event7-l.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">-->
-                        <!-- LAYERS -->
-                        <!-- LAYER NR. 1 -->
-                        <!--<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
-                        </div>-->
-                        <!-- LAYER NR. 2 -->
-                        <!--<div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['155','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
-                            Activar Bahrain Public Relations Company presented a souvenir to the Ambassador of the Sultanate of Oman  in recognition of the ongoing cooperation between the company and the Embassy of the Sultanate of Oman.
-                        </div>-->
-                        <!-- LAYER NR. 3 -->
-                        <!--<div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                            Activar Bahrain Public Relations
-                        </div>-->
-                        <!-- LAYER NR. 4 -->
+                    <!-- MAIN IMAGE -->
+                    <!--<img src="~/assets/Planeragroup/images/event7-l.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg">-->
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+                    <!--<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);">
+                    </div>-->
+                    <!-- LAYER NR. 2 -->
+                    <!--<div class="tp-caption Newspaper-Title tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-1" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['155','135','105','130']" data-fontsize="['25','25','25','20']" data-lineheight="['35','35','35','15']" data-width="['850','850','850','420']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: 850px; max-width: 850px; white-space: normal;">
+                        Activar Bahrain Public Relations Company presented a souvenir to the Ambassador of the Sultanate of Oman  in recognition of the ongoing cooperation between the company and the Embassy of the Sultanate of Oman.
+                    </div>-->
+                    <!-- LAYER NR. 3 -->
+                    <!--<div class="tp-caption Newspaper-Subtitle tp-resizeme rs-parallaxlevel-0" id="slide-132-layer-2" data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" data-y="['middle','middle','middle','middle']" data-voffset="['40','30','20','10']" data-fontsize="['25','25','25','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:0;y:0;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
+                        Activar Bahrain Public Relations
+                    </div>-->
+                    <!-- LAYER NR. 4 -->
                     <!--</li>-->
                 </ul>
                 <div class="tp-bannertimer tp-bottom" style="height: 5px; background-color: rgba(166, 216, 236, 1.00);"></div>
