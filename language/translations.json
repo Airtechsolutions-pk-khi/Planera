@@ -11,6 +11,62 @@
     "ar": "الأخبارو الأحداث",
     "en": "News & Events"
   },
+  "a2c": {
+    "ar": "أعمالنا",
+    "en": "ABC"
+  },
+  "00rsoe": {
+    "ar": "۲۰۱۹",
+    "en": "2019"
+  },
+  "00rsod": {
+    "ar": "اسمك",
+    "en": "Your name"
+  },
+  "00exp": {
+    "ar": "خبرة",
+    "en": "Experience"
+  },
+  "00rsok": {
+    "ar": "أكتفار لتأجير السيارات",
+    "en": "Activar Rent a Car"
+  },
+  "00rsor": {
+    "ar": "نتيجة المنحى",
+    "en": "Result Oriented"
+  },
+  "00rsoa": {
+    "ar": "عود بوتيك",
+    "en": "OUD BOUTIQUE"
+  },
+  "00rsob": {
+    "ar": "أكتيفار لتأجير السيارات",
+    "en": "ACTIVAR RENT A CAR"
+  },
+  "00rsoc": {
+    "ar": "غانشاتنا",
+    "en": "GHANCHATNA"
+  },
+  "00rsof": {
+    "ar": "۲۰۲۰",
+    "en": "2020"
+  },
+  "00rsog": {
+    "ar": "۲۰۲۲",
+    "en": "2022"
+  },
+  "00rsoj": {
+    "ar": "غنشاتنا",
+    "en": "Ghanchatna"
+  },
+  "00rsol": {
+    "ar": "عود بوتيك",
+    "en": "Oud Boutiquer"
+  },
+  "aa1": {
+    "ar": "عن",
+    "en": "About"
+  },
   "00a3": {
     "ar": "فرص العمل",
     "en": "Careers"
@@ -23,18 +79,9 @@
     "ar": "عن الشركة",
     "en": "About Us"
   },
-  "aa1": {
-    "ar": "عن",
-    "en": "About"
-  },
   "00aa2": {
-    "ar": "لمحة عامة  عن الشركة",
+    "ar": "نبذة عامة عن الشركة",
     "en": "Company Overview"
-  },
-  "00aa3": {
-    "ar": "تأسس فلاور سنتر في دولة الإمارات العربية المتحدة في عام 2012 عندما بدأنا في استيراد الزهور الاصطناعية وتوزيعها في السوق. وفي عام 2015 ، افتتحنا فرعنا الأول للبيع بالتجزئة مباشرة تلاه فرع ثان ، وبعد ذلك بدأنا بالتعاقد مع مصانع في الخارج لتصنيع المنتجات وفق مواصفاتنا الخاصة للبيع بالجملة والتجزئة ، إضافة إلى ذلك بدأنا رحلتنا في بيع الورود الطبيعية وتنسيق الحفلات حتى يومنا هذا",
-    "en": "Flower Center was established in the UAE in 2012 when we started importing artificial flowers and distributing them in the market. In year 2015, we opened our first branch for direct retail selling followed by a second branch. After that, we have started contracting with factories abroad to manufacture products according to our own specifications for wholesale and retail selling. In addition to that, we began our journey in selling natural roses and coordinating parties until this day."
-
   },
   "00aa5": {
     "ar": "اشترك في البريد الالكتروني ",
@@ -53,48 +100,36 @@
     "en": "ANY QUERY"
   },
   "00cn3": {
-    "ar": "ارسل بريد الكتروني",
+    "ar": "ارسل البريد الكتروني",
     "en": "Send Email"
   },
   "00cn4": {
-    "ar": "العنوان : ",
-    "en": "Address : "
+    "ar": "العنوان",
+    "en": "Address"
   },
   "00cn5": {
-    "ar": "البريد الالكتروني : ",
-    "en": "Email : "
+    "ar": "البريد الالكتروني:",
+    "en": "Email:"
   },
   "00cn6": {
-    "ar": "ال الهاتف ",
-    "en": "Telephone : "
+    "ar": "الهاتف:",
+    "en": "Telephone:"
   },
   "00cn7": {
-    "ar": "الموبايل : ",
-    "en": "Mobile : "
-  },
-  "00cn8": {
-    "ar": "فلاور سنتر, مجمع الطويلة,   المبنى رقم  20 ,   شارع رقم 4101, الجفير , مملكة البحرين ",
-    "en": "Flower Center, Al Taweela Complex, Building 20, Road 4101 Juffair, Kingdom of Bahrain"
+    "ar": "الموبايل:",
+    "en": "Mobile:"
   },
   "00kb8": {
     "ar": "مملكة البحرين",
     "en": "Kingdom of Bahrain"
   },
-  "h0": {
-    "ar": "إختر باقتك و اضفها للسلة",
-    "en": "Choose your flower then click order in the website."
-  },
   "h1": {
     "ar": "إملأ معلومات طلبك و تأكد من صحتها",
-    "en": "Fill in your order data  form & make sure everything fits."
+    "en": "Fill in your order data form & make sure everything fits."
   },
   "00h2": {
-    "ar": "إدفع للطلب حسب مجموع الفاتورة",
+    "ar": "ادفع للطلب حسب مجموع الفاتورة",
     "en": "Make payment according to the price listed on your order."
-  },
-  "00h3": {
-    "ar": "تم استلام طلبك و سيتم توصيله  إلى عنوانك",
-    "en": "Your flowers is ready to process & delivery to your address."
   },
   "00h4": {
     "ar": "الفرز حسب الكلمات",
@@ -109,20 +144,16 @@
     "en": "Search"
   },
   "00h7": {
-    "ar": "التصنيفات ",
+    "ar": "التصنيفات",
     "en": "CATEGORIES"
   },
   "00h8": {
-    "ar": "الالوان",
+    "ar": "الألوان",
     "en": "Color"
   },
   "00h9": {
-    "ar": "اشترك في البريد الالكتروني ",
+    "ar": "اشترك في البريد الالكتروني",
     "en": "Subscribe Our Newsletter"
-  },
-  "00h10": {
-    "ar": "لماذا فلاور سنتر",
-    "en": "WHY FLOWER CENTER?"
   },
   "00h11": {
     "ar": "المنتجات المفضلة",
@@ -133,7 +164,7 @@
     "en": "All Products"
   },
   "00h12": {
-    "ar": "مشاهدة كل المنتجات",
+    "ar": "مشاهدة الكل ",
     "en": "View All"
   },
   "00ca0": {
@@ -154,15 +185,15 @@
   },
   "00ca4": {
     "ar": "الكمية",
-    "en": "Quantity"
+    "en": "Quantity "
   },
   "00ca5": {
     "ar": "المجموع",
-    "en": "Total"
+    "en": "Total "
   },
   "00ca6": {
     "ar": "حذف",
-    "en": "Remove"
+    "en": "Remove "
   },
   "00ca7": {
     "ar": "مواصلة التسوق",
@@ -174,22 +205,22 @@
   },
   "00ch0": {
     "ar": "إتمام الطلب",
-    "en": "Checkout"
+    "en": "checkout"
   },
   "00ch1": {
-    "ar": "إظغط هنا لإضافة الكود",
+    "ar": "اضغط هنا لإضافة الكود",
     "en": "Click here to enter your code"
   },
   "00ch2": {
-    "ar": "اضف  قسيمة الشراء",
+    "ar": "اضف رمز القسيمة ",
     "en": "Apply coupon"
   },
   "00apn2": {
-    "ar": "قدم الآن",
+    "ar": "اطلب الآن",
     "en": "Apply Now"
   },
   "00ch3": {
-    "ar": "عنوان التوصيل",
+    "ar": "تفاصيل الفاتورة",
     "en": "Billing Details"
   },
   "00ch4": {
@@ -201,7 +232,7 @@
     "en": "Delivery Charges"
   },
   "00ch6": {
-    "ar": "تخفيض قسيمة الشراء",
+    "ar": "كود الخصم",
     "en": "Coupon Discount"
   },
   "00ch7": {
@@ -233,7 +264,7 @@
     "en": "TOTAL"
   },
   "00mo0": {
-    "ar": "قائمة طلباتي",
+    "ar": " طلباتي",
     "en": "My Orders"
   },
   "00mo1": {
@@ -242,10 +273,10 @@
   },
   "00mo2": {
     "ar": "جميع الطلبات",
-    "en": "-- All Orders --"
+    "en": "--All Orders"
   },
   "00mo3": {
-    "ar": "الطلب?#?",
+    "ar": "الطلب? #?",
     "en": "Order#"
   },
   "00mo4": {
@@ -273,11 +304,11 @@
     "en": "Your Payment through card not successfully done."
   },
   "00oc2": {
-    "ar": "جرب مرة ثانية",
+    "ar": "حاول مرة أخرى",
     "en": "Try Again"
   },
   "00oc3": {
-    "ar": "شكرا ",
+    "ar": "شكرا",
     "en": "THANK YOU"
   },
   "00oc4": {
@@ -285,11 +316,11 @@
     "en": "Order Number"
   },
   "00oc5": {
-    "ar": "تم استلام طلبك بنجاح",
+    "ar": "تم طلبك بنجاح",
     "en": "Your Order was completed successfully."
   },
   "00oc6": {
-    "ar": "الرجوع الى التسوق",
+    "ar": "العودة الى التسوق",
     "en": "Back to shop"
   },
   "00od0": {
@@ -309,7 +340,7 @@
     "en": "Order Information"
   },
   "00od4": {
-    "ar": "معلومات الزبون",
+    "ar": "معلومات العميل",
     "en": "Customer Information"
   },
   "00od5": {
@@ -321,7 +352,7 @@
     "en": "Billing Information"
   },
   "00od7": {
-    "ar": "الرجوع للطلبات",
+    "ar": "العودة للطلبات",
     "en": "Back to Orders"
   },
   "00pd0": {
@@ -329,8 +360,8 @@
     "en": "Product Detail"
   },
   "00pd1": {
-    "ar": "الكميه",
-    "en": "Quantity :"
+    "ar": "الكمية",
+    "en": "Quantity"
   },
   "00pd2": {
     "ar": "الوصف",
@@ -345,79 +376,71 @@
     "en": "Wishlist"
   },
   "00w1": {
-    "ar": "الصور",
+    "ar": "الصور ",
     "en": "Images"
   },
   "00w2": {
-    "ar": "المنتح",
+    "ar": "المنتح ",
     "en": "Product"
   },
   "00w3": {
-    "ar": "سعر الوحدة",
+    "ar": "سعر الوحدة ",
     "en": "Unit Price"
   },
   "00w4": {
-    "ar": "حالة الكمية",
+    "ar": "حالة الكمية ",
     "en": "Stock Status"
   },
   "00w5": {
-    "ar": "اضف للسلة",
+    "ar": "اضف للسلة ",
     "en": "Add to cart."
   },
   "00w6": {
-    "ar": "حذف",
+    "ar": "حذف ",
     "en": "Remove"
   },
   "00l0": {
-    "ar": "توصيل مجاني لجميع المناطق",
+    "ar": "توصيل مجاني لجميع المناطق ",
     "en": "FREE Delivery nationwide"
   },
-  "00l2": {
-    "ar": "نحن متخصصون في ابتكار أفكار إبداعية لجميع المناسبات والحفلات وكذلك تنفيذ الديكورات الداخلية والخارجية المكونة من الزهور الاصطناعية والينابيع والخضروات الاصطناعية والديكورات وتنسيقات الزهور الطبيعية المميزة",
-    "en": "We are specialized in coming up with creative ideas for all events and occasions as well as the implementation of interior and exterior decoration consisted of artificial flowers, springs, artificial vegetables, decorations, and distinctive natural flowers arrangements"
-  },
   "00l4": {
-    "ar": "تسجيل الدخول",
+    "ar": "تسجيل الدخول ",
     "en": "Login"
   },
   "00l5": {
-    "ar": "تسجيل خروج",
+    "ar": "تسجيل خروج ",
     "en": "Logout"
   },
-  "00s0": {
-    "ar": "المتجر عبر الانترنت",
-    "en": "Online Flower Shop"
-  },
   "00s1": {
-    "ar": "المتجر",
+    "ar": " المتجر ",
     "en": "Shop"
   },
   "00s3": {
-    "ar": "الاسم (ا ء ي)",
-    "en": "Name(A - Z)"
+    "ar": " الاسم (ا ء ي)",
+    "en": "Name (A - Z)"
   },
   "00s4": {
-    "ar": "الاسم (ا ء ي)",
-    "en": "Name(Z - A)"
+    "ar": " الاسم (ا ء ي)",
+    "en": "Name (Z - A)"
   },
   "00s5": {
-    "ar": "السعر (من الأرخص الى الأغلى)",
-    "en": "Price(Low > High)"
+    "ar": " السعر (من الأقل الى الأعلى)",
+    "en": "Price (Low > High)"
   },
   "00s6": {
-    "ar": "السعر (من الأغلى الى الأرخص )",
-    "en": "Price(High > Low)"
+    "ar": "السعر (من الأعلى الى الأقل)",
+    "en": "Price (High > Low)"
   },
   "00s7": {
-    "ar": "وصلة سريعة",
+    "ar": "رابط سريع",
     "en": "QUICK LINK"
   },
   "00s8": {
-    "ar": "للإتصال السريع",
+    "ar": "للاتصال السريع ",
     "en": "QUICK CONTACT"
   },
   "00s9": {
-    "ar": "قائمة طعام",
+    "ar": " قائمة",
     "en": "Menu"
   },
   "00s10": {
@@ -429,99 +452,99 @@
     "en": "عربى"
   },
   "000a3": {
-    "ar": "مشاهدة,",
+    "ar": "مشاهدة",
     "en": "View"
   },
   "000a4": {
-    "ar": "فرز",
+    "ar": "التصنيف",
     "en": "Filter"
   },
   "000aa5": {
-    "ar": "عرض عربة التسوق",
+    "ar": "عرض سلة التسوق",
     "en": "VIEW CART"
   },
   "000aa6": {
     "ar": "إتمام الطلب",
-    "en": "CHECKOUT"
+    "en": "CHECKOUT "
   },
   "000aa7": {
     "ar": "افضل المنتجات",
     "en": "BEST PRODUCTS"
   },
   "000aa8": {
-    "ar": "السعر: ",
-    "en": "Price: "
+    "ar": "السعر",
+    "en": " Price"
   },
   "000co1": {
-    "ar": "اسم المرسل ",
-    "en": "Sender Name * "
+    "ar": "اسم المرسل",
+    "en": " Sender Name * "
   },
   "000co2": {
-    "ar": "البريد الإلكتروني للمرسل",
-    "en": "Sender Email * "
+    "ar": "البريد الإلكتروني للمرسل ",
+    "en": " Sender Email * "
   },
   "000co3": {
-    "ar": "رقم هاتف المرسل",
-    "en": "Sender Contact * "
+    "ar": "رقم هاتف المرسل ",
+    "en": " Sender Contact * "
   },
   "000co4": {
     "ar": "اسم المستلم ",
-    "en": "Recipient Name * "
+    "en": " Recipient Name * "
   },
   "000co5": {
     "ar": "رقم هاتف المستلم",
-    "en": "Recipient Contact * "
+    "en": " Recipient Contact * "
   },
   "000co6": {
-    "ar": "تاريخ التسليم او الوصول ",
+    "ar": "تاريخ الاستلام ",
     "en": "Delivery Date"
   },
   "000co7": {
-    "ar": "موعد التسليم ",
-    "en": "Delivery Time"
+    "ar": "موعد الاستلام",
+    "en": " Delivery Time"
   },
   "000co8": {
-    "ar": "البلد ",
-    "en": "Country * "
+    "ar": "البلد",
+    "en": "Country"
   },
   "000co9": {
-    "ar": "المدينة ",
-    "en": "City  * "
+    "ar": "المدينة",
+    "en": "City"
   },
   "000co10": {
-    "ar": "عنوان المستلم ",
-    "en": "Recipient Address * "
+    "ar": "عنوان المستلم",
+    "en": "Recipient Address *"
   },
   "000co11": {
-    "ar": "نوع المكان ",
+    "ar": "نوع المكان",
     "en": "Place Type * "
   },
   "000co12": {
-    "ar": "أقرب مكان ",
+    "ar": "أقرب مكان",
     "en": "Nearest Place * "
   },
   "000co13": {
-    "ar": "رسالة للحصول على بطاقة هدية ",
-    "en": "Message for Gift Card * "
+    "ar": "ارسل للحصول على بطاقة هدية",
+    "en": "Message for Gift Card *"
   },
   "000co14": {
     "ar": "تأكيد الطلب",
     "en": "CONFIRM ORDER"
   },
   "000co15": {
-    "ar": "الدفع عند الاستلام ",
+    "ar": "الدفع عند الاستلام",
     "en": "CASH ON DELIVERY"
   },
   "000co16": {
-    "ar": "الدفع ببطاقة الإئتمان",
+    "ar": "الدفع ببطاقة الائتمان",
     "en": "Credimax"
   },
   "000co17": {
-    "ar": "هل لديك قسيمة ?",
-    "en": "Have A Coupon?"
+    "ar": "الدفع كاش عند الاستلام",
+    "en": "CASH ON DELIVERY"
   },
   "000co18": {
-    "ar": "الإشتراك",
+    "ar": "الاشتراك",
     "en": "Subscribe"
   },
   "000co19": {
@@ -542,11 +565,11 @@
   },
   "000co23": {
     "ar": "المجموع الفرعي",
-    "en": "Sub-Total :"
+    "en": "Sub-Total"
   },
   "000co24": {
     "ar": "المجموع",
-    "en": "Total :"
+    "en": "Total"
   },
   "000co25": {
     "ar": "ساعات العمل",
@@ -558,15 +581,15 @@
   },
   "000co27": {
     "ar": "الجمعة: مغلق",
-    "en": "Friday : Closed"
+    "en": "Friday: Closed"
   },
   "000co28": {
-    "ar": " الهاتف",
-    "en": "Telephone :"
+    "ar": "الهاتف",
+    "en": "Telephone"
   },
   "000co29": {
-    "ar": "التليفون المحمول :",
-    "en": "Mobile :"
+    "ar": "الهاتف المحمول",
+    "en": "Mobile"
   },
   "000co30": {
     "ar": "إرسال",
@@ -577,7 +600,7 @@
     "en": "04:00 PM – 09:00 PM"
   },
   "000co32": {
-    "ar": "إجماليات سلة التسوق",
+    "ar": "تفاصيل سلة التسوق",
     "en": "Cart Totals"
   },
   "000co33": {
@@ -601,31 +624,23 @@
     "en": "A Symbol Of Happiness"
   },
   "00m38": {
-    "ar": "أقسامنا",
+    "ar": "تصنيفاتنا ",
     "en": "Our Categories"
   },
   "00m39": {
-    "ar": "تسوق حسب الاقسام",
+    "ar": "تسوق حسب الصنف",
     "en": "Shop By Category"
   },
   "00m40": {
-    "ar": "اشترك في النشرة الإخبارية لدينا وابق على اطلاع دائم بالمنتجات والعروض الترويجية الجديدة",
+    "ar": "اشترك في النشرة الإخبارية ليصلك كل جديد عن المنتجات والعروض الترويجية ",
     "en": "Subscribe to our newsletter and always up to date about new products and promos."
   },
   "00m41": {
-    "ar": "ماذا يقول عملاؤنا",
+    "ar": "آراء عملائنا",
     "en": "What Our Client Says!!"
   },
-  "00m42": {
-    "ar": "حقوق النشر محفوظة © فلاور سنتر الإمارات العربية المتحدة ، جميع الحقوق محفوظة",
-    "en": "Copyright © Flower Center UAE, ALL RIGHTS REGISTERED"
-  },
-  "00m43": {
-    "ar": "flowercenter.uae@gmail.com",
-    "en": "flowercenter.uae@gmail.com"
-  },
   "00m44": {
-    "ar": "لم يتم العثور على منتج",
+    "ar": "لم يتم العثور على المنتج",
     "en": "No Product Found"
   },
   "00m45": {
@@ -641,7 +656,7 @@
     "en": "Buy Now"
   },
   "00m48": {
-    "ar": "تسليم في نفس اليوم (درجة أولى)",
+    "ar": "التسليم في نفس اليوم (درجة أولى)",
     "en": "SAME DAY PREMIUM DELIVERY"
   },
   "00m49": {
@@ -664,10 +679,6 @@
     "ar": "تخصيص الوصف",
     "en": "Customization Description"
   },
-  "00m54": {
-    "ar": "تأسس فلاور سنتر في دولة الإمارات العربية المتحدة في عام 2012 عندما بدأنا في استيراد الزهور الاصطناعية وتوزيعها في السوق. وفي عام 2015 ، افتتحنا فرعنا الأول للبيع بالتجزئة مباشرة تلاه فرع ثان ",
-    "en": "Flower Center was established in the UAE in 2012 when we started importing artificial flowers and distributing them in the market. In year 2015, we opened our first branch for direct retail selling followed by a second branch."
-  },
   "00m55": {
     "ar": "رسالة",
     "en": "Message"
@@ -685,7 +696,7 @@
     "en": "VIEW ALL"
   },
   "0fc02": {
-    "ar": "التسوق حسب الفئة",
+    "ar": "التسوق حسب الصنف",
     "en": "Shop By Category"
   },
   "0fc03": {
@@ -697,19 +708,11 @@
     "en": "Brands"
   },
   "0fc05": {
-    "ar": "ماذا يقول عملائنا",
+    "ar": "آراء عملائنا",
     "en": "What Our Client Says!!"
   },
-  "0fc06": {
-    "ar": "تأسس مركز الزهور في دولة الإمارات العربية المتحدة في عام 2012 عندما بدأنا في استيراد الزهور الاصطناعية وتوزيعها في السوق. في عام 2015 ، افتتحنا أول فرع لنا للبيع بالتجزئة مباشرة تبعه فرع ثان",
-    "en": "Flower Center was established in the UAE in 2012 when we started importing artificial flowers and distributing them in the market. In year 2015, we opened our first branch for direct retail selling followed by a second branch."
-  },
-  "0fc07": {
-    "ar": "حقوق النشر محفوظة © فلاور سنتر الإمارات العربية المتحدة ، جميع الحقوق محفوظة",
-    "en": "Copyright © Flower Center UAE, ALL RIGHTS REGISTERED"
-  },
   "0fc08": {
-    "ar": "ادخل بريدك الإلكتروني",
+    "ar": "ادخل البريد الإلكتروني",
     "en": "Enter you email"
   },
   "0fc09": {
@@ -729,28 +732,16 @@
     "en": "Subject"
   },
   "0fc013": {
-    "ar": "أرسل لنا رسالة",
+    "ar": "أرسل ",
     "en": "Message"
   },
   "0fc014": {
-    "ar": "طريقك نحو اللحظات التي لا تنسى",
+    "ar": "طريقك نحو اللحظات السعيدة",
     "en": "Your link for special moments"
   },
-  "0fc015": {
-    "ar": "تأسس مركز الزهور في دولة الإمارات العربية المتحدة في عام 2012 عندما بدأنا في استيراد الزهور الاصطناعية وتوزيعها في السوق. في عام 2015 ، افتتحنا أول فرع لنا للبيع بالتجزئة مباشرة تبعه فرع ثان. بعد ذلك بدأنا بالتعاقد مع المصانع بالخارج لتصنيع المنتجات حسب مواصفاتنا للبيع بالجملة والتجزئة. بالإضافة إلى ذلك بدأنا رحلتنا في بيع الورد الطبيعي وتنسيق الحفلات حتى يومنا هذا",
-    "en": "Flower Center was established in the UAE in 2012 when we started importing artificial flowers and distributing them in the market. In year 2015, we opened our first branch for direct retail selling followed by a second branch. After that, we have started contracting with factories abroad to manufacture products according to our own specifications for wholesale and retail selling. In addition to that, we began our journey in selling natural roses and coordinating parties until this day."
-  },
-  "0fc016": {
-    "ar": "لماذا فلاور سنتر?",
-    "en": "WHY FLOWER CENTER?"
-  },
-  "0fc017": {
-    "ar": " نحن متخصصون في إقتراح أفكار إبداعية لجميع المناسبات و الأحداث, و كذلك تنفيذ الديكورات الداخلية والخارجية المكونة من الزهور الاصطناعية والينابيع والخضروات الاصطناعية والديكورات وتنسيقات الزهور الطبيعية المميزة ",
-    "en": "We are specialized in coming up with creative ideas for all events and occasions as well as the implementation of interior and exterior decoration consisted of artificial flowers, springs, artificial vegetables, decorations, and distinctive natural flowers arrangements"
-  },
   "0fc018": {
-    "ar": "اشترك في النشرة الإخبارية معنا وكن على اطلاع دائم بالمنتجات الجديدة والعروض الترويجية",
-    "en": "Subscribe to our newsletter and always upto date about new products and promos."
+    "ar": " اشترك في النشرة الإخبارية ليصلك كل جديد عن المنتجات والعروض الترويجية ",
+    "en": "Subscribe to our newsletter and always up to date about new products and promos."
   },
   "0fc019": {
     "ar": "التصنيفات",
@@ -759,10 +750,6 @@
   "0fc020": {
     "ar": "منتج مقترح",
     "en": "SUGGESTED PRODUCT"
-  },
-  "0fc021": {
-    "ar": "تنسيقات زهور مبدعة ومبتكرة",
-    "en": "Creative flowers arrangements"
   },
   "0fc022": {
     "ar": "سلة التسوق",
@@ -789,11 +776,11 @@
     "en": "Kindly add items in your cart then place order"
   },
   "0fc028": {
-    "ar": "رقم  قسيمة الشراء",
+    "ar": "كود الخصم",
     "en": "Coupon code"
   },
   "0fc029": {
-    "ar": "قسيمة الشراء غير صالحة",
+    "ar": "كود الخصم منتهي الصلاحية",
     "en": "Invalid Coupon"
   },
   "0fc030": {
@@ -830,10 +817,10 @@
   },
   "0svc01": {
     "ar": "أكبر مجموعة في صناعة الخدمات",
-    "en": "The Largest group in the Services industry"
+    "en": "The Largest group in the services industry"
   },
   "0exp01": {
-    "ar": "توسعات أعمالنا تشهد على رؤيتنا",
+    "ar": "توسع أعمالنا تشهد على رؤيتنا",
     "en": "Our Business Expansions witnesses our Vision"
   },
   "0wwa01": {
@@ -845,7 +832,7 @@
     "en": "Planera Holding is having diversified multinational-owned businesses,"
   },
   "0lmp01": {
-    "ar": "تحتل مجموعة بلانيرا مكانة رائدة في السوق في مجال البناء ، وتقدم خدمات متعددة لعملائها بسبب النطاق الواسع من الشركات والعلامات التجارية التي تضمها",
+    "ar": "تحتل مجموعة بلانيرا مكانة رائدة في السوق في مجال البناء ، وتقدم خدمات متعددة لعملائها لما تضمنها الشركات والعلامات التجارية بالنطاق الواسع ",
     "en": "A leading market position in the construction field, Planera Holding offers multiple services to its clients due to the wide range of companies and brands it houses"
   },
   "0wmh01": {
@@ -857,7 +844,7 @@
     "en": "Since 2019"
   },
   "0est01": {
-    "ar": "تأ سسنا في  عام2019  وحققنا ثقة كبيرة في مجال البناء. و أعلنا عن مشاريع فيلات فاخرة لعملائنا الحصريين في مناطق مختلفة من مملكة البحرين.تأ سسنا في  عام2019  وحققنا ثقة كبيرة في مجال البناء. و أعلنا عن مشاريع فيلات فاخرة لعملائنا الحصريين في مناطق مختلفة من مملكة البحرين.",
+    "ar": "تأ سسنا في عام2019 وحققنا ثقة كبيرة في مجال البناء. و أعلنا عن مشاريع فيلات فاخرة لعملائنا الحصريين في مناطق مختلفة من مملكة البحرين. تأ سسنا في  عام2019  وحققنا ثقة كبيرة في مجال البناء. و أعلنا عن مشاريع فيلات فاخرة لعملائنا الحصريين في مناطق مختلفة من مملكة البحرين.",
     "en": "Established in 2019 in the field of construction we accomplished substantial confidence in the field of construction. Currently, we have announced luxurious villas projects for our exclusive customers in different areas of the Bahrain Kingdom."
   },
   "0str01": {
@@ -933,7 +920,7 @@
     "en": "OUR EVENTS"
   },
   "0ptw01": {
-    "ar": "امتيازات العمل مع بلانيرا",
+    "ar": "مزايا العمل مع بلانيرا",
     "en": "Perks To Work With Planera"
   },
   "0ohs01": {
@@ -953,7 +940,7 @@
     "en": "Trained and Transformed"
   },
   "0wp01": {
-    "ar": "حسن التخطيط والتنفيذ بشكل صحيح",
+    "ar": " التخطيط المناسب والتنفيذ الدقيق",
     "en": "Well Planned and properly executed"
   },
   "0es01": {
@@ -989,7 +976,7 @@
     "en": "Planera Holding"
   },
   "0ea01": {
-    "ar": "تأسست الشركة عام 2020 في مجال البناء ، وحققت نجاحًا كبيرًا من خلال العمل على الظروف المعيشية ، والتنوع في المجتمعات والمناطق الحضرية. ثم قررت الشركة جمع عملياتها معًا تحت مظلة واحدة لمجموعة بلانيرا مثل Planera Arts , Activar Bahrain Public Relations من خلال رؤية مؤسسها ، والتوجه الاستراتيجي ، والالتزام الثابت ، حققت مجموعة بلانيرا أهدافها في أعمال البناء والآن توسع المجموعة محفظتها في التصميم الداخلي ، ومبيعات العطور ، والإعلان عبر وسائل التواصل الاجتماعي ، والتصوير الفوتوغرافي ، والفيديو ، والاستشارات التسويقية  و مجال الإدارية .",
+    "ar": "تأسست الشركة عام 2020 في مجال البناء ، وحققت نجاحًا كبيرًا من خلال العمل على ظروف المعيشة ، والتنوع في المجتمعات والمناطق الحضرية. ثم قررت الشركة جمع عملياتها معًا تحت مظلة واحدة لمجموعة بلانيرا مثل Planera Arts , Activar Bahrain Public Relations من خلال رؤية مؤسسها ، والتوجه الاستراتيجي ، والالتزام الثابت ، حققت مجموعة بلانيرا أهدافها في أعمال البناء والآن توسع المجموعة محفظتها في التصميم الداخلي ، ومبيعات العطور ، والإعلان عبر وسائل التواصل الاجتماعي ، والتصوير الفوتوغرافي ، والفيديو ، والاستشارات التسويقية  و مجال الإدارية .",
     "en": "Established in 2020 in the field of construction, and achieved great success by working on living conditions, and versatility in urban communities and areas. Then the company decided to bring its operations together under one umbrella of Planera Holding such as Planera Arts and Activar Bahrain Public Relations Through its founder's vision, strategic direction, and unwavering commitment, the Planera Holding achieved its goals in the construction business and now The Group expands its Portfolio in interior design, perfume sales, social media advertising, photography, and video, and Marketing and Management consultancy field We started with one employee, and now the group consists of more than 50 employees from around the world working together with a common goal. We achieve our goals under the leadership of Omar Abdulaziz, a great leader and successful businessman. The Planera Holding now works in construction, interior design, perfume sales, social media advertising, photography and video, and also works in marketing and management consulting."
   },
   "0cm01": {
@@ -1021,11 +1008,11 @@
     "en": "Mission"
   },
   "0rgn1": {
-    "ar": "أن نكون الرائد الإقليمي من خلال وضع معايير للمنتجات العالية الجودة والخدمات المبتكرة والموثوقة وقناعة العملاء و تحقيق فرق كبير للأشخاص الذين لديهم أحلام كبيرة",
-    "en": "To be the regional leader by setting benchmarks for superior quality products, innovative services, reliability, and customer satisfaction and make a big difference for people with a big dreams"
+    "ar": "أن نكون الرائد الإقليمي من خلال وضع معايير للمنتجات العالية الجودة والخدمات المبتكرة والموثوقة وقناعة العملاء و تحقيق فرق كبير للأشخاص الذين لديهم رؤى عظيمة",
+    "en": "To be the regional leader by setting benchmarks for superior quality products, innovative services, reliability, and customer satisfaction and make a big difference for people with a big dream"
   },
   "0om1": {
-    "ar": "مهمتنا هي ما إذا كنا ندخل أسواقًا جديدة أو نلتقي بالعملاء بطرق جديدة ، فنحن نبتكر باستمرار لتلبية توقعات العملاء.",
+    "ar": "هدفنا هو الابتكار لتلبية توقعات العملاء باستمرار إذا دخلنا على العملاء بأسواق جديدة أو بطرق جديدة.",
     "en": "Our mission is whether we are entering new markets or meeting customers in new ways, we are constantly innovating to meet customer expectations."
   },
   "0os1": {
@@ -1033,7 +1020,7 @@
     "en": "Our Strategy"
   },
   "0pgs1": {
-    "ar": "تُستمد إستراتيجية مجموعة بلانيرا من مهمتنا المتمثلة في جعل الغد مكانًا أفضل. استراتيجيتنا هي تحقيق نمو مستدام ومربح من خلال",
+    "ar": "تُستمد إستراتيجية مجموعة بلانيرا من مهمتنا المتمثلة في جعل الغد أفضل. استراتيجيتنا هي تحقيق نمو مستدام ومربح من خلال",
     "en": "Planera Holding strategy is derived from our mission to make tomorrow a better place. Our strategy is to achieve sustainable, profitable growth by"
   },
   "0aag1": {
@@ -1041,7 +1028,7 @@
     "en": "Investing in our people and capabilities"
   },
   "0ag1": {
-    "ar": "بناء شراكات طويلة الأمد وموثوقة",
+    "ar": "بناء شراكات طويلة الأمدوموثوقة",
     "en": "Building long-term, trusted partnerships"
   },
   "0as01": {
@@ -1069,7 +1056,7 @@
     "en": "Explore"
   },
   "0pgi01": {
-    "ar": "تضم مجموعة بلانيرا العديد من الشركات تحت مظلتها.",
+    "ar": "تضم مجموعة بلانيرا تحت مظلتها العديد من الشركات.",
     "en": "Planera Holding includes several companies under its umbrella."
   },
   "0pi01": {
@@ -1078,10 +1065,10 @@
   },
   "0bbc01": {
     "ar": "شركة بحرينية متخصصة في عدة مجالات تقدم خدمات إعلامية متعددة مثل ،التصوير الفوتوغرافي والفيديو.",
-    "en": "A Bahraini-based company that specialises in several fields, it provides multiple media services such as, photography and videography."
+    "en": "A Bahraini-based company that specializes in several fields, it provides multiple media services such as, photography and videography."
   },
   "0bct01": {
-    "ar": "شركة بحرينية افتتحت مؤخرًا فرعًا لها في دبي تحت إدارة مجموعة من الشباب البحريني.",
+    "ar": "شركة بحرينية افتتحت مؤخرًا فرعًا لها في دبي تحت إدارة مجموعة من الشباب البحرينيين.",
     "en": "A Bahraini company that has recently opened a branch in Dubai, which was under the management of a group of young Bahrainis."
   },
   "0b01": {
@@ -1089,7 +1076,7 @@
     "en": "Hermano Contracting and Landscaping Company works on constructing and maintaining buildings of all kinds, such as hotels, buildings, villas and apartments"
   },
   "0hm1": {
-    "ar": "هيرمانو لخدمات الصيانة للكهرباء والسباكة تعمل من خلال فريق عمل متخصص وذو  خبرة , يستعمل ميني باص مجهز بجميع المعدات",
+    "ar": "هيرمانو لخدمات الصيانة للكهرباء والسباكة تعمل من خلال فريق عمل متخصص وذو خبرة, يستعمل ميني باص مجهز بجميع المعدات",
     "en": "Hermano maintenance services for electricity and plumbing that works through a specialized and experienced team through a mini bus with all their equipment"
   },
   "0cp1": {
@@ -1101,8 +1088,8 @@
     "en": "Sales"
   },
   "0in01": {
-    "ar": "للإستفسار",
-    "en": "Inquires"
+    "ar": "مبيعات",
+    "en": "Sales"
   },
   "0wva1": {
     "ar": "نحن نقدر ونريد أن نسمع منك! تواصل معنا باستخدام النموذج أدناه أو اتصل بفريق الدعم لصيانة المنتج واستفسارات الدعم",
@@ -1125,7 +1112,7 @@
     "en": "Let's talk..."
   },
   "0qs01": {
-    "ar": "هل لديك اسئلة؟",
+    "ar": "هل لديك استفسار؟",
     "en": "Do you have any questions?"
   },
   "0ser01": {
@@ -1169,7 +1156,7 @@
     "en": "We Dont Renovate"
   },
   "0wt1": {
-    "ar": "نحن نحول",
+    "ar": "نحن نغيّر",
     "en": "We Transform"
   },
   "0tss1": {
@@ -1185,11 +1172,11 @@
     "en": "Design your dream Residence and Commercial projects with us"
   },
   "0opa1": {
-    "ar": "هدفنا الأساسي هو إنشاء تصميمات من خلال التركيز على الجانب الجمالي وضمان تنفيذ عملنا بإتقان تام.",
+    "ar": "هدفنا الأساسي هو إنشاء تصميمات مرتكزا على جانب حسن المنظر وضمان التنفيذ بإتقان تام.",
     "en": "Our primary aim is to create designs by focusing on the aesthetic side and ensuring the execution of our work with full perfection."
   },
   "0oda1": {
-    "ar": "تم تحقيق تصميماتنا من قبل محترفين ونحن متحمسون لتلبية رغبات عملائنا.",
+    "ar": "تم تحقيق تصميماتنا من قبل مصممين محترفين ونحن متحمسون لتلبية رغبات عملائنا.",
     "en": "Our designs are made by professionals and we are passionate to meet the aspiration of our customers."
   },
   "0oss1": {
@@ -1197,7 +1184,7 @@
     "en": "Our Services"
   },
   "0wwc1": {
-    "ar": "ماذا نستطيع ان نفعل",
+    "ar": "ماذا نستطيع أن نفعل",
     "en": "What We Can Do"
   },
   "0id01": {
@@ -1213,7 +1200,7 @@
     "en": "Landscape Design"
   },
   "0ccs01": {
-    "ar": "استشارات الفضاء المفاهيمية والتصميم",
+    "ar": "استشارات عن الافكار المتبكرة والتصاميم المخترعة",
     "en": "Consulting Conceptual Space & Design"
   },
   "0sse01": {
@@ -1229,7 +1216,7 @@
     "en": "Our Vision"
   },
   "0wat01": {
-    "ar": "نحن نهدف إلى رسم خيالك من خلال الشكل النهائي و الرفيع المُستوى. نحن نصمم أسلوب حياتك. نحن متحمسون لتلبية رغبات عملائنا",
+    "ar": "نحن نهدف إلى تحقيق رسم خيالك في الواقع الملموس وفق التصميم الحديث والجودة العالية ومن خلال الشكل النهائي. نحن نصمم أسلوب حياتك. نحن متحمسون لتلبية رغبات عملائنا",
     "en": "We aim to sketch your imagination through the ultimate form of sophistication. We design your lifestyle. we are passionate to meet the aspiration of our customers."
   },
   "0inq01": {
@@ -1241,15 +1228,15 @@
     "en": "Our designs are professional and passionate to meet the ambition of our customer"
   },
   "0iyh01": {
-    "ar": "في منزلك أو مكتبك ، نهدف إلى إنشاء تصميمات جمالية ومتطورة. أينما كنت ، نحن نصمم حياتك.",
-    "en": "In your home or office , we aim to create aesthetic and sophisticated designs. Whereever you are, we design your life."
+    "ar": "في منزلك أو مكتبك ، نهدف إلى إنشاء تصميمات جميلة ومتطورة. أينما كنت ، نحن نصمم حياتك.",
+    "en": "In your home or office, we aim to create aesthetic and sophisticated designs. Wherever you are, we design your life."
   },
   "0vow01": {
-    "ar": "عرض عملنا",
+    "ar": "شاهد أعمالنا",
     "en": "View our work"
   },
   "0wsy01": {
-    "ar": "نصوغ قيمك من خلال الهندسة المعمارية المبتكرة وآفاق التصميم",
+    "ar": " سنحول أفكارك إلى تصميم معماري مبتكر وحديث,",
     "en": "We shape your values through Innovative Architecture & Design Perspectives"
   },
   "0pit01": {
@@ -1257,15 +1244,15 @@
     "en": "Planera interior transforms your standards that purely connect with people by marrying unbounded creativity with intelligent utility. Our designs are professional and passionate to meet the ambition of our customers."
   },
   "0wpi01": {
-    "ar": "لماذا بلانيرا للتصميم الداخلي",
+    "ar": "لماذا أختار بلانيرا للتصميم الداخلي",
     "en": "Why Planera Interior"
   },
   "0wwo01": {
-    "ar": "نحن نعمل على الابتكارات اللتي تجعل الأشياء الإبداعية تبدو مختلفة.",
+    "ar": " عملنا يعكس الابتكار الذي يحقيق التميز في الأشياء المبدعة.",
     "en": "We work on innovations and innovations does creative things to look differently."
   },
   "0ww01": {
-    "ar": "لدينا صيغة عمل QRECS. الجودة والموثوقية والكفاءة وخدمة العملاء",
+    "ar": "لدينا صيغة عمل QRECS. الجودة والضمان والكفاءة وخدمة العملاء",
     "en": "We have a working formula QRECS. Quality, Reliability, Efficiency, Customer, Services"
   },
   "0vop01": {
@@ -1273,19 +1260,19 @@
     "en": "View Our Projects"
   },
   "0sow01": {
-    "ar": "إكتشف أعمالنا",
+    "ar": "اكتشف أعمالنا",
     "en": "See Our Work"
   },
   "0wap01": {
-    "ar": "نحن نقدم مجموعة واسعة من الخدمات من صيانة المنزل إلى المساعدة الشخصية. نحن نتأكد من عدم المساس بسلامتك. هذا هو السبب في أننا نوظف جميع الموظفين تحت سقف شركة هيرمانو للإصلاح والصيانة.",
-    "en": "We are providing the most extensive range of services from home maintenance to personal assistance. We make sure that your safety is never compromised. This is why we hire all the staff under the roof of Hermano repair and maintainence company."
+    "ar": "نحن نقدم مجموعة واسعة من الخدمات من صيانة المنزل إلى الخدمات الشخصية. نحن نتأكد من عدم المساس بسلامتك. ولذا نحن نوظف جميع الموظفين تحت سقف شركة هيرمانو للإصلاح والصيانة.",
+    "en": "We are providing the most extensive range of services from home maintenance to personal assistance. We make sure that your safety is never compromised. This is why we hire all the staff under the roof of Hermano repair and maintenance company."
   },
   "0oea01": {
     "ar": "خبراؤنا متواجدون دائمًا",
     "en": "OUR EXPERTS ARE ON HAND"
   },
   "0rhh01": {
-    "ar": "إصلاح عقد المنزل والأجهزة",
+    "ar": "إصلاح أغراض المنزل والأجهزة",
     "en": "Repair House Hold and Appliances"
   },
   "0elec1": {
@@ -1293,7 +1280,7 @@
     "en": "Electricity"
   },
   "0gal1": {
-    "ar": "صالة عرض",
+    "ar": "معرض",
     "en": "Gallery"
   },
   "0bnw1": {
@@ -1305,23 +1292,23 @@
     "en": "2022 Powered by Planera Holding"
   },
   "0bft1": {
-    "ar": "موجز ، أول شيء يتم تحديده هو المفهوم والنموذج الذي تريده.",
+    "ar": "تعليمات ، أول شيء يتم تحديده هو المفهوم والنموذج الذي تريده.",
     "en": "<b>Briefing</b>, First thing you determine the concept and model you want."
   },
   "0bfw1": {
-    "ar": "المعالجة، بعد الإحاطة نقوم بتنفيذ المفهوم المطلوب.",
+    "ar": "التطبيق، بعد الإحاطة نقوم بتنفيذ المفهوم المطلوب.",
     "en": "<b>Processing</b>, After briefing we carry out the execution of the desired concept."
   },
   "0bwa1": {
-    "ar": "الإنهاء، بعد اكتمال العملية ، سنقوم على الفور بتنفيذ مرحلة الإنهاء.",
-    "en": "<b>Finishing</b>, After the process is complete, We will immediately carry out finishing stage."
+    "ar": "الإنهاء، بعد اكتمال العمل ، سنقوم على الفور بتنفيذ مرحلة الإنهاء.",
+    "en": "<b>Finishing</b>, After the process is complete, we will immediately carry out finishing stage."
   },
   "0oprt1": {
     "ar": "الحافظة",
     "en": "Our <br /><span>Portfolio</span>"
   },
   "0ocp1": {
-    "ar": "مشاريعنا المكتملة  تمت بافضل إنجاز وأصبحت مثالا للأناقة . نهدف إلى إنشاء تصميمات جمالية حديثة.",
+    "ar": "مشاريعنا المكتملة تمت بأفضل إنجاز وأصبحت مثالا للأناقة. نهدف إلى إنشاء تصميمات أنيقة حديثة.",
     "en": "Our completed projects carried to an extreme and become elegance. We aim to create aesthetic and sophisticated designs."
   },
   "0vp01": {
@@ -1329,7 +1316,7 @@
     "en": "View Portfolio"
   },
   "0yhs01": {
-    "ar": "سوف يروي منزلك قصتك أنت ، و سييكون المكان الذي تجد فيه كل شيء تحبه",
+    "ar": "سوف يروي منزلك قصتك أنت ، و سيصبح المكان الذي تجد فيه كل شيء تحبه",
     "en": "Your home should tell the story of who you are, and be a collection of what you love"
   },
   "0wos01": {
@@ -1337,7 +1324,7 @@
     "en": "We offer services for physical structures as well as personal and artistic designs such as paint color, roof shape and material, decks, patios, gardens, and more."
   },
   "0ws01": {
-    "ar": "يتمتع المصممون لدينا بالخبرة لتحويل مشروعك من خلال الفن والعلم وتحسين التصميم الداخلي لتحقيق بيئة مبهجة من الناحية الجمالية للأشخاص الذين يستخدمون المساحة.",
+    "ar": "يتمتع المصممون لدينا بالخبرة العميقة للإبداع في مشروعك من خلال الفن والعلم وتحسين التصميم الداخلي لتحقيق بيئة مبهجة بالإناقة والجمال. للأشخاص المبدعين في رسم التخيل المبتكر والمستقبل المشرق.",
     "en": "Our designers have expertise to transform your project through art and science and enhance the interior design to achieve an aesthetically pleasing environment for the people using the space."
   },
   "0off01": {
@@ -1353,11 +1340,11 @@
     "en": "Share your Workload; Hire our services to supervise your projects to minimize your hidden risks. We offer supervision services for small and large scale of businesses or projects"
   },
   "0glc01": {
-    "ar": "الإضاءة الجيدة تغيروتحول المساحة ، يوفر فريقنا الإبداعي أثاثًا وتصميمات إضاءة حصرية ستؤثر على أجواء مساحتك وتعززها",
+    "ar": "الإضاءة الجيدة تغير وتحول المكان ، يوفر فريقنا الإبداعي أثاث وتصميمات إضاءة حصرية ستؤثر على أجواء منزلك وتعززها",
     "en": "Good lighting changes and transforms a space, Our Creative team provides exclusive furniture and lighting designs which will impact and enhance the ambiance of your space"
   },
   "0yh01": {
-    "ar": "سوف يروي منزلك قصتك أنت ، و سييكون المكان الذي تجد فيه كل شيء تحبه.",
+    "ar": "سوف يروي منزلك قصتك أنت ، و سيصبح المكان الذي تجد فيه كل شيء تحبه.",
     "en": "Your home should tell the story of who you are, and be a collection of what you love."
   },
   "0fb01": {
@@ -1374,7 +1361,7 @@
   },
   "0app1": {
     "ar": "الشقة",
-    "en": "Appartment"
+    "en": "Apartment"
   },
   "0shp1": {
     "ar": "المحل",
@@ -1405,7 +1392,7 @@
     "en": "HOW IT WORKS"
   },
   "0bs1": {
-    "ar": "3 خطوات فقط لحجز الحدمات",
+    "ar": "3 خطوات فقط لحجز الخدمات",
     "en": "Book services in just 3 steps!"
   },
   "0sts1": {
@@ -1413,15 +1400,15 @@
     "en": "Select the service"
   },
   "0cts1": {
-    "ar": "إختر المعاد",
+    "ar": "اختر المعاد",
     "en": "Choose the slot"
   },
   "0mpr1": {
-    "ar": "إدفع و لا تشيل هم",
+    "ar": "ادفع و لا تشيل هم",
     "en": "Make payment and relax"
   },
   "0bks1": {
-    "ar": "حجز الحدمات",
+    "ar": "حجز الخدمات",
     "en": "Book Service"
   },
   "0tak1": {
@@ -1446,31 +1433,31 @@
   },
   "0hha1": {
     "ar": "الأدوات المنزلية والأجهزة",
-    "en": "Household and appliances"
+    "en": "Householdand appliances"
   },
   "0acw1": {
     "ar": "أعمال التكييف",
     "en": "Air Conditioner Work"
   },
   "0wap1": {
-    "ar": "نحن نقدم مجموعة واسعة من الخدمات من صيانة المنزل إلى المساعدة الشخصية. نحن نتأكد من عدم المساس بسلامتك.",
-    "en": "We are providing the most extensive range of services from home maintenance to personal assistance.We make sure that your safety is never compromised."
+    "ar": "نحن نقدم مجموعة واسعة من الخدمات من صيانة المنزل إلى الخدمات الشخصية. نحن نتأكد من عدم المساس بسلامتك.",
+    "en": "We are providing the most extensive range of services from home maintenance to personal assistance. We make sure that your safety is never compromised."
   },
   "0tiw1": {
     "ar": "هذا هو السبب في أننا نوظف جميع الموظفين تحت سقف شركة Hermano للإصلاح والصيانة.",
-    "en": "This is why we hire all the staff under the roof of Hermano repair and maintainence company."
+    "en": "This is why we hire all the staff under the roof of Hermano repair and maintenance company."
   },
   "0wch1": {
     "ar": "لماذا تختار هيرمانو",
     "en": "WHY CHOOSE <br /> HERMANO"
   },
   "0wot1": {
-    "ar": "نحن نقدم أفضل خدمة إصلاح وصيانة بأسعار تنافسية. إن الفنيين لدينا مدربين تدريباً جيداً ومطلعين ومجهزين بأحدث التقنيات. يمكننا إصلاح الأشياء التي لا يمكن للآخرين إصلاحها في أي وقت من الأوقات.",
-    "en": "We offer the best repair and maintenance service with competitive pricing.  Our Technicians are well trained and informed and equipped with the latest technologies. We can fix things that can not be fixed by others in no time."
+    "ar": "نحن نقدم أفضل خدمة إصلاح وصيانة بأسعار تنافسية. موظفوا شركتا مدربين تدريباً جيداً ومطلعين ومجهزين بأحدث التقنيات. يمكننا إصلاح الأشياء التي لا يمكن للآخرين إصلاحها في أي وقت من الأوقات.",
+    "en": "We offer the best repair and maintenance service with competitive pricing.  Our technicians are well trained and informed and equipped with the latest technologies. We can fix things that cannot be fixed by others in no time."
   },
   "0pm1": {
     "ar": "الصيانة المهنية",
-    "en": "Professional Maintainence"
+    "en": "Professional Maintenance"
   },
   "0srv1": {
     "ar": "خدمات 24/7",
@@ -1482,7 +1469,7 @@
   },
   "0acwk1": {
     "ar": "أعمال صيانة المكيفات",
-    "en": "Air conditioner <br /> maintainence work"
+    "en": "Air conditioner <br /> maintenance work"
   },
   "0mb01": {
     "ar": "مركز مندرين للأعمال - منطقة السيف (البحرين)",
@@ -1493,19 +1480,19 @@
     "en": "Repair of household <br /> and appliances"
   },
   "0Hih1": {
-    "ar": "يقدم الفنيون الداخليون في HERMANO أفضل مجموعة موثوقة وكاملة من خدمات إصلاح وتركيب الأجهزة المنزلية باستخدام أحدث التقنيات و المواد المناسبة التي تم التحقق منها .",
-    "en": "Hermano’s In-house technicians provide the best reliable, and Complete range of home appliance repairing and installation services by using the appropriate verified materials and latest techniques."
+    "ar": "يقدم المصممون في HERMANO أفضل مجموعة موثوقة وكاملة من خدمات إصلاح وتركيب الأجهزة المنزلية باستخدام أحدث التقنيات و المواد المناسبة التي تم التحقق منها.",
+    "en": "Hermanos In-house technicians provide the best reliable, and Complete range of home appliance repairing and installation services by using the appropriate verified materials and latest techniques."
   },
   "0wdi1": {
-    "ar": "نحن نتعامل في جميع أنواع أعمال السباكة ، بما في ذلك تركيبات PPR ، وتركيب CPVC ، والأعمال المماثلة. فريقنا متاح لأعمال الإصلاح الصغيرة / الكبيرة. نحن نصلح مشاكلك في أي وقت من الأوقات",
+    "ar": "نحن نتعامل في جميع أنواع أعمال السباكة ، بما في ذلك تركيبات PPR ، وتركيب CPVC ، والأعمال المماثلة بذلك. فريقنا متاح لأعمال الإصلاح الصغيرة / الكبيرة. نحن نصلح مشاكلك في أي وقت من الأوقات",
     "en": "We deal in all kinds of plumbing work, including PPR Fittings, CPVC Fitting, and similar work. Our team is available for small/large repair work. We fix your issues in no time"
   },
   "0wrs1": {
-    "ar": "متخصصون في إصلاح المكيفات بأحدث الأدوات. نعدك بإرضائك و  تقديم الجودة لك",
+    "ar": "متخصصون في إصلاح المكيفات بأحدث الأدوات. نعدك بإرضائك و تقديم الجودة لك",
     "en": "We are specialized in repairing Air conditioners with the latest tools. We promise to deliver quality and satisfaction"
   },
   "0oet1": {
-    "ar": "فريقنا الكهربائي مدرب جيدًا ولديه معرفة كاملة بإجراأت التشغيل الموحدة المطلوبة للعمل جنبًا إلى جنب مع أحدث المعدات اللازمة لأعمال الإصلاح والتركيب الكهربائي  للمباني السكنية والتجارية",
+    "ar": "فريقنا الكهربائي مدرب جيدًا ولديه معرفة كاملة بإجراأت التشغيل الموحدة المطلوبة للعمل مع أحدث المعدات اللازمة لأعمال الإصلاح والتركيب الكهربائي للمباني السكنية والتجارية",
     "en": "Our Electrical team is well-trained with full knowledge of SOPs required for the work along with the latest equipment required for the Electric repair and fitting work for residential and commercial customers."
   },
   "0rpr1": {
@@ -1514,10 +1501,10 @@
   },
   "0mnt1": {
     "ar": "اعمال صيانة",
-    "en": "Maintainence"
+    "en": "Maintenance"
   },
   "0oth1": {
-    "ar": "آحرون",
+    "ar": "آخرون",
     "en": "Others"
   },
   "0cua1": {
@@ -1525,20 +1512,20 @@
     "en": "Call us <br> Anytime"
   },
   "0git1": {
-    "ar": "تواصل مع فريق الخدمة لدينا. تحدث إلينا للحصول على دعم العملاء على مدار الساعة وطوال أيام الأسبوع ، وأخبرنا كيف يمكننا المساعدة. سنتواصل معك في أقرب وقت ممكن بناءً على مدى إلحاحكطلب.",
-    "en": "Get in touch with our service team. Talk to us for 24/7 customer support.Let us know how we can help. We will get in touch as soon as possible based on urgency of your request."
+    "ar": "تواصل مع فريق الخدمة لدينا. تحدث إلينا للحصول على دعم العملاء على مدار الساعة وطوال أيام الأسبوع ، وأخبرنا كيف يمكننا المساعدة. سنتواصل معك في أقرب وقت ممكن بناءً على ما طلبت.",
+    "en": "Get in touch with our service team. Talk to us for 24/7 customer support. Let us know how we can help. We will get in touch as soon as possible based on urgency of your request."
   },
   "0fft1": {
-    "ar": "لا تتردد في إرسال رسالة إلينا",
+    "ar": "لا تتردد في مراسلتنا",
     "en": "Feel free to <br> send us a message"
   },
   "0stf1": {
-    "ar": "أرسل النموذج بنجاح!",
+    "ar": "تم إرسال النموذج بنجاح!",
     "en": "Submitted the form successfully!"
   },
   "0wwg1": {
-    "ar": "سوف نعود اليك قريبا.",
-    "en": "We will get back to you soon."
+    "ar": " تم إرسال النموذج بنجاح!",
+    "en": "Submitted the form successfully!"
   },
   "0bsi1": {
     "ar": "احجز الخدمة في 3 خطوات فقط!",
@@ -1553,16 +1540,16 @@
     "en": "Choose your <br /> time slot"
   },
   "0mpar1": {
-    "ar": "إدفع و لا تشيل هم",
+    "ar": "ادفع و لا تشيل هم",
     "en": "Make payment <br /> and relax"
   },
   "0hcl1": {
-    "ar": "شركة هيرمانو للمقاولات وتنسيق الحدائق هي شركة رائدة في تقديم الخدمات المتعددة التي تلبي جميع احتياجاتك  بجودة مضمونة.",
+    "ar": "شركة هيرمانو للمقاولات وتنسيق الحدائق هي شركة رائدة في تقديم الخدمات المتعددة التي تلبي جميع احتياجاتك بجودة مضمونة.",
     "en": "Hermano contracting and landscaping company is a leading multiple service provider catering to your 360 needs with quality guaranteed."
   },
   "0wwd1": {
     "ar": "الذي نفعله",
-    "en": "What We Do?"
+    "en": "What WeDo?"
   },
   "0bwc": {
     "ar": "أعمال تشييد المباني",
@@ -1570,23 +1557,23 @@
   },
   "0lde": {
     "ar": "تصميم وتنفيذ المناظر الطبيعية",
-    "en": "Landscapíng Design and Execution"
+    "en": "Landscaping Design and Execution"
   },
   "0ode": {
-    "ar": "موضفونا يجسدون شعارهم للجودة والسرعة وإرضاء العميل! كل مشروع يبدأ برؤية ، من اجل تحقيق هدف واحد.",
-    "en": "Our developers embody their motto of quality, speed & client satisfaction! Every project begins with a vision, bringing alive one goal."
+    "ar": "موضفونا يحملون شعار الجودة والسرعة وإرضاء العميل! كل مشروع يبدأ برؤية ، من اجل تحقيق هدف واحد.",
+    "en": "Our developers embody their motto of quality, speed & client satisfaction! Every project begins with a vision, bringing alive one goal."
   },
   "0hcle": {
-    "ar": "هيرمانو للمقاولات والمناظر الطبيعية خبراء في بناء وصيانة جميع أنواع المشاريع الصناعية والتجارية والسكنية بما في ذلك فنادق بورش عالية الجودة وأحدث المباني التكنولوجية والفيلات والشقق الراقية هي خبرتنا.",
+    "ar": "هيرمانو للمقاولات والمناظر الطبيعية خبراء في بناء وصيانة جميع أنواع المشاريع الصناعية والتجارية والسكنية بما في ذلك فنادق بورش عالية الجودة وأحدث المباني التكنولوجية والفيلات والشقق الراقية هذه خبرتنا.",
     "en": "Hermano Contracting and Landscaping are experts in constructing and maintaining all kind of Industrial, Commercial, and residential projects including Porsche quality hotels, latest Tech buildings, high end villas and apartments are our expertise."
   },
   "0Iat": {
-    "ar": "بالإضافة إلى أعمال البناء لدينا ، نحن بارعون في تقديم خدمات الصيانة مثل الكهرباء والسباكة والأعمال الأخرى ذات الصلة من خلال سيارة متنقلة متوفرة عند الطلب و كذلك المعدات والمواد الكاملة المطلوبة لأعمال الصيانة.",
+    "ar": "بالإضافة إلى أعمال البناء، نحن بارعون في خدمات الصيانة مثل الكهرباء والسباكة والأعمال الأخرى ذات الصلة من خلال سيارة متنقلة متوفرة عند الطلب و كذلك المعدات والمواد الكاملة المطلوبة لأعمال الصيانة.",
     "en": "In addition to our construction business, we are proficient in providing maintenance services such as electricity, plumbing and other related works through a mobile car available on call complete equipment and material required for the maintenance work."
   },
   "0odet0": {
-    "ar": "موضفونا يجسدون شعارهم للجودة والسرعة وإرضاء العميل! كل مشروع يبدأ برؤية ، من اجل تحقيق هدف واحد.",
-    "en": "Our developers embody their motto of quality, speed & client satisfaction! Every project begins with a vision, bringing alive one goal."
+    "ar": "موضفونا يحملون شعار الجودة والسرعة وإرضاء العميل! كل مشروع يبدأ برؤية ، من اجل تحقيق هدف واحد.",
+    "en": "Our developers embody their motto of quality, speed & client satisfaction! Every project begins with a vision, bringing alive one goal."
   },
   "0om0": {
     "ar": "مهمتنا",
@@ -1605,8 +1592,8 @@
     "en": "Specializing in Contracting and Landscaping"
   },
   "0shc0": {
-    "ar": "منذ تأسيس شركة Hermano ، نقدم سجلاً حافلًا من التصميم الإبداعي والجودة في تنسيق الحدائق والصيانة. لقد خدمنا واكتسبنا سمعة كوننا أحد المنافسين الرائدين في السوق في مجال المناظر الطبيعية السكنية والتجارية.",
-    "en": "Since Hermano company was founded, we offers a proven track record of creative, quality design in Landscaping and maintenance. We have served and earned the reputation of being one of the market leading competitors in residential and commercial landscaping."
+    "ar": "منذ تأسيس شركة Hermano ، قدمنا خدمات حافلة من التصميم الإبداعي والجودة في تنسيق الحدائق والصيانة. لقد خدمنا واكتسبنا سمعة حسنة كوننا أحد المنافسين الرائدين في السوق في مجال المناظر الطبيعية السكنية والتجارية.",
+    "en": "Since Hermano company was founded, we offer a proven track record of creative, quality design in Landscaping and maintenance. We have served and earned the reputation of being one of the market leading competitors in residential and commercial landscaping."
   },
   "0wae0": {
     "ar": "نحن خبراء",
@@ -1617,19 +1604,19 @@
     "en": "Why Hermano"
   },
   "0weg0": {
-    "ar": "لقد توسعنا بشكل كبير بسبب جودة عملنا ، ولدينا الآن عملاء للمناظر الطبيعية وشركات في جميع أنحاء البحرين.",
+    "ar": "لقد توسعنا بشكل كبير بسبب جودة عملنا ، ولدينا الآن عملاء للمناظر الطبيعية وشركات متخلفة في جميع أنحاء البحرين.",
     "en": "We expanded greatly because of our quality work, and now have domestic and corporate landscaping and gardening clients all over Bahrain."
   },
   "0wao0": {
-    "ar": "حن نقدم مستوى عاليًا من المعرفة ونقدم لك القيمتة الحقيقية في مقابل ما تدفعه. اليوم نحافظ على أكثر من 50 موقعًا ، مما يجعلنا إحدى الشركات الرائدة في مجال الخدمات الخضراء في البحرين",
+    "ar": "حن نقدم مستوى عاليًا من المعرفة ونقدم لك الثمن الحقيقي في مقابل ما تدفعه. و اليوم نقوم بصيانة أكثر من 50 موقعًا مختلفا",
     "en": "We are offering a high level of knowledge and real value for money. Today we maintain over 50+ sites, making us one the leading green services companies in Bahrain."
   },
   "0wbt0": {
-    "ar": "نعتقد أن هذا لا يرجع فقط إلى الحفاظ على معايير عالية من التصميم الإبداعي والبناء الماهر ، ولكن أيضًا بسبب التركيز الذي نوليه للعناية والاهتمام بالعميل ومنزله",
+    "ar": "نعتقد أن هذا لا يرجع فقط إلى الحفاظ على معايير عالية من التصميم الإبداعي والبناء المبدع، ولكن أيضًا بسبب التركيز الذي نوليه للعناية والاهتمام بالعميل ومنزله",
     "en": "We believe that this is due to, not only maintaining high standards of creative design and skilled construction, but also the emphasis we put on care and consideration for the customer and their home"
   },
   "0oai0": {
-    "ar": "هدفنا هو جعل تجربتك في المشروع إيجابية ومرضية قدر الإمكان. تأتي معظم مشاريعنا إلينا من توصيات العملاء. نعتقد أن هذا لا يرجع فقط إلى الحفاظ على معايير عالية من التصميم الإبداعي والبناء الماهر ، ولكن أيضًا بسبب التركيز الذي نوليه للعناية والاهتمام بالعميل ومنزله.",
+    "ar": "هدفنا هو جعل تجربتك في المشروع إيجابية ومرضية قدر الإمكان. تأتي معظم المشاريع إلينا من توصيات العملاء. نعتقد أن هذا لا يرجع فقط إلى الحفاظ على معايير عالية من التصميم الإبداعي والبناء المبهر ، ولكن أيضًا بسبب التركيز الذي نوليه للعناية والاهتمام بالعميل ومنزله.",
     "en": "Our aim is to make your experience of the project as positive and pleasing as possible. Most of our projects come to us from customer recommendation. We believe that this is due to, not only maintaining high standards of creative design and skilled construction, but also the emphasis we put on care and consideration for the customer and their home."
   },
   "0sas0": {
@@ -1640,28 +1627,28 @@
     "ar": "متخصصة في المقاولات وتنسيق الحدائق في البحرين",
     "en": "Specializing in Contracting & Landscaping in Bahrain"
   },
-  "0hca0": {
-    "ar": "يستخدم خبراء هيرمانو للمقاولات والمناظر الطبيعية أحدث الأدوات والتقنيات لضمان الجودة والدقة والكفاءة العالية للمشروع وجعله يصل إلى أعلى جودة. تؤمن شركتنا بالاختلاف والموثوقية والاستدامة.",
-    "en": "Hermano Contracting and Landscaping’s experts use the latest tools and techniques to ensure quality, precision, accuracy, and high efficiency of the project and make it up to its mark. Our company believes in Difference, Reliability, and Sustainability."
+  "0hcao": {
+    "ar": "يستخدم خبراء هيرمانو للمقاولات والمناظر الطبيعية أحدث الأدوات والتقنيات لضمان الجودة والدقة والكفاءة العالية للمشروع وجعله يصل إلى أعلى جودة. تؤمن شركتنا بالتميز والضمان والاستدامة.",
+    "en": "Hermano Contracting and Landscapings experts use the latest tools and techniques to ensure quality, precision, accuracy, and high efficiency of the project and make it up to its mark. Our company believes in Difference, Reliability, and Sustainability."
   },
   "0obc0": {
-    "ar": "أعمال البناء الخاصة بنا  تضيف الهياكل إلى مناطق الأرض بطريقة قديمة أو مصممة بطريقة تقنية حديثة أو مخصصة وفقًا للظواهر",
+    "ar": "أعمالنا في البناء تشكل الهياكل إلى مناطق أرضية قديمة الطراز أو مصممة بتقنية حديثة أو مخصصة وفقًا للظواهر الطبيعية",
     "en": "Our Building construction work add the structures to areas of land in an old fashioned or newly tech designed ways or customized as per the natural phenomena"
   },
   "0ood0": {
-    "ar": "طريقة التصميم والبناء الخاصة بنا هي تحول تدريجي بعيدًا عن الأساليب التقليدية. يضمن إشراك كل من المهندس المعماري والمقاول في وقت مبكر في العملية الحصول على منتج عالي الجودة في فترة زمنية أقصر.",
+    "ar": "طريقة التصميم والبناء الخاصة بنا هي تحول تدريجي بعيدًا عن الأساليب التقليدية. يضمن إشراك كل من المهندس المعماري والمقاول في وقت مبكر من العملية منتجًا عالي الجودة في فترة زمنية قصيرة.",
     "en": "Our own Design-Build method is a progressive shift away from more traditional methods. Involving both the architect and the contractor early on in the process ensures a higher quality product in a shorter amount of time."
   },
   "0wah0": {
-    "ar": "نحن فريق ذو خبرة عالية من المتخصصين في تنسيق الحدائق مع سجل حافل في إنشاء وصيانة المناظر الطبيعية المرموقة عبر أجزاء مختلفة من الشرق الأوسط.",
-    "en": "We are a highly experienced team of landscaping specialists with a proven track record for constructing and maintaining prestigious landscapes across various parts of middle east ."
+    "ar": "نحن فريق من المتخصصين ذو خبرة عالية في تنسيق الحدائق مع تاريخ حافل في إنشاء وصيانة المناظر الطبيعية المرموقة بأماكن مختلفة من الشرق الأوسط.",
+    "en": "We are a highly experienced team of landscaping specialists with a proven track record for constructing and maintaining prestigious landscapes across various parts of middle east."
   },
   "0ros0": {
-    "ar": "بغض النظر عن الحجم أو التعقيد ، سواء كنت بحاجة إلى خدمات تصميم مناظر طبيعية موثوقة أو صيانة احترافية ، فإننا نقدم نهجًا مرنًا ، مصممًا وفقًا للاحتياجات المحددة لمشروعك",
+    "ar": "بغض النظر عن الكثافة أو التعقيد ، سواء كنت بحاجة إلى خدمات تصميم مناظر طبيعية مضمونة أو صيانة احترافية ، فإننا نقدم نهجًا مرنًا ، مصممًا وفقًا للاحتياجات المحددة لمشروعك",
     "en": "Regardless of size or complexity, whether you require a trusted landscaping design services or professional maintenance, we offer a flexible approach, tailored to the specific needs of your project"
   },
   "0jnb0": {
-    "ar": "جانبية",
+    "ar": "الجنبية",
     "en": "Janabiya"
   },
   "0rlnd0": {
@@ -1689,8 +1676,8 @@
     "en": "Want to chat?"
   },
   "0wlt0": {
-    "ar": "يسعدنا أن نسمع منك! تواصل مع فريق نجاح العملاء لدينا للاستفسار عن الخدمات أو المشاريع أو الأسعار أو فقط قل مرحبًا.",
-    "en": "We’d love to hear from you! Get in touch with our Customer Success Team to inquire about services, projects, rates, or just say hello."
+    "ar": "يسعدنا أن نسمع منك! تواصل مع عملائنا للاستفسار عن الخدمات أو المشاريع أو الأسعار أو فقط قل مرحبًا.",
+    "en": "We would love to hear from you! Get in touch with our Customer Success Team to inquire about services, projects, rates, or just say hello."
   },
   "0sum0": {
     "ar": "أرسل لنا رسالة",
@@ -1737,11 +1724,11 @@
     "en": "It seeks to be a success partner with its clients to achieve their goals and desires and provide the best services to be the ideal choice for all clients"
   },
   "0art0": {
-    "ar": "مراجعة الحسابات  واختبارو فحص المخاطر السيبرانية",
+    "ar": " مراجعة التدقيق & < br/> اختبار المخاطر الإلكترونية ",
     "en": "Auditing Reviewing & <br />Testing Cyber Risk"
   },
   "0sma0": {
-    "ar": "تطوير وإدارة تطبيقات الوسائط الاجتماعية",
+    "ar": " تطبيقات وسائل التواصل الاجتماعي < br/> التطوير والإدارة",
     "en": "Social Media Applications <br /> Development & Management"
   },
   "0it0": {
@@ -1757,7 +1744,7 @@
     "en": " Marketing Service Via <br /> Social Media"
   },
   "0css0": {
-    "ar": "خدمات إسكان أنظمة الكمبيوتر",
+    "ar": " أنظمة الكمبيوتر < br/> خدمات الإسكان ",
     "en": "Computer Systems <br /> Housing Services"
   },
   "0wd0": {
@@ -1765,7 +1752,7 @@
     "en": "Website <br /> Design"
   },
   "0ogs0": {
-    "ar": "خدمات الألعاب عبر الإنترنت",
+    "ar": " الألعاب عبر الإنترنت < br/> الخدمات ",
     "en": "Online Gaming <br /> Services"
   },
   "0bap0": {
@@ -1794,7 +1781,7 @@
   },
   "0mac0": {
     "ar": "إدارة البطولة",
-    "en": "Manage Tournament"
+    "en": "Manage Tournament"
   },
   "0all0": {
     "ar": "الجميع",
@@ -1813,71 +1800,71 @@
     "en": "Perfumes"
   },
   "00spr": {
-    "ar": "رياضات",
+    "ar": " الرياضة",
     "en": "Sports"
   },
   "00oobj": {
-    "ar": "",
+    "ar": " أهدافنا",
     "en": "Our Objectives"
   },
   "00wwt": {
-    "ar": "نعمل على مواكبة التقدم الالكتروني  وتلبية رغبات عملائك حسب احتياجاتهم بأعلى درجة من التخصيص",
+    "ar": "نعمل على مواكبة التقدم الالكتروني وتلبية متطلبات عملائك حسب احتياجاتهم بأعلى جودة",
     "en": "We work to keep pace with the progress of the electronic word and meet the requirements of your customers to their suit need with the highest degree of personalism"
   },
   "00csf": {
-    "ar": "",
+    "ar": " رضا العملاء أولاً ",
     "en": "Customer Satisfaction First"
   },
   "00Inh": {
-    "ar": "",
+    "ar": "الإناقة والأمانة",
     "en": "Integrity and honesty"
   },
   "00cts": {
-    "ar": "",
+    "ar": " الالتزام باللوازم الاجتماعية ",
     "en": "Commitment to social responsibility"
   },
   "00ohb": {
-    "ar": "",
-    "en": "One Hand to acheive the best"
+    "ar": " يد واحدة لتحقيق الأفضل ",
+    "en": "One Hand to achieve the best"
   },
   "00ddi": {
-    "ar": "",
+    "ar": " التنوع والتميز والابتكار ",
     "en": "Diversity, distinction and Innovation"
   },
   "00ycd": {
-    "ar": "",
+    "ar": " يمكنك فعل هذا معنا!",
     "en": "YOU CAN DO THIS WITH US!"
   },
   "00los": {
-    "ar": "",
+    "ar": " أعجبك خدماتنا؟",
     "en": "Like our services?"
   },
   "00fftc": {
-    "ar": "",
+    "ar": " لا تتردد في الاتصال بنا",
     "en": "Feel free to contact us"
   },
   "00ocis": {
-    "ar": "",
+    "ar": " تم الاعتراف بشركتنا كاسم حاسم وقوي في المنطقة. لقد ساعدنا الآلاف من العلامات التجارية من خلال تقديم الخدمات الأكثر طلبًا لهم وفقًا لطبيعة أعمالهم.",
     "en": "Our company is recognized as a decisive and robust name in the region. We have assisted thousands of brands by providing them best-demanded services as per their business nature."
   },
   "00oyw": {
-    "ar": "",
-    "en": "Do you want to give an exclusive touch to your brands, we promise you that our services range from high-quality video production, 4K Videos, Destination shoots, testimonial shoots as well as Top Impact Editing and Copy Editing we meet your demand."
+    "ar": "هل تريد إعطاء لمسة حصرية لعلاماتك التجارية، فإننا نعدك بأن خدماتنا تتراوح من إنتاج فيديو عالي الجودة،ومقاطع فيديو بدقة 4K، ولقطات الوجهة، ولقطات الشهادة، بالإضافة إلى تحرير Top Impact وتحرير النسخ، فإننا نلبي طلبك",
+    "en": "Do you want to give an exclusive touch to your brands, we promise you that our services range from high-quality video production, 4K Videos, Destination shoots, testimonial shoots as well as Top Impact Editing and Copy Editing, we meet your demand."
   },
   "00wof": {
-    "ar": "",
-    "en": "We offer our services to individuals and brands. We re-imagine our experience with your brand, with clear digital directions and get an understanding of your brand’s goals and objectives, and help to reach the next highest level."
+    "ar": "نقدم خدماتنا للأفراد والعلامات التجارية. نعيد هيكل تجربتنا مع علامتك التجارية، مع اتجاهات رقمية واضحة والحصول على فهم لأهداف علامتك التجارية، والمساعدة في الوصول إلى المستوى الأعلى",
+    "en": "We offer our services to individuals and brands. We re-imagine our experience with your brand, with clear digital directions and get an understanding of your brands goals and objectives, and help to reach the next highest level."
   },
   "00wat": {
-    "ar": "",
+    "ar": " نهدف إلى اختراع وتنفيذ تجارب فريدة للعلامة التجارية والحصول على أفضل نتيجة منها. استخدم خدماتنا لتجربة الطرق الإبداعية لجذب المستهلكين والمتسوقين من خلال علاماتك التجارية المعروضة ",
     "en": "We aim to invent and execute unique brand experiences and get the best result out of them. Use our services to experience the creative ways to attract consumers & shoppers with your offered brands."
   },
   "00get": {
-    "ar": "",
+    "ar": " احصل لدينا على خدمات التصوير الفوتوغرافي لالتقاط لحظاتك المهمة للمستقبل ",
     "en": "Get our photography services to capture your important moments for future"
   },
   "00hut": {
-    "ar": "",
+    "ar": " اخترنا لإيصال الرسالة الصحيحة إلى الأشخاص المناسبين في الوقت المناسب وهذا بالضبط ما نفعله لعلامتك التجارية ",
     "en": "Hire us to deliver the right message to the right people at the right time that is exactly what we do for your brand"
   },
   "00occ": {
@@ -1885,8 +1872,8 @@
     "en": "Our company can develop and steer your brand's relationship with the media in the right direction. Hire our team to get the best media coverage for your event."
   },
   "00fsf": {
-    "ar": "",
-    "en": "From start to finish, we are experts in managing events. Our company is known for being able to customize the perfect funfilled tournaments for your company and with other companies"
+    "ar": " من البداية إلى النهاية، نحن خبراء في إدارة الأحداث. تشتهر شركتنا بقدرتها على تخصيص البطولات المثالية لشركتك ومع الشركات الأخرى ",
+    "en": "From start to finish, we are experts in managing events. Our company is known for being able to customize the perfect fun filled tournaments for your company and with other companies"
   },
   "00ss": {
     "ar": "شركة بحرينية متخصصة في عدة مجالات",
@@ -1914,7 +1901,7 @@
   },
   "00abc": {
     "ar": "شبكة مراكز أعمال التحالف ، الطابق الرابع ، بلوك ب ، صندوق بريد 183125 ، قرية الأعمال ، دبي ، الإمارات العربية المتحدة",
-    "en": "Alliance Business Centers Network, 4th Floor, Block-B, P.o.Box 183125,Business village ,Dubai UAE"
+    "en": "Alliance Business Centers Network, 4th Floor, Block-B, P.O.Box 183125,Business village ,Dubai UAE"
   },
   "00cre": {
     "ar": "مصداقية",
@@ -1935,53 +1922,5 @@
   "00rsor": {
     "ar": "نتيجة المنحى",
     "en": "Result Oriented"
-  },
-  "00rsoa": {
-    "ar": "عود بوتيك",
-    "en": "OUD BOUTIQUE"
-  },
-  "00rsob": {
-    "ar": "أكتيفار لتأجير السيارات",
-    "en": "ACTIVAR RENT A CAR"
-  },
-  "00rsoc": {
-    "ar": "غانشاتنا",
-    "en": "GHANCHATNA"
-  },
-  "00rsod": {
-    "ar": "اسمك",
-    "en": "Your name"
-  },
-  "00rsoe": {
-    "ar": "۲۰۱۹",
-    "en": "2019"
-  },
-  "00rsof": {
-    "ar": "۲۰۲۰",
-    "en": "2020"
-  },
-  "00rsog": {
-    "ar": "۲۰۲۲",
-    "en": "2022"
-  },
-  "00rsoh": {
-    "ar": "لقد قرأت ووافقت على سياسة الخصوصية",
-    "en": "I have read and accept the privacy policy"
-  },
-  "00rsoi": {
-    "ar": "عزيق",
-    "en": "IZIQ"
-  },
-  "00rsoj": {
-    "ar": "غنشاتنا",
-    "en": "Ghanchatna"
-  },
-  "00rsok": {
-    "ar": "أكتفار لتأجير السيارات",
-    "en": "Activar Rent a Car"
-  },
-  "00rsol": {
-    "ar": "عود بوتيك",
-    "en": "Oud Boutiquer"
   }
 }

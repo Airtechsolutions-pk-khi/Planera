@@ -2844,7 +2844,7 @@
     <Content Include="assets\ActivarDB\fonts\FontsFree-Net-ProximaNova-Regular.ttf" />
     <Content Include="assets\HarmanoRepair\images\HermanoRMContact.cshtml" />
     <Content Include="assets\HarmanoContract\css\Lato-Regular.ttf" />
-    <Content Include="language\translations.json" />
+    <Content Include="language\translationsold.json" />
     <Content Include="assets\js\cookie\js.cookie.min.mjs" />
     <Content Include="assets\js\cookie\js.cookie.mjs" />
     <Content Include="assets\aracbicfont\Cairo-Black.ttf" />
@@ -2853,7 +2853,7 @@
     <Content Include="assets\aracbicfont\Cairo-Light.ttf" />
     <Content Include="assets\aracbicfont\Cairo-Regular.ttf" />
     <Content Include="assets\aracbicfont\Cairo-SemiBold.ttf" />
-    <Content Include="language\translationsnew.json" />
+    <Content Include="language\translations.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

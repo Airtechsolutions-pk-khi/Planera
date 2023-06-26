@@ -5,7 +5,7 @@ translate; // Container of all translations
 
 // Call translations json file and populate translate variable  
 jQuery.getJSON("http://localhost:9090/language/translations.json", function (texts) {
-    
+    debugger
     translate=texts;
 
     // Translations Function: Get all the element with data-text
